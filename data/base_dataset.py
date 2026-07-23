@@ -15,6 +15,11 @@ class BaseDataset(data.Dataset):
     unit-testable: a test can call ``dataset._make_sample(known_H, 0)`` with a
     known array instead of going through ``__getitem__`` (and disk I/O), which
     is exactly what ``tests/data/test_dataset_*.py`` does.
+
+    If a subclass has no core transform of its own (it only loads a sample
+    as-is), it may omit ``_make_sample`` and do the load + tensor wrapping
+    entirely inside ``__getitem__``; the base default raises
+    ``NotImplementedError``.
     """
 
     def __init__(self, opt, n_channels_default=3):

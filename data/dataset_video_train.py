@@ -1,71 +1,39 @@
-import numpy as np
 import random
 import torch
 from pathlib import Path
-import torch.utils.data as data
 from torchvision import transforms
 
 import utils.utils_video as utils_video
+from data.base_dataset import BaseDataset
 
 
-class VideoRecurrentTrainDataset(data.Dataset):
-    """Video dataset for training recurrent networks.
+class VideoRecurrentTrainDataset(BaseDataset):
+    """Video dataset for training recurrent networks, built from a meta_info txt.
 
-    The keys are generated from a meta info txt file.
-    basicsr/data/meta_info/meta_info_XXX_GT.txt
-
-    Each line contains:
-    1. subfolder (clip) name; 2. frame number; 3. image shape, separated by
-    a white space.
-    Examples:
-    720p_240fps_1 100 (720,1280,3)
-    720p_240fps_3 100 (720,1280,3)
-    ...
-
-    Key examples: "720p_240fps_1/00000"
-    GT (gt): Ground-Truth;
-    LQ (lq): Low-Quality, e.g., low-resolution/blurry/noisy/compressed frames.
-
-    Args:
-        opt (dict): Config for train dataset. It contains the following keys:
-            dataroot_gt (str): Data root path for gt.
-            dataroot_lq (str): Data root path for lq.
-            dataroot_flow (str, optional): Data root path for flow.
-            meta_info_file (str): Path for meta information file.
-            val_partition (str): Validation partition types. 'REDS4' or
-                'official'.
-            io_backend (dict): IO backend type and other kwarg.
-
-            num_frame (int): Window size for input frames.
-            gt_size (int): Cropped patched size for gt patches.
-            interval_list (list): Interval list for temporal augmentation.
-            random_reverse (bool): Random reverse input frames.
-            use_hflip (bool): Use horizontal flips.
-            use_rot (bool): Use rotation (use vertical flip and transposing h
-                and w for implementation).
-
-            scale (bool): Scale, which will be added automatically.
+    Each line of the meta file lists a clip folder, frame count, image shape and
+    start frame. Frames are read through ``utils_video.FileClient``; ``__getitem__``
+    selects a neighboring window, loads the LQ/GT frames and delegates the paired
+    random crop + flip/rotate augmentation to ``_make_sample``.
     """
 
     def __init__(self, opt):
-        super(VideoRecurrentTrainDataset, self).__init__()
-        self.opt = opt
-        self.scale = opt.get('scale', 4)
-        self.gt_size = opt.get('gt_size', 256)
+        super().__init__(opt)
+        self.scale = opt['scale'] if opt['scale'] else 4
+        self.gt_size = opt['gt_size'] if opt['gt_size'] else 256
         self.gt_root, self.lq_root = Path(opt['dataroot_gt']), Path(opt['dataroot_lq'])
-        self.filename_tmpl = opt.get('filename_tmpl', '08d')
-        self.filename_ext = opt.get('filename_ext', 'png')
+        self.filename_tmpl = opt['filename_tmpl'] if opt['filename_tmpl'] else '08d'
+        self.filename_ext = opt['filename_ext'] if opt['filename_ext'] else 'png'
         self.num_frame = opt['num_frame']
 
         keys = []
-        total_num_frames = [] # some clips may not have 100 frames
-        start_frames = [] # some clips may not start from 00000
+        total_num_frames = []  # some clips may not have 100 frames
+        start_frames = []  # some clips may not start from 00000
         with open(opt['meta_info_file'], 'r') as fin:
             for line in fin:
                 folder, frame_num, _, start_frame = line.split(' ')
-                keys.extend([f'{folder}/{i:{self.filename_tmpl}}' for i in range(int(start_frame), int(start_frame)+int(frame_num))])
-                total_num_frames.extend([int(frame_num) for i in range(int(frame_num))])
-                start_frames.extend([int(start_frame) for i in range(int(frame_num))])
+                keys.extend([f'{folder}/{i:{self.filename_tmpl}}' for i in range(int(start_frame), int(start_frame) + int(frame_num))])
+                total_num_frames.extend([int(frame_num) for _ in range(int(frame_num))])
+                start_frames.extend([int(start_frame) for _ in range(int(frame_num))])
 
         # remove the video clips used in validation
         if opt['name'] == 'REDS':
@@ -80,7 +48,7 @@ class VideoRecurrentTrainDataset(data.Dataset):
             val_partition = []
 
         self.keys = []
-        self.total_num_frames = [] # some clips may not have 100 frames
+        self.total_num_frames = []  # some clips may not have 100 frames
         self.start_frames = []
         if opt['test_mode']:
             for i, v in zip(range(len(keys)), keys):
@@ -109,13 +77,29 @@ class VideoRecurrentTrainDataset(data.Dataset):
                 self.io_backend_opt['client_keys'] = ['lq', 'gt']
 
         # temporal augmentation configs
-        self.interval_list = opt.get('interval_list', [1])
-        self.random_reverse = opt.get('random_reverse', False)
+        self.interval_list = opt['interval_list'] if opt['interval_list'] else [1]
+        self.random_reverse = opt['random_reverse'] if opt['random_reverse'] else False
         interval_str = ','.join(str(x) for x in self.interval_list)
         print(f'Temporal augmentation interval list: [{interval_str}]; '
                     f'random reverse is {self.random_reverse}.')
 
+    def _make_sample(self, imgs_H, imgs_L, index, gt_path=None):
+        """Paired random crop + flip/rotate the GT/LQ frame lists, then convert
+        to (t,c,h,w) tensors stacked along the time dimension.
+
+        ``imgs_H`` / ``imgs_L`` are the already-loaded lists of float32 GT/LQ
+        frames; ``gt_path`` is only used for crop error messages.
+        """
+        img_gts, img_lqs = utils_video.paired_random_crop(imgs_H, imgs_L, self.gt_size, self.scale, gt_path)
+        img_lqs.extend(img_gts)
+        img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
+        img_results = utils_video.img2tensor(img_results)
+        img_gts = torch.stack(img_results[len(img_lqs) // 2:], dim=0)
+        img_lqs = torch.stack(img_results[:len(img_lqs) // 2], dim=0)
+        return img_gts, img_lqs
+
     def __getitem__(self, index):
+        """Load the neighboring LQ/GT window and return ``{L, H, key}`` tensors."""
         if self.file_client is None:
             self.file_client = utils_video.FileClient(self.io_backend_opt.pop('type'), **self.io_backend_opt)
 
@@ -161,16 +145,8 @@ class VideoRecurrentTrainDataset(data.Dataset):
             img_gt = utils_video.imfrombytes(img_bytes, float32=True)
             img_gts.append(img_gt)
 
-        # randomly crop
-        img_gts, img_lqs = utils_video.paired_random_crop(img_gts, img_lqs, self.gt_size, self.scale, img_gt_path)
-
-        # augmentation - flip, rotate
-        img_lqs.extend(img_gts)
-        img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
-
-        img_results = utils_video.img2tensor(img_results)
-        img_gts = torch.stack(img_results[len(img_lqs) // 2:], dim=0)
-        img_lqs = torch.stack(img_results[:len(img_lqs) // 2], dim=0)
+        # crop + augment + tensorize, then build the sample dict
+        img_gts, img_lqs = self._make_sample(img_gts, img_lqs, index, img_gt_path)
 
         # img_lqs: (t, c, h, w)
         # img_gts: (t, c, h, w)
@@ -184,17 +160,44 @@ class VideoRecurrentTrainDataset(data.Dataset):
 class VideoRecurrentTrainNonblindDenoisingDataset(VideoRecurrentTrainDataset):
     """Video dataset for training recurrent architectures in non-blind video denoising.
 
-    Args:
-        Same as VideoTestDataset.
-
+    GT frames are loaded and cropped/augmented; the LQ sequence is synthesized by
+    adding AWGN whose level is sampled uniformly in [sigma_min, sigma_max], and the
+    noise level is concatenated as an extra channel.
     """
 
     def __init__(self, opt):
-        super(VideoRecurrentTrainNonblindDenoisingDataset, self).__init__(opt)
+        super().__init__(opt)
         self.sigma_min = self.opt['sigma_min'] / 255.
         self.sigma_max = self.opt['sigma_max'] / 255.
 
+    def _make_sample(self, imgs_H, index, gt_path=None):
+        """Crop+augment the GT frames, stack to (t,c,h,w), then synthesize LQ by
+        adding AWGN(sigma in [sigma_min, sigma_max]); concat the noise level as an
+        extra channel. ``imgs_H`` is the loaded list of float32 GT frames.
+        """
+        img_gts, _ = utils_video.paired_random_crop(imgs_H, imgs_H, self.gt_size, 1, gt_path)
+
+        # augmentation - flip, rotate
+        img_gts = utils_video.augment(img_gts, self.opt['use_hflip'], self.opt['use_rot'])
+
+        img_gts = utils_video.img2tensor(img_gts)
+        img_gts = torch.stack(img_gts, dim=0)
+
+        # we add noise in the network
+        noise_level = torch.empty((1, 1, 1, 1)).uniform_(self.sigma_min, self.sigma_max)
+        noise = torch.normal(mean=0, std=noise_level.expand_as(img_gts))
+        img_lqs = img_gts + noise
+
+        t, _, h, w = img_lqs.shape
+        img_lqs = torch.cat([img_lqs, noise_level.expand(t, 1, h, w)], 1)
+
+        # img_lqs: (t, c, h, w)
+        # img_gts: (t, c, h, w)
+        # key: str
+        return img_gts, img_lqs
+
     def __getitem__(self, index):
+        """Load the GT window and return ``{L, H, key}`` tensors (L synthesized in-network)."""
         if self.file_client is None:
             self.file_client = utils_video.FileClient(self.io_backend_opt.pop('type'), **self.io_backend_opt)
 
@@ -232,78 +235,29 @@ class VideoRecurrentTrainNonblindDenoisingDataset(VideoRecurrentTrainDataset):
             img_gt = utils_video.imfrombytes(img_bytes, float32=True)
             img_gts.append(img_gt)
 
-        # randomly crop
-        img_gts, _ = utils_video.paired_random_crop(img_gts, img_gts, self.gt_size, 1, img_gt_path)
-
-        # augmentation - flip, rotate
-        img_gts = utils_video.augment(img_gts, self.opt['use_hflip'], self.opt['use_rot'])
-
-        img_gts = utils_video.img2tensor(img_gts)
-        img_gts = torch.stack(img_gts, dim=0)
-
-        # we add noise in the network
-        noise_level = torch.empty((1, 1, 1, 1)).uniform_(self.sigma_min, self.sigma_max)
-        noise = torch.normal(mean=0, std=noise_level.expand_as(img_gts))
-        img_lqs = img_gts + noise
-
-        t, _, h, w = img_lqs.shape
-        img_lqs = torch.cat([img_lqs, noise_level.expand(t, 1, h, w)], 1)
+        img_gts, img_lqs = self._make_sample(img_gts, index, img_gt_path)
 
         # img_lqs: (t, c, h, w)
         # img_gts: (t, c, h, w)
         # key: str
         return {'L': img_lqs, 'H': img_gts, 'key': key}
 
-
     def __len__(self):
         return len(self.keys)
 
 
-class VideoRecurrentTrainVimeoDataset(data.Dataset):
-    """Vimeo90K dataset for training recurrent networks.
+class VideoRecurrentTrainVimeoDataset(BaseDataset):
+    """Vimeo90K dataset for training recurrent networks, built from a meta_info txt.
 
-    The keys are generated from a meta info txt file.
-    basicsr/data/meta_info/meta_info_Vimeo90K_train_GT.txt
-
-    Each line contains:
-    1. clip name; 2. frame number; 3. image shape, separated by a white space.
-    Examples:
-        00001/0001 7 (256,448,3)
-        00001/0002 7 (256,448,3)
-
-    Key examples: "00001/0001"
-    GT (gt): Ground-Truth;
-    LQ (lq): Low-Quality, e.g., low-resolution/blurry/noisy/compressed frames.
-
-    The neighboring frame list for different num_frame:
-    num_frame | frame list
-             1 | 4
-             3 | 3,4,5
-             5 | 2,3,4,5,6
-             7 | 1,2,3,4,5,6,7
-
-    Args:
-        opt (dict): Config for train dataset. It contains the following keys:
-            dataroot_gt (str): Data root path for gt.
-            dataroot_lq (str): Data root path for lq.
-            meta_info_file (str): Path for meta information file.
-            io_backend (dict): IO backend type and other kwarg.
-
-            num_frame (int): Window size for input frames.
-            gt_size (int): Cropped patched size for gt patches.
-            random_reverse (bool): Random reverse input frames.
-            use_hflip (bool): Use horizontal flips.
-            use_rot (bool): Use rotation (use vertical flip and transposing h
-                and w for implementation).
-
-            scale (bool): Scale, which will be added automatically.
+    Neighboring frame indices are precomputed from ``num_frame``; ``__getitem__``
+    loads the window and delegates the paired crop + flip/rotate augmentation (and
+    optional mirror/pad sequence expansion) to ``_make_sample``.
     """
 
     def __init__(self, opt):
-        super(VideoRecurrentTrainVimeoDataset, self).__init__()
-        self.opt = opt
+        super().__init__(opt)
         self.gt_root, self.lq_root = Path(opt['dataroot_gt']), Path(opt['dataroot_lq'])
-        self.temporal_scale = opt.get('temporal_scale', 1)
+        self.temporal_scale = opt['temporal_scale'] if opt['temporal_scale'] else 1
 
         with open(opt['meta_info_file'], 'r') as fin:
             self.keys = [line.split(' ')[0] for line in fin]
@@ -324,10 +278,40 @@ class VideoRecurrentTrainVimeoDataset(data.Dataset):
         self.random_reverse = opt['random_reverse']
         print(f'Random reverse is {self.random_reverse}.')
 
-        self.mirror_sequence = opt.get('mirror_sequence', False)
-        self.pad_sequence = opt.get('pad_sequence', False)
+        self.mirror_sequence = opt['mirror_sequence'] if opt['mirror_sequence'] else False
+        self.pad_sequence = opt['pad_sequence'] if opt['pad_sequence'] else False
+
+    def _make_sample(self, imgs_H, imgs_L, index, gt_path=None):
+        """Paired random crop + flip/rotate the LQ/GT window, convert to (t,c,h,w)
+        tensors, then apply mirror/pad sequence expansion if configured.
+
+        ``imgs_H`` / ``imgs_L`` are the loaded lists of float32 GT/LQ frames.
+        """
+        img_gts, img_lqs = utils_video.paired_random_crop(imgs_H, imgs_L, self.opt['gt_size'], self.opt['scale'], gt_path)
+
+        # augmentation - flip, rotate
+        img_lqs.extend(img_gts)
+        img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
+
+        img_results = utils_video.img2tensor(img_results)
+        n_lq = len(self.neighbor_list)
+        img_lqs = torch.stack(img_results[:n_lq], dim=0)
+        img_gts = torch.stack(img_results[n_lq:], dim=0)
+
+        if self.mirror_sequence:  # mirror the sequence: 7 frames to 14 frames
+            img_lqs = torch.cat([img_lqs, img_lqs.flip(0)], dim=0)
+            img_gts = torch.cat([img_gts, img_gts.flip(0)], dim=0)
+        elif self.pad_sequence:  # pad the sequence: 7 frames to 8 frames
+            img_lqs = torch.cat([img_lqs, img_lqs[-1:, ...]], dim=0)
+            img_gts = torch.cat([img_gts, img_gts[-1:, ...]], dim=0)
+
+        # img_lqs: (t, c, h, w)
+        # img_gt: (t, c, h, w)
+        # key: str
+        return img_gts, img_lqs
 
     def __getitem__(self, index):
+        """Load the Vimeo window and return ``{L, H, key}`` tensors."""
         if self.file_client is None:
             self.file_client = utils_video.FileClient(self.io_backend_opt.pop('type'), **self.io_backend_opt)
 
@@ -360,24 +344,7 @@ class VideoRecurrentTrainVimeoDataset(data.Dataset):
             img_lqs.append(img_lq)
             img_gts.append(img_gt)
 
-        # randomly crop
-        img_gts, img_lqs = utils_video.paired_random_crop(img_gts, img_lqs, gt_size, scale, img_gt_path)
-
-        # augmentation - flip, rotate
-        img_lqs.extend(img_gts)
-        img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
-
-        img_results = utils_video.img2tensor(img_results)
-        n_lq = len(self.neighbor_list)
-        img_lqs = torch.stack(img_results[:n_lq], dim=0)
-        img_gts = torch.stack(img_results[n_lq:], dim=0)
-
-        if self.mirror_sequence:  # mirror the sequence: 7 frames to 14 frames
-            img_lqs = torch.cat([img_lqs, img_lqs.flip(0)], dim=0)
-            img_gts = torch.cat([img_gts, img_gts.flip(0)], dim=0)
-        elif self.pad_sequence:  # pad the sequence: 7 frames to 8 frames
-            img_lqs = torch.cat([img_lqs, img_lqs[-1:,...]], dim=0)
-            img_gts = torch.cat([img_gts, img_gts[-1:,...]], dim=0)
+        img_gts, img_lqs = self._make_sample(img_gts, img_lqs, index, img_gt_path)
 
         # img_lqs: (t, c, h, w)
         # img_gt: (t, c, h, w)
@@ -387,16 +354,51 @@ class VideoRecurrentTrainVimeoDataset(data.Dataset):
     def __len__(self):
         return len(self.keys)
 
+
 class VideoRecurrentTrainVimeoVFIDataset(VideoRecurrentTrainVimeoDataset):
+    """Vimeo90K VFI training dataset: a window of LQ frames plus a single center GT.
+
+    The LQ window and the single center GT are loaded and cropped/augmented
+    together; ``_make_sample`` stacks them (GT last) and optionally applies the
+    shared color-jitter transform.
+    """
 
     def __init__(self, opt):
-        super(VideoRecurrentTrainVimeoVFIDataset, self).__init__(opt)
-        self.color_jitter = self.opt.get('color_jitter', False)
+        super().__init__(opt)
+        self.color_jitter = self.opt['color_jitter'] if self.opt['color_jitter'] else False
 
         if self.color_jitter:
             self.transforms_color_jitter = transforms.ColorJitter(0.05, 0.05, 0.05, 0.05)
 
+    def _make_sample(self, imgs_H, imgs_L, index, gt_path=None):
+        """Crop+augment the concatenated LQ window and center GT, convert to
+        tensors, stack (GT last), then apply color jitter if configured.
+
+        ``imgs_H`` is the single center GT frame (ndarray); ``imgs_L`` is the list
+        of LQ float32 frames.
+        """
+        img_gts, img_lqs = utils_video.paired_random_crop([imgs_H], imgs_L, self.opt['gt_size'], self.opt['scale'], gt_path)
+
+        # augmentation - flip, rotate
+        img_lqs.extend([img_gts])
+        img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
+
+        img_results = utils_video.img2tensor(img_results)
+        img_results = torch.stack(img_results, dim=0)
+
+        if self.color_jitter:  # same color_jitter for img_lqs and img_gts
+            img_results = self.transforms_color_jitter(img_results)
+
+        img_lqs = img_results[:-1, ...]
+        img_gts = img_results[-1:, ...]
+
+        # img_lqs: (t, c, h, w)
+        # img_gt: (t, c, h, w)
+        # key: str
+        return img_gts, img_lqs
+
     def __getitem__(self, index):
+        """Load the LQ window + center GT and return ``{L, H, key}`` tensors."""
         if self.file_client is None:
             self.file_client = utils_video.FileClient(self.io_backend_opt.pop('type'), **self.io_backend_opt)
 
@@ -409,9 +411,8 @@ class VideoRecurrentTrainVimeoVFIDataset(VideoRecurrentTrainVimeoDataset):
         key = self.keys[index]
         clip, seq = key.split('/')  # key example: 00001/0001
 
-        # get the neighboring LQ and  GT frames
+        # get the neighboring LQ frames
         img_lqs = []
-        img_gts = []
         for neighbor in self.neighbor_list:
             if self.is_lmdb:
                 img_lq_path = f'{clip}/{seq}/im{neighbor}'
@@ -430,23 +431,8 @@ class VideoRecurrentTrainVimeoVFIDataset(VideoRecurrentTrainVimeoDataset):
 
         img_bytes = self.file_client.get(img_gt_path, 'gt')
         img_gt = utils_video.imfrombytes(img_bytes, float32=True)
-        img_gts.append(img_gt)
 
-        # randomly crop
-        img_gts, img_lqs = utils_video.paired_random_crop(img_gts, img_lqs, gt_size, scale, img_gt_path)
-
-        # augmentation - flip, rotate
-        img_lqs.extend([img_gts])
-        img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
-
-        img_results = utils_video.img2tensor(img_results)
-        img_results = torch.stack(img_results, dim=0)
-
-        if self.color_jitter: # same color_jitter for img_lqs and img_gts
-            img_results = self.transforms_color_jitter(img_results)
-
-        img_lqs = img_results[:-1, ...]
-        img_gts = img_results[-1:, ...]
+        img_gts, img_lqs = self._make_sample(img_gt, img_lqs, index, img_gt_path)
 
         # img_lqs: (t, c, h, w)
         # img_gt: (t, c, h, w)

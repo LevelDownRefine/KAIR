@@ -2,51 +2,23 @@ import glob
 import os
 import torch
 from os import path as osp
-import torch.utils.data as data
 from torchvision import transforms
 from PIL import Image
 
 import utils.utils_video as utils_video
+from data.base_dataset import BaseDataset
 
 
-class VideoRecurrentTestDataset(data.Dataset):
-    """Video test dataset for recurrent architectures, which takes LR video
-    frames as input and output corresponding HR video frames. Modified from
-    https://github.com/xinntao/BasicSR/blob/master/basicsr/data/reds_dataset.py
+class VideoRecurrentTestDataset(BaseDataset):
+    """Video test dataset for recurrent architectures (LR in, HR out).
 
-    Supported datasets: Vid4, REDS4, REDSofficial.
-    More generally, it supports testing dataset with following structures:
-
-    dataroot
-    ├── subfolder1
-        ├── frame000
-        ├── frame001
-        ├── ...
-    ├── subfolder1
-        ├── frame000
-        ├── frame001
-        ├── ...
-    ├── ...
-
-    For testing datasets, there is no need to prepare LMDB files.
-
-    Args:
-        opt (dict): Config for train dataset. It contains the following keys:
-            dataroot_gt (str): Data root path for gt.
-            dataroot_lq (str): Data root path for lq.
-            io_backend (dict): IO backend type and other kwarg.
-            cache_data (bool): Whether to cache testing datasets.
-            name (str): Dataset name.
-            meta_info_file (str): The path to the file storing the list of test
-                folders. If not provided, all the folders in the dataroot will
-                be used.
-            num_frame (int): Window size for input frames.
-            padding (str): Padding mode.
+    Subfolders of ``dataroot_lq`` / ``dataroot_gt`` each form one clip/sample. For
+    non-blind video denoising (``sigma`` given) ``_make_sample`` synthesizes the LQ
+    sequence by adding AWGN; otherwise the on-disk LQ sequence is used as-is.
     """
 
     def __init__(self, opt):
-        super(VideoRecurrentTestDataset, self).__init__()
-        self.opt = opt
+        super().__init__(opt)
         self.cache_data = opt['cache_data']
         self.gt_root, self.lq_root = opt['dataroot_gt'], opt['dataroot_lq']
         self.data_info = {'lq_path': [], 'gt_path': [], 'folder': [], 'idx': [], 'border': []}
@@ -93,32 +65,44 @@ class VideoRecurrentTestDataset(data.Dataset):
 
         # Find unique folder strings
         self.folders = sorted(list(set(self.data_info['folder'])))
-        self.sigma = opt['sigma'] / 255. if 'sigma' in opt else 0 # for non-blind video denoising
+        self.sigma = opt['sigma'] / 255. if 'sigma' in opt else 0  # for non-blind video denoising
+
+    def _make_sample(self, imgs_H, imgs_L, index):
+        """Return the (H, L) pair for one clip. When ``sigma > 0`` (non-blind
+        denoising) ``imgs_L`` is synthesized as GT + AWGN(sigma) with a fixed seed
+        and the noise level is concatenated as an extra channel; otherwise the
+        on-disk LQ sequence ``imgs_L`` is returned unchanged."""
+        if self.sigma:
+            # for non-blind video denoising
+            torch.manual_seed(0)
+            noise_level = torch.ones((1, 1, 1, 1)) * self.sigma
+            noise = torch.normal(mean=0, std=noise_level.expand_as(imgs_H))
+            imgs_L = imgs_H + noise
+            t, _, h, w = imgs_L.shape
+            imgs_L = torch.cat([imgs_L, noise_level.expand(t, 1, h, w)], 1)
+        return imgs_H, imgs_L
 
     def __getitem__(self, index):
         folder = self.folders[index]
 
         if self.sigma:
-        # for non-blind video denoising
+            # for non-blind video denoising
             if self.cache_data:
                 imgs_gt = self.imgs_gt[folder]
             else:
                 imgs_gt = utils_video.read_img_seq(self.imgs_gt[folder])
-
-            torch.manual_seed(0)
-            noise_level = torch.ones((1, 1, 1, 1)) * self.sigma
-            noise = torch.normal(mean=0, std=noise_level.expand_as(imgs_gt))
-            imgs_lq = imgs_gt + noise
-            t, _, h, w = imgs_lq.shape
-            imgs_lq = torch.cat([imgs_lq, noise_level.expand(t, 1, h, w)], 1)
+            imgs_lq = None
         else:
-        # for video sr and deblurring
+            # for video sr and deblurring
             if self.cache_data:
                 imgs_lq = self.imgs_lq[folder]
                 imgs_gt = self.imgs_gt[folder]
             else:
                 imgs_lq = utils_video.read_img_seq(self.imgs_lq[folder])
                 imgs_gt = utils_video.read_img_seq(self.imgs_gt[folder])
+
+        # crop/augment/synthesize, then build the sample dict
+        imgs_gt, imgs_lq = self._make_sample(imgs_gt, imgs_lq, index)
 
         return {
             'L': imgs_lq,
@@ -131,42 +115,15 @@ class VideoRecurrentTestDataset(data.Dataset):
         return len(self.folders)
 
 
-class SingleVideoRecurrentTestDataset(data.Dataset):
-    """Single video test dataset for recurrent architectures, which takes LR video
-    frames as input and output corresponding HR video frames (only input LQ path).
+class SingleVideoRecurrentTestDataset(BaseDataset):
+    """Single video test dataset for recurrent architectures (LR-only input).
 
-    More generally, it supports testing dataset with following structures:
-
-    dataroot
-    ├── subfolder1
-        ├── frame000
-        ├── frame001
-        ├── ...
-    ├── subfolder1
-        ├── frame000
-        ├── frame001
-        ├── ...
-    ├── ...
-
-    For testing datasets, there is no need to prepare LMDB files.
-
-    Args:
-        opt (dict): Config for train dataset. It contains the following keys:
-            dataroot_gt (str): Data root path for gt.
-            dataroot_lq (str): Data root path for lq.
-            io_backend (dict): IO backend type and other kwarg.
-            cache_data (bool): Whether to cache testing datasets.
-            name (str): Dataset name.
-            meta_info_file (str): The path to the file storing the list of test
-                folders. If not provided, all the folders in the dataroot will
-                be used.
-            num_frame (int): Window size for input frames.
-            padding (str): Padding mode.
+    Subfolders of ``dataroot_lq`` form one clip/sample; no GT is loaded. The full LQ
+    sequence is returned as-is (no degradation for the test set).
     """
 
     def __init__(self, opt):
-        super(SingleVideoRecurrentTestDataset, self).__init__()
-        self.opt = opt
+        super().__init__(opt)
         self.cache_data = opt['cache_data']
         self.lq_root = opt['dataroot_lq']
         self.data_info = {'lq_path': [], 'folder': [], 'idx': [], 'border': []}
@@ -224,31 +181,17 @@ class SingleVideoRecurrentTestDataset(data.Dataset):
         return len(self.folders)
 
 
-class VideoTestVimeo90KDataset(data.Dataset):
-    """Video test dataset for Vimeo90k-Test dataset.
+class VideoTestVimeo90KDataset(BaseDataset):
+    """Video test dataset for Vimeo90k-Test: only the center frame is kept as GT.
 
-    It only keeps the center frame for testing.
-    For testing datasets, there is no need to prepare LMDB files.
-
-    Args:
-        opt (dict): Config for train dataset. It contains the following keys:
-            dataroot_gt (str): Data root path for gt.
-            dataroot_lq (str): Data root path for lq.
-            io_backend (dict): IO backend type and other kwarg.
-            cache_data (bool): Whether to cache testing datasets.
-            name (str): Dataset name.
-            meta_info_file (str): The path to the file storing the list of test
-                folders. If not provided, all the folders in the dataroot will
-                be used.
-            num_frame (int): Window size for input frames.
-            padding (str): Padding mode.
+    ``_make_sample`` applies the optional pad/mirror sequence expansion to the LQ
+    window; the center GT is returned unchanged.
     """
 
     def __init__(self, opt):
-        super(VideoTestVimeo90KDataset, self).__init__()
-        self.opt = opt
+        super().__init__(opt)
         self.cache_data = opt['cache_data']
-        self.temporal_scale = opt.get('temporal_scale', 1)
+        self.temporal_scale = opt['temporal_scale'] if opt['temporal_scale'] else 1
         if self.cache_data:
             raise NotImplementedError('cache_data in Vimeo90K-Test dataset is not implemented.')
         self.gt_root, self.lq_root = opt['dataroot_gt'], opt['dataroot_lq']
@@ -266,8 +209,18 @@ class VideoTestVimeo90KDataset(data.Dataset):
             self.data_info['idx'].append(f'{idx}/{len(subfolders)}')
             self.data_info['border'].append(0)
 
-        self.pad_sequence = opt.get('pad_sequence', False)
-        self.mirror_sequence = opt.get('mirror_sequence', False)
+        self.pad_sequence = opt['pad_sequence'] if opt['pad_sequence'] else False
+        self.mirror_sequence = opt['mirror_sequence'] if opt['mirror_sequence'] else False
+
+    def _make_sample(self, imgs_H, imgs_L, index):
+        """Optionally pad/mirror the LQ window; return (center GT, possibly expanded LQ)."""
+        if self.pad_sequence:  # pad the sequence: 7 frames to 8 frames
+            imgs_L = torch.cat([imgs_L, imgs_L[-1:, ...]], dim=0)
+
+        if self.mirror_sequence:  # mirror the sequence: 7 frames to 14 frames
+            imgs_L = torch.cat([imgs_L, imgs_L.flip(0)], dim=0)
+
+        return imgs_H, imgs_L
 
     def __getitem__(self, index):
         lq_path = self.data_info['lq_path'][index]
@@ -275,11 +228,7 @@ class VideoTestVimeo90KDataset(data.Dataset):
         imgs_lq = utils_video.read_img_seq(lq_path)
         img_gt = utils_video.read_img_seq([gt_path])
 
-        if self.pad_sequence:  # pad the sequence: 7 frames to 8 frames
-            imgs_lq = torch.cat([imgs_lq, imgs_lq[-1:,...]], dim=0)
-
-        if self.mirror_sequence:  # mirror the sequence: 7 frames to 14 frames
-            imgs_lq = torch.cat([imgs_lq, imgs_lq.flip(0)], dim=0)
+        img_gt, imgs_lq = self._make_sample(img_gt, imgs_lq, index)
 
         return {
             'L': imgs_lq,  # (t, c, h, w)
@@ -295,33 +244,27 @@ class VideoTestVimeo90KDataset(data.Dataset):
         return len(self.data_info['gt_path'])
 
 
-class VFI_DAVIS(data.Dataset):
-    """Video test dataset for DAVIS dataset in video frame interpolation.
-    Modified from https://github.com/tarun005/FLAVR/blob/main/dataset/Davis_test.py
-    """
+class VFI_DAVIS(BaseDataset):
+    """Video test dataset for DAVIS in video frame interpolation (non-opt API)."""
 
     def __init__(self, data_root, ext="png"):
-
-        super().__init__()
-
         self.data_root = data_root
         self.images_sets = []
 
         for label_id in os.listdir(self.data_root):
-            ctg_imgs_ = sorted(os.listdir(os.path.join(self.data_root , label_id)))
-            ctg_imgs_ = [os.path.join(self.data_root , label_id , img_id) for img_id in ctg_imgs_]
-            for start_idx in range(0,len(ctg_imgs_)-6,2):
-                add_files = ctg_imgs_[start_idx : start_idx+7 : 2]
-                add_files = add_files[:2] + [ctg_imgs_[start_idx+3]] + add_files[2:]
+            ctg_imgs_ = sorted(os.listdir(os.path.join(self.data_root, label_id)))
+            ctg_imgs_ = [os.path.join(self.data_root, label_id, img_id) for img_id in ctg_imgs_]
+            for start_idx in range(0, len(ctg_imgs_) - 6, 2):
+                add_files = ctg_imgs_[start_idx:start_idx + 7:2]
+                add_files = add_files[:2] + [ctg_imgs_[start_idx + 3]] + add_files[2:]
                 self.images_sets.append(add_files)
 
         self.transforms = transforms.Compose([
-                transforms.CenterCrop((480, 840)),
-                transforms.ToTensor()
-            ])
+            transforms.CenterCrop((480, 840)),
+            transforms.ToTensor()
+        ])
 
     def __getitem__(self, idx):
-
         imgpaths = self.images_sets[idx]
         images = [Image.open(img) for img in imgpaths]
         images = [self.transforms(img) for img in images]
@@ -337,26 +280,23 @@ class VFI_DAVIS(data.Dataset):
         return len(self.images_sets)
 
 
-class VFI_UCF101(data.Dataset):
-    """Video test dataset for UCF101 dataset in video frame interpolation.
-        Modified from https://github.com/tarun005/FLAVR/blob/main/dataset/ucf101_test.py
-    """
+class VFI_UCF101(BaseDataset):
+    """Video test dataset for UCF101 in video frame interpolation (non-opt API)."""
 
     def __init__(self, data_root, ext="png"):
-        super().__init__()
-
         self.data_root = data_root
         self.file_list = sorted(os.listdir(self.data_root))
 
         self.transforms = transforms.Compose([
-                transforms.CenterCrop((224,224)),
-                transforms.ToTensor(),
-            ])
+            transforms.CenterCrop((224, 224)),
+            transforms.ToTensor(),
+        ])
 
     def __getitem__(self, idx):
-
-        imgpath = os.path.join(self.data_root , self.file_list[idx])
-        imgpaths = [os.path.join(imgpath , "frame0.png") , os.path.join(imgpath , "frame1.png") ,os.path.join(imgpath , "frame2.png") ,os.path.join(imgpath , "frame3.png") ,os.path.join(imgpath , "framet.png")]
+        imgpath = os.path.join(self.data_root, self.file_list[idx])
+        imgpaths = [os.path.join(imgpath, "frame0.png"), os.path.join(imgpath, "frame1.png"),
+                    os.path.join(imgpath, "frame2.png"), os.path.join(imgpath, "frame3.png"),
+                    os.path.join(imgpath, "framet.png")]
 
         images = [Image.open(img) for img in imgpaths]
         images = [self.transforms(img) for img in images]
@@ -372,15 +312,10 @@ class VFI_UCF101(data.Dataset):
         return len(self.file_list)
 
 
-class VFI_Vid4(data.Dataset):
-    """Video test dataset for Vid4 dataset in video frame interpolation.
-    Modified from https://github.com/tarun005/FLAVR/blob/main/dataset/Davis_test.py
-    """
+class VFI_Vid4(BaseDataset):
+    """Video test dataset for Vid4 in video frame interpolation (non-opt API)."""
 
     def __init__(self, data_root, ext="png"):
-
-        super().__init__()
-
         self.data_root = data_root
         self.images_sets = []
         self.data_info = {'lq_path': [], 'gt_path': [], 'folder': []}
@@ -389,7 +324,7 @@ class VFI_Vid4(data.Dataset):
 
         for label_id in os.listdir(self.data_root):
             ctg_imgs_ = sorted(os.listdir(os.path.join(self.data_root, label_id)))
-            ctg_imgs_ = [os.path.join(self.data_root , label_id , img_id) for img_id in ctg_imgs_]
+            ctg_imgs_ = [os.path.join(self.data_root, label_id, img_id) for img_id in ctg_imgs_]
             if len(ctg_imgs_) % 2 == 0:
                 ctg_imgs_.append(ctg_imgs_[-1])
             ctg_imgs_.insert(0, None)
@@ -397,17 +332,17 @@ class VFI_Vid4(data.Dataset):
             ctg_imgs_.append(None)
             ctg_imgs_.append(ctg_imgs_[-2])
 
-            for start_idx in range(0,len(ctg_imgs_)-6,2):
-                add_files = ctg_imgs_[start_idx : start_idx+7 : 2]
+            for start_idx in range(0, len(ctg_imgs_) - 6, 2):
+                add_files = ctg_imgs_[start_idx:start_idx + 7:2]
                 self.data_info['lq_path'].append([os.path.basename(path) for path in add_files])
                 self.data_info['gt_path'].append(os.path.basename(ctg_imgs_[start_idx + 3]))
                 self.data_info['folder'].append(label_id)
-                add_files = add_files[:2] + [ctg_imgs_[start_idx+3]] + add_files[2:]
+                add_files = add_files[:2] + [ctg_imgs_[start_idx + 3]] + add_files[2:]
                 self.images_sets.append(add_files)
 
         self.transforms = transforms.Compose([
-                transforms.ToTensor()
-            ])
+            transforms.ToTensor()
+        ])
 
     def __getitem__(self, idx):
         imgpaths = self.images_sets[idx]

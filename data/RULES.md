@@ -14,6 +14,9 @@
   分支多「随机裁剪 + 翻转/旋转增广」一段。
 - `_make_sample` 直接接收已加载的 `img_H`（uint8），返回 `(H, L, *aux)`。
   把核心变换留在 `_make_sample` 内，使其可脱离磁盘 I/O 做数值单元测试。
+- 若某类的核心变换为空（即 `_make_sample` 只是 `return img_H` / `return imgs_L`
+  之类的纯透传），**不要定义** `_make_sample`：在 `__getitem__` 中直接加载并转
+  tensor 即可。基类默认 `_make_sample` 抛 `NotImplementedError` 作为兜底，子类无需覆盖。
 
 ## 2. opt 配置
 
