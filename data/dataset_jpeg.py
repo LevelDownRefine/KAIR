@@ -102,7 +102,7 @@ class DatasetJPEG(data.Dataset):
                 img_L = cv2.cvtColor(img_L, cv2.COLOR_BGR2RGB)
             else:
                 img_H = cv2.imread(H_path, cv2.IMREAD_UNCHANGED)
-                is_to_ycbcr = True if img_L.ndim == 3 else False
+                is_to_ycbcr = True if img_H.ndim == 3 else False
                 if is_to_ycbcr:
                     img_H = cv2.cvtColor(img_H, cv2.COLOR_BGR2RGB)
                     img_H = util.rgb2ycbcr(img_H)

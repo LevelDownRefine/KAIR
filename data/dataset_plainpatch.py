@@ -47,8 +47,8 @@ class DatasetPlainPatch(data.Dataset):
         # reserve space with zeros
         # ------------------------------------
         self.total_patches = self.num_sampled * self.num_patches_per_image
-        self.H_data = np.zeros([self.total_patches, self.path_size, self.path_size, self.n_channels], dtype=np.uint8)
-        self.L_data = np.zeros([self.total_patches, self.path_size, self.path_size, self.n_channels], dtype=np.uint8)
+        self.H_data = np.zeros([self.total_patches, self.patch_size, self.patch_size, self.n_channels], dtype=np.uint8)
+        self.L_data = np.zeros([self.total_patches, self.patch_size, self.patch_size, self.n_channels], dtype=np.uint8)
 
         # ------------------------------------
         # update H patches
@@ -91,10 +91,10 @@ class DatasetPlainPatch(data.Dataset):
 
         num = self.num_patches_per_image
         for _ in range(num):
-            rnd_h = random.randint(0, max(0, H - self.path_size))
-            rnd_w = random.randint(0, max(0, W - self.path_size))
-            L_patch = img_L[rnd_h:rnd_h + self.path_size, rnd_w:rnd_w + self.path_size, :]
-            H_patch = img_H[rnd_h:rnd_h + self.path_size, rnd_w:rnd_w + self.path_size, :]
+            rnd_h = random.randint(0, max(0, H - self.patch_size))
+            rnd_w = random.randint(0, max(0, W - self.patch_size))
+            L_patch = img_L[rnd_h:rnd_h + self.patch_size, rnd_w:rnd_w + self.patch_size, :]
+            H_patch = img_H[rnd_h:rnd_h + self.patch_size, rnd_w:rnd_w + self.patch_size, :]
             L_patches.append(L_patch)
             H_patches.append(H_patch)
 

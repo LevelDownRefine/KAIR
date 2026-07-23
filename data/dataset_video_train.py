@@ -368,8 +368,9 @@ class VideoRecurrentTrainVimeoDataset(data.Dataset):
         img_results = utils_video.augment(img_lqs, self.opt['use_hflip'], self.opt['use_rot'])
 
         img_results = utils_video.img2tensor(img_results)
-        img_lqs = torch.stack(img_results[:7], dim=0)
-        img_gts = torch.stack(img_results[7:], dim=0)
+        n_lq = len(self.neighbor_list)
+        img_lqs = torch.stack(img_results[:n_lq], dim=0)
+        img_gts = torch.stack(img_results[n_lq:], dim=0)
 
         if self.mirror_sequence:  # mirror the sequence: 7 frames to 14 frames
             img_lqs = torch.cat([img_lqs, img_lqs.flip(0)], dim=0)
