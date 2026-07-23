@@ -5,12 +5,13 @@ import torch.utils.data as data
 import utils.utils_image as util
 from utils import utils_sisr
 
-
 import hdf5storage
 import os
 
+from data.base_dataset import BaseDataset
 
-class DatasetSRMD(data.Dataset):
+
+class DatasetSRMD(BaseDataset):
     '''
     # -----------------------------------------
     # Get L/H/M for noisy image SR with Gaussian kernels.
@@ -21,9 +22,7 @@ class DatasetSRMD(data.Dataset):
     '''
 
     def __init__(self, opt):
-        super(DatasetSRMD, self).__init__()
-        self.opt = opt
-        self.n_channels = opt['n_channels'] if opt['n_channels'] else 3
+        super(DatasetSRMD, self).__init__(opt)
         self.sf = opt['scale'] if opt['scale'] else 4
         self.patch_size = self.opt['H_size'] if self.opt['H_size'] else 96
         self.L_size = self.patch_size // self.sf
@@ -37,19 +36,7 @@ class DatasetSRMD(data.Dataset):
         self.p = hdf5storage.loadmat(os.path.join('kernels', 'srmd_pca_pytorch.mat'))['p']
         self.ksize = int(np.sqrt(self.p.shape[-1]))  # kernel size
 
-        # ------------------------------------
-        # get paths of L/H
-        # ------------------------------------
-        self.paths_H = util.get_image_paths(opt['dataroot_H'])
-        self.paths_L = util.get_image_paths(opt['dataroot_L'])
-
-    def __getitem__(self, index):
-
-        # ------------------------------------
-        # get H image
-        # ------------------------------------
-        H_path = self.paths_H[index]
-        img_H = util.imread_uint(H_path, self.n_channels)
+    def _make_sample(self, img_H, index):
         img_H = util.uint2single(img_H)
 
         # ------------------------------------
@@ -108,25 +95,26 @@ class DatasetSRMD(data.Dataset):
             mode = random.randint(0, 7)
             img_L, img_H = util.augment_img(img_L, mode=mode), util.augment_img(img_H, mode=mode)
 
-            # --------------------------------
-            # get patch pairs
-            # --------------------------------
-            img_H, img_L = util.single2tensor3(img_H), util.single2tensor3(img_L)
+        return img_H, img_L, k_reduced
 
-            # --------------------------------
-            # select noise level and get Gaussian noise
-            # --------------------------------
+    def __getitem__(self, index):
+        H_path = self.paths_H[index] if self.paths_H is not None else ''
+        L_path = H_path
+        img_H = self._load_img_H(index)
+        img_H, img_L, k_reduced = self._make_sample(img_H, index)
+        img_H = util.single2tensor3(img_H)
+        img_L = util.single2tensor3(img_L)
+
+        # --------------------------------
+        # select noise level and get Gaussian noise
+        # --------------------------------
+        if self.opt['phase'] == 'train':
             if random.random() < 0.1:
                 noise_level = torch.zeros(1).float()
             else:
                 noise_level = torch.FloatTensor([np.random.uniform(self.sigma_min, self.sigma_max)])/255.0
-                # noise_level = torch.rand(1)*50/255.0
-                # noise_level = torch.min(torch.from_numpy(np.float32([7*np.random.chisquare(2.5)/255.0])),torch.Tensor([50./255.]))
-    
         else:
-
-            img_H, img_L = util.single2tensor3(img_H), util.single2tensor3(img_L)
-            noise_level = noise_level = torch.FloatTensor([self.sigma_test])
+            noise_level = torch.FloatTensor([self.sigma_test])
 
         # ------------------------------------
         # add noise
@@ -140,16 +128,5 @@ class DatasetSRMD(data.Dataset):
         M_vector = torch.cat((k_reduced, noise_level), 0).unsqueeze(1).unsqueeze(1)
         M = M_vector.repeat(1, img_L.size()[-2], img_L.size()[-1])
 
-        """
-        # -------------------------------------
-        # concat L and noise level map M
-        # -------------------------------------
-        """
-
         img_L = torch.cat((img_L, M), 0)
-        L_path = H_path
-
         return {'L': img_L, 'H': img_H, 'L_path': L_path, 'H_path': H_path}
-
-    def __len__(self):
-        return len(self.paths_H)

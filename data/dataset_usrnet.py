@@ -12,8 +12,10 @@ from scipy import ndimage
 from scipy.io import loadmat
 # import hdf5storage
 
+from data.base_dataset import BaseDataset
 
-class DatasetUSRNet(data.Dataset):
+
+class DatasetUSRNet(BaseDataset):
     '''
     # -----------------------------------------
     # Get L/k/sf/sigma for USRNet.
@@ -21,31 +23,16 @@ class DatasetUSRNet(data.Dataset):
     # -----------------------------------------
     '''
     def __init__(self, opt):
-        super(DatasetUSRNet, self).__init__()
-        self.opt = opt
-        self.n_channels = opt['n_channels'] if opt['n_channels'] else 3
+        super(DatasetUSRNet, self).__init__(opt)
         self.patch_size = self.opt['H_size'] if self.opt['H_size'] else 96
         self.sigma_max = self.opt['sigma_max'] if self.opt['sigma_max'] is not None else 25
         self.scales = opt['scales'] if opt['scales'] is not None else [1,2,3,4]
         self.sf_validation = opt['sf_validation'] if opt['sf_validation'] is not None else 3
         #self.kernels = hdf5storage.loadmat(os.path.join('kernels', 'kernels_12.mat'))['kernels']
         self.kernels = loadmat(os.path.join('kernels', 'kernels_12.mat'))['kernels']  # for validation
-
-        # -------------------
-        # get the path of H
-        # -------------------
-        self.paths_H = util.get_image_paths(opt['dataroot_H'])  # return None if input is None
         self.count = 0
 
-    def __getitem__(self, index):
-
-        # -------------------
-        # get H image
-        # -------------------
-        H_path = self.paths_H[index]
-        img_H = util.imread_uint(H_path, self.n_channels)
-        L_path = H_path
-
+    def _make_sample(self, img_H, index):
         if self.opt['phase'] == 'train':
 
             # ---------------------------
@@ -92,13 +79,13 @@ class DatasetUSRNet(data.Dataset):
                 noise_level = np.random.randint(0, self.sigma_max)/255.0
 
             # ---------------------------
-            # Low-quality image
+            # Low-quality image (degradation applied to uint8 patch_H)
             # ---------------------------
             img_L = ndimage.filters.convolve(patch_H, np.expand_dims(k, axis=2), mode='wrap')
             img_L = img_L[0::self.sf, 0::self.sf, ...]
             # add Gaussian noise
             img_L = util.uint2single(img_L) + np.random.normal(0, noise_level, img_L.shape)
-            img_H = patch_H
+            img_H_out = util.uint2single(patch_H)  # returned H is float; L computed from uint8
 
         else:
 
@@ -109,18 +96,23 @@ class DatasetUSRNet(data.Dataset):
             # ------------------------------------
             # modcrop
             # ------------------------------------
-            img_H = util.modcrop(img_H, self.sf_validation)
+            img_H_mc = util.modcrop(img_H, self.sf_validation)
 
-            img_L = ndimage.filters.convolve(img_H, np.expand_dims(k, axis=2), mode='wrap')  # blur
+            img_L = ndimage.filters.convolve(img_H_mc, np.expand_dims(k, axis=2), mode='wrap')  # blur
             img_L = img_L[0::self.sf_validation, 0::self.sf_validation, ...]  # downsampling
             img_L = util.uint2single(img_L) + np.random.normal(0, noise_level, img_L.shape)
             self.sf = self.sf_validation
+            img_H_out = util.uint2single(img_H_mc)
 
         k = util.single2tensor3(np.expand_dims(np.float32(k), axis=2))
-        img_H, img_L = util.uint2tensor3(img_H), util.single2tensor3(img_L)
         noise_level = torch.FloatTensor([noise_level]).view([1,1,1])
 
-        return {'L': img_L, 'H': img_H, 'k': k, 'sigma': noise_level, 'sf': self.sf, 'L_path': L_path, 'H_path': H_path}
+        return img_L, img_H_out, k, noise_level, self.sf
 
-    def __len__(self):
-        return len(self.paths_H)
+    def __getitem__(self, index):
+        H_path = self.paths_H[index] if self.paths_H is not None else ''
+        L_path = H_path
+        img_H = self._load_img_H(index)
+        img_L, img_H, k, noise_level, sf = self._make_sample(img_H, index)
+        img_H, img_L = util.single2tensor3(img_H), util.single2tensor3(img_L)
+        return {'L': img_L, 'H': img_H, 'k': k, 'sigma': noise_level, 'sf': sf, 'L_path': L_path, 'H_path': H_path}
