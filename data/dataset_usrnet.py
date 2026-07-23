@@ -2,7 +2,6 @@ import random
 
 import numpy as np
 import torch
-import torch.utils.data as data
 import utils.utils_image as util
 from utils import utils_deblur
 from utils import utils_sisr
@@ -16,12 +15,7 @@ from data.base_dataset import BaseDataset
 
 
 class DatasetUSRNet(BaseDataset):
-    '''
-    # -----------------------------------------
-    # Get L/k/sf/sigma for USRNet.
-    # Only "paths_H" and kernel is needed, synthesize L on-the-fly.
-    # -----------------------------------------
-    '''
+    """USRNet dataset: returns (L, H, k, noise_level, sf); L synthesized by blur+downsample with a fixed validation kernel."""
     def __init__(self, opt):
         super(DatasetUSRNet, self).__init__(opt)
         self.patch_size = self.opt['H_size'] if self.opt['H_size'] else 96
@@ -33,6 +27,7 @@ class DatasetUSRNet(BaseDataset):
         self.count = 0
 
     def _make_sample(self, img_H, index):
+        """Build (L, H, k, noise_level, sf): train uses random scale/kernel/noise; test uses fixed kernel, zero noise."""
         if self.opt['phase'] == 'train':
 
             # ---------------------------
@@ -110,6 +105,7 @@ class DatasetUSRNet(BaseDataset):
         return img_L, img_H_out, k, noise_level, self.sf
 
     def __getitem__(self, index):
+        """Return ``{'L', 'H', 'k', 'sigma', 'sf', 'L_path', 'H_path'}`` tensors."""
         H_path = self.paths_H[index] if self.paths_H is not None else ''
         L_path = H_path
         img_H = self._load_img_H(index)

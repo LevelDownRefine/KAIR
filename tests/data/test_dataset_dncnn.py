@@ -9,7 +9,6 @@ Covers:
   * ``__getitem__``  -- end-to-end, tensor dtype / shape / values, L_path == H_path.
 """
 import numpy as np
-import pytest
 import torch
 
 import utils.utils_image as util
@@ -17,6 +16,7 @@ from data.dataset_dncnn import DatasetDnCNN
 
 
 def _img_H(h=64, w=64, seed=0):
+    """Deterministic synthetic RGB uint8 image of shape (h, w, 3) (seeded)."""
     rng = np.random.RandomState(seed)
     return rng.randint(0, 256, (h, w, 3), dtype=np.uint8)
 
@@ -27,8 +27,7 @@ def _single(h=64, w=64, seed=0):
 
 
 def _opt(**kw):
-    # DatasetDnCNN.__init__ reads opt['sigma']/opt['sigma_test'] with no .get(),
-    # so they are required (mirrors the real dataloader config).
+    """Default opt dict for DatasetDnCNN; sigma/sigma_test required (no .get())."""
     opt = {"phase": "test", "n_channels": 3, "H_size": 64, "sigma": 25, "sigma_test": 25}
     opt.update(kw)
     return opt

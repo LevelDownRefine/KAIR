@@ -1,21 +1,11 @@
-import os.path
 import random
 import numpy as np
-import torch
-import torch.utils.data as data
 import utils.utils_image as util
 from data.base_dataset import BaseDataset
 
 
 class DatasetDnCNN(BaseDataset):
-    """
-    # -----------------------------------------
-    # Get L/H for denosing on AWGN with fixed sigma.
-    # Only dataroot_H is needed.
-    # -----------------------------------------
-    # e.g., DnCNN
-    # -----------------------------------------
-    """
+    """Denoising dataset for fixed-sigma AWGN (e.g. DnCNN): L = H + AWGN(sigma/255)."""
 
     def __init__(self, opt):
         super(DatasetDnCNN, self).__init__(opt)
@@ -37,6 +27,7 @@ class DatasetDnCNN(BaseDataset):
         return img + np.random.normal(0, sigma / 255.0, img.shape)
 
     def _make_sample(self, img_H, index):
+        """Build (H, L): train crops+augments then adds AWGN(sigma); test adds seeded AWGN(sigma_test)."""
         if self.opt['phase'] == 'train':
             # get L/H patch pairs
             H, W, _ = img_H.shape
@@ -60,6 +51,7 @@ class DatasetDnCNN(BaseDataset):
             return img_H, img_L
 
     def __getitem__(self, index):
+        """Return ``{'L', 'H', 'H_path', 'L_path'}`` as float32 tensors."""
         H_path = self.paths_H[index] if self.paths_H is not None else ''
         img_H = self._load_img_H(index)
         img_H, img_L = self._make_sample(img_H, index)

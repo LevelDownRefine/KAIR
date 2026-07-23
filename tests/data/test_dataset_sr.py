@@ -17,13 +17,13 @@ from data.dataset_sr import DatasetSR
 
 
 def _img_H(h=64, w=64, seed=0):
+    """Deterministic synthetic RGB uint8 image of shape (h, w, 3) (seeded)."""
     rng = np.random.RandomState(seed)
     return rng.randint(0, 256, (h, w, 3), dtype=np.uint8)
 
 
 def _opt(**kw):
-    # DatasetSR.__init__ reads opt['scale'] with no .get(), so it is required
-    # (mirrors the real dataloader config).
+    """Default opt dict for DatasetSR; scale is required (read with no .get())."""
     opt = {"phase": "test", "n_channels": 3, "H_size": 96, "scale": 4}
     opt.update(kw)
     return opt

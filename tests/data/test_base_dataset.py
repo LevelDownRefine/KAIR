@@ -13,11 +13,11 @@ import cv2
 import numpy as np
 import pytest
 
-import utils.utils_image as util
 from data.base_dataset import BaseDataset
 
 
 class _Stub(BaseDataset):
+    """Minimal BaseDataset subclass that implements the abstract _make_sample."""
     def _make_sample(self, img_H, index):
         return img_H
 

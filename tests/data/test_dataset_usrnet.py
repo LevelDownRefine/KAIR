@@ -15,7 +15,6 @@ import os
 from pathlib import Path
 
 import numpy as np
-import pytest
 import torch
 from scipy.io import loadmat
 from scipy.ndimage import filters
@@ -27,13 +26,13 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def _img_H(h=96, w=96, seed=0):
+    """Deterministic synthetic RGB uint8 image of shape (h, w, 3) (seeded)."""
     rng = np.random.RandomState(seed)
     return rng.randint(0, 256, (h, w, 3), dtype=np.uint8)
 
 
 def _opt(**kw):
-    # DatasetUSRNet.__init__ reads opt['sigma_max']/opt['scales']/opt['sf_validation']
-    # with no .get(), so they are required (mirrors the real dataloader config).
+    """Default opt dict for DatasetUSRNet; sigma_max/scales/sf_validation required (no .get())."""
     opt = {"phase": "test", "n_channels": 3, "H_size": 96,
            "sigma_max": 25, "scales": [1, 2, 3, 4], "sf_validation": 3}
     opt.update(kw)

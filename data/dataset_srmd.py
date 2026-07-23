@@ -1,7 +1,6 @@
 import random
 import numpy as np
 import torch
-import torch.utils.data as data
 import utils.utils_image as util
 from utils import utils_sisr
 
@@ -12,14 +11,7 @@ from data.base_dataset import BaseDataset
 
 
 class DatasetSRMD(BaseDataset):
-    '''
-    # -----------------------------------------
-    # Get L/H/M for noisy image SR with Gaussian kernels.
-    # Only "paths_H" is needed, sythesize bicubicly downsampled L on-the-fly.
-    # -----------------------------------------
-    # e.g., SRMD, H = f(L, kernel, sigma), sigma is noise level
-    # -----------------------------------------
-    '''
+    """SRMD dataset: L = degradation(H, kernel) + noise, concatenated with degradation map M (reduced kernel + noise level)."""
 
     def __init__(self, opt):
         super(DatasetSRMD, self).__init__(opt)
@@ -37,6 +29,7 @@ class DatasetSRMD(BaseDataset):
         self.ksize = int(np.sqrt(self.p.shape[-1]))  # kernel size
 
     def _make_sample(self, img_H, index):
+        """Build (H, L, k_reduced): train uses a random anisotropic kernel; test uses a fixed theta=pi kernel."""
         img_H = util.uint2single(img_H)
 
         # ------------------------------------
@@ -98,6 +91,7 @@ class DatasetSRMD(BaseDataset):
         return img_H, img_L, k_reduced
 
     def __getitem__(self, index):
+        """Return ``{'L', 'H', 'L_path', 'H_path'}``; adds noise and the degradation map M to L."""
         H_path = self.paths_H[index] if self.paths_H is not None else ''
         L_path = H_path
         img_H = self._load_img_H(index)

@@ -1,19 +1,10 @@
 import random
-import numpy as np
-import torch.utils.data as data
 import utils.utils_image as util
 from data.base_dataset import BaseDataset
 
 
 class DatasetSR(BaseDataset):
-    '''
-    # -----------------------------------------
-    # Get L/H for SISR.
-    # If only "paths_H" is provided, sythesize bicubicly downsampled L on-the-fly.
-    # -----------------------------------------
-    # e.g., SRResNet
-    # -----------------------------------------
-    '''
+    """SISR dataset (e.g. SRResNet): synthesizes L on the fly via bicubic downsample when paths_L is absent."""
 
     def __init__(self, opt):
         super(DatasetSR, self).__init__(opt)
@@ -26,6 +17,7 @@ class DatasetSR(BaseDataset):
             assert len(self.paths_L) == len(self.paths_H), 'L/H mismatch - {}, {}.'.format(len(self.paths_L), len(self.paths_H))
 
     def _make_sample(self, img_H, index):
+        """Build (H, L, L_path): test synthesizes L via bicubic; train crops+augments a patch pair."""
         L_path = None
         img_H = util.uint2single(img_H)
 
@@ -81,6 +73,7 @@ class DatasetSR(BaseDataset):
         return img_H, img_L, L_path
 
     def __getitem__(self, index):
+        """Return ``{'L', 'H', 'L_path', 'H_path'}`` as float32 tensors."""
         H_path = self.paths_H[index] if self.paths_H is not None else ''
         img_H = self._load_img_H(index)
         img_H, img_L, L_path = self._make_sample(img_H, index)

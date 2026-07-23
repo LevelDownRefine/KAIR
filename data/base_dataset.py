@@ -1,4 +1,3 @@
-import numpy as np
 import torch.utils.data as data
 import utils.utils_image as util
 
@@ -15,7 +14,7 @@ class BaseDataset(data.Dataset):
     Keeping the core transform in ``_make_sample`` makes it directly
     unit-testable: a test can call ``dataset._make_sample(known_H, 0)`` with a
     known array instead of going through ``__getitem__`` (and disk I/O), which
-    is exactly what ``tests/data/test_dataset_getitem_values.py`` does.
+    is exactly what ``tests/data/test_dataset_*.py`` does.
     """
 
     def __init__(self, opt, n_channels_default=3):

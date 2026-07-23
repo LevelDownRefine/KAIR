@@ -16,7 +16,6 @@ import os
 from pathlib import Path
 
 import numpy as np
-import pytest
 import torch
 import hdf5storage
 
@@ -28,13 +27,13 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def _img_H(h=64, w=64, seed=0):
+    """Deterministic synthetic RGB uint8 image of shape (h, w, 3) (seeded)."""
     rng = np.random.RandomState(seed)
     return rng.randint(0, 256, (h, w, 3), dtype=np.uint8)
 
 
 def _opt(**kw):
-    # DatasetSRMD.__init__ reads opt['scale']/opt['sigma']/opt['sigma_test'] with
-    # no .get(), so they are required (mirrors the real dataloader config).
+    """Default opt dict for DatasetSRMD; scale/sigma/sigma_test required (no .get())."""
     opt = {"phase": "test", "n_channels": 3, "H_size": 96,
            "scale": 4, "sigma": [0, 50], "sigma_test": 0}
     opt.update(kw)
