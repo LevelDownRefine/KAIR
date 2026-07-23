@@ -130,8 +130,11 @@ def print_model_with_flops(model, units='GMac', precision=3):
 
     def accumulate_flops(self):
         if is_supported_instance(self):
-            batch_counter = getattr(model, '__batch_counter__', 1)
-            return self.__flops__ / batch_counter
+            if not hasattr(model, '__batch_counter__') or model.__batch_counter__ == 0:
+                raise RuntimeError(
+                    'print_model_with_flops needs a forward pass first: '
+                    'call get_model_flops(...) or start_flops_count() followed by a forward.')
+            return self.__flops__ / model.__batch_counter__
         else:
             sum = 0
             for m in self.children():
@@ -210,6 +213,10 @@ def start_flops_count(self):
 
     """
     self.apply(add_flops_counter_hook_function)
+    # initialize the per-forward batch counter; print_model_with_flops uses it
+    # to normalize per-layer statistics into per-sample FLOPs
+    self.__batch_counter__ = 0
+    self.__batch_counter_handle__ = self.register_forward_hook(_batch_size_hook)
 
 
 def stop_flops_count(self):
@@ -222,6 +229,9 @@ def stop_flops_count(self):
 
     """
     self.apply(remove_flops_counter_hook_function)
+    if hasattr(self, '__batch_counter_handle__'):
+        self.__batch_counter_handle__.remove()
+        del self.__batch_counter_handle__
 
 
 def reset_flops_count(self):
@@ -450,6 +460,12 @@ def conv_activation_counter_hook(module, input, output):
 
 def empty_flops_counter_hook(module, input, output):
     module.__flops__ += 0
+
+
+def _batch_size_hook(module, input, output):
+    # record the batch size of the forward pass so that print_model_with_flops
+    # can normalize per-layer FLOPs to per-sample (input[0] is the batch tensor)
+    module.__batch_counter__ = input[0].shape[0]
 
 
 def upsample_flops_counter_hook(module, input, output):
