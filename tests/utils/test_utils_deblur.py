@@ -1,9 +1,11 @@
 """Unit tests for utils.utils_deblur.
 
-Covers the pure numpy kernel/FFT/fspecial helpers with numerical assertions.
-The ``torch.rfft``-based helpers (``rfft``/``irfft``/``fft``/``ifft``/``p2o``/
-``get_uperleft_denominator_pytorch``) are deprecated in modern PyTorch and are
-intentionally NOT exercised here.
+Covers the numpy kernel/FFT/fspecial helpers and the migrated torch.fft
+wrappers (``rfft``/``irfft``/``fft``/``ifft``/``p2o``) with numerical
+assertions. The wrappers were migrated off the removed top-level
+``torch.rfft``/``torch.irfft``/``torch.fft``/``torch.ifft`` onto the
+``torch.fft`` namespace (native complex bridged via ``view_as_real`` /
+``view_as_complex``) so they run on modern PyTorch.
 """
 import numpy as np
 import pytest
@@ -111,3 +113,32 @@ def test_cmul_matches_complex_mul():
     expected = (1 + 2j) * (3 - 1j)     # 5+5j
     assert out[..., 0].item() == pytest.approx(expected.real)
     assert out[..., 1].item() == pytest.approx(expected.imag)
+
+
+# ------------------------------------------------------------------
+# migrated torch.fft wrappers
+# ------------------------------------------------------------------
+def test_rfft_shape_and_irfft_roundtrip():
+    x = torch.randn(1, 3, 16, 16)
+    X = deblur.rfft(x)
+    assert X.shape == (1, 3, 16, 16, 2)
+    y = deblur.irfft(X)
+    assert y.shape == (1, 3, 16, 16)
+    assert torch.allclose(y, x, atol=1e-5)
+
+
+def test_fft_ifft_roundtrip():
+    a = torch.randn(1, 1, 16, 16, 2)
+    b = deblur.fft(a)
+    assert b.shape == (1, 1, 16, 16, 2)
+    c = deblur.ifft(b)
+    assert torch.allclose(c, a, atol=1e-5)
+
+
+def test_p2o_matches_numpy_psf2otf():
+    psf = torch.randn(1, 1, 5, 5)
+    otf = deblur.p2o(psf, (16, 16))
+    assert otf.shape == (1, 1, 16, 16, 2)
+    ref = deblur.psf2otf(psf[0, 0].numpy(), (16, 16))
+    err = np.abs(torch.view_as_complex(otf)[0, 0].numpy() - ref).max()
+    assert err < 1e-4

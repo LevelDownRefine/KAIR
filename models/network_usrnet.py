@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 import models.basicblock as B
 import numpy as np
-from utils import utils_image as util
 
 
 """
@@ -109,22 +108,22 @@ def cconj(t, inplace=False):
 
 def rfft(t):
     # Real-to-complex Discrete Fourier Transform
-    return torch.rfft(t, 2, onesided=False)
+    return torch.view_as_real(torch.fft.fft2(t))
 
 
 def irfft(t):
     # Complex-to-real Inverse Discrete Fourier Transform
-    return torch.irfft(t, 2, onesided=False)
+    return torch.fft.ifft2(torch.view_as_complex(t)).real
 
 
 def fft(t):
     # Complex-to-complex Discrete Fourier Transform
-    return torch.fft(t, 2)
+    return torch.view_as_real(torch.fft.fft2(torch.view_as_complex(t)))
 
 
 def ifft(t):
     # Complex-to-complex Inverse Discrete Fourier Transform
-    return torch.ifft(t, 2)
+    return torch.view_as_real(torch.fft.ifft2(torch.view_as_complex(t)))
 
 
 def p2o(psf, shape):
@@ -145,7 +144,7 @@ def p2o(psf, shape):
     otf[...,:psf.shape[2],:psf.shape[3]].copy_(psf)
     for axis, axis_size in enumerate(psf.shape[2:]):
         otf = torch.roll(otf, -int(axis_size / 2), dims=axis+2)
-    otf = torch.rfft(otf, 2, onesided=False)
+    otf = rfft(otf)
     n_ops = torch.sum(torch.tensor(psf.shape).type_as(psf) * torch.log2(torch.tensor(psf.shape).type_as(psf)))
     otf[..., 1][torch.abs(otf[..., 1]) < n_ops*2.22e-16] = torch.tensor(0).type_as(psf)
     return otf
@@ -263,14 +262,14 @@ class DataNet(nn.Module):
         super(DataNet, self).__init__()
 
     def forward(self, x, FB, FBC, F2B, FBFy, alpha, sf):
-        FR = FBFy + torch.rfft(alpha*x, 2, onesided=False)
+        FR = FBFy + rfft(alpha*x)
         x1 = cmul(FB, FR)
         FBR = torch.mean(splits(x1, sf), dim=-1, keepdim=False)
         invW = torch.mean(splits(F2B, sf), dim=-1, keepdim=False)
         invWBR = cdiv(FBR, csum(invW, alpha))
         FCBinvWBR = cmul(FBC, invWBR.repeat(1, 1, sf, sf, 1))
         FX = (FR-FCBinvWBR)/alpha.unsqueeze(-1)
-        Xest = torch.irfft(FX, 2, onesided=False)
+        Xest = irfft(FX)
 
         return Xest
 
@@ -329,7 +328,7 @@ class USRNet(nn.Module):
         FBC = cconj(FB, inplace=False)
         F2B = r2c(cabs2(FB))
         STy = upsample(x, sf=sf)
-        FBFy = cmul(FBC, torch.rfft(STy, 2, onesided=False))
+        FBFy = cmul(FBC, rfft(STy))
         x = nn.functional.interpolate(x, scale_factor=sf, mode='nearest')
 
         # hyper-parameter, alpha & beta

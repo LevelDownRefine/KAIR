@@ -86,19 +86,19 @@ def cconj(t, inplace=False):
 
 
 def rfft(t):
-    return torch.rfft(t, 2, onesided=False)
+    return torch.view_as_real(torch.fft.fft2(t))
 
 
 def irfft(t):
-    return torch.irfft(t, 2, onesided=False)
+    return torch.fft.ifft2(torch.view_as_complex(t)).real
 
 
 def fft(t):
-    return torch.fft(t, 2)
+    return torch.view_as_real(torch.fft.fft2(torch.view_as_complex(t)))
 
 
 def ifft(t):
-    return torch.ifft(t, 2)
+    return torch.view_as_real(torch.fft.ifft2(torch.view_as_complex(t)))
 
 
 def p2o(psf, shape):
@@ -111,7 +111,7 @@ def p2o(psf, shape):
     otf[...,:psf.shape[2],:psf.shape[3]].copy_(psf)
     for axis, axis_size in enumerate(psf.shape[2:]):
         otf = torch.roll(otf, -int(axis_size / 2), dims=axis+2)
-    otf = torch.rfft(otf, 2, onesided=False)
+    otf = rfft(otf)
     n_ops = torch.sum(torch.tensor(psf.shape).type_as(psf) * torch.log2(torch.tensor(psf.shape).type_as(psf)))
     otf[...,1][torch.abs(otf[...,1])<n_ops*2.22e-16] = torch.tensor(0).type_as(psf)
     return otf

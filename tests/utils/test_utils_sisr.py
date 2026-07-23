@@ -1,10 +1,12 @@
 """Unit tests for utils.utils_sisr.
 
-Covers the pure numpy/torch helpers (kernel generation, PCA, pixel shifts,
-complex helpers, OTF, up/down sampling, degradation operators) with numerical
-assertions. The ``torch.rfft``-based helpers (``rfft``/``irfft``/``fft``/
-``ifft``/``p2o``/``INVLS_pytorch``) are deprecated in modern PyTorch and are
-intentionally NOT exercised here.
+Covers the numpy/torch helpers (kernel generation, PCA, pixel shifts, complex
+helpers, OTF, up/down sampling, degradation operators) and the migrated
+torch.fft wrappers (``rfft``/``irfft``/``fft``/``ifft``/``p2o``/``INVLS_pytorch``)
+with numerical assertions. The wrappers were migrated off the removed
+top-level ``torch.rfft``/``torch.irfft``/``torch.fft``/``torch.ifft`` onto the
+``torch.fft`` namespace (native complex bridged via ``view_as_real`` /
+``view_as_complex``) so they run on modern PyTorch.
 """
 import numpy as np
 import pytest
@@ -173,3 +175,47 @@ def test_G_np_and_Gt_np_shapes():
     assert low.shape[:2] == (8, 8)
     rec = sisr.Gt_np(low, k, sf=2)
     assert rec.shape[:2] == (16, 16)
+
+
+# ------------------------------------------------------------------
+# migrated torch.fft wrappers
+# ------------------------------------------------------------------
+def test_rfft_shape_and_irfft_roundtrip():
+    x = torch.randn(1, 3, 16, 16)
+    X = sisr.rfft(x)
+    assert X.shape == (1, 3, 16, 16, 2)
+    y = sisr.irfft(X)
+    assert y.shape == (1, 3, 16, 16)
+    assert torch.allclose(y, x, atol=1e-5)
+
+
+def test_fft_ifft_roundtrip():
+    a = torch.randn(1, 1, 16, 16, 2)
+    b = sisr.fft(a)
+    assert b.shape == (1, 1, 16, 16, 2)
+    c = sisr.ifft(b)
+    assert torch.allclose(c, a, atol=1e-5)
+
+
+def test_p2o_matches_numpy_reference():
+    psf = torch.randn(1, 1, 5, 5)
+    otf = sisr.p2o(psf, (16, 16))
+    assert otf.shape == (1, 1, 16, 16, 2)
+    ref = np.zeros((1, 1, 16, 16), dtype=np.complex64)
+    ref[..., :5, :5] = psf.numpy()
+    for ax in (2, 3):
+        ref = np.roll(ref, -2, axis=ax)
+    err = np.abs(torch.view_as_complex(otf).numpy() - np.fft.fft2(ref)).max()
+    assert err < 1e-4
+
+
+def test_INVLS_pytorch_runs():
+    N, C, Up, sf = 1, 3, 32, 2
+    shape = (N, C, Up, Up, 2)
+    FB = torch.randn(*shape)
+    FBC = torch.randn(*shape)
+    F2B = torch.randn(*shape)
+    FR = torch.randn(*shape)
+    out = sisr.INVLS_pytorch(FB, FBC, F2B, FR, torch.tensor(0.05), sf)
+    assert out.shape == (N, C, Up, Up)
+    assert torch.isfinite(out).all()
