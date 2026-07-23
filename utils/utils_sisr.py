@@ -6,7 +6,32 @@ import scipy
 import scipy.stats as ss
 import scipy.io as io
 from scipy import ndimage
-from scipy.interpolate import interp2d
+from scipy.interpolate import RectBivariateSpline
+
+
+def interp2d(x, y, z, kind="linear", **kwargs):
+    """Compatibility shim for ``scipy.interpolate.interp2d`` (removed in 1.14).
+
+    Mirrors the default (bilinear) behaviour used throughout this file:
+    ``interp2d(x, y, z)(x1, y1)`` returns an array of shape
+    ``(len(y1), len(x1))``.
+    """
+    kx = 1 if kind == "linear" else 3
+    sp = RectBivariateSpline(
+        np.asarray(x, dtype=float),
+        np.asarray(y, dtype=float),
+        np.asarray(z, dtype=float).T,
+        kx=kx,
+        ky=kx,
+    )
+
+    def _f(x1, y1):
+        x1 = np.asarray(x1, dtype=float)
+        y1 = np.asarray(y1, dtype=float)
+        return sp(x1, y1).T
+
+    return _f
+
 
 import numpy as np
 import torch
