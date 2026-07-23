@@ -17,3 +17,21 @@ def write_rgb_png():
         cv2.imwrite(str(path), cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
 
     return _write
+
+
+@pytest.fixture
+def make_image_dir(tmp_path, write_rgb_png):
+    """Factory that writes ``n`` synthetic RGB PNGs into a fresh tmp dir.
+
+    Returns the directory Path. Use it to exercise disk-backed dataset methods
+    (``__init__`` path scanning, ``_load_img_H``, ``__getitem__``) without
+    committing any binary test assets.
+    """
+    def _make(n=3, h=64, w=64, name="imgs"):
+        d = tmp_path / name
+        d.mkdir(parents=True, exist_ok=True)
+        for i in range(n):
+            write_rgb_png(d / "{:03d}.png".format(i), h=h, w=w, seed=i)
+        return d
+
+    return _make
