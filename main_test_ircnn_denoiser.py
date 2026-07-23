@@ -63,7 +63,7 @@ def main():
     need_degradation = True          # default: True
     x8 = False                       # default: False, x8 to boost performance
     show_img = False                 # default: False
-    current_idx = min(24, np.int(np.ceil(noise_level_img/2)-1)) # current_idx+1 th denoiser
+    current_idx = min(24, int(np.ceil(noise_level_img/2)-1)) # current_idx+1 th denoiser
 
 
     task_current = 'dn'       # fixed, 'dn' for denoising | 'sr' for super-resolution
