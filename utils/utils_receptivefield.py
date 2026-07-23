@@ -18,6 +18,7 @@
 import math
 
 def outFromIn(conv, layerIn):
+    """Compute output size, stride, receptive field and start for one conv layer."""
     n_in = layerIn[0]
     j_in = layerIn[1]
     r_in = layerIn[2]
@@ -37,6 +38,7 @@ def outFromIn(conv, layerIn):
     return n_out, j_out, r_out, start_out
 
 def printLayer(layer, layer_name):
+    """Print a layer's n/jump/receptive-size/start summary."""
     print(layer_name + ":")
     print(" n features: %s  jump: %s  receptive size: %s  start: %s " % (layer[0], layer[1], layer[2], layer[3]))
 

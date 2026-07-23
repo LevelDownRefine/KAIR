@@ -1,7 +1,6 @@
 import os
 import json
 import scipy.io as spio
-import pandas as pd
 
 
 def loadmat(filename):
@@ -39,6 +38,7 @@ def _todict(matobj):
 
 
 def dict_to_nonedict(opt):
+    """Recursively convert dicts to NoneDict so missing keys return None."""
     if isinstance(opt, dict):
         new_opt = dict()
         for key, sub_opt in opt.items():
@@ -52,10 +52,15 @@ def dict_to_nonedict(opt):
 
 class NoneDict(dict):
     def __missing__(self, key):
+        """Return None for any key that is not present."""
         return None
 
 
-def mat2json(mat_path=None, filepath = None):
+def mat2json(mat_path=None, filepath=None):
+    """Convert a .mat file to JSON and (optionally) write it to disk.
+
+    Requires the optional ``pandas`` dependency. Returns the JSON string.
+    """
     """
     Converts .mat file to .json and writes new file
     Parameters
@@ -72,6 +77,10 @@ def mat2json(mat_path=None, filepath = None):
     --------
     >>> mat2json(blah blah)
     """
+
+    # pandas is an optional dependency, imported lazily so that the rest of
+    # this module (e.g. loadmat) remains usable without it installed.
+    import pandas as pd
 
     matlabFile = loadmat(mat_path)
     #pop all those dumb fields that don't let you jsonize file

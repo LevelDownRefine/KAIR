@@ -538,9 +538,9 @@ def rgb2ycbcr(img, only_y=True):
         float, [0, 1]
     '''
     in_img_type = img.dtype
-    img.astype(np.float32)
+    img = img.astype(np.float32)
     if in_img_type != np.uint8:
-        img *= 255.
+        img = img * 255.
     # convert
     if only_y:
         rlt = np.dot(img, [65.481, 128.553, 24.966]) / 255.0 + 16.0
@@ -561,9 +561,9 @@ def ycbcr2rgb(img):
         float, [0, 1]
     '''
     in_img_type = img.dtype
-    img.astype(np.float32)
+    img = img.astype(np.float32)
     if in_img_type != np.uint8:
-        img *= 255.
+        img = img * 255.
     # convert
     rlt = np.matmul(img, [[0.00456621, 0.00456621, 0.00456621], [0, -0.00153632, 0.00791071],
                           [0.00625893, -0.00318811, 0]]) * 255.0 + [-222.921, 135.576, -276.836]
@@ -583,9 +583,9 @@ def bgr2ycbcr(img, only_y=True):
         float, [0, 1]
     '''
     in_img_type = img.dtype
-    img.astype(np.float32)
+    img = img.astype(np.float32)
     if in_img_type != np.uint8:
-        img *= 255.
+        img = img * 255.
     # convert
     if only_y:
         rlt = np.dot(img, [24.966, 128.553, 65.481]) / 255.0 + 16.0

@@ -5,6 +5,7 @@ import torchvision
 from models import basicblock as B
 
 def show_kv(net):
+    """Print every key of a (state_dict-like) mapping."""
     for k, v in net.items():
         print(k)
 
@@ -62,7 +63,11 @@ torch.save(crt_net, '../pretrained_tmp.pth')
 # x3/4/8 RGB -> Y
 
 def rgb2gray_net(net, only_input=True):
+    """Turn an RGB input conv into a grayscale (1-channel) input conv.
 
+    Combines the first conv's 3 input channels with Rec.601 luma weights so the
+    network can be fed a single luminance channel.
+    """
     if only_input:
         in_filter = net['0.weight']
         in_new_filter = in_filter[:,0,:,:]*0.2989 + in_filter[:,1,:,:]*0.587 + in_filter[:,2,:,:]*0.114

@@ -14,6 +14,7 @@ import logging
 
 
 def log(*args, **kwargs):
+    """Print a message prefixed with the current timestamp."""
     print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S:"), *args, **kwargs)
 
 
@@ -29,7 +30,7 @@ def logger_info(logger_name, log_path='default_logger.log'):
     modified by Kai Zhang (github: https://github.com/cszn)
     '''
     log = logging.getLogger(logger_name)
-    if log.hasHandlers():
+    if log.handlers:
         print('LogHandlers exist!')
     else:
         print('LogHandlers setup!')
@@ -59,8 +60,10 @@ class logger_print(object):
         self.log = open(log_path, 'a')
 
     def write(self, message):
+        """Write ``message`` to both stdout and the log file."""
         self.terminal.write(message)
         self.log.write(message)  # write the message
 
     def flush(self):
-        pass
+        """Flush the underlying log file."""
+        self.log.flush()

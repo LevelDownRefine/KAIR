@@ -96,6 +96,7 @@ def test_mode(model, L, mode=0, refield=32, min_size=256, sf=1, modulo=1):
 
 
 def test(model, L):
+    """Run the model on a single low-quality input tensor."""
     E = model(L)
     return E
 
@@ -108,6 +109,7 @@ def test(model, L):
 
 
 def test_pad(model, L, modulo=16, sf=1):
+    """Pad L to a multiple of ``modulo``, run the model, and crop back to size."""
     h, w = L.size()[-2:]
     paddingBottom = int(np.ceil(h/modulo)*modulo-h)
     paddingRight = int(np.ceil(w/modulo)*modulo-w)
@@ -172,6 +174,7 @@ def test_split_fn(model, L, refield=32, min_size=256, sf=1, modulo=1):
 
 
 def test_split(model, L, refield=32, min_size=256, sf=1, modulo=1):
+    """Run the model on quadrants of L and stitch the results back together."""
     E = test_split_fn(model, L, refield=refield, min_size=min_size, sf=sf, modulo=modulo)
     return E
 
@@ -184,6 +187,7 @@ def test_split(model, L, refield=32, min_size=256, sf=1, modulo=1):
 
 
 def test_x8(model, L, modulo=1, sf=1):
+    """Run the model on 8 augmentations of L and average the un-augmented outputs."""
     E_list = [test_pad(model, util.augment_img_tensor4(L, mode=i), modulo=modulo, sf=sf) for i in range(8)]
     for i in range(len(E_list)):
         if i == 3 or i == 5:
@@ -203,6 +207,7 @@ def test_x8(model, L, modulo=1, sf=1):
 
 
 def test_split_x8(model, L, refield=32, min_size=256, sf=1, modulo=1):
+    """Combine the split and x8 strategies: 8 augmentations, each split-run."""
     E_list = [test_split_fn(model, util.augment_img_tensor4(L, mode=i), refield=refield, min_size=min_size, sf=sf, modulo=modulo) for i in range(8)]
     for k, i in enumerate(range(len(E_list))):
         if i==3 or i==5:
@@ -232,6 +237,7 @@ def test_split_x8(model, L, refield=32, min_size=256, sf=1, modulo=1):
 # print model
 # --------------------------------------------
 def print_model(model):
+    """Print the model's name, parameter count and structure."""
     msg = describe_model(model)
     print(msg)
 
@@ -240,6 +246,7 @@ def print_model(model):
 # print params
 # --------------------------------------------
 def print_params(model):
+    """Print per-parameter statistics (mean/min/max/std/shape) of the model."""
     msg = describe_params(model)
     print(msg)
 
@@ -255,6 +262,7 @@ def print_params(model):
 # model inforation
 # --------------------------------------------
 def info_model(model):
+    """Return the model description string (name + params + structure)."""
     msg = describe_model(model)
     return msg
 
@@ -263,6 +271,7 @@ def info_model(model):
 # params inforation
 # --------------------------------------------
 def info_params(model):
+    """Return the per-parameter statistics string of the model."""
     msg = describe_params(model)
     return msg
 
@@ -278,6 +287,7 @@ def info_params(model):
 # model name and total number of parameters
 # --------------------------------------------
 def describe_model(model):
+    """Build a string with the model name, total parameter count and structure."""
     if isinstance(model, torch.nn.DataParallel):
         model = model.module
     msg = '\n'
@@ -291,6 +301,7 @@ def describe_model(model):
 # parameters description
 # --------------------------------------------
 def describe_params(model):
+    """Build a per-parameter statistics table (mean/min/max/std/shape)."""
     if isinstance(model, torch.nn.DataParallel):
         model = model.module
     msg = '\n'

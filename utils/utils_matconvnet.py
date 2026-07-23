@@ -66,6 +66,7 @@ def weights2tensor(x, squeeze=False, in_features=None, out_features=None):
 
 
 def save_model(network, save_path):
+    """Move all parameters to CPU and save the state_dict to ``save_path``."""
     state_dict = network.state_dict()
     for key, param in state_dict.items():
         state_dict[key] = param.cpu()

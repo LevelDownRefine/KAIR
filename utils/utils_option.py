@@ -17,11 +17,17 @@ import glob
 
 
 def get_timestamp():
+    """Return a filesystem-friendly timestamp suffix like ``_yymmdd_HHMMSS``."""
     return datetime.now().strftime('_%y%m%d_%H%M%S')
 
 
 def parse(opt_path, is_train=True):
+    """Load a (comment-stripped) JSON opt file and fill in KAIR defaults.
 
+    Sets ``opt_path``/``is_train``, broadcasts scale/n_channels into datasets,
+    expands paths, configures GPU/optimizer/perceptual defaults, and exports
+    ``CUDA_VISIBLE_DEVICES``.
+    """
     # ----------------------------------------
     # remove comments starting with '//'
     # ----------------------------------------
@@ -202,6 +208,7 @@ def find_last_checkpoint(save_dir, net_type='G', pretrained_path=None):
 
 
 def save(opt):
+    """Dump the resolved opt dict to a timestamped JSON under ``opt['path']['options']``."""
     opt_path = opt['opt_path']
     opt_path_copy = opt['path']['options']
     dirname, filename_ext = os.path.split(opt_path)
@@ -219,6 +226,7 @@ def save(opt):
 
 
 def dict2str(opt, indent_l=1):
+    """Render a (nested) opt dict as an indented human-readable string."""
     msg = ''
     for k, v in opt.items():
         if isinstance(v, dict):
@@ -239,6 +247,7 @@ def dict2str(opt, indent_l=1):
 
 
 def dict_to_nonedict(opt):
+    """Recursively convert dicts to NoneDict so missing keys return None."""
     if isinstance(opt, dict):
         new_opt = dict()
         for key, sub_opt in opt.items():
@@ -252,4 +261,5 @@ def dict_to_nonedict(opt):
 
 class NoneDict(dict):
     def __missing__(self, key):
+        """Return None for any key that is not present."""
         return None

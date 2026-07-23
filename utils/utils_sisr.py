@@ -754,7 +754,7 @@ def zero_pad(image, shape, position='corner'):
     """
     shape = np.asarray(shape, dtype=int)
     imshape = np.asarray(image.shape, dtype=int)
-    if np.alltrue(imshape == shape):
+    if np.all(imshape == shape):
         return image
     if np.any(shape <= 0):
         raise ValueError("ZERO_PAD: null or negative shape given")

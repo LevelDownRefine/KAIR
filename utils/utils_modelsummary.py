@@ -26,6 +26,7 @@ https://github.com/sovrasov/flops-counter.pytorch.git
 
 def get_model_flops(model, input_res, print_per_layer_stat=True,
                               input_constructor=None):
+    """Estimate the total FLOPs (MACs) of ``model`` on an input of ``input_res``."""
     assert type(input_res) is tuple, 'Please provide the size of the input image.'
     assert len(input_res) >= 3, 'Input image should have 3 dimensions.'
     flops_model = add_flops_counting_methods(model)
@@ -46,6 +47,7 @@ def get_model_flops(model, input_res, print_per_layer_stat=True,
     return flops_count
 
 def get_model_activation(model, input_res, input_constructor=None):
+    """Estimate total activations and the number of Conv2d layers for ``model``."""
     assert type(input_res) is tuple, 'Please provide the size of the input image.'
     assert len(input_res) >= 3, 'Input image should have 3 dimensions.'
     activation_model = add_activation_counting_methods(model)
@@ -66,6 +68,7 @@ def get_model_activation(model, input_res, input_constructor=None):
 
 def get_model_complexity_info(model, input_res, print_per_layer_stat=True, as_strings=True,
                               input_constructor=None):
+    """Return (flops, params) as strings or raw ints for ``model`` at ``input_res``."""
     assert type(input_res) is tuple
     assert len(input_res) >= 3
     flops_model = add_flops_counting_methods(model)
@@ -90,6 +93,7 @@ def get_model_complexity_info(model, input_res, print_per_layer_stat=True, as_st
 
 
 def flops_to_string(flops, units='GMac', precision=2):
+    """Format a FLOP count into a human-readable string (GMac/MMac/KMac/Mac)."""
     if units is None:
         if flops // 10**9 > 0:
             return str(round(flops / 10.**9, precision)) + ' GMac'
@@ -111,6 +115,7 @@ def flops_to_string(flops, units='GMac', precision=2):
 
 
 def params_to_string(params_num):
+    """Format a parameter count into a human-readable string (M/k)."""
     if params_num // 10 ** 6 > 0:
         return str(round(params_num / 10 ** 6, 2)) + ' M'
     elif params_num // 10 ** 3:
@@ -120,11 +125,13 @@ def params_to_string(params_num):
 
 
 def print_model_with_flops(model, units='GMac', precision=3):
+    """Print the model structure annotated with per-layer FLOP percentages."""
     total_flops = model.compute_average_flops_cost()
 
     def accumulate_flops(self):
         if is_supported_instance(self):
-            return self.__flops__ / model.__batch_counter__
+            batch_counter = getattr(model, '__batch_counter__', 1)
+            return self.__flops__ / batch_counter
         else:
             sum = 0
             for m in self.children():
@@ -158,6 +165,7 @@ def print_model_with_flops(model, units='GMac', precision=3):
 
 
 def get_model_parameters_number(model):
+    """Count the trainable parameters of ``model``."""
     params_num = sum(p.numel() for p in model.parameters() if p.requires_grad)
     return params_num
 
