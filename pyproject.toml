@@ -1,0 +1,49 @@
+[project]
+name = "kair"
+version = "0.1.0"
+description = "KAIR - PyTorch image restoration (BasicSR-based), configured for NVIDIA RTX 5070 Ti (Blackwell / sm_120)"
+requires-python = ">=3.10"
+dependencies = [
+    # --- torch family: pulled from the CUDA 12.8 (cu128) index below ---
+    # cu128 builds include Blackwell (sm_120) support for RTX 5070 Ti and only
+    # need NVIDIA driver R570+ (572.x), which is what the 50-series ships with.
+    # (CUDA 13.0 / cu130 needs R580+, which most 50-series launch drivers lack.)
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+
+    # --- rest from PyPI ---
+    "opencv-python",
+    "scikit-image",
+    "pillow",
+    "hdf5storage",
+    "ninja",
+    "lmdb",
+    "requests",
+    "timm",
+    "einops",
+    # --- added during review: actually imported by the codebase ---
+    "numpy",        # used by ~60 files; only present transitively otherwise
+    "scipy",        # used by DnCNN/IRCNN/SRMD/USRNet/DRUNet paths (10 files)
+    "matplotlib",   # imported at top of utils/utils_image.py -> needed by almost every main_*
+]
+
+[dependency-groups]
+# Dev-only tools (not part of the runtime environment).
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.uv]
+package = false
+
+# PyTorch publishes CUDA-enabled wheels on its own index.
+# Mark it explicit so uv only uses it for the packages listed in [tool.uv.sources],
+# leaving everything else on PyPI (the cu128 index only hosts torch-related wheels).
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+torchvision = [{ index = "pytorch-cu128" }]

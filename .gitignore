@@ -1,0 +1,61 @@
+# ============================================================
+# KAIR - .gitignore (uv 管理 / PyTorch 图像复原工具箱)
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.so
+
+# ---------- 虚拟环境与依赖 ----------
+.venv/
+venv/
+env/
+# 说明：uv.lock 作为应用锁文件建议提交，保证环境可复现，故不忽略
+
+# ---------- 测试 / 缓存 ----------
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+
+# ---------- 训练 / 推理产物（大模型文件，勿入库） ----------
+results/
+experiments/
+tb_logger/
+wandb/
+logs/
+log/
+checkpoints/
+pretrained_models/
+weights/
+
+# 模型权重文件
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# ---------- 数据集（体积大，勿入库） ----------
+trainsets/
+testsets/
+
+# ---------- 助手工作区数据（.workbuddy 记忆，勿入库） ----------
+.workbuddy/
