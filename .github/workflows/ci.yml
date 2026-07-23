@@ -1,0 +1,43 @@
+name: CI
+
+# Run the test suite on every push and pull request.
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    # Headless Linux needs these for opencv-python (libGL) and matplotlib (Agg
+    # backend) to import cleanly inside the import smoke tests.
+    env:
+      MPLBACKEND: Agg
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install system libraries for headless OpenCV/matplotlib
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgl1 libglib2.0-0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dependencies (incl. dev group with pytest)
+        run: uv sync --all-groups
+
+      - name: Run tests
+        # The CUDA smoke test (tests/test_cuda_smoke.py) is a hard assertion
+        # that requires a real GPU; CI runners are headless, so it is excluded
+        # here. Run it locally on the RTX 5070 Ti to verify the GPU path.
+        run: uv run pytest -k "not cuda" -v
