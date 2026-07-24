@@ -3,20 +3,16 @@ import logging
 import argparse
 
 import numpy as np
-from datetime import datetime
 from collections import OrderedDict
-# from scipy.io import loadmat
 
 import torch
 
 from utils import utils_logger
-from utils import utils_model
 from utils import utils_image as util
 from utils import utils_benchmark
 
 
 '''
-Spyder (Python 3.6)
 PyTorch 1.1.0
 Windows 10 or Linux
 
@@ -24,42 +20,13 @@ Kai Zhang (cskaizhang@gmail.com)
 github: https://github.com/cszn/KAIR
         https://github.com/cszn/DnCNN
 
-@article{zhang2017beyond,
-  title={Beyond a gaussian denoiser: Residual learning of deep cnn for image denoising},
-  author={Zhang, Kai and Zuo, Wangmeng and Chen, Yunjin and Meng, Deyu and Zhang, Lei},
-  journal={IEEE Transactions on Image Processing},
-  volume={26},
-  number={7},
-  pages={3142--3155},
-  year={2017},
-  publisher={IEEE}
+@misc{zhang2020plug,
+  title={Plug-and-Play Image Restoration with Deep Denoiser Prior},
+  author={Zhang, Kai and Li, Yawei and Zuo, Wangmeng and Zhang, Lei and Van Gool, Luc and Timofte, Radu},
+  journal={arXiv preprint},
+  year={2020}
 }
-
-% If you have any question, please feel free to contact with me.
-% Kai Zhang (e-mail: cskaizhang@gmail.com; github: https://github.com/cszn)
-
-by Kai Zhang (12/Dec./2019)
 '''
-
-"""
-# --------------------------------------------
-|--model_zoo          # model_zoo
-   |--dncnn_15        # model_name
-   |--dncnn_25
-   |--dncnn_50
-   |--dncnn_gray_blind
-   |--dncnn_color_blind
-   |--dncnn3
-|--testset            # testsets
-   |--set12           # testset_name
-   |--bsd68
-   |--cbsd68
-|--results            # results
-   |--set12_dncnn_15  # result_name = testset_name + '_' + model_name
-   |--set12_dncnn_25
-   |--bsd68_dncnn_15
-# --------------------------------------------
-"""
 
 
 def main():
@@ -67,11 +34,12 @@ def main():
     # ----------------------------------------
     # Preparation
     # ----------------------------------------
+
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', type=str, default='dncnn_25', help='dncnn_15, dncnn_25, dncnn_50, dncnn_gray_blind, dncnn_color_blind, dncnn3')
-    parser.add_argument('--testset_name', type=str, default='set12', help='test set, bsd68 | set12')
-    parser.add_argument('--noise_level_img', type=int, default=15, help='noise level: 15, 25, 50')
-    parser.add_argument('--x8', type=bool, default=False, help='x8 to boost performance')
+    parser.add_argument('--model_name', type=str, default='drunet_color',
+                        help='drunet_color | drunet_gray | drunet_deblocking_color | drunet_deblocking_grayscale')
+    parser.add_argument('--testset_name', type=str, default='bsd68', help='test set')
+    parser.add_argument('--noise_level_img', type=int, default=25, help='noise level: 15, 25, 50')
     parser.add_argument('--show_img', type=bool, default=False, help='show the image')
     parser.add_argument('--model_pool', type=str, default='model_zoo', help='path of model_zoo')
     parser.add_argument('--testsets', type=str, default='testsets', help='path of testing folder')
@@ -79,20 +47,23 @@ def main():
     parser.add_argument('--testset_path', type=str, default=None, help='explicit full path to the test set folder; overrides --testsets/--testset_name')
     parser.add_argument('--results', type=str, default='results', help='path of results')
     parser.add_argument('--need_degradation', type=bool, default=True, help='add noise or not')
-    parser.add_argument('--task_current', type=str, default='dn', help='dn for denoising, fixed!')
-    parser.add_argument('--sf', type=int, default=1, help='unused for denoising')
     args = parser.parse_args()
 
+    # DRUNet feeds (noisy image || noise-level map) along the channel dim, so
+    # in_nc = n_channels + 1. The released weights are color (in_nc=4) or gray (in_nc=2).
     if 'color' in args.model_name:
-        n_channels = 3        # fixed, 1 for grayscale image, 3 for color image
+        n_channels = 3        # color image
+        nc = [64, 128, 256, 512]
     else:
-        n_channels = 1        # fixed for grayscale image
-    if args.model_name in ['dncnn_gray_blind', 'dncnn_color_blind', 'dncnn3']:
-        nb = 20               # fixed
-    else:
-        nb = 17               # fixed
+        n_channels = 1        # grayscale image
+        nc = [64, 128, 256, 512]
+    nb = 4                   # fixed for DRUNet
+    act_mode = 'R'           # ReLU, no BN (matches the released weights)
+    downsample_mode = 'strideconv'
+    upsample_mode = 'convtranspose'
+    bias = False             # fixed for DRUNet
 
-    border = args.sf if args.task_current == 'sr' else 0        # shave boader to calculate PSNR and SSIM
+    border = 0               # shave border to calculate PSNR and SSIM (denoising)
 
     if args.model_path:
         model_path = args.model_path
@@ -129,9 +100,9 @@ def main():
     # load model
     # ----------------------------------------
 
-    from models.network_dncnn import DnCNN as net
-    model = net(in_nc=n_channels, out_nc=n_channels, nc=64, nb=nb, act_mode='R')
-    # model = net(in_nc=n_channels, out_nc=n_channels, nc=64, nb=nb, act_mode='BR')  # use this if BN is not merged by utils_bnorm.merge_bn(model)
+    from models.network_unet import UNetRes as net
+    model = net(in_nc=n_channels + 1, out_nc=n_channels, nc=nc, nb=nb, act_mode=act_mode,
+                downsample_mode=downsample_mode, upsample_mode=upsample_mode, bias=bias)
     model.load_state_dict(torch.load(model_path), strict=True)
     model.eval()
     for k, v in model.named_parameters():
@@ -146,7 +117,6 @@ def main():
     test_results['ssim'] = []
 
     logger.info('model_name:{}, image sigma:{}'.format(args.model_name, args.noise_level_img))
-    logger.info(L_path)
     L_paths = util.get_image_paths(L_path)
     H_paths = util.get_image_paths(H_path) if need_H else None
 
@@ -157,7 +127,6 @@ def main():
         # ------------------------------------
 
         img_name, ext = os.path.splitext(os.path.basename(img))
-        # logger.info('{:->4d}--> {:>10s}'.format(idx+1, img_name+ext))
         img_L = util.imread_uint(img, n_channels=n_channels)
         img_L = util.uint2single(img_L)
 
@@ -170,29 +139,29 @@ def main():
         img_L = util.single2tensor4(img_L)
         img_L = img_L.to(device)
 
-        # ------------------------------------
-        # (2) img_E
-        # ------------------------------------
+        # DRUNet's 4-stage U-Net (stride-2 convs) needs H/W divisible by 16.
+        # Pad with reflect and crop back to the original size after inference.
+        h, w = img_L.shape[2], img_L.shape[3]
+        pad_h = int(np.ceil(h / 16) * 16) - h
+        pad_w = int(np.ceil(w / 16) * 16) - w
+        img_L = torch.nn.functional.pad(img_L, (0, pad_w, 0, pad_h), mode='reflect')
 
-        if not args.x8:
-            img_E = model(img_L)
-        else:
-            img_E = utils_model.test_mode(model, img_L, mode=3)
-
-        img_E = util.tensor2uint(img_E)
+        # DRUNet takes the noisy image concatenated with a noise-level map.
+        sigma = torch.full((1, 1, img_L.size(2), img_L.size(3)), args.noise_level_img/255.).type_as(img_L)
+        img_E = model(torch.cat((img_L, sigma), dim=1))
+        img_E = util.tensor2uint(img_E[..., :h, :w])
 
         if need_H:
 
-            # --------------------------------
+            # ------------------------------------
             # (3) img_H
-            # --------------------------------
-
+            # ------------------------------------
             img_H = util.imread_uint(H_paths[idx], n_channels=n_channels)
             img_H = img_H.squeeze()
 
-            # --------------------------------
+            # ------------------------------------
             # PSNR and SSIM
-            # --------------------------------
+            # ------------------------------------
 
             psnr = util.calculate_psnr(img_E, img_H, border=border)
             ssim = util.calculate_ssim(img_E, img_H, border=border)
