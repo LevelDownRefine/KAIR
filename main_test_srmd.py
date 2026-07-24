@@ -1,6 +1,7 @@
 import os.path
 import logging
 import re
+import argparse
 
 import numpy as np
 from collections import OrderedDict
@@ -13,6 +14,7 @@ from utils import utils_sisr as sr
 from utils import utils_logger
 from utils import utils_image as util
 from utils import utils_model
+from utils import utils_benchmark
 
 
 '''
@@ -66,17 +68,27 @@ def main():
     # Preparation
     # ----------------------------------------
 
-    noise_level_img = 0                  # default: 0, noise level for LR image
-    noise_level_model = noise_level_img  # noise level for model 
-    model_name = 'srmdnf_x4'             # 'srmd_x2' | 'srmd_x3' | 'srmd_x4' | 'srmdnf_x2' | 'srmdnf_x3' | 'srmdnf_x4'
-    testset_name = 'set5'                # test set,  'set5' | 'srbsd68'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model_name', type=str, default='srmdnf_x4',
+                        help='srmd_x2 | srmd_x3 | srmd_x4 | srmdnf_x2 | srmdnf_x3 | srmdnf_x4')
+    parser.add_argument('--testset_name', type=str, default='set5', help='test set, set5 | srbsd68')
+    parser.add_argument('--noise_level_img', type=int, default=0, help='noise level for LR image')
+    parser.add_argument('--x8', type=bool, default=False, help='x8 to boost performance')
+    parser.add_argument('--show_img', type=bool, default=False, help='show the image')
+    parser.add_argument('--model_pool', type=str, default='model_zoo', help='path of model_zoo')
+    parser.add_argument('--testsets', type=str, default='testsets', help='path of testing folder')
+    parser.add_argument('--model_path', type=str, default=None, help='explicit full path to the .pth; overrides --model_pool/--model_name')
+    parser.add_argument('--testset_path', type=str, default=None, help='explicit full path to the test set folder; overrides --testsets/--testset_name')
+    parser.add_argument('--results', type=str, default='results', help='path of results')
+    parser.add_argument('--need_degradation', type=bool, default=True, help='use degradation model to generate LR image')
+    args = parser.parse_args()
+
+    noise_level_img = args.noise_level_img  # noise level for LR image
+    noise_level_model = noise_level_img     # noise level for model
+    model_name = args.model_name
     sf = [int(s) for s in re.findall(r'\d+', model_name)][0]  # scale factor
-    x8 = False                           # default: False, x8 to boost performance
-    need_degradation = True              # default: True, use degradation model to generate LR image
-    show_img = False                     # default: False
-
-
-
+    x8 = args.x8
+    need_degradation = args.need_degradation
 
     srmd_pca_path = os.path.join('kernels', 'srmd_pca_matlab.mat')
     task_current = 'sr'       # 'dn' for denoising | 'sr' for super-resolution
@@ -84,20 +96,29 @@ def main():
     in_nc = 18 if 'nf' in model_name else 19
     nc = 128                  # fixed, number of channels
     nb = 12                   # fixed, number of conv layers
-    model_pool = 'model_zoo'  # fixed
-    testsets = 'testsets'     # fixed
-    results = 'results'       # fixed
-    result_name = testset_name + '_' + model_name
+
+    if args.model_path:
+        model_path = args.model_path
+        model_basename = os.path.splitext(os.path.basename(args.model_path))[0]
+    else:
+        model_path = os.path.join(args.model_pool, model_name + '.pth')
+        model_basename = model_name
+
     border = sf if task_current == 'sr' else 0     # shave boader to calculate PSNR and SSIM
-    model_path = os.path.join(model_pool, model_name+'.pth')
 
     # ----------------------------------------
     # L_path, E_path, H_path
     # ----------------------------------------
 
-    L_path = os.path.join(testsets, testset_name) # L_path, for Low-quality images
+    if args.testset_path:
+        L_path = args.testset_path
+        testset_basename = os.path.basename(os.path.normpath(args.testset_path))
+    else:
+        L_path = os.path.join(args.testsets, args.testset_name) # L_path, for Low-quality images
+        testset_basename = args.testset_name
     H_path = L_path                               # H_path, for High-quality images
-    E_path = os.path.join(results, result_name)   # E_path, for Estimated images
+    result_name = testset_basename + '_' + model_basename
+    E_path = os.path.join(args.results, result_name)   # E_path, for Estimated images
     util.mkdir(E_path)
 
     if H_path == L_path:
@@ -115,7 +136,7 @@ def main():
 
     from models.network_srmd import SRMD as net
     model = net(in_nc=in_nc, out_nc=n_channels, nc=nc, nb=nb, upscale=sf, act_mode='R', upsample_mode='pixelshuffle')
-    model.load_state_dict(torch.load(model_path), strict=False)
+    model.load_state_dict(torch.load(model_path), strict=True)
     model.eval()
     for k, v in model.named_parameters():
         v.requires_grad = False
@@ -166,7 +187,7 @@ def main():
             np.random.seed(seed=0)  # for reproducibility
             img_L += np.random.normal(0, noise_level_img/255., img_L.shape)
 
-        util.imshow(util.single2uint(img_L), title='LR image with noise level {}'.format(noise_level_img)) if show_img else None
+        util.imshow(util.single2uint(img_L), title='LR image with noise level {}'.format(noise_level_img)) if args.show_img else None
 
         img_L = util.single2tensor4(img_L)
         degradation_map = degradation_vector.repeat(1, 1, img_L.size(-2), img_L.size(-1))
@@ -203,7 +224,7 @@ def main():
             test_results['psnr'].append(psnr)
             test_results['ssim'].append(ssim)
             logger.info('{:s} - PSNR: {:.2f} dB; SSIM: {:.4f}.'.format(img_name+ext, psnr, ssim))
-            util.imshow(np.concatenate([img_E, img_H], axis=1), title='Recovered / Ground-truth') if show_img else None
+            util.imshow(np.concatenate([img_E, img_H], axis=1), title='Recovered / Ground-truth') if args.show_img else None
 
             if np.ndim(img_H) == 3:  # RGB image
                 img_E_y = util.rgb2ycbcr(img_E, only_y=True)
@@ -223,6 +244,9 @@ def main():
         ave_psnr = sum(test_results['psnr']) / len(test_results['psnr'])
         ave_ssim = sum(test_results['ssim']) / len(test_results['ssim'])
         logger.info('Average PSNR/SSIM(RGB) - {} - x{} --PSNR: {:.2f} dB; SSIM: {:.4f}'.format(result_name, sf, ave_psnr, ave_ssim))
+        noise_level = 'real' if 'real' in testset_basename.lower() else noise_level_model
+        utils_benchmark.save_benchmark(model_basename, testset_basename, ave_psnr, ave_ssim,
+                                       noise_level=noise_level)
         if np.ndim(img_H) == 3:
             ave_psnr_y = sum(test_results['psnr_y']) / len(test_results['psnr_y'])
             ave_ssim_y = sum(test_results['ssim_y']) / len(test_results['ssim_y'])
