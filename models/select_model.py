@@ -7,7 +7,12 @@
 
 
 def define_Model(opt):
+    assert 'model' in opt
     model = opt['model']      # one input: L
+
+    if model == 'marble':
+        from models.model_marble import ModelMARBLE
+        return ModelMARBLE(opt)
 
     if model == 'plain':
         from models.model_plain import ModelPlain as M

@@ -10,7 +10,12 @@
 
 
 def define_Dataset(dataset_opt):
+    assert 'dataset_type' in dataset_opt
     dataset_type = dataset_opt['dataset_type'].lower()
+    if dataset_type == 'marble':
+        from data.dataset_marble import DatasetMARBLE
+        return DatasetMARBLE(dataset_opt)
+
     if dataset_type in ['l', 'low-quality', 'input-only']:
         from data.dataset_l import DatasetL as D
 

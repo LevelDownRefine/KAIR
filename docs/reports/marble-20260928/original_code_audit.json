@@ -1,0 +1,44 @@
+{
+  "rtol": 0.0002,
+  "atol": 2e-05,
+  "seeds": {
+    "0": {
+      "original_embedding_max_abs_error": 2.60770320892334e-07,
+      "eval_decoder": {
+        "max_abs_error_m": 5.960464477539063e-08,
+        "exact_boundary_tie_samples": []
+      },
+      "notebook_decoder": {
+        "max_abs_error_m": 1.4901161193847656e-08,
+        "exact_boundary_tie_samples": []
+      }
+    },
+    "1": {
+      "original_embedding_max_abs_error": 2.980232238769531e-07,
+      "eval_decoder": {
+        "max_abs_error_m": 0.0,
+        "exact_boundary_tie_samples": []
+      },
+      "notebook_decoder": {
+        "max_abs_error_m": 5.960464477539063e-08,
+        "exact_boundary_tie_samples": []
+      }
+    },
+    "2": {
+      "original_embedding_max_abs_error": 3.427267074584961e-07,
+      "eval_decoder": {
+        "max_abs_error_m": 0.0,
+        "exact_boundary_tie_samples": []
+      },
+      "notebook_decoder": {
+        "max_abs_error_m": 0.006899833679199219,
+        "exact_boundary_tie_samples": [
+          44
+        ]
+      }
+    }
+  },
+  "decoder_reference": "CEBRA KNNDecoder in original pinned CPU environment",
+  "decoder_rule": "Strict prediction tolerance or proven exact kNN boundary ties",
+  "audit_source_sha256": "6755154d3c9e568179aa7e8f6b4d2e8b5facb8090f4f4c44ddb378c6eb7d45f5"
+}

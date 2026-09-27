@@ -12,9 +12,11 @@ code review flagged:
 Modules that require the JIT-compiled CUDA extensions
 (``deform_attn`` / ``upfirdn2d`` / ``fused_act``) — ``network_vrt``,
 ``network_rvrt``, ``network_faceenhancer``, ``model_vrt`` — are
-*intentionally excluded*: they need the CUDA 12.8 toolkit (``nvcc``) and
-are tracked separately, not as plain import smoke tests.
+*intentionally excluded*: they need a CUDA toolkit matching PyTorch's
+CUDA 13.0 runtime (``nvcc``) and a compatible C++ compiler. Their build
+compatibility is tracked separately, not as plain import smoke tests.
 """
+
 import importlib
 
 import pytest

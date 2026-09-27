@@ -1,0 +1,29 @@
+{
+  "seed": 2,
+  "training_epochs": 100,
+  "representation_training_performed": true,
+  "initial_state_sha256": "f0b4d8037f50c2f790055b66519da106eab99d87d4aa475e0a747b7ccf32171a",
+  "trained_state_sha256": "ac57ae33ec8d00d8be248a35ea0f6474023992ffa574c197de70ce1b1871572a",
+  "best_epoch_zero_based": 73,
+  "best_validation_loss": 1.0122913580674393,
+  "training_seconds": 72.19894480000221,
+  "scope": "Achilles offline position decoding; KAIR MARBLE integration",
+  "primary_mode": "eval",
+  "sampling_sha256": "00fe91ecd7b405f6d874ba49f42657a61df8ad56a2483cdbea85b9ad08c88aba",
+  "results": {
+    "eval": {
+      "samples": 1999,
+      "mean_absolute_error_m": 0.09316680580377579,
+      "median_absolute_error_m": 0.05628277733922005,
+      "std_absolute_error_m": 0.13483208417892456,
+      "position_r2": 0.9034870266914368
+    },
+    "notebook": {
+      "samples": 1999,
+      "mean_absolute_error_m": 0.08610281348228455,
+      "median_absolute_error_m": 0.04730883240699768,
+      "std_absolute_error_m": 0.1346973478794098,
+      "position_r2": 0.9081693291664124
+    }
+  }
+}

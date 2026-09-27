@@ -1,4 +1,9 @@
 ## Training and testing codes for USRNet, DnCNN, FFDNet, SRMD, DPSR, MSRResNet, ESRGAN, BSRGAN, SwinIR, VRT, RVRT
+
+This fork also supports **MARBLE neural population dynamics** through a dedicated
+CUDA 13 graph-training entry point. See the [MARBLE reproduction guide](docs/README_MARBLE.md)
+for public data, setup, training, and original-code numerical checks.
+
 [![download](https://img.shields.io/github/downloads/cszn/KAIR/total.svg)](https://github.com/cszn/KAIR/releases) ![visitors](https://visitor-badge.glitch.me/badge?page_id=cszn/KAIR) 
 
 [Kai Zhang](https://cszn.github.io/)
@@ -91,16 +96,22 @@ logger.info('{:>16s} : {:<.4f} [M]'.format('#Params', num_parameters/10**6))
   - [Dataset](https://github.com/cszn/KAIR/blob/6c852636d3715bb281637863822a42c72739122a/data/dataset_usrnet.py#L16)
 
 
-Clone repo
+Install with uv (CUDA 13.0)
 ----------
-```
-git clone https://github.com/cszn/KAIR.git
-```
-```
-pip install -r requirement.txt
+This fork uses the official stable PyTorch 2.14.0 and TorchVision 0.29.0
+CUDA 13.0 wheels. Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+and a compatible NVIDIA driver, then run:
+
+```sh
+git clone https://github.com/LevelDownRefine/KAIR.git
+cd KAIR
+uv sync --locked --all-groups --python 3.12
+uv run --locked python -m pytest tests/test_cuda_smoke.py -v
 ```
 
-
+Use `uv run --locked python ...` for the training/testing commands below, or
+activate `.venv` first. See [CUDA 13 environment and validation](docs/README_CUDA13.md)
+for the full test command and the separate CUDA toolkit requirements for JIT extensions.
 
 Training
 ----------

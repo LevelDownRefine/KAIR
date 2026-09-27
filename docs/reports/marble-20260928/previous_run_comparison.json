@@ -1,0 +1,46 @@
+{
+  "reference": "train-gpu-20260922-194834",
+  "scope": "Identical graph, initialization and sampling; independent GPU training",
+  "bitwise_training_equivalence_claimed": false,
+  "runs": [
+    {
+      "seed": 0,
+      "identical_graphs_initialization_sampling": true,
+      "best_epoch_zero_based": 22,
+      "reference_best_epoch_zero_based": 22,
+      "mae_cm": 8.970236778259277,
+      "reference_mae_cm": 9.71648097038269,
+      "max_absolute_history_differences": {
+        "train_loss": 0.000348305106163016,
+        "val_loss": 0.0009095531243543675,
+        "lr": 0.0
+      }
+    },
+    {
+      "seed": 1,
+      "identical_graphs_initialization_sampling": true,
+      "best_epoch_zero_based": 58,
+      "reference_best_epoch_zero_based": 58,
+      "mae_cm": 9.264083206653595,
+      "reference_mae_cm": 9.482455253601074,
+      "max_absolute_history_differences": {
+        "train_loss": 0.0005698788166046409,
+        "val_loss": 0.0010816271488482965,
+        "lr": 0.0
+      }
+    },
+    {
+      "seed": 2,
+      "identical_graphs_initialization_sampling": true,
+      "best_epoch_zero_based": 73,
+      "reference_best_epoch_zero_based": 73,
+      "mae_cm": 9.316680580377579,
+      "reference_mae_cm": 8.769631385803223,
+      "max_absolute_history_differences": {
+        "train_loss": 0.00037963867187507105,
+        "val_loss": 0.0008927491995003312,
+        "lr": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "summary": {
+    "eval": {
+      "mean_mae_m": 0.09213145573933919,
+      "sample_std_across_seeds_m": 0.003132200388507391,
+      "min_mae_m": 0.0885915756225586,
+      "max_mae_m": 0.09454374760389328
+    },
+    "notebook": {
+      "mean_mae_m": 0.08820630113283794,
+      "sample_std_across_seeds_m": 0.006898269741907459,
+      "min_mae_m": 0.08048905432224274,
+      "max_mae_m": 0.0937734916806221
+    }
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "training_epochs": 100,
+      "representation_training_performed": true,
+      "initial_state_sha256": "9270949fd1726801bcf8d24fbcbe6f3df298abf6e96e3a9210dca830115fb429",
+      "trained_state_sha256": "e27b200054b2bf0f61c8c9261b175b483fe6df87d342db9e53d33475a6c5d623",
+      "best_epoch_zero_based": 22,
+      "best_validation_loss": 1.0168382342045124,
+      "training_seconds": 45.975451900001644,
+      "scope": "Achilles offline position decoding; KAIR MARBLE integration",
+      "primary_mode": "eval",
+      "sampling_sha256": "1760f411119fa5c983b36ff75ca3b4c69cab0b2d20bbd3de0ad1ae468e02610b",
+      "results": {
+        "eval": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0932590439915657,
+          "median_absolute_error_m": 0.05310094356536865,
+          "std_absolute_error_m": 0.1460336595773697,
+          "position_r2": 0.8921222686767578
+        },
+        "notebook": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0937734916806221,
+          "median_absolute_error_m": 0.055651068687438965,
+          "std_absolute_error_m": 0.14547087252140045,
+          "position_r2": 0.8923658132553101
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "training_epochs": 100,
+      "representation_training_performed": true,
+      "initial_state_sha256": "74c490a5535423097ee9834ebe90f3b80a8fa0f41af4cc2f78d53dd3064d9a39",
+      "trained_state_sha256": "9de7506067af2c9e6d12dafdef0a6788e8d412c887a2a7506fe4275852b975f5",
+      "best_epoch_zero_based": 58,
+      "best_validation_loss": 1.0139744235919073,
+      "training_seconds": 58.32171970000127,
+      "scope": "Achilles offline position decoding; KAIR MARBLE integration",
+      "primary_mode": "eval",
+      "sampling_sha256": "8f51fbd9a8850232fb9640a042b9cfd63a8f437da22380c4db7db1f4de87f7c2",
+      "results": {
+        "eval": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09454374760389328,
+          "median_absolute_error_m": 0.054740771651268005,
+          "std_absolute_error_m": 0.14627112448215485,
+          "position_r2": 0.8910056352615356
+        },
+        "notebook": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09035635739564896,
+          "median_absolute_error_m": 0.050504863262176514,
+          "std_absolute_error_m": 0.13270778954029083,
+          "position_r2": 0.9073827862739563
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "training_epochs": 100,
+      "representation_training_performed": true,
+      "initial_state_sha256": "f0b4d8037f50c2f790055b66519da106eab99d87d4aa475e0a747b7ccf32171a",
+      "trained_state_sha256": "d678e00efb86613fb1c3af7e7dfb49b660f7cc66e6c9f36a04d73f1c45f4962e",
+      "best_epoch_zero_based": 73,
+      "best_validation_loss": 1.0125416012910697,
+      "training_seconds": 69.11562029999914,
+      "scope": "Achilles offline position decoding; KAIR MARBLE integration",
+      "primary_mode": "eval",
+      "sampling_sha256": "00fe91ecd7b405f6d874ba49f42657a61df8ad56a2483cdbea85b9ad08c88aba",
+      "results": {
+        "eval": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0885915756225586,
+          "median_absolute_error_m": 0.05468852072954178,
+          "std_absolute_error_m": 0.132156640291214,
+          "position_r2": 0.9090423583984375
+        },
+        "notebook": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.08048905432224274,
+          "median_absolute_error_m": 0.04514443874359131,
+          "std_absolute_error_m": 0.12362086772918701,
+          "position_r2": 0.9218103289604187
+        }
+      }
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "seconds": 183.8013140999974,
+  "peak_allocated_gpu_bytes": 982087680
+}
