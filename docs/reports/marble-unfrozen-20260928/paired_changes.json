@@ -1,0 +1,70 @@
+{
+  "full_palm_minus_baseline": [
+    {
+      "seed": 0,
+      "mae_change_cm": 3.5703495144844055,
+      "consistency_change": 0.016067955939851553
+    },
+    {
+      "seed": 1,
+      "mae_change_cm": 4.688556492328644,
+      "consistency_change": 0.005184633269881056
+    },
+    {
+      "seed": 2,
+      "mae_change_cm": 1.9064128398895264,
+      "consistency_change": 0.0021529984264050395
+    }
+  ],
+  "frozen_palm_minus_baseline": [
+    {
+      "seed": 0,
+      "mae_change_cm": -0.8345372974872589,
+      "consistency_change": 0.004461745987554333
+    },
+    {
+      "seed": 1,
+      "mae_change_cm": 0.24841204285621643,
+      "consistency_change": 0.003326525322749907
+    },
+    {
+      "seed": 2,
+      "mae_change_cm": 0.17168670892715454,
+      "consistency_change": 0.005948065561911298
+    }
+  ],
+  "full_palm_minus_full_no_prior": [
+    {
+      "seed": 0,
+      "mae_change_cm": -1.757630705833435,
+      "consistency_change": 0.006457767710632778
+    },
+    {
+      "seed": 1,
+      "mae_change_cm": -2.9789671301841736,
+      "consistency_change": 0.01190219967463646
+    },
+    {
+      "seed": 2,
+      "mae_change_cm": -2.7481503784656525,
+      "consistency_change": 0.010532168655424945
+    }
+  ],
+  "full_palm_minus_frozen_palm": [
+    {
+      "seed": 0,
+      "mae_change_cm": 4.404886811971664,
+      "consistency_change": 0.01160620995229722
+    },
+    {
+      "seed": 1,
+      "mae_change_cm": 4.440144449472427,
+      "consistency_change": 0.001858107947131149
+    },
+    {
+      "seed": 2,
+      "mae_change_cm": 1.7347261309623718,
+      "consistency_change": -0.003795067135506258
+    }
+  ]
+}

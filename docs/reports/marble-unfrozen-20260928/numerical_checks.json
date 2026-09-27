@@ -1,0 +1,1757 @@
+{
+  "seed-0/achilles/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0554280147321202,
+    "final_objective": 1.0538511166682594,
+    "minimum_majorization_margin": 4.644968853995124e-10,
+    "minimum_descent_margin": 7.513462071516271e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 796,
+    "fit_seconds": 6.921920400003728,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004138354860312382,
+      "auxiliary_gradient_norm": 0.0002849175646623349,
+      "auxiliary_force_rms": 0.0284903318427937
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007357285004724902,
+      "auxiliary_gradient_norm": 2.718639694090779e-06,
+      "auxiliary_force_rms": 0.0002718503758707605
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5035783076337296,
+      0.06859972603338708,
+      1.0392139395321862,
+      0.09484576695189373
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-0/achilles/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0523694803486305,
+    "final_objective": 1.0435422364980844,
+    "minimum_majorization_margin": 7.441776084249341e-10,
+    "minimum_descent_margin": 7.813776202478845e-08,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.001953125,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 13,
+    "backtracks_total": 1389,
+    "fit_seconds": 40.17243079999753,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006453688354274412,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0036163137198520863,
+      "auxiliary_gradient_norm": 1.2686567244855906e-06,
+      "auxiliary_force_rms": 0.0001268593290063466
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      2.421315846050352,
+      0.23105314071992353,
+      0.27888056197956673,
+      0.04276755586455028,
+      0.40996427718826883,
+      0.032513060105140754,
+      0.9396788752299418,
+      0.06277750071704569
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/achilles/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0554280147321202,
+    "final_objective": 1.0458588822994368,
+    "minimum_majorization_margin": 2.76329981119261e-09,
+    "minimum_descent_margin": 4.2017085695803473e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.03125,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 9,
+    "backtracks_total": 1013,
+    "fit_seconds": 35.39880239999911,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006453688354274412,
+      "auxiliary_gradient_norm": 0.0002849175646623349,
+      "auxiliary_force_rms": 0.0284903318427937
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002260652565884378,
+      "auxiliary_gradient_norm": 2.818634845893084e-06,
+      "auxiliary_force_rms": 0.000281849391062732
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      2.4971392518911864,
+      0.22975508940648837,
+      0.32008874300466283,
+      0.03514757218236717,
+      0.44212491187252617,
+      0.03291864664076355,
+      0.9874213585856036,
+      0.0745879652170325
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/buddy/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.063912687283037,
+    "final_objective": 1.0624124734927094,
+    "minimum_majorization_margin": 1.889156608925191e-09,
+    "minimum_descent_margin": 9.404472463703856e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 742,
+    "fit_seconds": 6.315542000003916,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0041203294949795615,
+      "auxiliary_gradient_norm": 0.00040685837752747127,
+      "auxiliary_force_rms": 0.03299317914447693
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006711461648658999,
+      "auxiliary_gradient_norm": 5.011578605003188e-06,
+      "auxiliary_force_rms": 0.00040640163714051475
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4528224840613165,
+      0.05636628372722748,
+      1.0241300267409976,
+      0.03413186657895551
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-0/buddy/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.059405221072151,
+    "final_objective": 1.043489542481942,
+    "minimum_majorization_margin": 1.8406232094037023e-10,
+    "minimum_descent_margin": 8.90130104390297e-08,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.00390625,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 12,
+    "backtracks_total": 990,
+    "fit_seconds": 34.25111490000563,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008248547990759842,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002332021040051473,
+      "auxiliary_gradient_norm": 1.649827594574527e-06,
+      "auxiliary_force_rms": 0.00013378870976209277
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.608304856173687,
+      0.329044494732563,
+      0.3196466721260168,
+      0.0465006844792016,
+      0.47886419813836734,
+      0.002970981062060344,
+      1.072575893888634,
+      0.06144238173286881
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/buddy/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.063912687283037,
+    "final_objective": 1.047657829557954,
+    "minimum_majorization_margin": 3.028768214008437e-08,
+    "minimum_descent_margin": 8.42892245969409e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 751,
+    "fit_seconds": 31.08726960000058,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008248547990759842,
+      "auxiliary_gradient_norm": 0.00040685837752747127,
+      "auxiliary_force_rms": 0.03299317914447693
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0032132054892716503,
+      "auxiliary_gradient_norm": 3.1061449232091427e-05,
+      "auxiliary_force_rms": 0.0025188518059512527
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.519674429232851,
+      0.3118522166631201,
+      0.3179469974634802,
+      0.03777030754268297,
+      0.4669315911347368,
+      0.01229837792416013,
+      1.059235587964793,
+      0.060267288485286806
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/cicero/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0647974444213992,
+    "final_objective": 1.0625831673662207,
+    "minimum_majorization_margin": 1.633882584783919e-09,
+    "minimum_descent_margin": 9.147553566145158e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 773,
+    "fit_seconds": 8.338122499997553,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004858956735551493,
+      "auxiliary_gradient_norm": 0.0004381503362290996,
+      "auxiliary_force_rms": 0.04381284281645728
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0013865838042311383,
+      "auxiliary_gradient_norm": 1.0227933274985077e-05,
+      "auxiliary_force_rms": 0.0010227421865535772
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5063409535630673,
+      0.20085414992212802,
+      1.0293499975071674,
+      0.046496173632737614
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-0/cicero/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0589514167496954,
+    "final_objective": 1.0432396818024154,
+    "minimum_majorization_margin": 2.7355630205505577e-08,
+    "minimum_descent_margin": 5.911564524484199e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 8.881784197001252e-16,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 674,
+    "fit_seconds": 27.57637270000123,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007710520369805543,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002480558269791181,
+      "auxiliary_gradient_norm": 1.3191074417149073e-05,
+      "auxiliary_force_rms": 0.001319041484693855
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      4.030848846137032,
+      0.43846390812868474,
+      0.4152240203493593,
+      0.13247482535878996,
+      0.6506621177814204,
+      0.08210800374543713,
+      1.2827252890457954,
+      0.051963456972959954
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/cicero/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0647974444213992,
+    "final_objective": 1.0486856482050668,
+    "minimum_majorization_margin": 2.6571233213701362e-08,
+    "minimum_descent_margin": 7.849448851415082e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 741,
+    "fit_seconds": 32.69855169999937,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007710520369805543,
+      "auxiliary_gradient_norm": 0.0004381503362290996,
+      "auxiliary_force_rms": 0.04381284281645728
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00208819153760693,
+      "auxiliary_gradient_norm": 1.0781396219498282e-05,
+      "auxiliary_force_rms": 0.0010780857136209888
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.6297308835013924,
+      0.37582963242819384,
+      0.3846265531641178,
+      0.12623499114538608,
+      0.5575648954104511,
+      0.08190189988704884,
+      1.1356454772530802,
+      0.05280410457197618
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/decoding/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0372119514456455,
+    "final_objective": 1.0345066827597427,
+    "minimum_majorization_margin": 2.971001222817904e-11,
+    "minimum_descent_margin": 1.1699981587659767e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1031,
+    "fit_seconds": 26.119550700001128,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01563166492127233,
+      "auxiliary_gradient_norm": 0.0003019379138042136,
+      "auxiliary_force_rms": 0.027004460073027443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0011117762299936457,
+      "auxiliary_gradient_norm": 7.749797668609863e-06,
+      "auxiliary_force_rms": 0.0006931196519153259
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.41163771646594827,
+      0.006629384023733341,
+      1.0035934406142566,
+      0.02848649112234418
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 4192
+  },
+  "seed-0/decoding/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0323350178789346,
+    "final_objective": 1.0026616106746489,
+    "minimum_majorization_margin": 1.7853457867644806e-07,
+    "minimum_descent_margin": 1.733595199312192e-05,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 992,
+    "fit_seconds": 59.513742600000114,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01913115751062026,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0052706797658870295,
+      "auxiliary_gradient_norm": 3.239695782803767e-05,
+      "auxiliary_force_rms": 0.002897490888547658
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      3.4878385573765036,
+      0.3255342543094955,
+      0.5321000613479047,
+      0.06014823071848721,
+      0.36226121317931065,
+      0.010891046899509933,
+      0.9414445946226749,
+      0.05336723243911746
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496
+  },
+  "seed-0/decoding/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0372119514456455,
+    "final_objective": 1.0138379854919655,
+    "minimum_majorization_margin": 9.029871472776563e-08,
+    "minimum_descent_margin": 1.6967631385788435e-05,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1031,
+    "fit_seconds": 61.03486400000111,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01913115751062026,
+      "auxiliary_gradient_norm": 0.0003019379138042136,
+      "auxiliary_force_rms": 0.027004460073027443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00447559025403051,
+      "auxiliary_gradient_norm": 2.791069476801678e-05,
+      "auxiliary_force_rms": 0.002496252401618226
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      2.915025047933582,
+      0.2250034280554257,
+      0.40755627320137894,
+      0.03417507423088096,
+      0.2554269035094429,
+      0.006033777479472021,
+      0.7691620722330067,
+      0.0400842889008329
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496
+  },
+  "seed-0/gatsby/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.063305563189685,
+    "final_objective": 1.0608522922219163,
+    "minimum_majorization_margin": 1.2571839125286033e-09,
+    "minimum_descent_margin": 7.324893869084276e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 1.5543122344752192e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 801,
+    "fit_seconds": 7.457621699999436,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0068485078335444325,
+      "auxiliary_gradient_norm": 0.00037704221444758384,
+      "auxiliary_force_rms": 0.03770233618655351
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0010552086082419297,
+      "auxiliary_gradient_norm": 7.770289873121763e-06,
+      "auxiliary_force_rms": 0.0007769901348914759
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5753022653473048,
+      0.2034741222611091,
+      1.1105736961626833,
+      0.08747602740236889
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-0/gatsby/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.058340437181783,
+    "final_objective": 1.0417114080229948,
+    "minimum_majorization_margin": 4.278314369443592e-08,
+    "minimum_descent_margin": 2.563239491258291e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 1.9984014443252818e-15,
+    "parameter_step_min": 0.125,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 7,
+    "backtracks_total": 810,
+    "fit_seconds": 30.05381959999795,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010293082562178273,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002376688846677834,
+      "auxiliary_gradient_norm": 4.029759477831975e-06,
+      "auxiliary_force_rms": 0.00040295579848206316
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.670024106108663,
+      0.37511094414625507,
+      0.3842240794591198,
+      0.014269592492217414,
+      0.5881964772925695,
+      0.08176652495859467,
+      1.154112343842984,
+      0.05942349910009041
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-0/gatsby/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.063305563189685,
+    "final_objective": 1.046461880301221,
+    "minimum_majorization_margin": 3.342121690508293e-09,
+    "minimum_descent_margin": 2.5597599331329036e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.25,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 6,
+    "backtracks_total": 838,
+    "fit_seconds": 30.541757799997868,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010293082562178273,
+      "auxiliary_gradient_norm": 0.00037704221444758384,
+      "auxiliary_force_rms": 0.03770233618655351
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002273089818189444,
+      "auxiliary_gradient_norm": 5.1078602522941365e-06,
+      "auxiliary_force_rms": 0.0005107604852896378
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.4940094200028495,
+      0.3671980496527661,
+      0.3813970424333487,
+      0.01352456246835672,
+      0.5649641985824457,
+      0.08666277491802314,
+      1.1167623070509223,
+      0.07155657709868501
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/achilles/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.057097851035328,
+    "final_objective": 1.0552685215054314,
+    "minimum_majorization_margin": 2.6184876489310227e-10,
+    "minimum_descent_margin": 4.96832755057602e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 1.5543122344752192e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 735,
+    "fit_seconds": 6.758590799996455,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006566203591949745,
+      "auxiliary_gradient_norm": 0.0002849175646590785,
+      "auxiliary_force_rms": 0.02849033184246808
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007301139895090848,
+      "auxiliary_gradient_norm": 3.7400741239983637e-06,
+      "auxiliary_force_rms": 0.0003739887115616837
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.6402334088489358,
+      0.14372372383370344,
+      1.252421837650222,
+      0.10903772275754839
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-1/achilles/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0540393166518498,
+    "final_objective": 1.0446326812429767,
+    "minimum_majorization_margin": 2.7192443852186443e-09,
+    "minimum_descent_margin": 3.028215701676928e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.03125,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 9,
+    "backtracks_total": 1167,
+    "fit_seconds": 36.392289000003075,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00836717471662153,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0038738103901262604,
+      "auxiliary_gradient_norm": 7.071576846235377e-06,
+      "auxiliary_force_rms": 0.0007071223258553153
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      2.4806547736546065,
+      0.2388447497476844,
+      0.28569602909126984,
+      0.01974050709674238,
+      0.43651151912563285,
+      0.02354185870854103,
+      0.9680373077813172,
+      0.065211914738119
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/achilles/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.057097851035328,
+    "final_objective": 1.0467404175248374,
+    "minimum_majorization_margin": 7.461521978058272e-08,
+    "minimum_descent_margin": 4.361308466107674e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 770,
+    "fit_seconds": 29.37220470000466,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00836717471662153,
+      "auxiliary_gradient_norm": 0.0002849175646590785,
+      "auxiliary_force_rms": 0.02849033184246808
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0021390789151212127,
+      "auxiliary_gradient_norm": 1.5061708792272737e-05,
+      "auxiliary_force_rms": 0.0015060955688005046
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      2.648719787437192,
+      0.2628470404919851,
+      0.35418038195920665,
+      0.02348065102459394,
+      0.49227224613471793,
+      0.028930093809665828,
+      1.0532971153669382,
+      0.07245890466071873
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/buddy/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0594135251298207,
+    "final_objective": 1.0577792032557791,
+    "minimum_majorization_margin": 3.412791160783968e-09,
+    "minimum_descent_margin": 9.533616108223637e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 750,
+    "fit_seconds": 6.529669499999727,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037942706956906463,
+      "auxiliary_gradient_norm": 0.00040685837355457954,
+      "auxiliary_force_rms": 0.03299317882230504
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009306718048049102,
+      "auxiliary_gradient_norm": 4.435132746312736e-06,
+      "auxiliary_force_rms": 0.00035965617844197346
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4526180543992607,
+      0.10192472230102152,
+      1.028639358484465,
+      0.04222481030903458
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-1/buddy/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0549060589627417,
+    "final_objective": 1.0386770586725609,
+    "minimum_majorization_margin": 4.020570543161739e-08,
+    "minimum_descent_margin": 8.074717388964554e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 1.0,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 4,
+    "backtracks_total": 680,
+    "fit_seconds": 27.174511999997776,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007536700235290026,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0023457893397346202,
+      "auxiliary_gradient_norm": 8.99994393836391e-06,
+      "auxiliary_force_rms": 0.0007298283113972265
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.8826844393561646,
+      0.48784729633194424,
+      0.4002486790584738,
+      0.06794662880871884,
+      0.6082336886432165,
+      0.05248555861358713,
+      1.2388986461742297,
+      0.0748217917346535
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/buddy/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0594135251298207,
+    "final_objective": 1.044656436007245,
+    "minimum_majorization_margin": 1.8135089874249388e-08,
+    "minimum_descent_margin": 7.800396471285877e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 758,
+    "fit_seconds": 28.712468600002467,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007536700235290026,
+      "auxiliary_gradient_norm": 0.00040685837355457954,
+      "auxiliary_force_rms": 0.03299317882230504
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002215718794801079,
+      "auxiliary_gradient_norm": 1.4399167979371305e-05,
+      "auxiliary_force_rms": 0.0011676651014583964
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.270769253663119,
+      0.360686657956119,
+      0.33855683608389037,
+      0.025216438270757216,
+      0.47115605862030324,
+      0.04463326681108336,
+      1.0534353163387493,
+      0.07038402213684045
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/cicero/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0658129603833175,
+    "final_objective": 1.063788017678418,
+    "minimum_majorization_margin": 2.530211595797027e-10,
+    "minimum_descent_margin": 9.040798113405492e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 765,
+    "fit_seconds": 6.678937999997288,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005947567859677593,
+      "auxiliary_gradient_norm": 0.00043815033623297126,
+      "auxiliary_force_rms": 0.04381284281684443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0013643341304944068,
+      "auxiliary_gradient_norm": 9.972982059467278e-06,
+      "auxiliary_force_rms": 0.0009972483397897454
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5010471715995888,
+      0.16353922623711376,
+      1.0397885060847494,
+      0.03649468238354994
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-1/cicero/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0599669327116126,
+    "final_objective": 1.0462958524724626,
+    "minimum_majorization_margin": 6.727691848062989e-08,
+    "minimum_descent_margin": 6.546652265002994e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 685,
+    "fit_seconds": 27.304522099999303,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00828396724147433,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0021191510846103757,
+      "auxiliary_gradient_norm": 4.056674308947399e-06,
+      "auxiliary_force_rms": 0.00040564714701608553
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.6802516979392395,
+      0.41667096448672025,
+      0.3431202068131279,
+      0.08564916757668704,
+      0.5743476014499304,
+      0.08286140168732657,
+      1.1913647554971851,
+      0.03878904362998908
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/cicero/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0658129603833175,
+    "final_objective": 1.0516186541314083,
+    "minimum_majorization_margin": 2.6543308218052175e-08,
+    "minimum_descent_margin": 7.932893685770714e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 756,
+    "fit_seconds": 28.58110769999621,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00828396724147433,
+      "auxiliary_gradient_norm": 0.00043815033623297126,
+      "auxiliary_force_rms": 0.04381284281684443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0022269077419837633,
+      "auxiliary_gradient_norm": 1.437670155021413e-05,
+      "auxiliary_force_rms": 0.0014375982697164844
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.359967923225131,
+      0.3570626175593698,
+      0.3182378087969865,
+      0.08133509734886678,
+      0.4867522751892842,
+      0.07140460105590032,
+      1.0656149209365955,
+      0.03490319309166977
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/decoding/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0365806049181159,
+    "final_objective": 1.0347544566173357,
+    "minimum_majorization_margin": 4.542607401347709e-09,
+    "minimum_descent_margin": 1.0457864031665588e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1033,
+    "fit_seconds": 26.694567300000926,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008739229763729114,
+      "auxiliary_gradient_norm": 0.00029672496226749236,
+      "auxiliary_force_rms": 0.026538228655242337
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016143610956685169,
+      "auxiliary_gradient_norm": 1.0654231524940531e-05,
+      "auxiliary_force_rms": 0.0009528838766853524
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2957142695890871,
+      0.004556980996612771,
+      0.841629975484569,
+      0.03366639108545309
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 4192
+  },
+  "seed-1/decoding/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0318089507351282,
+    "final_objective": 1.0031202809990034,
+    "minimum_majorization_margin": 3.229547340666272e-08,
+    "minimum_descent_margin": 1.1264403799273775e-05,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.25,
+    "parameter_step_max": 8.0,
+    "backtracks_max": 6,
+    "backtracks_total": 1010,
+    "fit_seconds": 60.92060869999841,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.013945664421097981,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005241379374912358,
+      "auxiliary_gradient_norm": 1.2475559140402715e-05,
+      "auxiliary_force_rms": 0.0011157781891351077
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      3.3420074499725296,
+      0.3244992808878947,
+      0.5505729714661793,
+      0.0826608219192348,
+      0.3579462839941902,
+      0.014741785418000298,
+      0.9408910029423023,
+      0.0963355802189201
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496
+  },
+  "seed-1/decoding/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0365806049181159,
+    "final_objective": 1.014816593443575,
+    "minimum_majorization_margin": 2.2226151363824442e-07,
+    "minimum_descent_margin": 1.568529753978244e-05,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 8.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1032,
+    "fit_seconds": 61.39127400000143,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.013945664421097981,
+      "auxiliary_gradient_norm": 0.00029672496226749236,
+      "auxiliary_force_rms": 0.026538228655242337
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004315271548812336,
+      "auxiliary_gradient_norm": 4.5726815616367016e-05,
+      "auxiliary_force_rms": 0.004089675095852896
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      2.788719710293929,
+      0.22021574822637055,
+      0.3951051976075176,
+      0.04702607493026558,
+      0.21178511967146982,
+      0.009724069093438566,
+      0.721633797894204,
+      0.0729680757367037
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496
+  },
+  "seed-1/gatsby/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0660712078763663,
+    "final_objective": 1.0635956335297576,
+    "minimum_majorization_margin": 1.7951979902619541e-09,
+    "minimum_descent_margin": 6.619288246933621e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 829,
+    "fit_seconds": 7.38189489999786,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007643667981508597,
+      "auxiliary_gradient_norm": 0.00037704221440886736,
+      "auxiliary_force_rms": 0.03770233618268206
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006950268324915299,
+      "auxiliary_gradient_norm": 2.101839636039643e-06,
+      "auxiliary_force_rms": 0.000210173454143041
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5386586307143898,
+      0.13949852545694325,
+      1.0676628478645298,
+      0.08648681265321753
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-1/gatsby/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.061106081869912,
+    "final_objective": 1.0429712144745975,
+    "minimum_majorization_margin": 8.073097057526013e-08,
+    "minimum_descent_margin": 2.9164908772055116e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.25,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 6,
+    "backtracks_total": 730,
+    "fit_seconds": 28.069764200001373,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010481129694924223,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002412257912741713,
+      "auxiliary_gradient_norm": 7.62000358122841e-06,
+      "auxiliary_force_rms": 0.0007619622571523868
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.979834004676964,
+      0.46869625671436244,
+      0.42309652263818964,
+      0.08928371106395322,
+      0.6047720404634904,
+      0.05630776724701163,
+      1.210117412188384,
+      0.05599572906152825
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-1/gatsby/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0660712078763663,
+    "final_objective": 1.048710259889408,
+    "minimum_majorization_margin": 3.3695255474697205e-08,
+    "minimum_descent_margin": 8.208907880128826e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 801,
+    "fit_seconds": 29.686202299999422,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010481129694924223,
+      "auxiliary_gradient_norm": 0.00037704221440886736,
+      "auxiliary_force_rms": 0.03770233618268206
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0022730185684911182,
+      "auxiliary_gradient_norm": 1.4833748136413526e-05,
+      "auxiliary_force_rms": 0.0014833006430463593
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.5269882556073266,
+      0.3767358380471901,
+      0.3777710660553864,
+      0.06850524272609494,
+      0.5097427573780665,
+      0.05898699442319687,
+      1.0757973615448746,
+      0.05203979590177057
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/achilles/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0588347883906124,
+    "final_objective": 1.0572833579542595,
+    "minimum_majorization_margin": 1.6530279367543699e-09,
+    "minimum_descent_margin": 8.56083543754682e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 737,
+    "fit_seconds": 28.670139499998186,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0060053066857705065,
+      "auxiliary_gradient_norm": 0.0002849175646627721,
+      "auxiliary_force_rms": 0.02849033184283742
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007093197920811659,
+      "auxiliary_gradient_norm": 1.9615343660558903e-06,
+      "auxiliary_force_rms": 0.0001961436286885547
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5555776586380565,
+      0.08635923405065996,
+      1.122239950540846,
+      0.07177818924787785
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-2/achilles/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0557762540071185,
+    "final_objective": 1.0453097609469342,
+    "minimum_majorization_margin": 1.3571775259180185e-08,
+    "minimum_descent_margin": 2.953762466181895e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 792,
+    "fit_seconds": 108.61197859999811,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00840053307823127,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0044737145923317255,
+      "auxiliary_gradient_norm": 2.311912843962145e-05,
+      "auxiliary_force_rms": 0.002311797245429911
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      2.8445992487297747,
+      0.28034135366063817,
+      0.29870265979797234,
+      0.08203067894271826,
+      0.5162183490570558,
+      0.01633314869900943,
+      1.095428193510025,
+      0.07465007261944324
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/achilles/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0588347883906124,
+    "final_objective": 1.0481485008363312,
+    "minimum_majorization_margin": 1.1858294235445044e-07,
+    "minimum_descent_margin": 6.1433638282672245e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 757,
+    "fit_seconds": 104.02322920000006,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00840053307823127,
+      "auxiliary_gradient_norm": 0.0002849175646627721,
+      "auxiliary_force_rms": 0.02849033184283742
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002438851698350271,
+      "auxiliary_gradient_norm": 1.873588790604185e-05,
+      "auxiliary_force_rms": 0.0018734951088225516
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      2.741877443515459,
+      0.2577846113167278,
+      0.32779434525069484,
+      0.050510333169576684,
+      0.4911055199118431,
+      0.008745501396649393,
+      1.0632753301475022,
+      0.07306847392068819
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/buddy/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.063584215910272,
+    "final_objective": 1.0618928424125356,
+    "minimum_majorization_margin": 7.334355345278709e-10,
+    "minimum_descent_margin": 8.609892788250079e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 710,
+    "fit_seconds": 26.914144399997895,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006182974245664523,
+      "auxiliary_gradient_norm": 0.00040685837355904883,
+      "auxiliary_force_rms": 0.032993178822667474
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009438963145264877,
+      "auxiliary_gradient_norm": 8.577557969144698e-06,
+      "auxiliary_force_rms": 0.0006955759604065627
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5200510066873569,
+      0.17270774813966785,
+      1.0933080487991558,
+      0.08359091704638277
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-2/buddy/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0590767497431488,
+    "final_objective": 1.0439373029602863,
+    "minimum_majorization_margin": 1.7352874692733167e-10,
+    "minimum_descent_margin": 8.361298950564056e-09,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.000244140625,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 16,
+    "backtracks_total": 1765,
+    "fit_seconds": 167.93379679999634,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.009486593223948299,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0028049521199625714,
+      "auxiliary_gradient_norm": 2.0820825300222923e-07,
+      "auxiliary_force_rms": 1.6884136028874803e-05
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.20145362199164,
+      0.3070039542819057,
+      0.2988779937210428,
+      0.016978614623677706,
+      0.3512621230401808,
+      0.029094632238902907,
+      0.8778738460933806,
+      0.0583470097065804
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/buddy/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.063584215910272,
+    "final_objective": 1.046299201094501,
+    "minimum_majorization_margin": 1.7585835010436313e-09,
+    "minimum_descent_margin": 1.662661518269069e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.0078125,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 11,
+    "backtracks_total": 987,
+    "fit_seconds": 118.75439289999485,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.009486593223948299,
+      "auxiliary_gradient_norm": 0.00040685837355904883,
+      "auxiliary_force_rms": 0.032993178822667474
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004033199699664986,
+      "auxiliary_gradient_norm": 3.849530642441571e-06,
+      "auxiliary_force_rms": 0.00031216821656732986
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.517069961237425,
+      0.3677214569164462,
+      0.3664669759642364,
+      0.025623805463436792,
+      0.4245285210630226,
+      0.04629431064845313,
+      0.9906608987654767,
+      0.06828962066336379
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/cicero/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0647790508438906,
+    "final_objective": 1.0626784737938386,
+    "minimum_majorization_margin": 1.914894465215866e-09,
+    "minimum_descent_margin": 9.24466415441413e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 767,
+    "fit_seconds": 30.167792799999006,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004641890120031805,
+      "auxiliary_gradient_norm": 0.0004381503362253763,
+      "auxiliary_force_rms": 0.043812842816084975
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0013586663427503452,
+      "auxiliary_gradient_norm": 1.0043674982563078e-05,
+      "auxiliary_force_rms": 0.0010043172786258728
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.49396583821219797,
+      0.1508552420040161,
+      1.036119171960157,
+      0.030759252107982978
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-2/cicero/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0589330231722451,
+    "final_objective": 1.043754772988541,
+    "minimum_majorization_margin": 1.0045719589513169e-08,
+    "minimum_descent_margin": 6.338011984622719e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 679,
+    "fit_seconds": 102.44764620000205,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007856778456622224,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00455729235419504,
+      "auxiliary_gradient_norm": 3.093290253851676e-05,
+      "auxiliary_force_rms": 0.0030931355854721776
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.9038696405491113,
+      0.42038527421117355,
+      0.3188897989886363,
+      0.0768167391725919,
+      0.6205927620485411,
+      0.052280534204762356,
+      1.2458569634549266,
+      0.06243829954191196
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/cicero/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0647790508438906,
+    "final_objective": 1.0494225016992473,
+    "minimum_majorization_margin": 2.8803470719651614e-09,
+    "minimum_descent_margin": 8.005576227372702e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 761,
+    "fit_seconds": 107.46241169999848,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007856778456622224,
+      "auxiliary_gradient_norm": 0.0004381503362253763,
+      "auxiliary_force_rms": 0.043812842816084975
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002109133104662282,
+      "auxiliary_gradient_norm": 1.2061072735591212e-05,
+      "auxiliary_force_rms": 0.0012060469666877337
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.466438289286324,
+      0.36574013696733754,
+      0.30218409946870073,
+      0.07468146573618847,
+      0.5106723072820987,
+      0.055052272314308884,
+      1.088658567441778,
+      0.04983902070769545
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/decoding/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0355721524680543,
+    "final_objective": 1.0338671427852077,
+    "minimum_majorization_margin": 2.184764591461885e-09,
+    "minimum_descent_margin": 7.657193183576697e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1037,
+    "fit_seconds": 26.503785999993852,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011104847893291822,
+      "auxiliary_gradient_norm": 0.00029730680035306047,
+      "auxiliary_force_rms": 0.026590266583016053
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009137847068245051,
+      "auxiliary_gradient_norm": 4.672816351693735e-06,
+      "auxiliary_force_rms": 0.0004179232776965099
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2449614538183445,
+      0.004915870774476205,
+      0.768966515667688,
+      0.026247167301271707
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 4192
+  },
+  "seed-2/decoding/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0307354508145188,
+    "final_objective": 1.0056483140889112,
+    "minimum_majorization_margin": 7.234624632701525e-08,
+    "minimum_descent_margin": 1.9430569306896447e-05,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 996,
+    "fit_seconds": 179.04713039999478,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01442873936335418,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005276157121125482,
+      "auxiliary_gradient_norm": 2.6320942944460197e-05,
+      "auxiliary_force_rms": 0.002354069563085753
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      3.381494293645504,
+      0.2566713493478574,
+      0.3866211736590518,
+      0.03890741972697091,
+      0.2949999720419096,
+      0.003954535347939839,
+      0.8212567859680008,
+      0.037067718155115614
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496
+  },
+  "seed-2/decoding/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0355721524821917,
+    "final_objective": 1.0164664705692286,
+    "minimum_majorization_margin": 7.300445759028662e-08,
+    "minimum_descent_margin": 1.752331618331118e-05,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 8.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1037,
+    "fit_seconds": 188.55140530000062,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01442873936335418,
+      "auxiliary_gradient_norm": 0.0002973068011717252,
+      "auxiliary_force_rms": 0.026590266656235078
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004287730996069184,
+      "auxiliary_gradient_norm": 3.2751886397240606e-05,
+      "auxiliary_force_rms": 0.0029292346806904113
+    },
+    "effective_rank": 32,
+    "parameter_changes": [
+      2.7333163223567074,
+      0.15348448247272933,
+      0.2589043249914697,
+      0.02341234626660501,
+      0.177012084614489,
+      0.0035955190799334216,
+      0.6346885621130718,
+      0.029905360040610778
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496
+  },
+  "seed-2/gatsby/frozen_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0638353910789453,
+    "final_objective": 1.0613562666915644,
+    "minimum_majorization_margin": 7.838341087307299e-10,
+    "minimum_descent_margin": 6.217897900838422e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 866,
+    "fit_seconds": 32.14420200000313,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00727379693946462,
+      "auxiliary_gradient_norm": 0.00037704221440445915,
+      "auxiliary_force_rms": 0.03770233618224126
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007402617672197398,
+      "auxiliary_gradient_norm": 1.9020719408725888e-06,
+      "auxiliary_force_rms": 0.00019019768348978365
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5155465482686742,
+      0.12211461383383408,
+      1.0455415124093481,
+      0.03627085591972067
+    ],
+    "encoder_frozen": true,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45
+  },
+  "seed-2/gatsby/full_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0588702650725343,
+    "final_objective": 1.0406222012384327,
+    "minimum_majorization_margin": 2.6231803174070478e-08,
+    "minimum_descent_margin": 5.625496675198105e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 787,
+    "fit_seconds": 113.88476059999812,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010212629313284571,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0026475845062414616,
+      "auxiliary_gradient_norm": 7.308356821701877e-06,
+      "auxiliary_force_rms": 0.000730799139472489
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.6838551887619926,
+      0.43662236969493123,
+      0.3477383648680577,
+      0.05204439374253188,
+      0.5708513547226645,
+      0.03806761894206519,
+      1.134593437852054,
+      0.010126948924454041
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  },
+  "seed-2/gatsby/full_palm": {
+    "iterations": 300,
+    "initial_objective": 1.0638353910789453,
+    "final_objective": 1.0451913713139829,
+    "minimum_majorization_margin": 3.031760553717788e-08,
+    "minimum_descent_margin": 3.9161745124494685e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.25,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 6,
+    "backtracks_total": 824,
+    "fit_seconds": 144.12831120000192,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010212629313284571,
+      "auxiliary_gradient_norm": 0.00037704221440445915,
+      "auxiliary_force_rms": 0.03770233618224126
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0026347007086551734,
+      "auxiliary_gradient_norm": 9.240418037377843e-06,
+      "auxiliary_force_rms": 0.0009239956004924874
+    },
+    "effective_rank": 3,
+    "parameter_changes": [
+      3.6435337233044636,
+      0.4344532654753889,
+      0.3706721560871847,
+      0.061819537729166145,
+      0.5800087861430844,
+      0.04423661873915776,
+      1.1509853505285321,
+      0.019200947376244448
+    ],
+    "encoder_frozen": false,
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984
+  }
+}

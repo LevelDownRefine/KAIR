@@ -1,0 +1,47 @@
+{
+  "frozen_palm": {
+    "fit_count": 15,
+    "fit_seconds_total": 253.5964824999901,
+    "objective_increases": 0,
+    "minimum_majorization_margin": 2.971001222817904e-11,
+    "minimum_descent_margin": 4.96832755057602e-07,
+    "maximum_constraint_excess": 1.5543122344752192e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 12372,
+    "final_parameter_mapping_min": 0.0006711461648658999,
+    "final_parameter_mapping_max": 0.0016143610956685169,
+    "final_auxiliary_force_rms_max": 0.0010227421865535772
+  },
+  "full_no_prior": {
+    "fit_count": 15,
+    "fit_seconds_total": 1043.3544891999918,
+    "objective_increases": 0,
+    "minimum_majorization_margin": 1.7352874692733167e-10,
+    "minimum_descent_margin": 8.361298950564056e-09,
+    "maximum_constraint_excess": 1.9984014443252818e-15,
+    "parameter_step_min": 0.000244140625,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 16,
+    "backtracks_total": 14146,
+    "final_parameter_mapping_min": 0.0021191510846103757,
+    "final_parameter_mapping_max": 0.005276157121125482,
+    "final_auxiliary_force_rms_max": 0.0030931355854721776
+  },
+  "full_palm": {
+    "fit_count": 15,
+    "fit_seconds_total": 1031.4242530999982,
+    "objective_increases": 0,
+    "minimum_majorization_margin": 1.7585835010436313e-09,
+    "minimum_descent_margin": 1.662661518269069e-07,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.0078125,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 11,
+    "backtracks_total": 12857,
+    "final_parameter_mapping_min": 0.00208819153760693,
+    "final_parameter_mapping_max": 0.00447559025403051,
+    "final_auxiliary_force_rms_max": 0.004089675095852896
+  }
+}

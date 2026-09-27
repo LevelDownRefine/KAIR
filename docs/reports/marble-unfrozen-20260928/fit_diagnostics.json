@@ -1,0 +1,4190 @@
+{
+  "seed-0/achilles/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004138354860312382,
+      "auxiliary_gradient_norm": 0.0002849175646623349,
+      "auxiliary_force_rms": 0.0284903318427937
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007357285004724902,
+      "auxiliary_gradient_norm": 2.718639694090779e-06,
+      "auxiliary_force_rms": 0.0002718503758707605
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.8,
+        0.7999999999999999,
+        0.8,
+        0.8997116641037591,
+        0.06859972603338708,
+        0.7708789440147632,
+        0.09484576695189373
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5035783076337296,
+      0.06859972603338708,
+      1.0392139395321862,
+      0.09484576695189373
+    ],
+    "parameter_radii": [
+      11.224543721599584,
+      6.360594886890398,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0510830348975535,
+    "final_geometry": 0.002533191182074001,
+    "final_coupling": 0.00023121399949384234,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.921920400003728,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758489889043958,
+      "effective_rank": 3,
+      "singular_values": [
+        59.631177476288755,
+        58.55992894331073,
+        54.4235641008389
+      ],
+      "mean_norm": 0.004962354718505179
+    }
+  },
+  "seed-0/achilles/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006453688354274412,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0036163137198520863,
+      "auxiliary_gradient_norm": 1.2686567244855906e-06,
+      "auxiliary_force_rms": 0.0001268593290063466
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7918274689905752,
+        0.8116363582710298,
+        0.8002700827109033,
+        0.7958747680499416,
+        0.8448737049455727,
+        0.032513060105140754,
+        0.7083796184193969,
+        0.06277750071704569
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.421315846050352,
+      0.23105314071992353,
+      0.27888056197956673,
+      0.04276755586455028,
+      0.40996427718826883,
+      0.032513060105140754,
+      0.9396788752299418,
+      0.06277750071704569
+    ],
+    "parameter_radii": [
+      11.224543721599584,
+      6.360594886890398,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0435385526480032,
+    "final_geometry": 0.0,
+    "final_coupling": 8.046644677970246e-09,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 40.17243079999753,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5757649435025315,
+      "effective_rank": 3,
+      "singular_values": [
+        59.28696300265148,
+        57.308175092020385,
+        56.08023426064009
+      ],
+      "mean_norm": 0.005417932115251964
+    }
+  },
+  "seed-0/achilles/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006453688354274412,
+      "auxiliary_gradient_norm": 0.0002849175646623349,
+      "auxiliary_force_rms": 0.0284903318427937
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002260652565884378,
+      "auxiliary_gradient_norm": 2.818634845893084e-06,
+      "auxiliary_force_rms": 0.000281849391062732
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7912694129382807,
+        0.808335594709547,
+        0.8003272633839806,
+        0.799224099979487,
+        0.8639676664038196,
+        0.03291864664076355,
+        0.7326176307161051,
+        0.0745879652170325
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.4971392518911864,
+      0.22975508940648837,
+      0.32008874300466283,
+      0.03514757218236717,
+      0.44212491187252617,
+      0.03291864664076355,
+      0.9874213585856036,
+      0.0745879652170325
+    ],
+    "parameter_radii": [
+      11.224543721599584,
+      6.360594886890398,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0435883413871452,
+    "final_geometry": 0.0020786810763091415,
+    "final_coupling": 0.00018818331478180031,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 35.39880239999911,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758271864940642,
+      "effective_rank": 3,
+      "singular_values": [
+        59.216191236268315,
+        57.572522779560565,
+        55.90313986343398
+      ],
+      "mean_norm": 0.0052771716794012494
+    }
+  },
+  "seed-0/achilles/initial": {
+    "fit_seconds": 3.609999839682132e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744672247910068,
+      "effective_rank": 3,
+      "singular_values": [
+        59.4087475088958,
+        58.96829680191672,
+        53.78409081411233
+      ],
+      "mean_norm": 0.00781955094030017
+    }
+  },
+  "seed-0/buddy/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0041203294949795615,
+      "auxiliary_gradient_norm": 0.00040685837752747127,
+      "auxiliary_force_rms": 0.03299317914447693
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006711461648658999,
+      "auxiliary_gradient_norm": 5.011578605003188e-06,
+      "auxiliary_force_rms": 0.00040640163714051475
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.7999999999999999,
+        0.8,
+        0.8,
+        0.8250076529335382,
+        0.05636628372722748,
+        0.6694339501392741,
+        0.03413186657895551
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4528224840613165,
+      0.05636628372722748,
+      1.0241300267409976,
+      0.03413186657895551
+    ],
+    "parameter_radii": [
+      10.803430698894918,
+      6.399414695496327,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0583528545966923,
+    "final_geometry": 0.003723805639117031,
+    "final_coupling": 0.0003318753633416698,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.315542000003916,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758945793952794,
+      "effective_rank": 3,
+      "singular_values": [
+        49.77638667314744,
+        46.12605083343106,
+        44.0179514937423
+      ],
+      "mean_norm": 0.010181376115821058
+    }
+  },
+  "seed-0/buddy/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008248547990759842,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002332021040051473,
+      "auxiliary_gradient_norm": 1.649827594574527e-06,
+      "auxiliary_force_rms": 0.00013378870976209277
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7926008508852195,
+        0.8263113360612738,
+        0.798930444131968,
+        0.7918568359804642,
+        0.8598151155815735,
+        0.002970981062060344,
+        0.709727260623383,
+        0.06144238173286881
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.608304856173687,
+      0.329044494732563,
+      0.3196466721260168,
+      0.0465006844792016,
+      0.47886419813836734,
+      0.002970981062060344,
+      1.072575893888634,
+      0.06144238173286881
+    ],
+    "parameter_radii": [
+      10.803430698894918,
+      6.399414695496327,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0434855897642306,
+    "final_geometry": 0.0,
+    "final_coupling": 8.949709429902745e-09,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 34.25111490000563,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759590883440394,
+      "effective_rank": 3,
+      "singular_values": [
+        48.53595683899023,
+        46.381338550221834,
+        45.137340461107996
+      ],
+      "mean_norm": 0.0034876840922966838
+    }
+  },
+  "seed-0/buddy/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008248547990759842,
+      "auxiliary_gradient_norm": 0.00040685837752747127,
+      "auxiliary_force_rms": 0.03299317914447693
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0032132054892716503,
+      "auxiliary_gradient_norm": 3.1061449232091427e-05,
+      "auxiliary_force_rms": 0.0025188518059512527
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7944385105738351,
+        0.8212979030356965,
+        0.798710137794431,
+        0.7954294124753215,
+        0.8485255330238176,
+        0.01229837792416013,
+        0.6928470276114562,
+        0.060267288485286806
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.519674429232851,
+      0.3118522166631201,
+      0.3179469974634802,
+      0.03777030754268297,
+      0.4669315911347368,
+      0.01229837792416013,
+      1.059235587964793,
+      0.060267288485286806
+    ],
+    "parameter_radii": [
+      10.803430698894918,
+      6.399414695496327,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0441265828626358,
+    "final_geometry": 0.0032278708314437445,
+    "final_coupling": 0.0002994336400289631,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 31.08726960000058,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759348810599549,
+      "effective_rank": 3,
+      "singular_values": [
+        48.79599024627268,
+        46.034512746232785,
+        45.20588510370331
+      ],
+      "mean_norm": 0.005939306296947485
+    }
+  },
+  "seed-0/buddy/initial": {
+    "fit_seconds": 4.269999772077426e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744554096906849,
+      "effective_rank": 3,
+      "singular_values": [
+        48.80031855918927,
+        47.02250958658628,
+        43.79078809907708
+      ],
+      "mean_norm": 0.01009322398729732
+    }
+  },
+  "seed-0/cicero/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004858956735551493,
+      "auxiliary_gradient_norm": 0.0004381503362290996,
+      "auxiliary_force_rms": 0.04381284281645728
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0013865838042311383,
+      "auxiliary_gradient_norm": 1.0227933274985077e-05,
+      "auxiliary_force_rms": 0.0010227421865535772
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.8,
+        0.7999999999999999,
+        0.7999999999999999,
+        0.9214415908315863,
+        0.20085414992212802,
+        0.7552116484176452,
+        0.046496173632737614
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5063409535630673,
+      0.20085414992212802,
+      1.0293499975071674,
+      0.046496173632737614
+    ],
+    "parameter_radii": [
+      12.871861337320016,
+      6.71376261036031,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0573935962606964,
+    "final_geometry": 0.004652260358671345,
+    "final_coupling": 0.0005327783539441898,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 8.338122499997553,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758622230179283,
+      "effective_rank": 3,
+      "singular_values": [
+        60.492901490401465,
+        57.43120465604902,
+        54.678969870530835
+      ],
+      "mean_norm": 0.009336079052616004
+    }
+  },
+  "seed-0/cicero/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007710520369805543,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002480558269791181,
+      "auxiliary_gradient_norm": 1.3191074417149073e-05,
+      "auxiliary_force_rms": 0.001319041484693855
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7793118005658161,
+        0.8408195524575098,
+        0.802400107231065,
+        0.7855442044004681,
+        0.9999999999999998,
+        0.08210800374543713,
+        0.9044161677919418,
+        0.051963456972959954
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      4.030848846137032,
+      0.43846390812868474,
+      0.4152240203493593,
+      0.13247482535878996,
+      0.6506621177814204,
+      0.08210800374543713,
+      1.2827252890457954,
+      0.051963456972959954
+    ],
+    "parameter_radii": [
+      12.871861337320016,
+      6.71376261036031,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.043234259595263,
+    "final_geometry": 0.0,
+    "final_coupling": 8.699352191716842e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 27.57637270000123,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.576179926791172,
+      "effective_rank": 3,
+      "singular_values": [
+        59.387750700129196,
+        58.443689525214964,
+        54.9175155360099
+      ],
+      "mean_norm": 0.0032353576206511844
+    }
+  },
+  "seed-0/cicero/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007710520369805543,
+      "auxiliary_gradient_norm": 0.0004381503362290996,
+      "auxiliary_force_rms": 0.04381284281645728
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00208819153760693,
+      "auxiliary_gradient_norm": 1.0781396219498282e-05,
+      "auxiliary_force_rms": 0.0010780857136209888
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7825962892945524,
+        0.8319278577376534,
+        0.8025807582381097,
+        0.7863563651147211,
+        0.9370169682342183,
+        0.08190189988704884,
+        0.7946458839450113,
+        0.05280410457197618
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.6297308835013924,
+      0.37582963242819384,
+      0.3846265531641178,
+      0.12623499114538608,
+      0.5575648954104511,
+      0.08190189988704884,
+      1.1356454772530802,
+      0.05280410457197618
+    ],
+    "parameter_radii": [
+      12.871861337320016,
+      6.71376261036031,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.044688220466691,
+    "final_geometry": 0.0036168483629202353,
+    "final_coupling": 0.0003760321051316465,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 32.69855169999937,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760223559605405,
+      "effective_rank": 3,
+      "singular_values": [
+        59.80701412161653,
+        58.07009922985701,
+        54.80914037838558
+      ],
+      "mean_norm": 0.005757945669940714
+    }
+  },
+  "seed-0/cicero/initial": {
+    "fit_seconds": 6.420000136131421e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744716422796667,
+      "effective_rank": 3,
+      "singular_values": [
+        60.43576714401996,
+        58.82143044593909,
+        52.792966865946624
+      ],
+      "mean_norm": 0.006775458866991054
+    }
+  },
+  "seed-0/decoding/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01563166492127233,
+      "auxiliary_gradient_norm": 0.0003019379138042136,
+      "auxiliary_force_rms": 0.027004460073027443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0011117762299936457,
+      "auxiliary_gradient_norm": 7.749797668609863e-06,
+      "auxiliary_force_rms": 0.0006931196519153259
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.7999999999999999,
+        0.7999999999999999,
+        0.8,
+        0.7918142666699955,
+        0.006629384023733341,
+        0.6174250038699393,
+        0.02848649112234418
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.41163771646594827,
+      0.006629384023733341,
+      1.0035934406142566,
+      0.02848649112234418
+    ],
+    "parameter_radii": [
+      7.390993495898948,
+      3.2733277557007674,
+      7.293235262384114,
+      1.440410594981555,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 4192,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0300721997201183,
+    "final_geometry": 0.004199884075933252,
+    "final_coupling": 0.00023414245292664688,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.119550700001128,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17602580917211139,
+      "effective_rank": 32,
+      "singular_values": [
+        39.002993146876946,
+        37.444610600131,
+        34.676499812736864,
+        33.49292154231403,
+        29.25765878211711,
+        27.43410724632441,
+        25.48305628898488,
+        20.28978597615747,
+        2.5728044746552188,
+        1.7272096696372938,
+        1.276746220606157,
+        0.9182494467303395,
+        0.7686747708827726,
+        0.5638651480498325,
+        0.38339640794889707,
+        0.3741546338944696,
+        0.3488158330349062,
+        0.32149032734614463,
+        0.28960085423407056,
+        0.25546261713613183,
+        0.22910828085108495,
+        0.21461988546930144,
+        0.19547566176219217,
+        0.1675860402725474,
+        0.15711769914261003,
+        0.13836788706534875,
+        0.12873610252083947,
+        0.12375592423060917,
+        0.11201602896118844,
+        0.09556027474612157,
+        0.08471473862211658,
+        0.07051446055638903
+      ],
+      "mean_norm": 0.006206689801807021
+    }
+  },
+  "seed-0/decoding/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01913115751062026,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0052706797658870295,
+      "auxiliary_gradient_norm": 3.239695782803767e-05,
+      "auxiliary_force_rms": 0.002897490888547658
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7723033605454581,
+        0.8628881150877618,
+        0.8060345985199435,
+        0.7672023598926774,
+        0.7427041479065565,
+        0.010891046899509933,
+        0.5520825713535492,
+        0.05336723243911746
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.4878385573765036,
+      0.3255342543094955,
+      0.5321000613479047,
+      0.06014823071848721,
+      0.36226121317931065,
+      0.010891046899509933,
+      0.9414445946226749,
+      0.05336723243911746
+    ],
+    "parameter_radii": [
+      7.390993495898948,
+      3.2733277557007674,
+      7.293235262384114,
+      1.440410594981555,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0026569560727498,
+    "final_geometry": 0.0,
+    "final_coupling": 4.197726724608348e-06,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 59.513742600000114,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17608065913501592,
+      "effective_rank": 32,
+      "singular_values": [
+        36.012335475234096,
+        33.96894416226421,
+        32.6149214378302,
+        32.303827762230775,
+        31.914278641562603,
+        30.555742480316482,
+        27.479340228160062,
+        24.87827802422094,
+        3.5930831844753928,
+        3.0646208114256672,
+        2.5688965993042303,
+        2.062681276369638,
+        1.763940695502543,
+        1.6141673582202982,
+        1.440515039524712,
+        1.3769705261424174,
+        1.1862647581896741,
+        1.0769125739631924,
+        1.0463579533444236,
+        0.9654705380556511,
+        0.8852927804632147,
+        0.825530445238103,
+        0.765664047230155,
+        0.7121156707392806,
+        0.6285075319687972,
+        0.6023565775189297,
+        0.5322289928074209,
+        0.506787214983276,
+        0.42987690835145376,
+        0.3935674646629374,
+        0.36029923851253787,
+        0.3230755484814817
+      ],
+      "mean_norm": 0.0066097431825981835
+    }
+  },
+  "seed-0/decoding/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01913115751062026,
+      "auxiliary_gradient_norm": 0.0003019379138042136,
+      "auxiliary_force_rms": 0.027004460073027443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00447559025403051,
+      "auxiliary_gradient_norm": 2.791069476801678e-05,
+      "auxiliary_force_rms": 0.002496252401618226
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7808421015490415,
+        0.8390988289844676,
+        0.8011410044071521,
+        0.7799072531831938,
+        0.6681739514514901,
+        0.006033777479472021,
+        0.4458529427652289,
+        0.0400842889008329
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.915025047933582,
+      0.2250034280554257,
+      0.40755627320137894,
+      0.03417507423088096,
+      0.2554269035094429,
+      0.006033777479472021,
+      0.7691620722330067,
+      0.0400842889008329
+    ],
+    "parameter_radii": [
+      7.390993495898948,
+      3.2733277557007674,
+      7.293235262384114,
+      1.440410594981555,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496,
+    "encoder_frozen": false,
+    "final_contrastive": 1.008180921043912,
+    "final_geometry": 0.005129151424030189,
+    "final_coupling": 0.0005274572361955599,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 61.03486400000111,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17604485953230858,
+      "effective_rank": 32,
+      "singular_values": [
+        36.473532288818966,
+        35.118674747281794,
+        32.96220721762178,
+        32.58653057239794,
+        31.627685855658477,
+        29.299114628078506,
+        27.055833579268036,
+        24.388044801000852,
+        3.1279313924542627,
+        2.7340353418599874,
+        2.1162634530208018,
+        1.6986299975611567,
+        1.3294938793476458,
+        1.2130322059642225,
+        1.149964177882793,
+        0.9927979287946541,
+        0.8800266551935233,
+        0.8558552655834486,
+        0.7628143827218165,
+        0.7219666330391579,
+        0.6924092700504123,
+        0.6443309400901621,
+        0.5760828440434613,
+        0.5108865849704991,
+        0.49704342586723554,
+        0.44264959625623146,
+        0.3957263143992416,
+        0.37419838259791083,
+        0.3283087702306613,
+        0.2945449622972256,
+        0.2757895688658891,
+        0.23892891425645288
+      ],
+      "mean_norm": 0.005969192123355105
+    }
+  },
+  "seed-0/decoding/initial": {
+    "fit_seconds": 5.220000457484275e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.1758719333851004,
+      "effective_rank": 32,
+      "singular_values": [
+        42.45375823512233,
+        36.98222228392718,
+        34.57413370462569,
+        32.32460503983205,
+        28.183784568296556,
+        27.30406328271554,
+        24.147360389007694,
+        19.16709057609599,
+        2.7992137550856446,
+        1.9202027426849684,
+        1.3917037388949478,
+        1.02249401422962,
+        0.8465765969813389,
+        0.6338970244493047,
+        0.4285651972182684,
+        0.4234195088314422,
+        0.38196553422305934,
+        0.3471343285190257,
+        0.3119791183612628,
+        0.2839065012778995,
+        0.2559004050856267,
+        0.23339060888835783,
+        0.21144375069867,
+        0.18473870764504266,
+        0.17375544899891043,
+        0.15245797277014586,
+        0.14169965598573978,
+        0.13391864172925846,
+        0.12338443805372017,
+        0.10759967774668751,
+        0.09384192935390125,
+        0.07863747674222928
+      ],
+      "mean_norm": 0.01757349605502059
+    }
+  },
+  "seed-0/gatsby/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0068485078335444325,
+      "auxiliary_gradient_norm": 0.00037704221444758384,
+      "auxiliary_force_rms": 0.03770233618655351
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0010552086082419297,
+      "auxiliary_gradient_norm": 7.770289873121763e-06,
+      "auxiliary_force_rms": 0.0007769901348914759
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7999999999999999,
+        0.8,
+        0.8,
+        0.8,
+        0.9999999999999997,
+        0.2034741222611091,
+        0.8395432425797269,
+        0.08747602740236889
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5753022653473048,
+      0.2034741222611091,
+      1.1105736961626833,
+      0.08747602740236889
+    ],
+    "parameter_radii": [
+      10.611379051108681,
+      3.702147129704008,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0564465200089488,
+    "final_geometry": 0.003996760022990033,
+    "final_coupling": 0.0004059985215061919,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 7.457621699999436,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759439431502816,
+      "effective_rank": 3,
+      "singular_values": [
+        62.059380391271645,
+        57.503168265128984,
+        52.84284795685781
+      ],
+      "mean_norm": 0.006616649960360046
+    }
+  },
+  "seed-0/gatsby/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010293082562178273,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002376688846677834,
+      "auxiliary_gradient_norm": 4.029759477831975e-06,
+      "auxiliary_force_rms": 0.00040295579848206316
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7813336976530056,
+        0.8615367527677689,
+        0.800742465912918,
+        0.7967632103654891,
+        1.000000000000002,
+        0.08176652495859467,
+        0.8742071239070454,
+        0.05942349910009041
+      ],
+      "maximum_relative_constraint_excess": 1.9984014443252818e-15
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.670024106108663,
+      0.37511094414625507,
+      0.3842240794591198,
+      0.014269592492217414,
+      0.5881964772925695,
+      0.08176652495859467,
+      1.154112343842984,
+      0.05942349910009041
+    ],
+    "parameter_radii": [
+      10.611379051108681,
+      3.702147129704008,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.041708309342653,
+    "final_geometry": 0.0,
+    "final_coupling": 8.118668776515854e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 30.05381959999795,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575999261987165,
+      "effective_rank": 3,
+      "singular_values": [
+        59.368643659554124,
+        58.223676697607075,
+        55.114669469032904
+      ],
+      "mean_norm": 0.003506856444196857
+    }
+  },
+  "seed-0/gatsby/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010293082562178273,
+      "auxiliary_gradient_norm": 0.00037704221444758384,
+      "auxiliary_force_rms": 0.03770233618655351
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002273089818189444,
+      "auxiliary_gradient_norm": 5.1078602522941365e-06,
+      "auxiliary_force_rms": 0.0005107604852896378
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7830421637165682,
+        0.8527410059866585,
+        0.8000941982920242,
+        0.8020677199314588,
+        0.9850764747434575,
+        0.08666277491802314,
+        0.8433308135390318,
+        0.07155657709868501
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.4940094200028495,
+      0.3671980496527661,
+      0.3813970424333487,
+      0.01352456246835672,
+      0.5649641985824457,
+      0.08666277491802314,
+      1.1167623070509223,
+      0.07155657709868501
+    ],
+    "parameter_radii": [
+      10.611379051108681,
+      3.702147129704008,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.042772395996379,
+    "final_geometry": 0.003348330417727306,
+    "final_coupling": 0.00033813783948044254,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 30.541757799997868,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759699305275516,
+      "effective_rank": 3,
+      "singular_values": [
+        60.41766634280763,
+        57.73536601298942,
+        54.47548721315003
+      ],
+      "mean_norm": 0.00341190285926772
+    }
+  },
+  "seed-0/gatsby/initial": {
+    "fit_seconds": 4.069999704370275e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744702805787105,
+      "effective_rank": 3,
+      "singular_values": [
+        63.286682671419705,
+        57.594630209325544,
+        50.76561254662194
+      ],
+      "mean_norm": 0.0071147909330137185
+    }
+  },
+  "seed-1/achilles/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006566203591949745,
+      "auxiliary_gradient_norm": 0.0002849175646590785,
+      "auxiliary_force_rms": 0.02849033184246808
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007301139895090848,
+      "auxiliary_gradient_norm": 3.7400741239983637e-06,
+      "auxiliary_force_rms": 0.0003739887115616837
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7999999999999999,
+        0.8,
+        0.7999999999999999,
+        0.8,
+        1.0000000000000002,
+        0.14372372383370344,
+        0.9446669015490524,
+        0.10903772275754839
+      ],
+      "maximum_relative_constraint_excess": 2.220446049250313e-16
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.6402334088489358,
+      0.14372372383370344,
+      1.252421837650222,
+      0.10903772275754839
+    ],
+    "parameter_radii": [
+      11.224543721599545,
+      6.360594886889301,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0525481521101328,
+    "final_geometry": 0.0024957733556877676,
+    "final_coupling": 0.00022091395556261023,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.758590799996455,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760419458951002,
+      "effective_rank": 3,
+      "singular_values": [
+        59.64145385483223,
+        59.16440568718241,
+        53.81639445106417
+      ],
+      "mean_norm": 0.0009009388014135821
+    }
+  },
+  "seed-1/achilles/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00836717471662153,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0038738103901262604,
+      "auxiliary_gradient_norm": 7.071576846235377e-06,
+      "auxiliary_force_rms": 0.0007071223258553153
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.788824826336718,
+        0.8108479278962969,
+        0.8005576844735727,
+        0.8000990492350236,
+        0.8419193927923775,
+        0.02354185870854103,
+        0.6988052630347735,
+        0.065211914738119
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.4806547736546065,
+      0.2388447497476844,
+      0.28569602909126984,
+      0.01974050709674238,
+      0.43651151912563285,
+      0.02354185870854103,
+      0.9680373077813172,
+      0.065211914738119
+    ],
+    "parameter_radii": [
+      11.224543721599545,
+      6.360594886889301,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0446287551121847,
+    "final_geometry": 0.0,
+    "final_coupling": 2.500109918615153e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 36.392289000003075,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575803465830966,
+      "effective_rank": 3,
+      "singular_values": [
+        59.35140240545336,
+        58.22287294811977,
+        55.07270092493954
+      ],
+      "mean_norm": 0.0016217287434162225
+    }
+  },
+  "seed-1/achilles/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00836717471662153,
+      "auxiliary_gradient_norm": 0.0002849175646590785,
+      "auxiliary_force_rms": 0.02849033184246808
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0021390789151212127,
+      "auxiliary_gradient_norm": 1.5061708792272737e-05,
+      "auxiliary_force_rms": 0.0015060955688005046
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7873497590959367,
+        0.8095611820432417,
+        0.8004322405042226,
+        0.8027954384329931,
+        0.8752258636303853,
+        0.028930093809665828,
+        0.741074686488239,
+        0.07245890466071873
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.648719787437192,
+      0.2628470404919851,
+      0.35418038195920665,
+      0.02348065102459394,
+      0.49227224613471793,
+      0.028930093809665828,
+      1.0532971153669382,
+      0.07245890466071873
+    ],
+    "parameter_radii": [
+      11.224543721599545,
+      6.360594886889301,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0444178765110719,
+    "final_geometry": 0.002118761053950781,
+    "final_coupling": 0.00020010210199322985,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 29.37220470000466,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759195994541954,
+      "effective_rank": 3,
+      "singular_values": [
+        59.54989034645549,
+        58.050546572598684,
+        55.07677462648839
+      ],
+      "mean_norm": 0.0017796045917866732
+    }
+  },
+  "seed-1/achilles/initial": {
+    "fit_seconds": 3.440000000409782e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744672247910089,
+      "effective_rank": 3,
+      "singular_values": [
+        59.40874750886054,
+        58.96829680193765,
+        53.784090814129
+      ],
+      "mean_norm": 0.00781955093985414
+    }
+  },
+  "seed-1/buddy/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037942706956906463,
+      "auxiliary_gradient_norm": 0.00040685837355457954,
+      "auxiliary_force_rms": 0.03299317882230504
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009306718048049102,
+      "auxiliary_gradient_norm": 4.435132746312736e-06,
+      "auxiliary_force_rms": 0.00035965617844197346
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7999999999999999,
+        0.7999999999999999,
+        0.8,
+        0.8,
+        0.830472103904749,
+        0.10192472230102152,
+        0.6761973664375516,
+        0.04222481030903458
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4526180543992607,
+      0.10192472230102152,
+      1.028639358484465,
+      0.04222481030903458
+    ],
+    "parameter_radii": [
+      10.803430698895163,
+      6.399414695492619,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.053775176891945,
+    "final_geometry": 0.0036702280467827576,
+    "final_coupling": 0.0003298604582439098,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.529669499999727,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758931171563291,
+      "effective_rank": 3,
+      "singular_values": [
+        49.23428784068226,
+        47.61534608315097,
+        43.03035884063406
+      ],
+      "mean_norm": 0.007213550560706926
+    }
+  },
+  "seed-1/buddy/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007536700235290026,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0023457893397346202,
+      "auxiliary_gradient_norm": 8.99994393836391e-06,
+      "auxiliary_force_rms": 0.0007298283113972265
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7898282740277973,
+        0.8389178165572374,
+        0.7994821884750906,
+        0.792603918252485,
+        0.9461066279504835,
+        0.05248555861358713,
+        0.8161791262881731,
+        0.0748217917346535
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.8826844393561646,
+      0.48784729633194424,
+      0.4002486790584738,
+      0.06794662880871884,
+      0.6082336886432165,
+      0.05248555861358713,
+      1.2388986461742297,
+      0.0748217917346535
+    ],
+    "parameter_radii": [
+      10.803430698895163,
+      6.399414695492619,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.038672843300125,
+    "final_geometry": 0.0,
+    "final_coupling": 2.6632468205846355e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 27.174511999997776,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761484624796569,
+      "effective_rank": 3,
+      "singular_values": [
+        48.38803243564367,
+        47.33510642496176,
+        44.34678607605838
+      ],
+      "mean_norm": 0.0038195555185806585
+    }
+  },
+  "seed-1/buddy/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007536700235290026,
+      "auxiliary_gradient_norm": 0.00040685837355457954,
+      "auxiliary_force_rms": 0.03299317882230504
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002215718794801079,
+      "auxiliary_gradient_norm": 1.4399167979371305e-05,
+      "auxiliary_force_rms": 0.0011676651014583964
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7942794836339273,
+        0.8244097598457949,
+        0.7991438682765881,
+        0.8002616559472966,
+        0.8476278038495952,
+        0.04463326681108336,
+        0.6979840365181232,
+        0.07038402213684045
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.270769253663119,
+      0.360686657956119,
+      0.33855683608389037,
+      0.025216438270757216,
+      0.47115605862030324,
+      0.04463326681108336,
+      1.0534353163387493,
+      0.07038402213684045
+    ],
+    "parameter_radii": [
+      10.803430698895163,
+      6.399414695492619,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0410810445463028,
+    "final_geometry": 0.003284784327932208,
+    "final_coupling": 0.00028666614753256807,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 28.712468600002467,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759430745193561,
+      "effective_rank": 3,
+      "singular_values": [
+        48.679581676084545,
+        47.630132888189586,
+        43.65377457915166
+      ],
+      "mean_norm": 0.0012570888356957764
+    }
+  },
+  "seed-1/buddy/initial": {
+    "fit_seconds": 3.789999755099416e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744554096906829,
+      "effective_rank": 3,
+      "singular_values": [
+        48.80031855917285,
+        47.022509586596584,
+        43.79078809908391
+      ],
+      "mean_norm": 0.010093223987626052
+    }
+  },
+  "seed-1/cicero/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005947567859677593,
+      "auxiliary_gradient_norm": 0.00043815033623297126,
+      "auxiliary_force_rms": 0.04381284281684443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0013643341304944068,
+      "auxiliary_gradient_norm": 9.972982059467278e-06,
+      "auxiliary_force_rms": 0.0009972483397897454
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7999999999999999,
+        0.8,
+        0.7999999999999999,
+        0.7999999999999999,
+        0.9011059094733336,
+        0.16353922623711376,
+        0.7455986944330092,
+        0.03649468238354994
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5010471715995888,
+      0.16353922623711376,
+      1.0397885060847494,
+      0.03649468238354994
+    ],
+    "parameter_radii": [
+      12.871861337319881,
+      6.71376261035317,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0585854740025216,
+    "final_geometry": 0.004657723934418845,
+    "final_coupling": 0.0005402872550427416,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.678937999997288,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758947380701511,
+      "effective_rank": 3,
+      "singular_values": [
+        59.84380133728867,
+        57.24081154553525,
+        55.59547149696881
+      ],
+      "mean_norm": 0.007449460473823909
+    }
+  },
+  "seed-1/cicero/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00828396724147433,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0021191510846103757,
+      "auxiliary_gradient_norm": 4.056674308947399e-06,
+      "auxiliary_force_rms": 0.00040564714701608553
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.78237497362952,
+        0.8396071931384124,
+        0.8001445034404027,
+        0.7987702503616053,
+        0.918779629548887,
+        0.08286140168732657,
+        0.800555133153442,
+        0.03878904362998908
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.6802516979392395,
+      0.41667096448672025,
+      0.3431202068131279,
+      0.08564916757668704,
+      0.5743476014499304,
+      0.08286140168732657,
+      1.1913647554971851,
+      0.03878904362998908
+    ],
+    "parameter_radii": [
+      12.871861337319881,
+      6.71376261035317,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0462912306390635,
+    "final_geometry": 0.0,
+    "final_coupling": 8.227480394114485e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 27.304522099999303,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760835997868576,
+      "effective_rank": 3,
+      "singular_values": [
+        59.248258103603625,
+        58.032756115635586,
+        55.470865602328864
+      ],
+      "mean_norm": 0.006735712391038932
+    }
+  },
+  "seed-1/cicero/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00828396724147433,
+      "auxiliary_gradient_norm": 0.00043815033623297126,
+      "auxiliary_force_rms": 0.04381284281684443
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0022269077419837633,
+      "auxiliary_gradient_norm": 1.437670155021413e-05,
+      "auxiliary_force_rms": 0.0014375982697164844
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7849180930457195,
+        0.8320293866109706,
+        0.8007348092920181,
+        0.796805379000728,
+        0.8583722958464504,
+        0.07140460105590032,
+        0.7170386487980459,
+        0.03490319309166977
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.359967923225131,
+      0.3570626175593698,
+      0.3182378087969865,
+      0.08133509734886678,
+      0.4867522751892842,
+      0.07140460105590032,
+      1.0656149209365955,
+      0.03490319309166977
+    ],
+    "parameter_radii": [
+      12.871861337319881,
+      6.71376261035317,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0475937252104184,
+    "final_geometry": 0.003661826899481901,
+    "final_coupling": 0.00035856466635634214,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 28.58110769999621,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759468778341651,
+      "effective_rank": 3,
+      "singular_values": [
+        59.63110398119281,
+        57.99073176032194,
+        55.06047135719024
+      ],
+      "mean_norm": 0.0056912141965270325
+    }
+  },
+  "seed-1/cicero/initial": {
+    "fit_seconds": 3.530000685714185e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744716422796715,
+      "effective_rank": 3,
+      "singular_values": [
+        60.43576714398425,
+        58.82143044590399,
+        52.792966866028024
+      ],
+      "mean_norm": 0.006775458865769206
+    }
+  },
+  "seed-1/decoding/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008739229763729114,
+      "auxiliary_gradient_norm": 0.00029672496226749236,
+      "auxiliary_force_rms": 0.026538228655242337
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016143610956685169,
+      "auxiliary_gradient_norm": 1.0654231524940531e-05,
+      "auxiliary_force_rms": 0.0009528838766853524
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.8,
+        0.7999999999999999,
+        0.7999999999999999,
+        0.713843428637014,
+        0.004556980996612771,
+        0.5120192123224679,
+        0.03366639108545309
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2957142695890871,
+      0.004556980996612771,
+      0.841629975484569,
+      0.03366639108545309
+    ],
+    "parameter_radii": [
+      7.547016704750319,
+      3.752470397704508,
+      6.715086495257271,
+      1.6398819526707307,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 4192,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0303548848052144,
+    "final_geometry": 0.004167765124025914,
+    "final_coupling": 0.0002313955518506482,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.694567300000926,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17602485458569034,
+      "effective_rank": 32,
+      "singular_values": [
+        39.165590778486276,
+        35.33562503994049,
+        34.49272886575274,
+        32.93465469895086,
+        29.930875834254294,
+        27.340934126336723,
+        25.137845062523702,
+        23.98356827419014,
+        3.391328682504826,
+        2.56806535449454,
+        1.3455853821070483,
+        1.035865099948629,
+        0.8841658882065478,
+        0.7308694867908007,
+        0.5290399731431881,
+        0.4894544575027766,
+        0.37076006320478183,
+        0.3497425516250103,
+        0.3353189409222766,
+        0.29198223220653147,
+        0.27626880091250666,
+        0.23242415789894205,
+        0.2084996611094808,
+        0.19147952094408005,
+        0.1695427756896441,
+        0.15033266410134966,
+        0.14696697858872246,
+        0.12628284881734625,
+        0.11958848556287191,
+        0.09604721906847034,
+        0.08292119376177533,
+        0.07419789557703824
+      ],
+      "mean_norm": 0.005143443704995568
+    }
+  },
+  "seed-1/decoding/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.013945664421097981,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005241379374912358,
+      "auxiliary_gradient_norm": 1.2475559140402715e-05,
+      "auxiliary_force_rms": 0.0011157781891351077
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7695270200701356,
+        0.866900962517221,
+        0.8165601722431483,
+        0.7674154930366718,
+        0.7651636455392704,
+        0.014741785418000298,
+        0.5817018761683586,
+        0.0963355802189201
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.3420074499725296,
+      0.3244992808878947,
+      0.5505729714661793,
+      0.0826608219192348,
+      0.3579462839941902,
+      0.014741785418000298,
+      0.9408910029423023,
+      0.0963355802189201
+    ],
+    "parameter_radii": [
+      7.547016704750319,
+      3.752470397704508,
+      6.715086495257271,
+      1.6398819526707307,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0031192461147798,
+    "final_geometry": 0.0,
+    "final_coupling": 6.224804836748101e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 60.92060869999841,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.1760796581962291,
+      "effective_rank": 32,
+      "singular_values": [
+        36.196386998323554,
+        34.977582602490955,
+        33.870532017166354,
+        32.33643761512502,
+        29.925757072348855,
+        28.48205593205839,
+        27.171066172888434,
+        26.332135654566258,
+        5.2979324166163435,
+        3.217225576343488,
+        2.186175003670603,
+        2.0685069490173102,
+        1.871627424201822,
+        1.7517240725610133,
+        1.6135888692461666,
+        1.4728326619511138,
+        1.437766450905165,
+        1.344514303179296,
+        1.3098526104697814,
+        1.1065433185560103,
+        1.0011371207249684,
+        0.9536912320871566,
+        0.8878231963528149,
+        0.7683213514450283,
+        0.7097133802210371,
+        0.6915127507691153,
+        0.5922637210753966,
+        0.5156154348800962,
+        0.47176801308852795,
+        0.4254339305692265,
+        0.33827181233041603,
+        0.32574350331999397
+      ],
+      "mean_norm": 0.00363245389071203
+    }
+  },
+  "seed-1/decoding/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.013945664421097981,
+      "auxiliary_gradient_norm": 0.00029672496226749236,
+      "auxiliary_force_rms": 0.026538228655242337
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004315271548812336,
+      "auxiliary_gradient_norm": 4.5726815616367016e-05,
+      "auxiliary_force_rms": 0.004089675095852896
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7775785930921184,
+        0.8403874097198211,
+        0.8085767100065551,
+        0.7832685170444258,
+        0.6495087834591025,
+        0.009724069093438566,
+        0.41642183894728474,
+        0.0729680757367037
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.788719710293929,
+      0.22021574822637055,
+      0.3951051976075176,
+      0.04702607493026558,
+      0.21178511967146982,
+      0.009724069093438566,
+      0.721633797894204,
+      0.0729680757367037
+    ],
+    "parameter_radii": [
+      7.547016704750319,
+      3.752470397704508,
+      6.715086495257271,
+      1.6398819526707307,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0091048678275854,
+    "final_geometry": 0.00514837837524155,
+    "final_coupling": 0.0005629361823499257,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 61.39127400000143,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17604449886904078,
+      "effective_rank": 32,
+      "singular_values": [
+        37.22630043829266,
+        34.90453384656599,
+        32.576847004051075,
+        31.392878896667543,
+        30.864675707053618,
+        29.421087631635093,
+        27.3026644900838,
+        25.794223136870283,
+        5.034631917472892,
+        2.8969949733384466,
+        1.7444321571378483,
+        1.6402186666532448,
+        1.5519890176618272,
+        1.3357259350134014,
+        1.2058405354234178,
+        1.1667964110666496,
+        1.063220784383465,
+        1.0117161422741134,
+        0.8837843944231842,
+        0.7908175235485438,
+        0.7546065573244609,
+        0.6403026871945792,
+        0.6263683590571604,
+        0.5811001527151751,
+        0.546707904338861,
+        0.5086209351140965,
+        0.44305900232998713,
+        0.3843036173195903,
+        0.3268218291195713,
+        0.31678619754153303,
+        0.2522012181802315,
+        0.23847282057336242
+      ],
+      "mean_norm": 0.00438926268194443
+    }
+  },
+  "seed-1/decoding/initial": {
+    "fit_seconds": 3.8700003642588854e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17589160724650726,
+      "effective_rank": 32,
+      "singular_values": [
+        38.29668348302787,
+        36.07143100634738,
+        35.163569566651574,
+        33.17558268776843,
+        29.10304575857615,
+        28.216094511835227,
+        25.07013768219486,
+        22.681648379078926,
+        3.732888430307479,
+        2.7712062768815744,
+        1.4489284396859026,
+        1.1242170897683565,
+        0.9659889246107216,
+        0.7884243535392244,
+        0.5833239197498358,
+        0.5429476696817329,
+        0.4098400763764897,
+        0.3814860643930308,
+        0.3687174120370283,
+        0.31504105441202923,
+        0.30393476990549717,
+        0.25466725226560705,
+        0.22614839995925853,
+        0.20948744624522972,
+        0.1828697877503739,
+        0.16567209214574036,
+        0.16076769535601998,
+        0.1391142553292132,
+        0.13077188710322707,
+        0.10555533521978748,
+        0.09071461415093776,
+        0.08142344555453723
+      ],
+      "mean_norm": 0.009343895176660332
+    }
+  },
+  "seed-1/gatsby/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007643667981508597,
+      "auxiliary_gradient_norm": 0.00037704221440886736,
+      "auxiliary_force_rms": 0.03770233618268206
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006950268324915299,
+      "auxiliary_gradient_norm": 2.101839636039643e-06,
+      "auxiliary_force_rms": 0.000210173454143041
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7999999999999999,
+        0.8,
+        0.8,
+        0.8,
+        0.9650991601285248,
+        0.13949852545694325,
+        0.8141395246724977,
+        0.08648681265321753
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5386586307143898,
+      0.13949852545694325,
+      1.0676628478645298,
+      0.08648681265321753
+    ],
+    "parameter_radii": [
+      10.611379051108763,
+      3.702147129709892,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0591852344144563,
+    "final_geometry": 0.003999688243258809,
+    "final_coupling": 0.00040769851671197525,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 7.38189489999786,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758661704334208,
+      "effective_rank": 3,
+      "singular_values": [
+        61.83908562119969,
+        57.64823758644499,
+        52.91756527526187
+      ],
+      "mean_norm": 0.010644606847803755
+    }
+  },
+  "seed-1/gatsby/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010481129694924223,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002412257912741713,
+      "auxiliary_gradient_norm": 7.62000358122841e-06,
+      "auxiliary_force_rms": 0.0007619622571523868
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7717607790845779,
+        0.8573388877034033,
+        0.8006730043394552,
+        0.7645015412646865,
+        0.9798808353615303,
+        0.05630776724701163,
+        0.871971418486245,
+        0.05599572906152825
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.979834004676964,
+      0.46869625671436244,
+      0.42309652263818964,
+      0.08928371106395322,
+      0.6047720404634904,
+      0.05630776724701163,
+      1.210117412188384,
+      0.05599572906152825
+    ],
+    "parameter_radii": [
+      10.611379051108763,
+      3.702147129709892,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0429679034042831,
+    "final_geometry": 0.0,
+    "final_coupling": 2.902932406623799e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 28.069764200001373,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.576089886407504,
+      "effective_rank": 3,
+      "singular_values": [
+        58.30314043523556,
+        58.04502382154937,
+        56.45272449495793
+      ],
+      "mean_norm": 0.0013690099543953334
+    }
+  },
+  "seed-1/gatsby/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010481129694924223,
+      "auxiliary_gradient_norm": 0.00037704221440886736,
+      "auxiliary_force_rms": 0.03770233618268206
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0022730185684911182,
+      "auxiliary_gradient_norm": 1.4833748136413526e-05,
+      "auxiliary_force_rms": 0.0014833006430463593
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7774514137305064,
+        0.8399815436246448,
+        0.8005751054056176,
+        0.7734425405536572,
+        0.9126232669725386,
+        0.05898699442319687,
+        0.7810340699036542,
+        0.05203979590177057
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.5269882556073266,
+      0.3767358380471901,
+      0.3777710660553864,
+      0.06850524272609494,
+      0.5097427573780665,
+      0.05898699442319687,
+      1.0757973615448746,
+      0.05203979590177057
+    ],
+    "parameter_radii": [
+      10.611379051108763,
+      3.702147129709892,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0451294049277418,
+    "final_geometry": 0.003253894183257792,
+    "final_coupling": 0.0003239446904140997,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 29.686202299999422,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759371276199561,
+      "effective_rank": 3,
+      "singular_values": [
+        59.45966480245089,
+        57.77702094743168,
+        55.465991836701775
+      ],
+      "mean_norm": 0.003561633764990436
+    }
+  },
+  "seed-1/gatsby/initial": {
+    "fit_seconds": 4.650000482797623e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744702805787085,
+      "effective_rank": 3,
+      "singular_values": [
+        63.28668267142534,
+        57.59463020927993,
+        50.765612546666105
+      ],
+      "mean_norm": 0.00711479093347051
+    }
+  },
+  "seed-2/achilles/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0060053066857705065,
+      "auxiliary_gradient_norm": 0.0002849175646627721,
+      "auxiliary_force_rms": 0.02849033184283742
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007093197920811659,
+      "auxiliary_gradient_norm": 1.9615343660558903e-06,
+      "auxiliary_force_rms": 0.0001961436286885547
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.7999999999999999,
+        0.7999999999999999,
+        0.8,
+        0.9463637423207372,
+        0.08635923405065996,
+        0.817787983337955,
+        0.07177818924787785
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5555776586380565,
+      0.08635923405065996,
+      1.122239950540846,
+      0.07177818924787785
+    ],
+    "parameter_radii": [
+      11.224543721599362,
+      6.360594886888945,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0545612874948178,
+    "final_geometry": 0.00249200180118944,
+    "final_coupling": 0.0002263898668097836,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 28.670139499998186,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759951615853289,
+      "effective_rank": 3,
+      "singular_values": [
+        60.644307390344984,
+        57.82319865421723,
+        54.137446858464315
+      ],
+      "mean_norm": 0.0023084486806828567
+    }
+  },
+  "seed-2/achilles/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00840053307823127,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0044737145923317255,
+      "auxiliary_gradient_norm": 2.311912843962145e-05,
+      "auxiliary_force_rms": 0.002311797245429911
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7884747652808339,
+        0.8182608759793504,
+        0.8002749433837086,
+        0.7877536157745066,
+        0.869479579884127,
+        0.01633314869900943,
+        0.7334347463134961,
+        0.07465007261944324
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.8445992487297747,
+      0.28034135366063817,
+      0.29870265979797234,
+      0.08203067894271826,
+      0.5162183490570558,
+      0.01633314869900943,
+      1.095428193510025,
+      0.07465007261944324
+    ],
+    "parameter_radii": [
+      11.224543721599362,
+      6.360594886888945,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.045303407484718,
+    "final_geometry": 0.0,
+    "final_coupling": 2.6722032519886624e-06,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 108.61197859999811,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759832407358456,
+      "effective_rank": 3,
+      "singular_values": [
+        59.39884740909755,
+        56.82080781275395,
+        56.52325418934238
+      ],
+      "mean_norm": 0.0014538153037550634
+    }
+  },
+  "seed-2/achilles/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00840053307823127,
+      "auxiliary_gradient_norm": 0.0002849175646627721,
+      "auxiliary_force_rms": 0.02849033184283742
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002438851698350271,
+      "auxiliary_gradient_norm": 1.873588790604185e-05,
+      "auxiliary_force_rms": 0.0018734951088225516
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7896131847658403,
+        0.813396182646165,
+        0.8003160120717028,
+        0.7948260984714015,
+        0.8432003520239503,
+        0.008745501396649393,
+        0.7019091053123305,
+        0.07306847392068819
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.741877443515459,
+      0.2577846113167278,
+      0.32779434525069484,
+      0.050510333169576684,
+      0.4911055199118431,
+      0.008745501396649393,
+      1.0632753301475022,
+      0.07306847392068819
+    ],
+    "parameter_radii": [
+      11.224543721599362,
+      6.360594886888945,
+      15.625712155148069,
+      3.6415639427528768,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.045878119946349,
+    "final_geometry": 0.0020704040445239835,
+    "final_coupling": 0.0001962976247082601,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 104.02322920000006,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759476946871405,
+      "effective_rank": 3,
+      "singular_values": [
+        59.80589006599978,
+        57.06630955035539,
+        55.83161372321662
+      ],
+      "mean_norm": 0.0017214455447081035
+    }
+  },
+  "seed-2/achilles/initial": {
+    "fit_seconds": 8.009999874047935e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744672247910066,
+      "effective_rank": 3,
+      "singular_values": [
+        59.40874750888274,
+        58.96829680191394,
+        53.78409081412982
+      ],
+      "mean_norm": 0.007819550940341511
+    }
+  },
+  "seed-2/buddy/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006182974245664523,
+      "auxiliary_gradient_norm": 0.00040685837355904883,
+      "auxiliary_force_rms": 0.032993178822667474
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009438963145264877,
+      "auxiliary_gradient_norm": 8.577557969144698e-06,
+      "auxiliary_force_rms": 0.0006955759604065627
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.7999999999999999,
+        0.8,
+        0.8,
+        0.898379882261297,
+        0.17270774813966785,
+        0.7335169270616423,
+        0.08359091704638277
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5200510066873569,
+      0.17270774813966785,
+      1.0933080487991558,
+      0.08359091704638277
+    ],
+    "parameter_radii": [
+      10.803430698894918,
+      6.399414695496136,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0579255103957408,
+    "final_geometry": 0.003642132987329977,
+    "final_coupling": 0.0003212590514029805,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.914144399997895,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759560368104093,
+      "effective_rank": 3,
+      "singular_values": [
+        50.066744431948756,
+        46.935373700042234,
+        42.833043640002394
+      ],
+      "mean_norm": 0.012495539170820205
+    }
+  },
+  "seed-2/buddy/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.009486593223948299,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0028049521199625714,
+      "auxiliary_gradient_norm": 2.0820825300222923e-07,
+      "auxiliary_force_rms": 1.6884136028874803e-05
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7941667514223344,
+        0.8171539579886108,
+        0.7988582525257442,
+        0.8007017043727712,
+        0.7796029565427098,
+        0.029094632238902907,
+        0.6126867793962342,
+        0.0583470097065804
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.20145362199164,
+      0.3070039542819057,
+      0.2988779937210428,
+      0.016978614623677706,
+      0.3512621230401808,
+      0.029094632238902907,
+      0.8778738460933806,
+      0.0583470097065804
+    ],
+    "parameter_radii": [
+      10.803430698894918,
+      6.399414695496136,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0439333663362826,
+    "final_geometry": 0.0,
+    "final_coupling": 1.4253702472077408e-10,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 167.93379679999634,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5756942581289893,
+      "effective_rank": 3,
+      "singular_values": [
+        48.54939893325114,
+        47.10308389519505,
+        44.30107936146462
+      ],
+      "mean_norm": 0.006916133876922374
+    }
+  },
+  "seed-2/buddy/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.009486593223948299,
+      "auxiliary_gradient_norm": 0.00040685837355904883,
+      "auxiliary_force_rms": 0.032993178822667474
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004033199699664986,
+      "auxiliary_gradient_norm": 3.849530642441571e-06,
+      "auxiliary_force_rms": 0.00031216821656732986
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7924195057689636,
+        0.820715511831545,
+        0.798722274494593,
+        0.8022610598842452,
+        0.8202253062134394,
+        0.04629431064845313,
+        0.664381523141296,
+        0.06828962066336379
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.517069961237425,
+      0.3677214569164462,
+      0.3664669759642364,
+      0.025623805463436792,
+      0.4245285210630226,
+      0.04629431064845313,
+      0.9906608987654767,
+      0.06828962066336379
+    ],
+    "parameter_radii": [
+      10.803430698894918,
+      6.399414695496136,
+      15.464949066337656,
+      4.9802286528837065,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0430519715222075,
+    "final_geometry": 0.0029802374284518245,
+    "final_coupling": 0.00026305329986240315,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 118.75439289999485,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575834301584484,
+      "effective_rank": 3,
+      "singular_values": [
+        48.91194195649292,
+        47.13548903448586,
+        43.90192827526635
+      ],
+      "mean_norm": 0.008520875580350633
+    }
+  },
+  "seed-2/buddy/initial": {
+    "fit_seconds": 9.890000364976004e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744554096906851,
+      "effective_rank": 3,
+      "singular_values": [
+        48.8003185591502,
+        47.022509586581734,
+        43.79078809912567
+      ],
+      "mean_norm": 0.010093223987246928
+    }
+  },
+  "seed-2/cicero/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004641890120031805,
+      "auxiliary_gradient_norm": 0.0004381503362253763,
+      "auxiliary_force_rms": 0.043812842816084975
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0013586663427503452,
+      "auxiliary_gradient_norm": 1.0043674982563078e-05,
+      "auxiliary_force_rms": 0.0010043172786258728
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.8,
+        0.7999999999999999,
+        0.7999999999999999,
+        0.8847184460741098,
+        0.1508552420040161,
+        0.7342640130611171,
+        0.030759252107982978
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.49396583821219797,
+      0.1508552420040161,
+      1.036119171960157,
+      0.030759252107982978
+    ],
+    "parameter_radii": [
+      12.871861337319803,
+      6.713762610350847,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0574548337635334,
+    "final_geometry": 0.004680767129721745,
+    "final_coupling": 0.0005383406010698076,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 30.167792799999006,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758964065724888,
+      "effective_rank": 3,
+      "singular_values": [
+        59.464973706184,
+        58.00542155811856,
+        55.2086327947691
+      ],
+      "mean_norm": 0.006972347804478482
+    }
+  },
+  "seed-2/cicero/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007856778456622224,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00455729235419504,
+      "auxiliary_gradient_norm": 3.093290253851676e-05,
+      "auxiliary_force_rms": 0.0030931355854721776
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7846180882221248,
+        0.8370917140614111,
+        0.8008673656331051,
+        0.7926351602924283,
+        0.979392458302909,
+        0.052280534204762356,
+        0.8795477414748842,
+        0.06243829954191196
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.9038696405491113,
+      0.42038527421117355,
+      0.3188897989886363,
+      0.0768167391725919,
+      0.6205927620485411,
+      0.052280534204762356,
+      1.2458569634549266,
+      0.06243829954191196
+    ],
+    "parameter_radii": [
+      12.871861337319803,
+      6.713762610350847,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0437454435232718,
+    "final_geometry": 0.0,
+    "final_coupling": 4.783743875057155e-06,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 102.44764620000205,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761398027867698,
+      "effective_rank": 3,
+      "singular_values": [
+        59.335227795731896,
+        57.40867300314276,
+        56.04187154159914
+      ],
+      "mean_norm": 0.0026915717588992575
+    }
+  },
+  "seed-2/cicero/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007856778456622224,
+      "auxiliary_gradient_norm": 0.0004381503362253763,
+      "auxiliary_force_rms": 0.043812842816084975
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.002109133104662282,
+      "auxiliary_gradient_norm": 1.2061072735591212e-05,
+      "auxiliary_force_rms": 0.0012060469666877337
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7871394710300422,
+        0.8283790913156689,
+        0.8010575466660018,
+        0.7924271068131127,
+        0.901958345567692,
+        0.055052272314308884,
+        0.7771741895647758,
+        0.04983902070769545
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.466438289286324,
+      0.36574013696733754,
+      0.30218409946870073,
+      0.07468146573618847,
+      0.5106723072820987,
+      0.055052272314308884,
+      1.088658567441778,
+      0.04983902070769545
+    ],
+    "parameter_radii": [
+      12.871861337319803,
+      6.713762610350847,
+      14.505993246106069,
+      8.685844671129297,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.045346926110763,
+    "final_geometry": 0.0037011194934184065,
+    "final_coupling": 0.0003699149753441844,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 107.46241169999848,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759632271780453,
+      "effective_rank": 3,
+      "singular_values": [
+        59.26357647981597,
+        57.33529218254842,
+        56.138282340004686
+      ],
+      "mean_norm": 0.0030190129119632373
+    }
+  },
+  "seed-2/cicero/initial": {
+    "fit_seconds": 8.030000026337802e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744716422796711,
+      "effective_rank": 3,
+      "singular_values": [
+        60.435767144046345,
+        58.82143044593023,
+        52.79296686592769
+      ],
+      "mean_norm": 0.006775458865877431
+    }
+  },
+  "seed-2/decoding/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011104847893291822,
+      "auxiliary_gradient_norm": 0.00029730680035306047,
+      "auxiliary_force_rms": 0.026590266583016053
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009137847068245051,
+      "auxiliary_gradient_norm": 4.672816351693735e-06,
+      "auxiliary_force_rms": 0.0004179232776965099
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.8,
+        0.8,
+        0.7999999999999999,
+        0.654217841189308,
+        0.004915870774476205,
+        0.42478255447708807,
+        0.026247167301271707
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2449614538183445,
+      0.004915870774476205,
+      0.768966515667688,
+      0.026247167301271707
+    ],
+    "parameter_radii": [
+      8.115730480872504,
+      4.30150054492936,
+      8.320553332136294,
+      1.8505711501928843,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 4192,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0297263726958816,
+    "final_geometry": 0.003930088768318206,
+    "final_coupling": 0.00021010771958090968,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.503785999993852,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17605401621029423,
+      "effective_rank": 32,
+      "singular_values": [
+        39.88515124131965,
+        39.292231535918056,
+        33.94041091071948,
+        32.364604439247906,
+        28.11010373531349,
+        26.71225223526618,
+        23.872278235240085,
+        22.540461342689326,
+        2.4512997262725365,
+        2.2752584067078936,
+        1.9205429465893824,
+        1.260166645921848,
+        0.650076439766307,
+        0.467463717373622,
+        0.40049326401473795,
+        0.39609196130550417,
+        0.3253320771493525,
+        0.268046527119866,
+        0.25133193202573056,
+        0.22219677228479304,
+        0.19151266809968434,
+        0.1887317982049316,
+        0.17225011365128853,
+        0.16055116733639513,
+        0.15309566534089342,
+        0.1261117929358491,
+        0.12450090213192969,
+        0.10688003598132502,
+        0.09743750635508595,
+        0.0796379156092754,
+        0.06772288768551411,
+        0.05378438148582384
+      ],
+      "mean_norm": 0.005298302322632185
+    }
+  },
+  "seed-2/decoding/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01442873936335418,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005276157121125482,
+      "auxiliary_gradient_norm": 2.6320942944460197e-05,
+      "auxiliary_force_rms": 0.002354069563085753
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7785229135717582,
+        0.8486134732752211,
+        0.804678139055821,
+        0.783391563573243,
+        0.7299115995429252,
+        0.003954535347939839,
+        0.5345613553793837,
+        0.037067718155115614
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.381494293645504,
+      0.2566713493478574,
+      0.3866211736590518,
+      0.03890741972697091,
+      0.2949999720419096,
+      0.003954535347939839,
+      0.8212567859680008,
+      0.037067718155115614
+    ],
+    "parameter_radii": [
+      8.115730480872504,
+      4.301500544943177,
+      8.320553332136294,
+      1.8505711501928843,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496,
+    "encoder_frozen": false,
+    "final_contrastive": 1.005644968830571,
+    "final_geometry": 0.0,
+    "final_coupling": 2.770821753923373e-06,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 179.04713039999478,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17608673195284566,
+      "effective_rank": 32,
+      "singular_values": [
+        36.691827180493725,
+        36.05049896827917,
+        33.91359910021386,
+        32.356918382298836,
+        31.382299546181052,
+        27.723833607653145,
+        26.98597454212086,
+        23.722909562070967,
+        4.223478568553236,
+        3.299164711042816,
+        2.1638643689642025,
+        1.8752680826257266,
+        1.4642179716249173,
+        1.2106522865889748,
+        1.1115659756696092,
+        1.0357634332615915,
+        1.023042851326831,
+        0.9478702149161546,
+        0.8567036244865844,
+        0.7591104138487471,
+        0.6974598574667014,
+        0.687935386705047,
+        0.6504671629637198,
+        0.6274425085382527,
+        0.5245900425606147,
+        0.507456986147413,
+        0.466807000658646,
+        0.3944174797181667,
+        0.37990331502552754,
+        0.3402388716120525,
+        0.2886089580674137,
+        0.22543187560895478
+      ],
+      "mean_norm": 0.0056059510038048025
+    }
+  },
+  "seed-2/decoding/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.01442873936335418,
+      "auxiliary_gradient_norm": 0.0002973068011717252,
+      "auxiliary_force_rms": 0.026590266656235078
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004287730996069184,
+      "auxiliary_gradient_norm": 3.2751886397240606e-05,
+      "auxiliary_force_rms": 0.0029292346806904113
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7864862362745216,
+        0.8266473379326503,
+        0.7992248303762896,
+        0.7905194434697361,
+        0.6253173284597133,
+        0.0035955190799334216,
+        0.37743115527840093,
+        0.029905360040610778
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      2.7333163223567074,
+      0.15348448247272933,
+      0.2589043249914697,
+      0.02341234626660501,
+      0.177012084614489,
+      0.0035955190799334216,
+      0.6346885621130718,
+      0.029905360040610778
+    ],
+    "parameter_radii": [
+      8.115730480872504,
+      4.301500544943177,
+      8.320553332136294,
+      1.8505711501928843,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 34496,
+    "optimized_parameter_count": 34496,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0113065102491265,
+    "final_geometry": 0.004702990474107266,
+    "final_coupling": 0.0004563964701315651,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 188.55140530000062,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17605451171388575,
+      "effective_rank": 32,
+      "singular_values": [
+        38.35179847151914,
+        37.38565180127556,
+        33.89180485788149,
+        32.953330585638476,
+        29.304675292246404,
+        27.928490242542527,
+        24.41565119126889,
+        23.739851351519782,
+        3.289444698446845,
+        2.911098456396355,
+        1.904518964125675,
+        1.5754173961986124,
+        1.0413116719242965,
+        0.8797034183957011,
+        0.8704723356769271,
+        0.8088123562291336,
+        0.7761024367370963,
+        0.6967210683611917,
+        0.647043177647986,
+        0.598182880191364,
+        0.5313310280175575,
+        0.4947919979260154,
+        0.47467750293584043,
+        0.45828053412949626,
+        0.3981883146947133,
+        0.3833125029017657,
+        0.3214657256808433,
+        0.28091488467044906,
+        0.2728447389628744,
+        0.2267231265647037,
+        0.2126405548097821,
+        0.15624743336451616
+      ],
+      "mean_norm": 0.006033045609757939
+    }
+  },
+  "seed-2/decoding/initial": {
+    "fit_seconds": 3.35000004270114e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17588081476335501,
+      "effective_rank": 32,
+      "singular_values": [
+        38.211021157240154,
+        36.00619278835022,
+        34.63142006330154,
+        33.07059411599413,
+        29.15573517923463,
+        27.877285281870677,
+        26.067710698433693,
+        23.25591740075386,
+        2.6157370574002203,
+        2.4735127536566184,
+        2.1035113676102544,
+        1.3690579058063188,
+        0.7174735975493418,
+        0.510745851599895,
+        0.44441462534769577,
+        0.42959215800599765,
+        0.361927518296207,
+        0.2940885233792133,
+        0.27776392980338643,
+        0.245429410808383,
+        0.21039411481083004,
+        0.2083228105235741,
+        0.1956108013763875,
+        0.178474056520893,
+        0.16760804607384733,
+        0.14001374759778834,
+        0.13908684229420984,
+        0.1177081004937666,
+        0.1069283043232258,
+        0.08841938679647963,
+        0.07488848432098567,
+        0.05950620348341088
+      ],
+      "mean_norm": 0.014454333435016757
+    }
+  },
+  "seed-2/gatsby/frozen_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00727379693946462,
+      "auxiliary_gradient_norm": 0.00037704221440445915,
+      "auxiliary_force_rms": 0.03770233618224126
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007402617672197398,
+      "auxiliary_gradient_norm": 1.9020719408725888e-06,
+      "auxiliary_force_rms": 0.00019019768348978365
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.8,
+        0.7999999999999999,
+        0.8,
+        0.8,
+        0.9606047442109817,
+        0.12211461383383408,
+        0.8303911138087079,
+        0.03627085591972067
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5155465482686742,
+      0.12211461383383408,
+      1.0455415124093481,
+      0.03627085591972067
+    ],
+    "parameter_radii": [
+      10.611379051108873,
+      3.7021471297106285,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 45,
+    "encoder_frozen": true,
+    "final_contrastive": 1.0568868179974304,
+    "final_geometry": 0.004053212764484443,
+    "final_coupling": 0.0004132243928364083,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 32.14420200000313,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758116796323851,
+      "effective_rank": 3,
+      "singular_values": [
+        61.7269009020779,
+        57.55768526488903,
+        53.12890556687455
+      ],
+      "mean_norm": 0.01151365735039311
+    }
+  },
+  "seed-2/gatsby/full_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010212629313284571,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0026475845062414616,
+      "auxiliary_gradient_norm": 7.308356821701877e-06,
+      "auxiliary_force_rms": 0.000730799139472489
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7802018786727798,
+        0.8606055750085236,
+        0.8017596862142681,
+        0.8105250641491889,
+        0.9994004569829453,
+        0.03806761894206519,
+        0.8904615523758008,
+        0.010126948924454041
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.6838551887619926,
+      0.43662236969493123,
+      0.3477383648680577,
+      0.05204439374253188,
+      0.5708513547226645,
+      0.03806761894206519,
+      1.134593437852054,
+      0.010126948924454041
+    ],
+    "parameter_radii": [
+      10.611379051108873,
+      3.7021471297106285,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.040618917848724,
+    "final_geometry": 0.0,
+    "final_coupling": 2.670336911268651e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 113.88476059999812,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759569858827128,
+      "effective_rank": 3,
+      "singular_values": [
+        60.2480799564943,
+        58.39622347348026,
+        53.95227755948259
+      ],
+      "mean_norm": 0.006576968959452039
+    }
+  },
+  "seed-2/gatsby/full_palm": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.010212629313284571,
+      "auxiliary_gradient_norm": 0.00037704221440445915,
+      "auxiliary_force_rms": 0.03770233618224126
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0026347007086551734,
+      "auxiliary_gradient_norm": 9.240418037377843e-06,
+      "auxiliary_force_rms": 0.0009239956004924874
+    },
+    "feasibility": {
+      "parameter_ball_ratios": [
+        0.7800161050308224,
+        0.8577519417194108,
+        0.8013226261197859,
+        0.8148906306531797,
+        0.9951185520450178,
+        0.04423661873915776,
+        0.8785152678141984,
+        0.019200947376244448
+      ],
+      "maximum_relative_constraint_excess": 0.0
+    },
+    "parameter_names": [
+      "encoder.0",
+      "encoder.1",
+      "encoder.2",
+      "encoder.3",
+      "latent.first.weight",
+      "latent.first.bias",
+      "latent.second.weight",
+      "latent.second.bias"
+    ],
+    "parameter_changes": [
+      3.6435337233044636,
+      0.4344532654753889,
+      0.3706721560871847,
+      0.061819537729166145,
+      0.5800087861430844,
+      0.04423661873915776,
+      1.1509853505285321,
+      0.019200947376244448
+    ],
+    "parameter_radii": [
+      10.611379051108873,
+      3.7021471297106285,
+      13.045084953831998,
+      2.0527789782696755,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "total_parameter_count": 7984,
+    "optimized_parameter_count": 7984,
+    "encoder_frozen": false,
+    "final_contrastive": 1.0413176065626368,
+    "final_geometry": 0.0034923089080305617,
+    "final_coupling": 0.00037843919433640217,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 144.12831120000192,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759871464967539,
+      "effective_rank": 3,
+      "singular_values": [
+        60.657719251865934,
+        58.2352746074632,
+        53.67619948227106
+      ],
+      "mean_norm": 0.0071784602395402655
+    }
+  },
+  "seed-2/gatsby/initial": {
+    "fit_seconds": 9.720000525703654e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744702805787114,
+      "effective_rank": 3,
+      "singular_values": [
+        63.28668267143607,
+        57.59463020932777,
+        50.7656125465992
+      ],
+      "mean_norm": 0.007114790932783817
+    }
+  }
+}
