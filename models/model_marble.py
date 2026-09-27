@@ -75,12 +75,25 @@ class ModelMARBLE:
             )
             values = features(batch["ids"], batch["targets"])
             compare(values, batch["features"], f"{step}:features")
-            embedding = self.netG(values)
+            mask = None
+            if self.params["dropout"] > 0:
+                assert "dropout_mask" in batch, "Dropout reference needs a fixed mask"
+                mask = batch["dropout_mask"].to(self.device)
+            embedding = self.netG(values, dropout_mask=mask)
             compare(embedding, batch["embedding"], f"{step}:embedding")
             loss = contrastive_loss(embedding)
             compare(loss, batch["loss"], f"{step}:loss")
             optimizer.zero_grad()
             loss.backward()
+            if "gradients" in batch:
+                actual_gradients = {
+                    key: value.grad
+                    for key, value in self.netG.named_parameters()
+                    if value.grad is not None
+                }
+                assert actual_gradients.keys() == batch["gradients"].keys()
+                for key, value in actual_gradients.items():
+                    compare(value, batch["gradients"][key], f"{step}:gradient:{key}")
             optimizer.step()
             for key, value in self.netG.state_dict().items():
                 assert key in batch["state_after"]

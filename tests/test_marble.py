@@ -87,7 +87,8 @@ def test_repeated_sample_columns_and_gradient_order(graph):
         ("diffusion", True),
         ("inner_product_features", True),
         ("frac_sampled_nb", 0.5),
-        ("dropout", 0.1),
+        ("dropout", -0.1),
+        ("dropout", 1.0),
         ("include_positions", False),
     ],
 )
