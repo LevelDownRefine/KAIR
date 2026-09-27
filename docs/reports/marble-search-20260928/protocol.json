@@ -1,0 +1,39 @@
+{
+  "lags": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "condition_budgets": [
+    3,
+    10,
+    30,
+    100,
+    300
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "behavioral_labels_used": false,
+  "purge_samples": 64,
+  "training_fraction": 0.6,
+  "candidate_count": 25,
+  "inputs": {
+    "achilles": "bbf1ecbe14e8a67068e47032008a75be084c76bec5071595eb6ddbc15e56874d",
+    "rats": "83e08e7c3529a9830529f2abdf4d83ea1206d106fe4465ccb7f0faf722b8248c"
+  },
+  "source_sha256": {
+    "main_search_marble_theory.py": "854c0a2e095bd8dd34e39f418a2ba6a37027db06e1b25326d5ddfff42cb0f284",
+    "models\\marble_rrr_theory.py": "688e1e002c6dc24b874b6835b1f4e8d026ebbe3a2aa299c00d3e4a7c41ade919",
+    "models\\marble_math_common.py": "e6bc5326daaff3e5117dcd02634ad6fb4425507dbd909a5acdad07c912b47973",
+    "docs\\MARBLE_SEARCH_PROTOCOL.md": "eb2ae1a7c2753469dfb8672580846aaba13199ccb4ebfcba00dfbc123e5ecd59",
+    "uv.lock": "bacd20a2f2cfe7cedcff697216c877606a317ac023ef0e2d1d3bc532cd1f7ebc"
+  },
+  "torch": "2.14.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU"
+}
