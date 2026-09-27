@@ -1,0 +1,338 @@
+{
+  "method": "koopman",
+  "runs": [
+    {
+      "seed": 0,
+      "baseline": {
+        "samples": 1999,
+        "mean_absolute_error_m": 0.08970236778259277,
+        "median_absolute_error_m": 0.05507713556289673,
+        "std_absolute_error_m": 0.1315249353647232,
+        "position_r2": 0.9089289307594299
+      },
+      "candidate": {
+        "samples": 1999,
+        "mean_absolute_error_m": 0.07067814469337463,
+        "median_absolute_error_m": 0.04585859179496765,
+        "std_absolute_error_m": 0.10506792366504669,
+        "position_r2": 0.9423842430114746
+      },
+      "consistency": {
+        "scores": [
+          0.7693448856051076,
+          0.6714717170812139,
+          0.755000148773804,
+          0.8117867229342229,
+          0.7133824467002222,
+          0.6174833281255263,
+          0.6977124248526302,
+          0.788482038549264,
+          0.6068602363457104,
+          0.9179813488216034,
+          0.7241647866052734,
+          0.656500780177704
+        ],
+        "pairs": [
+          [
+            "achilles",
+            "buddy"
+          ],
+          [
+            "achilles",
+            "cicero"
+          ],
+          [
+            "achilles",
+            "gatsby"
+          ],
+          [
+            "buddy",
+            "achilles"
+          ],
+          [
+            "buddy",
+            "cicero"
+          ],
+          [
+            "buddy",
+            "gatsby"
+          ],
+          [
+            "cicero",
+            "achilles"
+          ],
+          [
+            "cicero",
+            "buddy"
+          ],
+          [
+            "cicero",
+            "gatsby"
+          ],
+          [
+            "gatsby",
+            "achilles"
+          ],
+          [
+            "gatsby",
+            "buddy"
+          ],
+          [
+            "gatsby",
+            "cicero"
+          ]
+        ],
+        "mean_r2": 0.7275142387143568
+      },
+      "mae_change_cm": -1.902422308921814,
+      "consistency_change": -0.06388533953907127
+    },
+    {
+      "seed": 1,
+      "baseline": {
+        "samples": 1999,
+        "mean_absolute_error_m": 0.09264083206653595,
+        "median_absolute_error_m": 0.053552206605672836,
+        "std_absolute_error_m": 0.1431775987148285,
+        "position_r2": 0.8955029249191284
+      },
+      "candidate": {
+        "samples": 1999,
+        "mean_absolute_error_m": 0.07341121137142181,
+        "median_absolute_error_m": 0.04502403736114502,
+        "std_absolute_error_m": 0.1148628294467926,
+        "position_r2": 0.9332294464111328
+      },
+      "consistency": {
+        "scores": [
+          0.591063256339133,
+          0.4777813802592779,
+          0.7729297956343592,
+          0.8584707676447393,
+          0.5281630034503758,
+          0.6056458404600468,
+          0.7415737425040548,
+          0.5270658703040788,
+          0.5470438394012659,
+          0.935282523881566,
+          0.5403029580167119,
+          0.4183560082214777
+        ],
+        "pairs": [
+          [
+            "achilles",
+            "buddy"
+          ],
+          [
+            "achilles",
+            "cicero"
+          ],
+          [
+            "achilles",
+            "gatsby"
+          ],
+          [
+            "buddy",
+            "achilles"
+          ],
+          [
+            "buddy",
+            "cicero"
+          ],
+          [
+            "buddy",
+            "gatsby"
+          ],
+          [
+            "cicero",
+            "achilles"
+          ],
+          [
+            "cicero",
+            "buddy"
+          ],
+          [
+            "cicero",
+            "gatsby"
+          ],
+          [
+            "gatsby",
+            "achilles"
+          ],
+          [
+            "gatsby",
+            "buddy"
+          ],
+          [
+            "gatsby",
+            "cicero"
+          ]
+        ],
+        "mean_r2": 0.6286399155097572
+      },
+      "mae_change_cm": -1.9229620695114136,
+      "consistency_change": -0.16275966274367093
+    },
+    {
+      "seed": 2,
+      "baseline": {
+        "samples": 1999,
+        "mean_absolute_error_m": 0.09316680580377579,
+        "median_absolute_error_m": 0.05628277733922005,
+        "std_absolute_error_m": 0.13483208417892456,
+        "position_r2": 0.9034870266914368
+      },
+      "candidate": {
+        "samples": 1999,
+        "mean_absolute_error_m": 0.07543891668319702,
+        "median_absolute_error_m": 0.0476536750793457,
+        "std_absolute_error_m": 0.10640092939138412,
+        "position_r2": 0.9388711452484131
+      },
+      "consistency": {
+        "scores": [
+          0.6452124105376104,
+          0.6890430926619316,
+          0.8651978335807202,
+          0.8605866085466527,
+          0.725745945954687,
+          0.7333320396777993,
+          0.7751440530236171,
+          0.6086769185136252,
+          0.6904538084129103,
+          0.9029977226278559,
+          0.5607553011397821,
+          0.6013517836173422
+        ],
+        "pairs": [
+          [
+            "achilles",
+            "buddy"
+          ],
+          [
+            "achilles",
+            "cicero"
+          ],
+          [
+            "achilles",
+            "gatsby"
+          ],
+          [
+            "buddy",
+            "achilles"
+          ],
+          [
+            "buddy",
+            "cicero"
+          ],
+          [
+            "buddy",
+            "gatsby"
+          ],
+          [
+            "cicero",
+            "achilles"
+          ],
+          [
+            "cicero",
+            "buddy"
+          ],
+          [
+            "cicero",
+            "gatsby"
+          ],
+          [
+            "gatsby",
+            "achilles"
+          ],
+          [
+            "gatsby",
+            "buddy"
+          ],
+          [
+            "gatsby",
+            "cicero"
+          ]
+        ],
+        "mean_r2": 0.7215414598578779
+      },
+      "mae_change_cm": -1.7727889120578766,
+      "consistency_change": -0.06985811839555023
+    }
+  ],
+  "baseline_consistency": {
+    "scores": [
+      0.8717601895332336,
+      0.5921814441680908,
+      0.9063289761543274,
+      0.9146786332130432,
+      0.549336850643158,
+      0.8839592933654785,
+      0.7702047228813171,
+      0.7735681533813477,
+      0.7971265912055969,
+      0.9343338012695312,
+      0.8659377694129944,
+      0.6373785138130188
+    ],
+    "pairs": [
+      [
+        "achilles",
+        "buddy"
+      ],
+      [
+        "achilles",
+        "cicero"
+      ],
+      [
+        "achilles",
+        "gatsby"
+      ],
+      [
+        "buddy",
+        "achilles"
+      ],
+      [
+        "buddy",
+        "cicero"
+      ],
+      [
+        "buddy",
+        "gatsby"
+      ],
+      [
+        "cicero",
+        "achilles"
+      ],
+      [
+        "cicero",
+        "buddy"
+      ],
+      [
+        "cicero",
+        "gatsby"
+      ],
+      [
+        "gatsby",
+        "achilles"
+      ],
+      [
+        "gatsby",
+        "buddy"
+      ],
+      [
+        "gatsby",
+        "cicero"
+      ]
+    ],
+    "mean_r2": 0.7913995782534281
+  },
+  "candidate_mae_cm_mean": 7.317609091599782,
+  "candidate_mae_cm_seed_sd": 0.23890790497989894,
+  "baseline_mae_cm_mean": 9.183666855096817,
+  "candidate_consistency_mean": 0.6925652046939973,
+  "candidate_consistency_seed_sd": 0.05544141475272475,
+  "all_seed_mae_improved": true,
+  "all_seed_consistency_improved": false,
+  "interpretation": "Three landmark/solver seeds; four shared animals; exploratory, no independent-subject significance claim."
+}

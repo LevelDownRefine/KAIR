@@ -1,0 +1,33 @@
+{
+  "baseline_mae_cm": 9.183666855096817,
+  "baseline_consistency": 0.7913995782534281,
+  "methods": [
+    {
+      "method": "diffusion",
+      "mae_cm": 9.54046274224917,
+      "mae_seed_sd": 0.243654172291354,
+      "relative_mae_reduction": -0.03885113569361853,
+      "consistency_r2": 0.5344713521094925,
+      "consistency_seed_sd": 0.02763331789507453,
+      "consistency_change": -0.2569282261439356
+    },
+    {
+      "method": "koopman",
+      "mae_cm": 7.317609091599782,
+      "mae_seed_sd": 0.23890790497989894,
+      "relative_mae_reduction": 0.20319310281398073,
+      "consistency_r2": 0.6925652046939973,
+      "consistency_seed_sd": 0.05544141475272475,
+      "consistency_change": -0.09883437355943081
+    },
+    {
+      "method": "transport",
+      "mae_cm": 9.571283807357153,
+      "mae_seed_sd": 0.5600347517854789,
+      "relative_mae_reduction": -0.04220720964471969,
+      "consistency_r2": 0.80583890143938,
+      "consistency_seed_sd": 0.028679091190250774,
+      "consistency_change": 0.014439323185951869
+    }
+  ]
+}
