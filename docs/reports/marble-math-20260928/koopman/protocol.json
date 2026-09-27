@@ -1,0 +1,38 @@
+{
+  "method": "koopman",
+  "input_kind": "phase_space",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "decoding_dimensions": 32,
+  "consistency_dimensions": 3,
+  "decoder": "fixed cosine kNN, k=36; no decoder tuning",
+  "fit_uses_behavioral_labels": false,
+  "hyperparameter_search": false,
+  "baseline": "C:\\Users\\WinSa\\Documents\\OneDragon-Helper\\闭关降级\\brain\\KAIR\\results\\marble-kair-20260928-final",
+  "baseline_sha256": {
+    "seed-0/embeddings.pt": "00a14117d5d76d7057a2fd0b0cac07e868e9659fabf60a771356a8cbdc460daa",
+    "seed-1/embeddings.pt": "81a1683c7ca35efd2dfaff141e2788d0a6aa40d7deba88db01dd9a5fee084290",
+    "seed-2/embeddings.pt": "7d2b59e32ff50008a30887db8b50624bb4cb802231fe74298c227474283af689"
+  },
+  "input": "C:\\Users\\WinSa\\Documents\\OneDragon-Helper\\闭关降级\\brain\\KAIR\\results\\marble-input-20260928",
+  "rat_input": "C:\\Users\\WinSa\\Documents\\OneDragon-Helper\\闭关降级\\brain\\KAIR\\results\\rat-consistency-input-20260928-final",
+  "source_sha256": {
+    "main_explore_marble_math.py": "b08ea1bfda1f0ac5fe0f9c034633d40a78e63a3fc642cfa2bebdd27c1e55f499",
+    "models\\network_marble_experiment.py": "cba9d6d7b786ff54bf483adf2eee31b6b4233ce12e3d1ce36e83923c1063bc4a",
+    "models\\marble_math_common.py": "e6bc5326daaff3e5117dcd02634ad6fb4425507dbd909a5acdad07c912b47973",
+    "utils\\utils_marble.py": "f5659cb1df54ee4fa8084b937c02f26b4a3737b3522145f5ae78337a92ea774e",
+    "utils\\utils_marble_consistency.py": "e485ae6317f59e5e0f275b8145976c8aaf1275093148b69ff47dff08da0864d3",
+    "docs\\MARBLE_MATH_PROTOCOL.md": "f85ab8a71b8a9b08af9b9714af8478622bb28b2e11b24c644438c360dcb4d282",
+    "uv.lock": "bacd20a2f2cfe7cedcff697216c877606a317ac023ef0e2d1d3bc532cd1f7ebc"
+  },
+  "input_sha256": "bbf1ecbe14e8a67068e47032008a75be084c76bec5071595eb6ddbc15e56874d",
+  "rat_input_sha256": "83e08e7c3529a9830529f2abdf4d83ea1206d106fe4465ccb7f0faf722b8248c",
+  "torch": "2.14.0+cu130",
+  "cuda": "13.0",
+  "python": "3.12.10",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "interpretation": "Exploratory on an already observed test split; not an independent confirmation cohort."
+}
