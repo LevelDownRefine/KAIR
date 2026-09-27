@@ -1,0 +1,1172 @@
+{
+  "seed-0/achilles/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.055458772600246,
+    "final_objective": 1.0538174388947201,
+    "minimum_majorization_margin": 2.318989000826832e-09,
+    "minimum_descent_margin": 8.972025911902464e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 792,
+    "fit_seconds": 5.794571499995072,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0040190985655148255,
+      "auxiliary_gradient_norm": 0.00028683635855899554,
+      "auxiliary_force_rms": 0.028682201638250422
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0014784704077524214,
+      "auxiliary_gradient_norm": 1.7034073707587756e-05,
+      "auxiliary_force_rms": 0.001703322198260872
+    },
+    "effective_rank": 3
+  },
+  "seed-0/achilles/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0523857721171004,
+    "final_objective": 1.050904220277333,
+    "minimum_majorization_margin": 1.986944164755755e-09,
+    "minimum_descent_margin": 7.082851476734019e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 1.0,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 4,
+    "backtracks_total": 674,
+    "fit_seconds": 6.027081300002465,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0040190985655148255,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006558335677892682,
+      "auxiliary_gradient_norm": 6.208163332072316e-07,
+      "auxiliary_force_rms": 6.20785291614512e-05
+    },
+    "effective_rank": 3
+  },
+  "seed-0/achilles/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.055458772600246,
+    "final_objective": 1.0539237206152063,
+    "minimum_majorization_margin": 3.0626836622360543e-09,
+    "minimum_descent_margin": 8.381635751640863e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 809,
+    "fit_seconds": 6.590811900001427,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0040190985655148255,
+      "auxiliary_gradient_norm": 0.00028683635855899554,
+      "auxiliary_force_rms": 0.028682201638250422
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009254593249669776,
+      "auxiliary_gradient_norm": 4.1419215916660976e-06,
+      "auxiliary_force_rms": 0.00041417144904088533
+    },
+    "effective_rank": 3
+  },
+  "seed-0/buddy/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0639501203464952,
+    "final_objective": 1.062447389684443,
+    "minimum_majorization_margin": 5.530215618776424e-09,
+    "minimum_descent_margin": 7.599377361370401e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 772,
+    "fit_seconds": 5.573723300003621,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004037932815636103,
+      "auxiliary_gradient_norm": 0.00040849218750959665,
+      "auxiliary_force_rms": 0.03312566894536509
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007203739278595872,
+      "auxiliary_gradient_norm": 6.110420120612752e-06,
+      "auxiliary_force_rms": 0.0004955094864029943
+    },
+    "effective_rank": 3
+  },
+  "seed-0/buddy/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.059430530734302,
+    "final_objective": 1.0581964715477596,
+    "minimum_majorization_margin": 1.0820014439971715e-08,
+    "minimum_descent_margin": 6.321504888405448e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 1.0,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 4,
+    "backtracks_total": 662,
+    "fit_seconds": 6.178257700004906,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004037932815636103,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0005745160447765283,
+      "auxiliary_gradient_norm": 2.4773964382858196e-06,
+      "auxiliary_force_rms": 0.00020089836910076699
+    },
+    "effective_rank": 3
+  },
+  "seed-0/buddy/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0639501203464952,
+    "final_objective": 1.062429082925206,
+    "minimum_majorization_margin": 1.8239967314315209e-09,
+    "minimum_descent_margin": 8.882718254905599e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 729,
+    "fit_seconds": 6.046658800005389,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004037932815636103,
+      "auxiliary_gradient_norm": 0.00040849218750959665,
+      "auxiliary_force_rms": 0.03312566894536509
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016585652312928905,
+      "auxiliary_gradient_norm": 1.463736838654303e-05,
+      "auxiliary_force_rms": 0.001186981377440875
+    },
+    "effective_rank": 3
+  },
+  "seed-0/cicero/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0648284813077913,
+    "final_objective": 1.0626010625137168,
+    "minimum_majorization_margin": 1.495881418733802e-09,
+    "minimum_descent_margin": 9.556627416976662e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 805,
+    "fit_seconds": 5.858932700000878,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004883637218190986,
+      "auxiliary_gradient_norm": 0.0004392621474387117,
+      "auxiliary_force_rms": 0.04392401837822346
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0012873217990408308,
+      "auxiliary_gradient_norm": 1.3139308690373368e-05,
+      "auxiliary_force_rms": 0.0013138651708513892
+    },
+    "effective_rank": 3
+  },
+  "seed-0/cicero/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0589720348294807,
+    "final_objective": 1.0571980337785458,
+    "minimum_majorization_margin": 3.729765163384968e-09,
+    "minimum_descent_margin": 5.635580924211178e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 1.1102230246251565e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 667,
+    "fit_seconds": 6.077499999999418,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004883637218190986,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009083212644107642,
+      "auxiliary_gradient_norm": 3.6641109951373104e-06,
+      "auxiliary_force_rms": 0.0003663927785007186
+    },
+    "effective_rank": 3
+  },
+  "seed-0/cicero/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0648284813077913,
+    "final_objective": 1.0625178947411422,
+    "minimum_majorization_margin": 3.944875093253586e-09,
+    "minimum_descent_margin": 8.449654107210291e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 748,
+    "fit_seconds": 6.419060899999749,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004883637218190986,
+      "auxiliary_gradient_norm": 0.0004392621474387117,
+      "auxiliary_force_rms": 0.04392401837822346
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008278701513909094,
+      "auxiliary_gradient_norm": 2.2059174887955213e-06,
+      "auxiliary_force_rms": 0.00022058071901635468
+    },
+    "effective_rank": 3
+  },
+  "seed-0/decoding/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0372202429654063,
+    "final_objective": 1.035147801182105,
+    "minimum_majorization_margin": 1.1519234233148268e-08,
+    "minimum_descent_margin": 1.6993663607424916e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 8.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1071,
+    "fit_seconds": 25.900334400001157,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.015527920555918142,
+      "auxiliary_gradient_norm": 0.0003031339122883278,
+      "auxiliary_force_rms": 0.02711142674344236
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00141352646739694,
+      "auxiliary_gradient_norm": 7.980370095488242e-05,
+      "auxiliary_force_rms": 0.007137413877454796
+    },
+    "effective_rank": 32
+  },
+  "seed-0/decoding/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0323329494017663,
+    "final_objective": 1.0297731647476285,
+    "minimum_majorization_margin": 6.575158861821251e-09,
+    "minimum_descent_margin": 9.655930217329525e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 990,
+    "fit_seconds": 25.90976220000448,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.015527920555918142,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016029071618252312,
+      "auxiliary_gradient_norm": 8.29902162173333e-06,
+      "auxiliary_force_rms": 0.0007422406653263485
+    },
+    "effective_rank": 32
+  },
+  "seed-0/decoding/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0372202429654063,
+    "final_objective": 1.0345058030836485,
+    "minimum_majorization_margin": 1.068125321523894e-08,
+    "minimum_descent_margin": 1.1735455682734282e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1030,
+    "fit_seconds": 26.018671800004086,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.015527920555918142,
+      "auxiliary_gradient_norm": 0.0003031339122883278,
+      "auxiliary_force_rms": 0.02711142674344236
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.001107238592627861,
+      "auxiliary_gradient_norm": 7.645974152042438e-06,
+      "auxiliary_force_rms": 0.0006838339746962524
+    },
+    "effective_rank": 32
+  },
+  "seed-0/gatsby/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0633197341160832,
+    "final_objective": 1.0609608503472974,
+    "minimum_majorization_margin": 6.636147409366799e-09,
+    "minimum_descent_margin": 7.237094993168265e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 885,
+    "fit_seconds": 6.030064899998251,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0067034466652869055,
+      "auxiliary_gradient_norm": 0.00037790367408280505,
+      "auxiliary_force_rms": 0.03778847784266977
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009402640498043984,
+      "auxiliary_gradient_norm": 1.2142027629885921e-05,
+      "auxiliary_force_rms": 0.0012141420513326134
+    },
+    "effective_rank": 3
+  },
+  "seed-0/gatsby/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0583467423406105,
+    "final_objective": 1.0563910144342483,
+    "minimum_majorization_margin": 1.8326082873443283e-08,
+    "minimum_descent_margin": 7.029987549912331e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 2.4424906541753444e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 743,
+    "fit_seconds": 6.438280299997132,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0067034466652869055,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008858174554562969,
+      "auxiliary_gradient_norm": 5.422271720905242e-06,
+      "auxiliary_force_rms": 0.0005422000600541018
+    },
+    "effective_rank": 3
+  },
+  "seed-0/gatsby/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0633197341160832,
+    "final_objective": 1.0608980734335929,
+    "minimum_majorization_margin": 4.198989822512544e-09,
+    "minimum_descent_margin": 7.760408313168914e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 811,
+    "fit_seconds": 6.471271100002923,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0067034466652869055,
+      "auxiliary_gradient_norm": 0.00037790367408280505,
+      "auxiliary_force_rms": 0.03778847784266977
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009820346203003821,
+      "auxiliary_gradient_norm": 7.258446209461116e-06,
+      "auxiliary_force_rms": 0.0007258083278077133
+    },
+    "effective_rank": 3
+  },
+  "seed-1/achilles/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0571231215092283,
+    "final_objective": 1.055342650359435,
+    "minimum_majorization_margin": 1.2541602423254972e-08,
+    "minimum_descent_margin": 7.287154434025121e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 797,
+    "fit_seconds": 6.068206799995096,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006436304461796419,
+      "auxiliary_gradient_norm": 0.00028683635851690334,
+      "auxiliary_force_rms": 0.028682201634041414
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009664594104312251,
+      "auxiliary_gradient_norm": 1.7001661116888297e-05,
+      "auxiliary_force_rms": 0.0017000811012579315
+    },
+    "effective_rank": 3
+  },
+  "seed-1/achilles/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0540501210269464,
+    "final_objective": 1.0525179701513623,
+    "minimum_majorization_margin": 8.267238005288391e-10,
+    "minimum_descent_margin": 5.914576577218033e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 1.5543122344752192e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 673,
+    "fit_seconds": 6.3060709000055795,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006436304461796419,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009675060482135366,
+      "auxiliary_gradient_norm": 5.987720748521268e-06,
+      "auxiliary_force_rms": 0.0005987421354998817
+    },
+    "effective_rank": 3
+  },
+  "seed-1/achilles/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0571231215092283,
+    "final_objective": 1.0552812472159714,
+    "minimum_majorization_margin": 5.710243389245306e-10,
+    "minimum_descent_margin": 4.5075591730028314e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 1.1102230246251565e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 745,
+    "fit_seconds": 6.467008399995393,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006436304461796419,
+      "auxiliary_gradient_norm": 0.00028683635851690334,
+      "auxiliary_force_rms": 0.028682201634041414
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006029732389153893,
+      "auxiliary_gradient_norm": 1.6920021243223747e-06,
+      "auxiliary_force_rms": 0.00016919175221010504
+    },
+    "effective_rank": 3
+  },
+  "seed-1/buddy/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0594435252146994,
+    "final_objective": 1.057816102518007,
+    "minimum_majorization_margin": 3.187901942425242e-09,
+    "minimum_descent_margin": 8.094102932540335e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 775,
+    "fit_seconds": 5.775637600003392,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037385675913847883,
+      "auxiliary_gradient_norm": 0.0004084921875467289,
+      "auxiliary_force_rms": 0.03312566894837624
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0010894949904540873,
+      "auxiliary_gradient_norm": 1.1577187478156197e-05,
+      "auxiliary_force_rms": 0.0009388235355439172
+    },
+    "effective_rank": 3
+  },
+  "seed-1/buddy/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0549239356017734,
+    "final_objective": 1.0536313138915854,
+    "minimum_majorization_margin": 3.747972376899611e-09,
+    "minimum_descent_margin": 6.381284488143667e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 677,
+    "fit_seconds": 6.168491399999766,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037385675913847883,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007461704098613655,
+      "auxiliary_gradient_norm": 2.5926589647319326e-06,
+      "auxiliary_force_rms": 0.00021024530010607692
+    },
+    "effective_rank": 3
+  },
+  "seed-1/buddy/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0594435252146994,
+    "final_objective": 1.0578250284821311,
+    "minimum_majorization_margin": 4.798184738419309e-09,
+    "minimum_descent_margin": 8.413649381302206e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 746,
+    "fit_seconds": 6.194142400003329,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037385675913847883,
+      "auxiliary_gradient_norm": 0.0004084921875467289,
+      "auxiliary_force_rms": 0.03312566894837624
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007173249892842086,
+      "auxiliary_gradient_norm": 1.4079960023556888e-06,
+      "auxiliary_force_rms": 0.00011417797176191113
+    },
+    "effective_rank": 3
+  },
+  "seed-1/cicero/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0658313641760375,
+    "final_objective": 1.0638112810746996,
+    "minimum_majorization_margin": 4.4970382973019696e-09,
+    "minimum_descent_margin": 8.367745422774456e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 800,
+    "fit_seconds": 5.878994899998361,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006010002935260671,
+      "auxiliary_gradient_norm": 0.0004392621475134729,
+      "auxiliary_force_rms": 0.04392401838569921
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008104235140815511,
+      "auxiliary_gradient_norm": 9.245395502419694e-06,
+      "auxiliary_force_rms": 0.0009244933221087251
+    },
+    "effective_rank": 3
+  },
+  "seed-1/cicero/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.059974917697674,
+    "final_objective": 1.0584510336593609,
+    "minimum_majorization_margin": 1.6692505155901927e-09,
+    "minimum_descent_margin": 6.425739278166033e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 681,
+    "fit_seconds": 6.286547199997585,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006010002935260671,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007123488452721237,
+      "auxiliary_gradient_norm": 2.360437999642846e-06,
+      "auxiliary_force_rms": 0.0002360319974792169
+    },
+    "effective_rank": 3
+  },
+  "seed-1/cicero/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0658313641760375,
+    "final_objective": 1.0637412675794367,
+    "minimum_majorization_margin": 6.151234188678245e-09,
+    "minimum_descent_margin": 9.667168872342998e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 739,
+    "fit_seconds": 6.314067100000102,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006010002935260671,
+      "auxiliary_gradient_norm": 0.0004392621475134729,
+      "auxiliary_force_rms": 0.04392401838569921
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008515822075378714,
+      "auxiliary_gradient_norm": 5.340838654070398e-06,
+      "auxiliary_force_rms": 0.0005340571605461313
+    },
+    "effective_rank": 3
+  },
+  "seed-1/decoding/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0365922957376088,
+    "final_objective": 1.0351473897131989,
+    "minimum_majorization_margin": 2.6548278020399607e-08,
+    "minimum_descent_margin": 1.1695531260681023e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 8.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1071,
+    "fit_seconds": 26.369442400005937,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008755619694654358,
+      "auxiliary_gradient_norm": 0.00029793109240988246,
+      "auxiliary_force_rms": 0.02664610147208298
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009634439018524427,
+      "auxiliary_gradient_norm": 6.0557118683468926e-05,
+      "auxiliary_force_rms": 0.005416054820746064
+    },
+    "effective_rank": 32
+  },
+  "seed-1/decoding/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0318103119661846,
+    "final_objective": 1.0299695282278025,
+    "minimum_majorization_margin": 9.636400566392922e-09,
+    "minimum_descent_margin": 7.238212279070767e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 986,
+    "fit_seconds": 26.00762069999473,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008755619694654358,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.001737112491541128,
+      "auxiliary_gradient_norm": 7.835150683829906e-06,
+      "auxiliary_force_rms": 0.0007007533805272177
+    },
+    "effective_rank": 32
+  },
+  "seed-1/decoding/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0365922957376088,
+    "final_objective": 1.0347699165182689,
+    "minimum_majorization_margin": 4.947782183961635e-10,
+    "minimum_descent_margin": 1.098408991608879e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1033,
+    "fit_seconds": 26.642801800000598,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008755619694654358,
+      "auxiliary_gradient_norm": 0.00029793109240988246,
+      "auxiliary_force_rms": 0.02664610147208298
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016894611779329416,
+      "auxiliary_gradient_norm": 1.0713734844264149e-05,
+      "auxiliary_force_rms": 0.0009582056827170692
+    },
+    "effective_rank": 32
+  },
+  "seed-1/gatsby/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.066085985327307,
+    "final_objective": 1.063663184251739,
+    "minimum_majorization_margin": 5.29723598319265e-09,
+    "minimum_descent_margin": 8.076980874357851e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 880,
+    "fit_seconds": 6.085978400005843,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007473830167399778,
+      "auxiliary_gradient_norm": 0.00037790367403285017,
+      "auxiliary_force_rms": 0.037788477837674535
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.001269229271598733,
+      "auxiliary_gradient_norm": 1.4506714308612232e-05,
+      "auxiliary_force_rms": 0.0014505988954762502
+    },
+    "effective_rank": 3
+  },
+  "seed-1/gatsby/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0611129935525005,
+    "final_objective": 1.0591054723353863,
+    "minimum_majorization_margin": 1.6298731253527876e-09,
+    "minimum_descent_margin": 6.04405514320455e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 745,
+    "fit_seconds": 6.374981200002367,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007473830167399778,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006746452396753888,
+      "auxiliary_gradient_norm": 1.0760079860114857e-06,
+      "auxiliary_force_rms": 0.00010759541842671079
+    },
+    "effective_rank": 3
+  },
+  "seed-1/gatsby/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.066085985327307,
+    "final_objective": 1.0635993687904852,
+    "minimum_majorization_margin": 2.4969937229002426e-10,
+    "minimum_descent_margin": 6.858218134143463e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 816,
+    "fit_seconds": 6.626586700003827,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007473830167399778,
+      "auxiliary_gradient_norm": 0.00037790367403285017,
+      "auxiliary_force_rms": 0.037788477837674535
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0011821457178991862,
+      "auxiliary_gradient_norm": 8.678988069336602e-06,
+      "auxiliary_force_rms": 0.0008678554109083858
+    },
+    "effective_rank": 3
+  },
+  "seed-2/achilles/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0588659900794648,
+    "final_objective": 1.0573812261381523,
+    "minimum_majorization_margin": 1.0459482169267176e-09,
+    "minimum_descent_margin": 9.088362815581965e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 793,
+    "fit_seconds": 6.086756999997306,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005945237215184421,
+      "auxiliary_gradient_norm": 0.0002868363584187737,
+      "auxiliary_force_rms": 0.02868220162422894
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007751037177241773,
+      "auxiliary_gradient_norm": 1.1080009659816994e-05,
+      "auxiliary_force_rms": 0.00110794556454833
+    },
+    "effective_rank": 3
+  },
+  "seed-2/achilles/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0557929895978806,
+    "final_objective": 1.054485384516735,
+    "minimum_majorization_margin": 8.220133462799595e-10,
+    "minimum_descent_margin": 6.478156488299187e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 679,
+    "fit_seconds": 6.171158800003468,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005945237215184421,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007751922169804054,
+      "auxiliary_gradient_norm": 2.7903109553831924e-06,
+      "auxiliary_force_rms": 0.00027901714363473605
+    },
+    "effective_rank": 3
+  },
+  "seed-2/achilles/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0588659900794648,
+    "final_objective": 1.057440536304572,
+    "minimum_majorization_margin": 1.3810905752364988e-09,
+    "minimum_descent_margin": 8.763303623267571e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 800,
+    "fit_seconds": 7.203500499999791,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005945237215184421,
+      "auxiliary_gradient_norm": 0.0002868363584187737,
+      "auxiliary_force_rms": 0.02868220162422894
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007881311099171553,
+      "auxiliary_gradient_norm": 2.9298307024114095e-06,
+      "auxiliary_force_rms": 0.00029296842072138173
+    },
+    "effective_rank": 3
+  },
+  "seed-2/buddy/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0636209855599026,
+    "final_objective": 1.0620012032457022,
+    "minimum_majorization_margin": 2.3367023871401216e-09,
+    "minimum_descent_margin": 8.211179714786369e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 768,
+    "fit_seconds": 5.618946699993103,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006170245637450478,
+      "auxiliary_gradient_norm": 0.00040849218768488314,
+      "auxiliary_force_rms": 0.03312566895957952
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009288688891120529,
+      "auxiliary_gradient_norm": 1.1788910422410325e-05,
+      "auxiliary_force_rms": 0.0009559926868127784
+    },
+    "effective_rank": 3
+  },
+  "seed-2/buddy/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.059101395946024,
+    "final_objective": 1.057875558076859,
+    "minimum_majorization_margin": 5.900800736924339e-09,
+    "minimum_descent_margin": 7.204720536495567e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 682,
+    "fit_seconds": 6.045670300001802,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006170245637450478,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006676284296168119,
+      "auxiliary_gradient_norm": 4.857007415834908e-07,
+      "auxiliary_force_rms": 3.938670668416408e-05
+    },
+    "effective_rank": 3
+  },
+  "seed-2/buddy/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0636209855599026,
+    "final_objective": 1.0619190040154711,
+    "minimum_majorization_margin": 1.5872507752590082e-09,
+    "minimum_descent_margin": 8.751331120136737e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 715,
+    "fit_seconds": 6.151064800003951,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006170245637450478,
+      "auxiliary_gradient_norm": 0.00040849218768488314,
+      "auxiliary_force_rms": 0.03312566895957952
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007127523907695303,
+      "auxiliary_gradient_norm": 2.75878213801506e-06,
+      "auxiliary_force_rms": 0.00022371665013575434
+    },
+    "effective_rank": 3
+  },
+  "seed-2/cicero/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.064800468877043,
+    "final_objective": 1.0627125396533041,
+    "minimum_majorization_margin": 1.2651035996569249e-08,
+    "minimum_descent_margin": 8.779021325833418e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 802,
+    "fit_seconds": 5.873973800000385,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004803314682900318,
+      "auxiliary_gradient_norm": 0.0004392621472950716,
+      "auxiliary_force_rms": 0.04392401836386017
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008540922234025268,
+      "auxiliary_gradient_norm": 8.347965977214426e-06,
+      "auxiliary_force_rms": 0.0008347548568480087
+    },
+    "effective_rank": 3
+  },
+  "seed-2/cicero/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0589440224006414,
+    "final_objective": 1.057257631950519,
+    "minimum_majorization_margin": 4.217920679394638e-09,
+    "minimum_descent_margin": 6.609288437501844e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 1.0,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 4,
+    "backtracks_total": 656,
+    "fit_seconds": 6.118036899999424,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004803314682900318,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009260168927098805,
+      "auxiliary_gradient_norm": 5.1659581631526634e-06,
+      "auxiliary_force_rms": 0.0005165699858786735
+    },
+    "effective_rank": 3
+  },
+  "seed-2/cicero/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.064800468877043,
+    "final_objective": 1.062704619935205,
+    "minimum_majorization_margin": 7.600344797964453e-10,
+    "minimum_descent_margin": 8.638493532294357e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 759,
+    "fit_seconds": 6.4352772000056575,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004803314682900318,
+      "auxiliary_gradient_norm": 0.0004392621472950716,
+      "auxiliary_force_rms": 0.04392401836386017
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007813745984380995,
+      "auxiliary_gradient_norm": 2.0217921284031505e-06,
+      "auxiliary_force_rms": 0.00020216910362693639
+    },
+    "effective_rank": 3
+  },
+  "seed-2/decoding/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0355890969018178,
+    "final_objective": 1.0341856205668951,
+    "minimum_majorization_margin": 3.3233646945518558e-09,
+    "minimum_descent_margin": 1.0367651326956179e-06,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 8.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1072,
+    "fit_seconds": 26.30257019999408,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011118322250456817,
+      "auxiliary_gradient_norm": 0.0002983176920482684,
+      "auxiliary_force_rms": 0.026680677833718074
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0011472892799161266,
+      "auxiliary_gradient_norm": 5.85483609204512e-05,
+      "auxiliary_force_rms": 0.0052363972940567514
+    },
+    "effective_rank": 32
+  },
+  "seed-2/decoding/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0307437801989703,
+    "final_objective": 1.0295325449667114,
+    "minimum_majorization_margin": 8.273359775046174e-11,
+    "minimum_descent_margin": 5.970958650614736e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 993,
+    "fit_seconds": 25.817397800004983,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011118322250456817,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008263244275332925,
+      "auxiliary_gradient_norm": 1.207128519005472e-06,
+      "auxiliary_force_rms": 0.00010796210877854023
+    },
+    "effective_rank": 32
+  },
+  "seed-2/decoding/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0355890969018178,
+    "final_objective": 1.0338757769617772,
+    "minimum_majorization_margin": 2.9476932006389234e-10,
+    "minimum_descent_margin": 7.581597359997443e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 1036,
+    "fit_seconds": 26.142350300004182,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011118322250456817,
+      "auxiliary_gradient_norm": 0.0002983176920482684,
+      "auxiliary_force_rms": 0.026680677833718074
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008617098614432866,
+      "auxiliary_gradient_norm": 3.946237851375253e-06,
+      "auxiliary_force_rms": 0.000352940182812661
+    },
+    "effective_rank": 32
+  },
+  "seed-2/gatsby/joint_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0638468193132733,
+    "final_objective": 1.0614190514332762,
+    "minimum_majorization_margin": 1.120125903142366e-08,
+    "minimum_descent_margin": 6.700120364854589e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 925,
+    "fit_seconds": 6.392292500000622,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0071004593035075185,
+      "auxiliary_gradient_norm": 0.00037790367385721326,
+      "auxiliary_force_rms": 0.03778847782011172
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007063108313627649,
+      "auxiliary_gradient_norm": 1.227645474134095e-05,
+      "auxiliary_force_rms": 0.0012275840903257548
+    },
+    "effective_rank": 3
+  },
+  "seed-2/gatsby/palm_no_prior": {
+    "iterations": 300,
+    "initial_objective": 1.0588738275392322,
+    "final_objective": 1.0567908792336473,
+    "minimum_majorization_margin": 1.727624487912749e-09,
+    "minimum_descent_margin": 6.049016940766127e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 2.4424906541753444e-15,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 801,
+    "fit_seconds": 6.483114000002388,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0071004593035075185,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007265157670058186,
+      "auxiliary_gradient_norm": 2.1635544652492926e-06,
+      "auxiliary_force_rms": 0.0002163446284821452
+    },
+    "effective_rank": 3
+  },
+  "seed-2/gatsby/palm_quadratic": {
+    "iterations": 300,
+    "initial_objective": 1.0638468193132733,
+    "final_objective": 1.061377107718118,
+    "minimum_majorization_margin": 3.6753289300861525e-10,
+    "minimum_descent_margin": 6.19449309041417e-07,
+    "negative_descent_margin_count": 0,
+    "objective_increase_count": 0,
+    "maximum_constraint_excess": 0.0,
+    "parameter_step_min": 0.5,
+    "parameter_step_max": 16.0,
+    "backtracks_max": 5,
+    "backtracks_total": 869,
+    "fit_seconds": 6.669478299998445,
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0071004593035075185,
+      "auxiliary_gradient_norm": 0.00037790367385721326,
+      "auxiliary_force_rms": 0.03778847782011172
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007341052508226746,
+      "auxiliary_gradient_norm": 1.694462802669797e-06,
+      "auxiliary_force_rms": 0.0001694378077411479
+    },
+    "effective_rank": 3
+  }
+}
