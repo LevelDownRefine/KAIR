@@ -1,0 +1,12 @@
+{
+  "task": "marble_achilles",
+  "model": "marble",
+  "device": "cuda:0",
+  "threads": 4,
+  "seeds": [0, 1, 2],
+  "dataset": {
+    "dataset_type": "marble",
+    "dataroot": "results/marble-input"
+  },
+  "decoder": {"neighbors": 36, "metric": "cosine"}
+}

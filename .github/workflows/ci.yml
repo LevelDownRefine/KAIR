@@ -34,10 +34,10 @@ jobs:
         run: uv python install 3.12
 
       - name: Install dependencies (incl. dev group with pytest)
-        run: uv sync --all-groups
+        run: uv sync --locked --all-groups
 
       - name: Run tests
         # The CUDA smoke test (tests/test_cuda_smoke.py) is a hard assertion
         # that requires a real GPU; CI runners are headless, so it is excluded
         # here. Run it locally on the RTX 5070 Ti to verify the GPU path.
-        run: uv run pytest -k "not cuda" -v
+        run: uv run --locked python -m pytest -k "not cuda" -v

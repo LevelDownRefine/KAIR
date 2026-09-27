@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-09-27T16:31:01.611351+00:00",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.14.0+cu130",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.1"
+  },
+  "cuda": "13.0",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "tf32": false,
+  "sparse_cuda_bitwise_determinism_guaranteed": false,
+  "training_input_sha256": "bbf1ecbe14e8a67068e47032008a75be084c76bec5071595eb6ddbc15e56874d",
+  "source_sha256": {
+    "main_train_marble.py": "1074fbf0a6722ef7eafa9eca36e580f03c49816234382ba590c275972e208450",
+    "data/dataset_marble.py": "582ab849565278de201e3ac3ea91f82891597c3ddd142c937934e6690c12608a",
+    "models/network_marble.py": "edff3f765806811c5ad17eca3fab7ceae5c58e47975adc166f73a458a519a1ef",
+    "models/model_marble.py": "6af0fd2314e08a91ed2f8f0ed464ffa0b589c330352cef0a305429def70aa058",
+    "utils/utils_marble.py": "98bc9c3737dea9a791637575ff0d413c136fedceaf3549c186a12e9e3d1d796f",
+    "pyproject.toml": "107917a43fc89fc12dd71d8229df03ea480f07ddb96da5c3ef7df7e81c6b6007",
+    "uv.lock": "ec147e74f2483e2a537f6dc9519f153e4046a586bf66dbce6de9d97aa287bf71",
+    "scripts/marble/prepare.py": "05b6120e1f4788d667abb171875a32241b7ba68651ec95dba7f0fe6ed820fcb5",
+    "scripts/marble/check_original.py": "6755154d3c9e568179aa7e8f6b4d2e8b5facb8090f4f4c44ddb378c6eb7d45f5",
+    "data/select_dataset.py": "91d6d9d76d2027fea5642006319c3322415851772ed54da5a06671d219e65594",
+    "models/select_model.py": "bd1c1e3950d470477783299f0a334131f41dc9d0ffd62f4f46e82a41beaa6307"
+  }
+}
