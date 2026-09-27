@@ -22,15 +22,27 @@ class LegacyNorm(nn.Module):
 class LegacyEncoder(nn.Module):
     """Preserve the PyG 2.1 MLP's architecture and checkpoint keys."""
 
-    def __init__(self, channels):
+    def __init__(self, channels, dropout=0.0):
         super().__init__()
+        self.dropout = dropout
         self.lins = nn.ModuleList(
             nn.Linear(left, right) for left, right in zip(channels[:-1], channels[1:])
         )
         self.norms = nn.ModuleList([LegacyNorm(channels[1])])
 
-    def forward(self, values):
-        return self.lins[1](F.relu(self.norms[0](self.lins[0](values))))
+    def forward(self, values, dropout_mask=None):
+        hidden = F.relu(self.norms[0](self.lins[0](values)))
+        if dropout_mask is None:
+            hidden = F.dropout(hidden, p=self.dropout, training=self.training)
+        else:
+            # Reference masks isolate numerical parity from device-specific RNGs.
+            assert self.training, "A reference mask requires training mode"
+            assert 0 < self.dropout < 1
+            assert dropout_mask.dtype == torch.bool
+            assert dropout_mask.shape == hidden.shape
+            assert dropout_mask.device == hidden.device
+            hidden = hidden * dropout_mask / (1 - self.dropout)
+        return self.lins[1](hidden)
 
 
 class MARBLEEncoder(nn.Module):
@@ -44,7 +56,6 @@ class MARBLEEncoder(nn.Module):
             "include_self": True,
             "vec_norm": False,
             "emb_norm": True,
-            "dropout": 0.0,
             "bias": True,
             "frac_sampled_nb": -1,
             "batch_norm": "batch_norm",
@@ -58,9 +69,13 @@ class MARBLEEncoder(nn.Module):
             for key in ("dim_emb", "dim_signal", "hidden_channels", "out_channels")
         )
         assert len(params["hidden_channels"]) == 1
+        assert "dropout" in params and 0 <= params["dropout"] < 1, (
+            "Unsupported MARBLE dropout probability"
+        )
         d, s = params["dim_emb"], params["dim_signal"]
         self.enc = LegacyEncoder(
-            [d + s + d * s, *params["hidden_channels"], params["out_channels"]]
+            [d + s + d * s, *params["hidden_channels"], params["out_channels"]],
+            dropout=params["dropout"],
         )
         self.diffusion = nn.Module()
         # Unused in this protocol, retained for original checkpoint compatibility.
@@ -68,8 +83,8 @@ class MARBLEEncoder(nn.Module):
             "diffusion_time", nn.Parameter(torch.tensor(0.0))
         )
 
-    def forward(self, features):
-        return F.normalize(self.enc(features), dim=-1)
+    def forward(self, features, dropout_mask=None):
+        return F.normalize(self.enc(features, dropout_mask=dropout_mask), dim=-1)
 
 
 class GraphFeatures:

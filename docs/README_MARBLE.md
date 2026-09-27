@@ -2,8 +2,12 @@
 
 本仓库现在提供 MARBLE 的独立图任务入口：读取原版导出的图与采样序列，
 在 KAIR 的 PyTorch CUDA 13 环境中从随机初始权重训练，保存原版可读取的
-检查点，最后拟合位置解码器。当前支持 **Achilles 单只大鼠、一阶梯度、
+检查点，最后拟合位置解码器。当前从头训练协议支持 **Achilles 单只大鼠、一阶梯度、
 无扩散、完整邻居、无可训练内积变换**。不是 MARBLE 全部模型或全论文的复现。
+
+另已支持四只大鼠作者 3D 检查点的 GPU 核验、dropout 和跨动物一致性评估，
+见 [四动物运行步骤与结果](MARBLE_RAT_CONSISTENCY.md)。该流程包含三步 SGD
+对照，不代表已完成四动物的完整从头训练。
 
 ## 环境和数据
 
@@ -108,15 +112,16 @@ uv run --locked python -m pytest tests -q
 
 ## 解释边界
 
-目前只有单只动物、一次时间划分和三个随机种子，不支持跨动物结论。
+目前从头训练只有单只动物、一次时间划分和三个随机种子，
+这组位置解码结果本身不支持跨动物结论。
 保留原实现的时间单位和 spike count 处理：25 ms 的 bin 索引被当作毫秒，
 非零计数当作一次事件；PCA=20、lr=1 遵循本次 checkpoint 协议，与论文
 Methods 或 notebook 的部分设置不同。测试图使用整个测试窗口，属于离线解码。
-本次没有重新训练 CEBRA，也没有完成其他动物、扩散或内积不变特征等实验。
+目前没有重新训练 CEBRA，也没有完成其他动物的从头训练、扩散或内积不变特征等实验。
 
 后续范围、数据盘点、协议差异和分阶段验收见
-[完整复现计划](MARBLE_FULL_REPRODUCTION_PLAN.md)。下一步优先四只大鼠的
-3D 表征与跨动物一致性；二阶特征、RNN 和猕猴扩散模型按依赖顺序补齐。
+[完整复现计划](MARBLE_FULL_REPRODUCTION_PLAN.md)。四只大鼠的作者权重核验已完成，
+下一步优先批量从头训练；二阶特征、RNN 和猕猴扩散模型按依赖顺序补齐。
 
 来源：[MARBLE 论文](https://www.nature.com/articles/s41592-024-02582-2)、
 [已核验的 CUDA 后端](https://github.com/LevelDownRefine/MARBLE/blob/872e46bd6dff2d092f8554a8c084701450e84904/reproduction/src/modern_gpu.py)。

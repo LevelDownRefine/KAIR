@@ -1,0 +1,524 @@
+{
+  "scope": "four animals; public author checkpoints; no representation training",
+  "device": "cuda:0",
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "rats": [
+    "achilles",
+    "buddy",
+    "cicero",
+    "gatsby"
+  ],
+  "pairs_per_method": 12,
+  "rtol": 0.0002,
+  "atol": 2e-05,
+  "results": {
+    "MARBLE-eval": {
+      "scores": [
+        0.8717603087425232,
+        0.592181384563446,
+        0.9063289761543274,
+        0.9146786332130432,
+        0.549336850643158,
+        0.8839592933654785,
+        0.7702047228813171,
+        0.7735681533813477,
+        0.7971265912055969,
+        0.9343338012695312,
+        0.8659377098083496,
+        0.6373785138130188
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.7913995782534281,
+      "alignment_max_abs_error": 1.7881393432617188e-07,
+      "original_score_max_abs_error": 4.8256865281537387e-08
+    },
+    "MARBLE-batch_stats": {
+      "scores": [
+        0.8717586398124695,
+        0.5918803215026855,
+        0.9067349433898926,
+        0.9153316617012024,
+        0.5485811829566956,
+        0.8847249150276184,
+        0.7715099453926086,
+        0.7728896141052246,
+        0.7998263239860535,
+        0.9344765543937683,
+        0.8659432530403137,
+        0.6381070613861084
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.7918137013912201,
+      "alignment_max_abs_error": 2.980232238769531e-07,
+      "original_score_max_abs_error": 1.0956725082778007e-07
+    },
+    "MARBLE-notebook_seed0": {
+      "scores": [
+        0.8669664263725281,
+        0.5831515192985535,
+        0.9079839587211609,
+        0.9167852997779846,
+        0.5398033261299133,
+        0.8836159110069275,
+        0.7642651200294495,
+        0.7632958292961121,
+        0.7928681969642639,
+        0.9360180497169495,
+        0.8591157793998718,
+        0.6317740082740784
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.787136952082316,
+      "alignment_max_abs_error": 2.086162567138672e-07,
+      "original_score_max_abs_error": 8.300458720356119e-08
+    },
+    "MARBLE-notebook_seed1": {
+      "scores": [
+        0.8647355437278748,
+        0.592481791973114,
+        0.9048649668693542,
+        0.9141952395439148,
+        0.5479357838630676,
+        0.8850522637367249,
+        0.7692556381225586,
+        0.7626792788505554,
+        0.7976450324058533,
+        0.9333388209342957,
+        0.861251175403595,
+        0.6389955878257751
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.7893692602713903,
+      "alignment_max_abs_error": 1.7881393432617188e-07,
+      "original_score_max_abs_error": 1.4732299680186856e-07
+    },
+    "MARBLE-notebook_seed2": {
+      "scores": [
+        0.8660278916358948,
+        0.5906519293785095,
+        0.9042677283287048,
+        0.9122294783592224,
+        0.5465065836906433,
+        0.8793641924858093,
+        0.7689435482025146,
+        0.765955924987793,
+        0.7938675284385681,
+        0.9360587000846863,
+        0.8598214983940125,
+        0.6362490057945251
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.7883286674817404,
+      "alignment_max_abs_error": 2.384185791015625e-07,
+      "original_score_max_abs_error": 6.790934836686802e-08
+    },
+    "CEBRA-time": {
+      "scores": [
+        0.6774802207946777,
+        0.540531575679779,
+        0.7493483424186707,
+        0.6705181002616882,
+        0.449734091758728,
+        0.6137143969535828,
+        0.8057659268379211,
+        0.6853067278862,
+        0.8397040367126465,
+        0.858435332775116,
+        0.7378479838371277,
+        0.7091929316520691
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.6947983056306839,
+      "alignment_max_abs_error": 1.1920928955078125e-07,
+      "original_score_max_abs_error": 9.022380975665101e-08
+    },
+    "CEBRA-behaviour": {
+      "scores": [
+        0.7542974948883057,
+        0.9641215205192566,
+        0.9572984576225281,
+        0.973486602306366,
+        0.9623792767524719,
+        0.9388203024864197,
+        0.9556272625923157,
+        0.7273756861686707,
+        0.9282260537147522,
+        0.9834043383598328,
+        0.7602541446685791,
+        0.9643016457557678
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.9057993988196055,
+      "alignment_max_abs_error": 1.1920928955078125e-07,
+      "original_score_max_abs_error": 9.64465689534677e-08
+    }
+  },
+  "runtime_seconds": 2.3489198999996006,
+  "peak_allocated_mib": 450.80908203125,
+  "packages": {
+    "torch": "2.14.0+cu130",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.1"
+  },
+  "source_sha256": {
+    "main_test_marble_consistency.py": "355bedebc6feff54f8e754d23c93986d1d560b1eb6b6b91c066680b9365c327e",
+    "models/network_marble.py": "87c1d84763964c89ac5b4b4e96bc3ff6768779636a4a40dbd26c59558675ae62",
+    "models/model_marble.py": "8d2f730e008a5ab656006861dbc53432df31fe8688c217e5900a6f7e63df34a9",
+    "utils/utils_marble_consistency.py": "86b596926c9410ceaf41cbbe4fa7b18182e6db3ab2b81c40634186b92b64a725",
+    "data/dataset_marble.py": "582ab849565278de201e3ac3ea91f82891597c3ddd142c937934e6690c12608a",
+    "utils/utils_marble.py": "98bc9c3737dea9a791637575ff0d413c136fedceaf3549c186a12e9e3d1d796f",
+    "uv.lock": "ec147e74f2483e2a537f6dc9519f153e4046a586bf66dbce6de9d97aa287bf71"
+  },
+  "limitations": [
+    "In-sample, position-only binned consistency; not held-out generalization.",
+    "Twelve directed pairs share four animals; pairs are not independent.",
+    "CEBRA embeddings use original CPU code; KAIR recomputes the metric.",
+    "Notebook dropout shares CPU-generated masks for CUDA numerical parity.",
+    "batch_stats disables dropout as a diagnostic, outside notebook protocol."
+  ]
+}
