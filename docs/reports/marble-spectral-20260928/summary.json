@@ -1,0 +1,1197 @@
+{
+  "baseline": {
+    "runs": [
+      {
+        "seed": 0,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.08970236778259277,
+          "median_absolute_error_m": 0.05507713556289673,
+          "std_absolute_error_m": 0.1315249353647232,
+          "position_r2": 0.9089289307594299
+        },
+        "consistency": {
+          "scores": [
+            0.8717601895332336,
+            0.5921814441680908,
+            0.9063289761543274,
+            0.9146786332130432,
+            0.549336850643158,
+            0.8839592933654785,
+            0.7702047228813171,
+            0.7735681533813477,
+            0.7971265912055969,
+            0.9343338012695312,
+            0.8659377694129944,
+            0.6373785138130188
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7913995782534281
+        }
+      },
+      {
+        "seed": 1,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09264083206653595,
+          "median_absolute_error_m": 0.053552206605672836,
+          "std_absolute_error_m": 0.1431775987148285,
+          "position_r2": 0.8955029249191284
+        },
+        "consistency": {
+          "scores": [
+            0.8717601895332336,
+            0.5921814441680908,
+            0.9063289761543274,
+            0.9146786332130432,
+            0.549336850643158,
+            0.8839592933654785,
+            0.7702047228813171,
+            0.7735681533813477,
+            0.7971265912055969,
+            0.9343338012695312,
+            0.8659377694129944,
+            0.6373785138130188
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7913995782534281
+        }
+      },
+      {
+        "seed": 2,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09316680580377579,
+          "median_absolute_error_m": 0.05628277733922005,
+          "std_absolute_error_m": 0.13483208417892456,
+          "position_r2": 0.9034870266914368
+        },
+        "consistency": {
+          "scores": [
+            0.8717601895332336,
+            0.5921814441680908,
+            0.9063289761543274,
+            0.9146786332130432,
+            0.549336850643158,
+            0.8839592933654785,
+            0.7702047228813171,
+            0.7735681533813477,
+            0.7971265912055969,
+            0.9343338012695312,
+            0.8659377694129944,
+            0.6373785138130188
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7913995782534281
+        }
+      }
+    ],
+    "mae_cm_mean": 9.183666855096817,
+    "mae_cm_sd": 0.18669740010193947,
+    "consistency_mean": 0.7913995782534281,
+    "consistency_sd": 0.0
+  },
+  "initial": {
+    "runs": [
+      {
+        "seed": 0,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0896700769662857,
+          "median_absolute_error_m": 0.05507683753967285,
+          "std_absolute_error_m": 0.1315222680568695,
+          "position_r2": 0.9089522957801819
+        },
+        "consistency": {
+          "scores": [
+            0.8720018267631531,
+            0.5944886803627014,
+            0.9065825343132019,
+            0.914064884185791,
+            0.5483946204185486,
+            0.8825142979621887,
+            0.7710811495780945,
+            0.7739973068237305,
+            0.798150360584259,
+            0.9340142607688904,
+            0.8653316497802734,
+            0.6377161145210266
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.791528140505155
+        }
+      },
+      {
+        "seed": 1,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0926097184419632,
+          "median_absolute_error_m": 0.053552206605672836,
+          "std_absolute_error_m": 0.14321452379226685,
+          "position_r2": 0.8954856395721436
+        },
+        "consistency": {
+          "scores": [
+            0.8720018267631531,
+            0.5944886803627014,
+            0.9065825343132019,
+            0.914064884185791,
+            0.5483946204185486,
+            0.8825142979621887,
+            0.7710811495780945,
+            0.7739973068237305,
+            0.798150360584259,
+            0.9340142607688904,
+            0.8653316497802734,
+            0.6377161145210266
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.791528140505155
+        }
+      },
+      {
+        "seed": 2,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0931975245475769,
+          "median_absolute_error_m": 0.05632011592388153,
+          "std_absolute_error_m": 0.1350003033876419,
+          "position_r2": 0.9033033847808838
+        },
+        "consistency": {
+          "scores": [
+            0.8720018267631531,
+            0.5944886803627014,
+            0.9065825343132019,
+            0.914064884185791,
+            0.5483945608139038,
+            0.8825142979621887,
+            0.7710811495780945,
+            0.7739973068237305,
+            0.7981503009796143,
+            0.9340141415596008,
+            0.8653316497802734,
+            0.6377161145210266
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.79152812063694
+        }
+      }
+    ],
+    "mae_cm_mean": 9.18257733186086,
+    "mae_cm_sd": 0.1889880704439534,
+    "consistency_mean": 0.7915281338824167,
+    "consistency_sd": 1.1470919256707519e-08
+  },
+  "unconstrained": {
+    "runs": [
+      {
+        "seed": 0,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.08258059620857239,
+          "median_absolute_error_m": 0.05718410015106201,
+          "std_absolute_error_m": 0.09726551920175552,
+          "position_r2": 0.9414990544319153
+        },
+        "consistency": {
+          "scores": [
+            0.88649582862854,
+            0.6104074120521545,
+            0.9081673622131348,
+            0.9081950187683105,
+            0.5495354533195496,
+            0.8791074752807617,
+            0.7648581862449646,
+            0.7804656624794006,
+            0.798273503780365,
+            0.9320482611656189,
+            0.878987729549408,
+            0.647241473197937
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7953152805566788
+        }
+      },
+      {
+        "seed": 1,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09696408361196518,
+          "median_absolute_error_m": 0.05663299560546875,
+          "std_absolute_error_m": 0.14575593173503876,
+          "position_r2": 0.8898801207542419
+        },
+        "consistency": {
+          "scores": [
+            0.8997862935066223,
+            0.6151556968688965,
+            0.9066869616508484,
+            0.9079307913780212,
+            0.5533015131950378,
+            0.8776316046714783,
+            0.7650097012519836,
+            0.7904117703437805,
+            0.7970039248466492,
+            0.9316763877868652,
+            0.8926281929016113,
+            0.6506573557853699
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7989900161822637
+        }
+      },
+      {
+        "seed": 2,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09594220668077469,
+          "median_absolute_error_m": 0.05830904841423035,
+          "std_absolute_error_m": 0.13800564408302307,
+          "position_r2": 0.8984897136688232
+        },
+        "consistency": {
+          "scores": [
+            0.9070668816566467,
+            0.602759063243866,
+            0.9049506783485413,
+            0.9083142280578613,
+            0.5443673729896545,
+            0.8747432827949524,
+            0.7631400227546692,
+            0.7955854535102844,
+            0.7920093536376953,
+            0.9329447150230408,
+            0.9001665115356445,
+            0.6435940861701965
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7974701374769211
+        }
+      }
+    ],
+    "mae_cm_mean": 9.18289621671041,
+    "mae_cm_sd": 0.8025600463069462,
+    "consistency_mean": 0.7972584780719546,
+    "consistency_sd": 0.0018464886290656959
+  },
+  "soft_spectral": {
+    "runs": [
+      {
+        "seed": 0,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.08966543525457382,
+          "median_absolute_error_m": 0.055045537650585175,
+          "std_absolute_error_m": 0.13176663219928741,
+          "position_r2": 0.9087241291999817
+        },
+        "consistency": {
+          "scores": [
+            0.8740213513374329,
+            0.5944503545761108,
+            0.9059005379676819,
+            0.9151995778083801,
+            0.5491487383842468,
+            0.8841009140014648,
+            0.7704384326934814,
+            0.7745060920715332,
+            0.7990734577178955,
+            0.9337579607963562,
+            0.8686440587043762,
+            0.6398138403892517
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7924212763706843
+        }
+      },
+      {
+        "seed": 1,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0928388386964798,
+          "median_absolute_error_m": 0.05343107134103775,
+          "std_absolute_error_m": 0.14331789314746857,
+          "position_r2": 0.8952264785766602
+        },
+        "consistency": {
+          "scores": [
+            0.87416011095047,
+            0.5943592190742493,
+            0.9055649638175964,
+            0.9153618216514587,
+            0.5487508177757263,
+            0.8831729888916016,
+            0.7709195017814636,
+            0.7747886776924133,
+            0.7989597916603088,
+            0.9335824847221375,
+            0.8678601384162903,
+            0.6393516659736633
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7922360152006149
+        }
+      },
+      {
+        "seed": 2,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09315444529056549,
+          "median_absolute_error_m": 0.0566859245300293,
+          "std_absolute_error_m": 0.13446350395679474,
+          "position_r2": 0.9038519263267517
+        },
+        "consistency": {
+          "scores": [
+            0.8741553425788879,
+            0.5944741368293762,
+            0.9055078029632568,
+            0.9151043891906738,
+            0.5488784909248352,
+            0.8839690089225769,
+            0.7703182101249695,
+            0.774746835231781,
+            0.79880291223526,
+            0.9336567521095276,
+            0.8689467310905457,
+            0.6393378973007202
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.7923248757918676
+        }
+      }
+    ],
+    "mae_cm_mean": 9.188623974720636,
+    "mae_cm_sd": 0.19297360768846797,
+    "consistency_mean": 0.7923273891210556,
+    "consistency_sd": 9.265615414839213e-05
+  },
+  "hard_spectral": {
+    "runs": [
+      {
+        "seed": 0,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09430666267871857,
+          "median_absolute_error_m": 0.05184318870306015,
+          "std_absolute_error_m": 0.15289433300495148,
+          "position_r2": 0.8840479850769043
+        },
+        "consistency": {
+          "scores": [
+            0.9079906940460205,
+            0.6114552617073059,
+            0.9500468373298645,
+            0.8982162475585938,
+            0.5854594111442566,
+            0.9344517588615417,
+            0.812187671661377,
+            0.8303408026695251,
+            0.8454734683036804,
+            0.9286890029907227,
+            0.9124962687492371,
+            0.6448519825935364
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.8218049506346384
+        }
+      },
+      {
+        "seed": 1,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.0933322012424469,
+          "median_absolute_error_m": 0.0510944128036499,
+          "std_absolute_error_m": 0.1503657102584839,
+          "position_r2": 0.8874602317810059
+        },
+        "consistency": {
+          "scores": [
+            0.9215764999389648,
+            0.6242721676826477,
+            0.9395248293876648,
+            0.8809583783149719,
+            0.5892758965492249,
+            0.9329139590263367,
+            0.7786014676094055,
+            0.8299968838691711,
+            0.8461222052574158,
+            0.8804519772529602,
+            0.910023033618927,
+            0.6474735140800476
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.8150992343823115
+        }
+      },
+      {
+        "seed": 2,
+        "decoding": {
+          "samples": 1999,
+          "mean_absolute_error_m": 0.09185821563005447,
+          "median_absolute_error_m": 0.053925663232803345,
+          "std_absolute_error_m": 0.1317720115184784,
+          "position_r2": 0.9072883129119873
+        },
+        "consistency": {
+          "scores": [
+            0.8687705993652344,
+            0.5989844799041748,
+            0.9145340919494629,
+            0.8891661167144775,
+            0.5914232134819031,
+            0.9341909289360046,
+            0.8250586986541748,
+            0.8314409255981445,
+            0.8466007709503174,
+            0.9265281558036804,
+            0.9119195342063904,
+            0.6495218276977539
+          ],
+          "pairs": [
+            [
+              "achilles",
+              "buddy"
+            ],
+            [
+              "achilles",
+              "cicero"
+            ],
+            [
+              "achilles",
+              "gatsby"
+            ],
+            [
+              "buddy",
+              "achilles"
+            ],
+            [
+              "buddy",
+              "cicero"
+            ],
+            [
+              "buddy",
+              "gatsby"
+            ],
+            [
+              "cicero",
+              "achilles"
+            ],
+            [
+              "cicero",
+              "buddy"
+            ],
+            [
+              "cicero",
+              "gatsby"
+            ],
+            [
+              "gatsby",
+              "achilles"
+            ],
+            [
+              "gatsby",
+              "buddy"
+            ],
+            [
+              "gatsby",
+              "cicero"
+            ]
+          ],
+          "mean_r2": 0.8156782786051432
+        }
+      }
+    ],
+    "mae_cm_mean": 9.316569318373999,
+    "mae_cm_sd": 0.12326868774099678,
+    "consistency_mean": 0.8175274878740311,
+    "consistency_sd": 0.003715688200627983
+  }
+}
