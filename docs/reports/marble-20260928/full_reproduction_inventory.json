@@ -1,0 +1,185 @@
+{
+  "checked_date": "2026-09-28",
+  "scope": "Local public author files rehashed against existing receipts; no training rerun",
+  "file_count": 29,
+  "total_bytes": 1860225828,
+  "all_data_hashes_verified": true,
+  "legacy_manifest_entry_count": 24,
+  "legacy_manifest_mismatches": [],
+  "files": [
+    {
+      "path": "macaque/cebra_embeddings_out20_pca5_100ms.pkl",
+      "bytes": 91719648,
+      "sha256": "161fc57e72999ffed95c0abe1148de993da3d53248d1aa1fe7bbd3763765b468",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7509031"
+    },
+    {
+      "path": "macaque/kinematics.pkl",
+      "bytes": 91102657,
+      "sha256": "feb95a378f4f315d391b13fdb95f90c5dcdb945b8feba606d1fdd40088ffa3cf",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6969885"
+    },
+    {
+      "path": "macaque/marble_embeddings_out20_pca5_100ms.pkl",
+      "bytes": 53892495,
+      "sha256": "b6322bebf00e43a9f0bdd00becc1c0c10d5ebe4732aed71f871862b7fc2c1e55",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7062022"
+    },
+    {
+      "path": "macaque/rate_data_20ms_100ms.pkl",
+      "bytes": 168895937,
+      "sha256": "6fd63d32ca02f657e77beb0a7711c4217650879cea4cae9195dc1a03fa0a5895",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6969883"
+    },
+    {
+      "path": "macaque/trial_ids.pkl",
+      "bytes": 126022,
+      "sha256": "8f67e9b088f2e8c66de1933a792a35ee1d3eabd556d6676e7bf86fd349df69d1",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6963200"
+    },
+    {
+      "path": "rat/cebra_behaviour_achilles_32D.pt",
+      "bytes": 584490,
+      "sha256": "8945ed9919a6d694adddc560d14143d44b86381a5f1aaf002cb7b0c27b51e879",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609520"
+    },
+    {
+      "path": "rat/cebra_behaviour_achilles_3D.pt",
+      "bytes": 717681,
+      "sha256": "d5ca4e3504d4969a2e165986b0a4f01ec1dbe417188d08140b8217d454b8306b",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609532"
+    },
+    {
+      "path": "rat/cebra_behaviour_buddy_3D.pt",
+      "bytes": 662256,
+      "sha256": "2bd8c5d7f54d7c08c19a07cc0572b8db0d44fc92ecb53e94d879520e3338a58f",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609530"
+    },
+    {
+      "path": "rat/cebra_behaviour_cicero_3D.pt",
+      "bytes": 667675,
+      "sha256": "508bee429ad90e127ca781590877562a820df844fc6527f1b749493337f3f70a",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609529"
+    },
+    {
+      "path": "rat/cebra_behaviour_gatsby_3D.pt",
+      "bytes": 676123,
+      "sha256": "1932bd65b9c7b96301f77f58e1993b4417e4927e0f7a76e81ed163729f92288c",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609536"
+    },
+    {
+      "path": "rat/cebra_time_achilles_32D.pt",
+      "bytes": 584362,
+      "sha256": "45f35449f39c4b31ccf77fba60cfb06eae0dc4c4e87edd0427b6bf5786d212d0",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609517"
+    },
+    {
+      "path": "rat/cebra_time_achilles_3D.pt",
+      "bytes": 822491,
+      "sha256": "278678c947b4ac65eac7c33c380f52b08a4cba3fefb666a48f865775edd14f7f",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609533"
+    },
+    {
+      "path": "rat/cebra_time_buddy_3D.pt",
+      "bytes": 767066,
+      "sha256": "e1b3fce1fbfb47aea4123cb0de28292142e9e6820357a42fa3529a10669752b2",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609531"
+    },
+    {
+      "path": "rat/cebra_time_cicero_3D.pt",
+      "bytes": 772485,
+      "sha256": "34aa236a71c1b41e10b408f65a60a045acadd4740b256eb1cc64a4b14ffc94e0",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609535"
+    },
+    {
+      "path": "rat/cebra_time_gatsby_3D.pt",
+      "bytes": 780933,
+      "sha256": "2570eb41be6c49296293390ddc2943a1a909455fb171ceb1a190218a51681b0b",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609534"
+    },
+    {
+      "path": "rat/marble_achilles_32D.pth",
+      "bytes": 251915,
+      "sha256": "960e62bcbc275da79987331833ae5f1a5c4126b6d9c6b1e9e4e305406438a1ba",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7659512"
+    },
+    {
+      "path": "rat/marble_achilles_3D.pth",
+      "bytes": 72843,
+      "sha256": "2ed49c043c940962b1407fed6061f0c3e3eb9e789bd0d7a5b8b70b8f059e8c72",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7657256"
+    },
+    {
+      "path": "rat/marble_buddy_3D.pth",
+      "bytes": 72523,
+      "sha256": "04c69b5791b80e932dd55090761223f16c7bbb34a57516fac7aae112221daa27",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7657252"
+    },
+    {
+      "path": "rat/marble_cicero_3D.pth",
+      "bytes": 72779,
+      "sha256": "1a787b13282cbaecd2607128913950ef3157e4e271b51c2ef99103f454679610",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7657257"
+    },
+    {
+      "path": "rat/marble_gatsby_3D.pth",
+      "bytes": 71691,
+      "sha256": "0b3ecd74fb57aa49d229169376d9d702335f513a341bf25fde25eb4057edceb2",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7657254"
+    },
+    {
+      "path": "rat/rat_data.pkl",
+      "bytes": 22055089,
+      "sha256": "29dffd951853a98615827e7b8f3507907f9e0f0ef67e875410778ab4aadd42ab",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7609512"
+    },
+    {
+      "path": "rnn/best_model_20231023-113502.pth",
+      "bytes": 26699,
+      "sha256": "7d4f1a4d42af4ab27a0b0f31facb3ef83578b65b34997aaa1cf19cf16c738863",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7509026"
+    },
+    {
+      "path": "rnn/best_model_20231023-115754.pth",
+      "bytes": 22012,
+      "sha256": "bf741c88c63a7da5c733f5601fb81e80365c4ff853d8266e2d86012d5bbe6764",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/7509027"
+    },
+    {
+      "path": "rnn/data_all_solutions.pkl",
+      "bytes": 540906046,
+      "sha256": "8d1a8bf57a1ded5124917921344b59698ace0d7e0c05c8ffc5238292869b7b44",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10092623"
+    },
+    {
+      "path": "rnn/data_solution_1.pkl",
+      "bytes": 883777926,
+      "sha256": "115b56ede8fa8a92bbd0ca8cd30dfc57393bc0cb1b29cb796773dfe429d8b61e",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10092620"
+    },
+    {
+      "path": "rnn/dms_rank2_500.pt",
+      "bytes": 18259,
+      "sha256": "a8d242e7e96118942fc221198eca27ed285f049d334c4a7af18ab04d8ea4406b",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6963161"
+    },
+    {
+      "path": "rnn/dms_rank2_500_2.pt",
+      "bytes": 18195,
+      "sha256": "77ab742072aa98ffc396275c230b8bb26b21567c9246a983eea8d90af3fa7864",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6963162"
+    },
+    {
+      "path": "rnn/dms_rank2_500_sampled_1.pt",
+      "bytes": 43765,
+      "sha256": "a16ec08d56103aa560d878d352a622da714fa0cc3632560c6e24c90ab4247157",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10092550"
+    },
+    {
+      "path": "rnn/dms_rank2_500_sampled_2.pt",
+      "bytes": 43765,
+      "sha256": "08ab1060f2a52446349c8d54ca9d1a4bd4f41cae4a81abe2bb4e92f8b8c5666f",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/10092551"
+    }
+  ]
+}

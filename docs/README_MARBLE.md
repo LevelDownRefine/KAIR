@@ -114,6 +114,10 @@ uv run --locked python -m pytest tests -q
 Methods 或 notebook 的部分设置不同。测试图使用整个测试窗口，属于离线解码。
 本次没有重新训练 CEBRA，也没有完成其他动物、扩散或内积不变特征等实验。
 
+后续范围、数据盘点、协议差异和分阶段验收见
+[完整复现计划](MARBLE_FULL_REPRODUCTION_PLAN.md)。下一步优先四只大鼠的
+3D 表征与跨动物一致性；二阶特征、RNN 和猕猴扩散模型按依赖顺序补齐。
+
 来源：[MARBLE 论文](https://www.nature.com/articles/s41592-024-02582-2)、
 [已核验的 CUDA 后端](https://github.com/LevelDownRefine/MARBLE/blob/872e46bd6dff2d092f8554a8c084701450e84904/reproduction/src/modern_gpu.py)。
 衍生代码的原许可证保留在 [licenses/MARBLE.txt](../licenses/MARBLE.txt)。
