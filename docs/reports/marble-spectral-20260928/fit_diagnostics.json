@@ -1,0 +1,3182 @@
+{
+  "seed-0/achilles/hard_spectral": {
+    "fit_seconds": 6.25461670000368,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000296860664,
+        0.9989999735163076
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010031991708,
+      "iteration_contraction_upper_bound": 0.4990005015995854,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 16,
+      "fixed_point_residual_max": 2.731428025981586e-07,
+      "a_posteriori_error_bound": 5.451957606150221e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0,
+    "representation": {
+      "centered_rms": 0.47972477012329484,
+      "effective_rank": 3,
+      "singular_values": [
+        57.25272297876352,
+        53.40914358966788,
+        27.802416029284768
+      ],
+      "mean_norm": 0.045479513704776764
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9926928281784058,
+      "sampled_D_jacobian_norm_max": 0.9990781545639038,
+      "sampled_D_symmetric_eigenvalue_max": 0.9853751063346863,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/achilles/initial": {
+    "fit_seconds": 3.7699996028095484e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.591767097077536e-07,
+      "a_posteriori_error_bound": 7.169203054051493e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.364418029785156e-07,
+    "representation": {
+      "centered_rms": 0.5632787606725178,
+      "effective_rank": 3,
+      "singular_values": [
+        58.21701888502151,
+        57.82377182755208,
+        52.770513941334656
+      ],
+      "mean_norm": 0.0018687339033931494
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979826807975769,
+      "sampled_D_jacobian_norm_max": 0.9959653615951538,
+      "sampled_D_symmetric_eigenvalue_max": 0.9959653615951538,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/achilles/soft_spectral": {
+    "fit_seconds": 4.940337100000761,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0170207008885586,
+        1.017517108531996
+      ],
+      "operator_lipschitz_upper_bound": 1.03483596288531,
+      "iteration_contraction_upper_bound": 0.517417981442655,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.816559512870299e-07,
+      "a_posteriori_error_bound": 7.908623541920842e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.816559512870299e-07,
+    "representation": {
+      "centered_rms": 0.583624037806421,
+      "effective_rank": 3,
+      "singular_values": [
+        60.38330161072315,
+        59.84560169651523,
+        54.67951644155334
+      ],
+      "mean_norm": 0.0025524392258375883
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0344823598861694,
+      "sampled_D_jacobian_norm_max": 1.0689946413040161,
+      "sampled_D_symmetric_eigenvalue_max": 1.0689352750778198,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/achilles/unconstrained": {
+    "fit_seconds": 4.283330199999909,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1787040063746623,
+        1.1741697089421055
+      ],
+      "operator_lipschitz_upper_bound": 1.3839985400938308,
+      "iteration_contraction_upper_bound": 0.6919992700469154,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 33,
+      "fixed_point_residual_max": 2.6845361844607396e-07,
+      "a_posteriori_error_bound": 8.716005916186156e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.00042912972276099026,
+    "representation": {
+      "centered_rms": 0.7898204961957437,
+      "effective_rank": 3,
+      "singular_values": [
+        79.63799759231208,
+        79.38755794678596,
+        77.89753538983571
+      ],
+      "mean_norm": 0.008283703587949276
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3743082284927368,
+      "sampled_D_jacobian_norm_max": 1.7487494945526123,
+      "sampled_D_symmetric_eigenvalue_max": 1.7483998537063599,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/buddy/hard_spectral": {
+    "fit_seconds": 5.962810099998023,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.998999964091002,
+        0.9990000046424437
+      ],
+      "operator_lipschitz_upper_bound": 0.998000968764712,
+      "iteration_contraction_upper_bound": 0.499000484382356,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.039252476355614e-07,
+      "a_posteriori_error_bound": 6.06637807345732e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.039252476355614e-07,
+    "representation": {
+      "centered_rms": 0.4984121014294571,
+      "effective_rank": 3,
+      "singular_values": [
+        47.9757338047721,
+        45.95023738516134,
+        22.082308071212953
+      ],
+      "mean_norm": 0.02966415509581566
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9946402311325073,
+      "sampled_D_jacobian_norm_max": 0.9997063875198364,
+      "sampled_D_symmetric_eigenvalue_max": 0.9892775416374207,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/buddy/initial": {
+    "fit_seconds": 5.680000322172418e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.591767097077536e-07,
+      "a_posteriori_error_bound": 7.169203054051493e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.136039362696465e-07,
+    "representation": {
+      "centered_rms": 0.5633778404265523,
+      "effective_rank": 3,
+      "singular_values": [
+        47.89475334446982,
+        46.12915830001093,
+        42.89235187657452
+      ],
+      "mean_norm": 0.011773892678320408
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.997995138168335,
+      "sampled_D_jacobian_norm_max": 0.9959902763366699,
+      "sampled_D_symmetric_eigenvalue_max": 0.9959902763366699,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/buddy/soft_spectral": {
+    "fit_seconds": 4.626708099996904,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.016048477602052,
+        1.0169942808805896
+      ],
+      "operator_lipschitz_upper_bound": 1.0333154908187168,
+      "iteration_contraction_upper_bound": 0.5166577454093584,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 16,
+      "fixed_point_residual_max": 2.731428025981586e-07,
+      "a_posteriori_error_bound": 5.651126091375813e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0,
+    "representation": {
+      "centered_rms": 0.5815846794450087,
+      "effective_rank": 3,
+      "singular_values": [
+        49.46412172708778,
+        47.63130759253421,
+        44.242202759231844
+      ],
+      "mean_norm": 0.004727772902697325
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0331804752349854,
+      "sampled_D_jacobian_norm_max": 1.066367268562317,
+      "sampled_D_symmetric_eigenvalue_max": 1.0663539171218872,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/buddy/unconstrained": {
+    "fit_seconds": 4.827813900003093,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1800109839402964,
+        1.1652114900923214
+      ],
+      "operator_lipschitz_upper_bound": 1.374962356922379,
+      "iteration_contraction_upper_bound": 0.6874811784611895,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 32,
+      "fixed_point_residual_max": 2.731428025981586e-07,
+      "a_posteriori_error_bound": 8.740043279736931e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0003435851540416479,
+    "representation": {
+      "centered_rms": 0.7812144139230036,
+      "effective_rank": 3,
+      "singular_values": [
+        65.66713068733215,
+        63.45767017105689,
+        60.83478242678033
+      ],
+      "mean_norm": 0.009830823168158531
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3487536907196045,
+      "sampled_D_jacobian_norm_max": 1.6978027820587158,
+      "sampled_D_symmetric_eigenvalue_max": 1.697025179862976,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/cicero/hard_spectral": {
+    "fit_seconds": 4.63405149999744,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9989999375779424,
+        0.9990000449583119
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009825537152,
+      "iteration_contraction_upper_bound": 0.4990004912768576,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.6582516688431497e-07,
+      "a_posteriori_error_bound": 9.297916640108619e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.6582516688431497e-07,
+    "representation": {
+      "centered_rms": 0.4874321265948835,
+      "effective_rank": 3,
+      "singular_values": [
+        57.10836793823585,
+        55.964224024049074,
+        27.085596018683667
+      ],
+      "mean_norm": 0.04288705810904503
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9969013929367065,
+      "sampled_D_jacobian_norm_max": 0.9993049502372742,
+      "sampled_D_symmetric_eigenvalue_max": 0.9938011169433594,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/cicero/initial": {
+    "fit_seconds": 9.419999696547166e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.6263745073483733e-07,
+      "a_posteriori_error_bound": 7.238279791128452e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.331233978722594e-07,
+    "representation": {
+      "centered_rms": 0.5638741065807804,
+      "effective_rank": 3,
+      "singular_values": [
+        59.30942398024739,
+        57.7471033142145,
+        51.82017624528764
+      ],
+      "mean_norm": 0.009755750186741352
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9980005025863647,
+      "sampled_D_jacobian_norm_max": 0.9960010051727295,
+      "sampled_D_symmetric_eigenvalue_max": 0.9960010051727295,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/cicero/soft_spectral": {
+    "fit_seconds": 4.742845400003716,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0163845807456433,
+        1.0167525151742156
+      ],
+      "operator_lipschitz_upper_bound": 1.0334115788574234,
+      "iteration_contraction_upper_bound": 0.5167057894287117,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.214684850012418e-07,
+      "a_posteriori_error_bound": 8.720743509487438e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.214684850012418e-07,
+    "representation": {
+      "centered_rms": 0.5822427905063381,
+      "effective_rank": 3,
+      "singular_values": [
+        61.22908003393496,
+        59.60509520160102,
+        53.548252792252825
+      ],
+      "mean_norm": 0.00488614197820425
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0329437255859375,
+      "sampled_D_jacobian_norm_max": 1.0658904314041138,
+      "sampled_D_symmetric_eigenvalue_max": 1.0658855438232422,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/cicero/unconstrained": {
+    "fit_seconds": 6.473711999999068,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1837733207305,
+        1.1730418079946903
+      ],
+      "operator_lipschitz_upper_bound": 1.388615596405584,
+      "iteration_contraction_upper_bound": 0.694307798202792,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 33,
+      "fixed_point_residual_max": 2.799673950448778e-07,
+      "a_posteriori_error_bound": 9.158473569129653e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0005491453339345753,
+    "representation": {
+      "centered_rms": 0.7818472899472801,
+      "effective_rank": 3,
+      "singular_values": [
+        80.2305826584639,
+        78.65639102815392,
+        75.58404226483464
+      ],
+      "mean_norm": 0.007137125823646784
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3811615705490112,
+      "sampled_D_jacobian_norm_max": 1.7630714178085327,
+      "sampled_D_symmetric_eigenvalue_max": 1.7611315250396729,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/decoding/hard_spectral": {
+    "fit_seconds": 8.971646400001191,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000539185152,
+        0.9989999908462257
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010447199756,
+      "iteration_contraction_upper_bound": 0.4990005223599878,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.5667866288567893e-07,
+      "a_posteriori_error_bound": 9.115352076550877e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 6.766300657545798e-07,
+    "representation": {
+      "centered_rms": 0.10551944781822858,
+      "effective_rank": 32,
+      "singular_values": [
+        35.144174437750046,
+        19.792515972141256,
+        17.689727516727704,
+        16.304438775694383,
+        14.243287900670888,
+        13.818987076163113,
+        12.267196201643324,
+        9.789305351854857,
+        1.4098140966379111,
+        0.9721757256262857,
+        0.7015332973885572,
+        0.5151823374188971,
+        0.42701972646153835,
+        0.3211817600473003,
+        0.21689506140549258,
+        0.21668272065340463,
+        0.19307208968807169,
+        0.1760589426344726,
+        0.1589436639829181,
+        0.14411321535509486,
+        0.13023324010358253,
+        0.11889271077282713,
+        0.10740270224519922,
+        0.0942860961788586,
+        0.08851571187594716,
+        0.07761118320705532,
+        0.07228927136667627,
+        0.06793910749733434,
+        0.0629352569387998,
+        0.05495388800331122,
+        0.04778250941871243,
+        0.040172006145310246
+      ],
+      "mean_norm": 0.02995224855840206
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979549646377563,
+      "sampled_D_jacobian_norm_max": 1.0328840017318726,
+      "sampled_D_symmetric_eigenvalue_max": 0.9950287342071533,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        0.9990000539185152,
+        0.9989999908462257
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010447199756,
+      "iteration_contraction_upper_bound": 0.4990005223599878,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.4731413595400227e-07,
+      "a_posteriori_error_bound": 8.928435176441742e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-0/decoding/initial": {
+    "fit_seconds": 5.60000044060871e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579595,
+        0.9990000067579595
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010135024032,
+      "iteration_contraction_upper_bound": 0.4990005067512016,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.3945030370196037e-07,
+      "a_posteriori_error_bound": 8.771472019907364e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 6.975466249059536e-07,
+    "representation": {
+      "centered_rms": 0.17575487304362444,
+      "effective_rank": 32,
+      "singular_values": [
+        42.40534223261015,
+        36.97538113351458,
+        34.520108044521905,
+        32.2756372456964,
+        28.210540647491083,
+        27.289049348036446,
+        24.152366361882454,
+        19.16719676480199,
+        2.802515959317878,
+        1.9227009621631943,
+        1.3838020941842495,
+        1.0286394394620557,
+        0.8498019547234364,
+        0.6378767128724396,
+        0.42794988224454267,
+        0.42374684312740396,
+        0.3770284430470134,
+        0.3525412690600037,
+        0.31516101928430623,
+        0.28863332996283386,
+        0.2625656379210169,
+        0.23629869745612261,
+        0.20841120620164447,
+        0.18477874785017734,
+        0.1726018272741251,
+        0.15818254531996012,
+        0.14326550207058353,
+        0.1314809270146871,
+        0.12391186200341313,
+        0.10992961708366497,
+        0.09398105766613825,
+        0.08087662556486064
+      ],
+      "mean_norm": 0.017787547782063484
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9980010390281677,
+      "sampled_D_jacobian_norm_max": 0.9960020780563354,
+      "sampled_D_symmetric_eigenvalue_max": 0.9960020780563354,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        0.9990000067579595,
+        0.9990000067579595
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010135024032,
+      "iteration_contraction_upper_bound": 0.4990005067512016,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.3291174733894877e-07,
+      "a_posteriori_error_bound": 8.6409617808528e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-0/decoding/soft_spectral": {
+    "fit_seconds": 5.881295799998043,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0234426975116675,
+        1.0253959820278715
+      ],
+      "operator_lipschitz_upper_bound": 1.0494340298642302,
+      "iteration_contraction_upper_bound": 0.5247170149321151,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 17,
+      "fixed_point_residual_max": 3.3867888760141796e-07,
+      "a_posteriori_error_bound": 7.125836569828904e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.980142532280297e-07,
+    "representation": {
+      "centered_rms": 0.18270047022934208,
+      "effective_rank": 32,
+      "singular_values": [
+        44.23482091418314,
+        38.41527058212756,
+        35.87364973892775,
+        33.55070807563693,
+        29.315860742070203,
+        28.32932620843384,
+        25.14941214536736,
+        19.698155147557966,
+        2.792963183466202,
+        1.9190682158800931,
+        1.3697352068724924,
+        1.0095699490997259,
+        0.8291870143181458,
+        0.6282857798904401,
+        0.4236707162509019,
+        0.4167935363097985,
+        0.3683772037251783,
+        0.3443251680468752,
+        0.30716396312762806,
+        0.28329047190917167,
+        0.2579943780210851,
+        0.23326316053333324,
+        0.20516963438439034,
+        0.1799227825535284,
+        0.17462557663886977,
+        0.15691253064651908,
+        0.1420656182221112,
+        0.1282447982953434,
+        0.12224925934912842,
+        0.10839124674129759,
+        0.09366815826816166,
+        0.07982397713337323
+      ],
+      "mean_norm": 0.009561375714838505
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0450347661972046,
+      "sampled_D_jacobian_norm_max": 1.0900741815567017,
+      "sampled_D_symmetric_eigenvalue_max": 1.090063214302063,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        1.0234426975116675,
+        1.0253959820278715
+      ],
+      "operator_lipschitz_upper_bound": 1.0494340298642302,
+      "iteration_contraction_upper_bound": 0.5247170149321151,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 17,
+      "fixed_point_residual_max": 3.1528398380942235e-07,
+      "a_posteriori_error_bound": 6.633605530069421e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-0/decoding/unconstrained": {
+    "fit_seconds": 6.426997300004587,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.3359355597160165,
+        1.2682445283247408
+      ],
+      "operator_lipschitz_upper_bound": 1.6942929638042878,
+      "iteration_contraction_upper_bound": 0.8471464819021439,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 66,
+      "fixed_point_residual_max": 1.367871647062202e-07,
+      "a_posteriori_error_bound": 8.94890522694085e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.02339261770248413,
+    "representation": {
+      "centered_rms": 0.2864123003524042,
+      "effective_rank": 32,
+      "singular_values": [
+        56.77626592779633,
+        55.99402975394006,
+        54.02135690534795,
+        52.32947037170417,
+        50.55174838665673,
+        48.899331031849975,
+        47.805104795110125,
+        41.61236126310368,
+        3.043346324402905,
+        2.012008416257246,
+        1.2228519281433854,
+        1.0805395783180907,
+        0.7923782308418663,
+        0.6280878869285339,
+        0.5173513826027969,
+        0.43926096422588307,
+        0.39762813983774453,
+        0.37206070157437554,
+        0.3628655343905945,
+        0.324646536724786,
+        0.2973800629963517,
+        0.2624683077515739,
+        0.23475157920665923,
+        0.23225721436053456,
+        0.2223595309627705,
+        0.18960831614308768,
+        0.18131936911624008,
+        0.15975559937315584,
+        0.14885832880370403,
+        0.13768070098890958,
+        0.12873889482538994,
+        0.11942386413414088
+      ],
+      "mean_norm": 0.013191597536206245
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.6705955266952515,
+      "sampled_D_jacobian_norm_max": 2.3471221923828125,
+      "sampled_D_symmetric_eigenvalue_max": 2.3302862644195557,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        1.3359355597160165,
+        1.2682445283247408
+      ],
+      "operator_lipschitz_upper_bound": 1.6942929638042878,
+      "iteration_contraction_upper_bound": 0.8471464819021439,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 64,
+      "fixed_point_residual_max": 1.470074266762822e-07,
+      "a_posteriori_error_bound": 9.617536351513268e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-0/gatsby/hard_spectral": {
+    "fit_seconds": 4.544691900002363,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.998999966357605,
+        0.9989999828462219
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009492546237,
+      "iteration_contraction_upper_bound": 0.49900047462731184,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.500051886680012e-07,
+      "a_posteriori_error_bound": 8.98214800369815e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 6.556510925292969e-07,
+    "representation": {
+      "centered_rms": 0.42695519290407413,
+      "effective_rank": 3,
+      "singular_values": [
+        62.73266755339117,
+        29.30423648872332,
+        25.96246089397313
+      ],
+      "mean_norm": 0.047396477311849594
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9975128769874573,
+      "sampled_D_jacobian_norm_max": 0.9950956106185913,
+      "sampled_D_symmetric_eigenvalue_max": 0.9950249195098877,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/gatsby/initial": {
+    "fit_seconds": 4.269999772077426e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.5801571129923104e-07,
+      "a_posteriori_error_bound": 7.146029409683234e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.205284878684324e-07,
+    "representation": {
+      "centered_rms": 0.5638974592049156,
+      "effective_rank": 3,
+      "singular_values": [
+        62.176929254335654,
+        56.51055096605907,
+        49.789993893482844
+      ],
+      "mean_norm": 0.007330410648137331
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979352355003357,
+      "sampled_D_jacobian_norm_max": 0.9958704710006714,
+      "sampled_D_symmetric_eigenvalue_max": 0.9958704710006714,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/gatsby/soft_spectral": {
+    "fit_seconds": 4.6604575000019395,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0165281840542264,
+        1.0170270653219209
+      ],
+      "operator_lipschitz_upper_bound": 1.0338366758456914,
+      "iteration_contraction_upper_bound": 0.5169183379228457,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.009492329259956e-07,
+      "a_posteriori_error_bound": 8.299823081712402e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.009492329259956e-07,
+    "representation": {
+      "centered_rms": 0.5819259145192098,
+      "effective_rank": 3,
+      "singular_values": [
+        64.18228405958767,
+        58.3093435727227,
+        51.36897946595002
+      ],
+      "mean_norm": 0.005183621309697628
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0331082344055176,
+      "sampled_D_jacobian_norm_max": 1.066226601600647,
+      "sampled_D_symmetric_eigenvalue_max": 1.0662060976028442,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-0/gatsby/unconstrained": {
+    "fit_seconds": 4.3502927999943495,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.2090422845044908,
+        1.180472422655889
+      ],
+      "operator_lipschitz_upper_bound": 1.4272410746824267,
+      "iteration_contraction_upper_bound": 0.7136205373412133,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 35,
+      "fixed_point_residual_max": 2.602375843707705e-07,
+      "a_posteriori_error_bound": 9.087159461599957e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0007397981826215982,
+    "representation": {
+      "centered_rms": 0.7827715175424319,
+      "effective_rank": 3,
+      "singular_values": [
+        82.3824584457133,
+        78.12358660118059,
+        74.09409574002879
+      ],
+      "mean_norm": 0.011910280212759972
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.405889868736267,
+      "sampled_D_jacobian_norm_max": 1.812183141708374,
+      "sampled_D_symmetric_eigenvalue_max": 1.811151146888733,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/achilles/hard_spectral": {
+    "fit_seconds": 4.316407700003765,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000442232883,
+        0.9990000274766709
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010716282605,
+      "iteration_contraction_upper_bound": 0.49900053581413023,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.129530850605079e-07,
+      "a_posteriori_error_bound": 8.242585363470632e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.129530850605079e-07,
+    "representation": {
+      "centered_rms": 0.4124530079173448,
+      "effective_rank": 3,
+      "singular_values": [
+        58.708241612925164,
+        30.071351415950478,
+        27.423901080764455
+      ],
+      "mean_norm": 0.024778764694929123
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9978075623512268,
+      "sampled_D_jacobian_norm_max": 0.9956814646720886,
+      "sampled_D_symmetric_eigenvalue_max": 0.9956130385398865,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/achilles/initial": {
+    "fit_seconds": 3.8100006349850446e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.591767097077536e-07,
+      "a_posteriori_error_bound": 7.169203054051493e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.364418029785156e-07,
+    "representation": {
+      "centered_rms": 0.5632787607055281,
+      "effective_rank": 3,
+      "singular_values": [
+        58.21701888775538,
+        57.82377183526164,
+        52.770513940440466
+      ],
+      "mean_norm": 0.0018687337869778275
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979826807975769,
+      "sampled_D_jacobian_norm_max": 0.9959653615951538,
+      "sampled_D_symmetric_eigenvalue_max": 0.9959653615951538,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/achilles/soft_spectral": {
+    "fit_seconds": 4.396120500001416,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.016783906965626,
+        1.017512493113798
+      ],
+      "operator_lipschitz_upper_bound": 1.034590328134582,
+      "iteration_contraction_upper_bound": 0.517295164067291,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.805480102731963e-07,
+      "a_posteriori_error_bound": 9.95531791896501e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.805480102731963e-07,
+    "representation": {
+      "centered_rms": 0.5834763521350457,
+      "effective_rank": 3,
+      "singular_values": [
+        60.421989073919065,
+        59.83081973341021,
+        54.605627159144376
+      ],
+      "mean_norm": 0.004957359284162521
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.034104585647583,
+      "sampled_D_jacobian_norm_max": 1.0682426691055298,
+      "sampled_D_symmetric_eigenvalue_max": 1.0681759119033813,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/achilles/unconstrained": {
+    "fit_seconds": 3.9713702999943052,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1772195243082701,
+        1.1686409586484672
+      ],
+      "operator_lipschitz_upper_bound": 1.3757469534273092,
+      "iteration_contraction_upper_bound": 0.6878734767136546,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 34,
+      "fixed_point_residual_max": 1.7441361421788315e-07,
+      "a_posteriori_error_bound": 5.587913913290727e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0004618521488737315,
+    "representation": {
+      "centered_rms": 0.7874399793209119,
+      "effective_rank": 3,
+      "singular_values": [
+        79.90398942398222,
+        78.94050418296844,
+        77.35464251934268
+      ],
+      "mean_norm": 0.007287453394383192
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.363793969154358,
+      "sampled_D_jacobian_norm_max": 1.7286148071289062,
+      "sampled_D_symmetric_eigenvalue_max": 1.7259342670440674,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/buddy/hard_spectral": {
+    "fit_seconds": 4.381229500002519,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000359373594,
+        0.9989999634772809
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009994152244,
+      "iteration_contraction_upper_bound": 0.4990004997076122,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.6648014517813863e-07,
+      "a_posteriori_error_bound": 9.310990228650859e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 6.95742244261055e-07,
+    "representation": {
+      "centered_rms": 0.4992748762029098,
+      "effective_rank": 3,
+      "singular_values": [
+        48.199038100791334,
+        45.90157247397525,
+        22.08174588608105
+      ],
+      "mean_norm": 0.028512882068753242
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9965927600860596,
+      "sampled_D_jacobian_norm_max": 0.999714732170105,
+      "sampled_D_symmetric_eigenvalue_max": 0.9931820034980774,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/buddy/initial": {
+    "fit_seconds": 3.609999839682132e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.591767097077536e-07,
+      "a_posteriori_error_bound": 7.169203054051493e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.136039362696465e-07,
+    "representation": {
+      "centered_rms": 0.5633778404636837,
+      "effective_rank": 3,
+      "singular_values": [
+        47.894753347449324,
+        46.129158301359304,
+        42.89235188141896
+      ],
+      "mean_norm": 0.011773892678320408
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.997995138168335,
+      "sampled_D_jacobian_norm_max": 0.9959902763366699,
+      "sampled_D_symmetric_eigenvalue_max": 0.9959902763366699,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/buddy/soft_spectral": {
+    "fit_seconds": 4.283961799999815,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.016545767438371,
+        1.0175240255040543
+      ],
+      "operator_lipschitz_upper_bound": 1.0343597413929995,
+      "iteration_contraction_upper_bound": 0.5171798706964997,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.053554221172817e-07,
+      "a_posteriori_error_bound": 8.395578343057766e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.053554221172817e-07,
+    "representation": {
+      "centered_rms": 0.5819961196114743,
+      "effective_rank": 3,
+      "singular_values": [
+        49.5147673653032,
+        47.65133305253376,
+        44.270715337462455
+      ],
+      "mean_norm": 0.00663139671087265
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0340576171875,
+      "sampled_D_jacobian_norm_max": 1.0681215524673462,
+      "sampled_D_symmetric_eigenvalue_max": 1.0681087970733643,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/buddy/unconstrained": {
+    "fit_seconds": 4.0931119000015315,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1767973731442336,
+        1.1694316413920434
+      ],
+      "operator_lipschitz_upper_bound": 1.3761840836619061,
+      "iteration_contraction_upper_bound": 0.6880920418309531,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 32,
+      "fixed_point_residual_max": 2.811545414260763e-07,
+      "a_posteriori_error_bound": 9.014022696839849e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.00040063465712592006,
+    "representation": {
+      "centered_rms": 0.78861644404153,
+      "effective_rank": 3,
+      "singular_values": [
+        65.76747302398273,
+        64.25911055635008,
+        61.762148563173994
+      ],
+      "mean_norm": 0.01071180123835802
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3664822578430176,
+      "sampled_D_jacobian_norm_max": 1.7334544658660889,
+      "sampled_D_symmetric_eigenvalue_max": 1.7321399450302124,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/cicero/hard_spectral": {
+    "fit_seconds": 4.294190799999342,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.999000019544068,
+        0.9990000427331129
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010622149046,
+      "iteration_contraction_upper_bound": 0.4990005311074523,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.4808908228333166e-07,
+      "a_posteriori_error_bound": 8.943903339335396e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.4808908228333166e-07,
+    "representation": {
+      "centered_rms": 0.4863497201746265,
+      "effective_rank": 3,
+      "singular_values": [
+        57.28985817791701,
+        55.490152785756486,
+        27.09403984338162
+      ],
+      "mean_norm": 0.04082687199115753
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9971402287483215,
+      "sampled_D_jacobian_norm_max": 0.9994068741798401,
+      "sampled_D_symmetric_eigenvalue_max": 0.9942779541015625,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/cicero/initial": {
+    "fit_seconds": 4.890000127488747e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.6263745073483733e-07,
+      "a_posteriori_error_bound": 7.238279791128452e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.331233978722594e-07,
+    "representation": {
+      "centered_rms": 0.5638741065352584,
+      "effective_rank": 3,
+      "singular_values": [
+        59.309423969256216,
+        57.74710331327068,
+        51.82017624406023
+      ],
+      "mean_norm": 0.009755751118063927
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9980005025863647,
+      "sampled_D_jacobian_norm_max": 0.9960010051727295,
+      "sampled_D_symmetric_eigenvalue_max": 0.9960010051727295,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/cicero/soft_spectral": {
+    "fit_seconds": 4.284227299998747,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0160363700384414,
+        1.017271700174296
+      ],
+      "operator_lipschitz_upper_bound": 1.0335850455879254,
+      "iteration_contraction_upper_bound": 0.5167925227939627,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.9649410155107034e-07,
+      "a_posteriori_error_bound": 8.205462875774317e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.9649410155107034e-07,
+    "representation": {
+      "centered_rms": 0.5822207175295243,
+      "effective_rank": 3,
+      "singular_values": [
+        61.232277760767715,
+        59.577045903389426,
+        53.56860775099241
+      ],
+      "mean_norm": 0.005600178148597479
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0327677726745605,
+      "sampled_D_jacobian_norm_max": 1.065541386604309,
+      "sampled_D_symmetric_eigenvalue_max": 1.065529227256775,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/cicero/unconstrained": {
+    "fit_seconds": 4.35595949999697,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1805194223583713,
+        1.170090113925013
+      ],
+      "operator_lipschitz_upper_bound": 1.3813141053979971,
+      "iteration_contraction_upper_bound": 0.6906570526989986,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 32,
+      "fixed_point_residual_max": 2.920019426255749e-07,
+      "a_posteriori_error_bound": 9.43942459892085e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0003730929456651211,
+    "representation": {
+      "centered_rms": 0.7806320596471104,
+      "effective_rank": 3,
+      "singular_values": [
+        79.59761888392714,
+        78.68809676786783,
+        75.84303997262235
+      ],
+      "mean_norm": 0.006852888036519289
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3743046522140503,
+      "sampled_D_jacobian_norm_max": 1.7488199472427368,
+      "sampled_D_symmetric_eigenvalue_max": 1.7482751607894897,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/decoding/hard_spectral": {
+    "fit_seconds": 8.70384880000347,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000047622514,
+        0.9989999850001305
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009897726194,
+      "iteration_contraction_upper_bound": 0.4990004948863097,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.940049507240474e-07,
+      "a_posteriori_error_bound": 9.86038799802695e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 7.338821887969971e-07,
+    "representation": {
+      "centered_rms": 0.10256032543247763,
+      "effective_rank": 32,
+      "singular_values": [
+        32.34653814819435,
+        18.169938777370888,
+        17.699617830822003,
+        16.73650604701835,
+        14.757079392355678,
+        14.235935488712164,
+        12.834542308469345,
+        11.411256967274223,
+        1.8885238229511045,
+        1.4121092202214773,
+        0.730506165864143,
+        0.5676937757555779,
+        0.4873722222112969,
+        0.3983355761043823,
+        0.2945067256355622,
+        0.2750409631669484,
+        0.21076416614501545,
+        0.1941918401844019,
+        0.18688410646575515,
+        0.16050383797203324,
+        0.1542285340112477,
+        0.13044822735622208,
+        0.11543871725118758,
+        0.10628791036108513,
+        0.09289850427504787,
+        0.0843980357942842,
+        0.08311463099807163,
+        0.0708861083693872,
+        0.06640985148862436,
+        0.054787884436570136,
+        0.04719530814109724,
+        0.04176170366660756
+      ],
+      "mean_norm": 0.035932756960392
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979770183563232,
+      "sampled_D_jacobian_norm_max": 1.0586111545562744,
+      "sampled_D_symmetric_eigenvalue_max": 0.9939754009246826,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        0.9990000047622514,
+        0.9989999850001305
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009897726194,
+      "iteration_contraction_upper_bound": 0.4990004948863097,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.976575382897863e-07,
+      "a_posteriori_error_bound": 9.933294009479199e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-1/decoding/initial": {
+    "fit_seconds": 5.129999772179872e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579595,
+        0.9990000067579595
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010135024032,
+      "iteration_contraction_upper_bound": 0.4990005067512016,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.5558365968645376e-07,
+      "a_posteriori_error_bound": 9.093495419170195e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 7.419972121169849e-07,
+    "representation": {
+      "centered_rms": 0.17581637021262994,
+      "effective_rank": 32,
+      "singular_values": [
+        38.23856085275314,
+        36.01783750097882,
+        35.15582835674019,
+        33.18147686875184,
+        29.0974548243549,
+        28.22830301817436,
+        25.089762176973142,
+        22.685962396878857,
+        3.7399575765034165,
+        2.7768877832571297,
+        1.4508068430499197,
+        1.125106675858631,
+        0.9712433952824213,
+        0.7927669977913714,
+        0.5904373444508761,
+        0.5469020218366791,
+        0.41439098084284404,
+        0.38189738602714224,
+        0.37195743457769326,
+        0.32171205784344625,
+        0.30538419845990694,
+        0.2552638997722957,
+        0.23691694273930622,
+        0.21556149568828023,
+        0.18781332738707573,
+        0.16791634819300286,
+        0.16297663411353966,
+        0.14546842183716638,
+        0.1344513680073735,
+        0.10794238755207843,
+        0.09376000695071583,
+        0.08134828723888021
+      ],
+      "mean_norm": 0.009379185736179352
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9980010390281677,
+      "sampled_D_jacobian_norm_max": 0.9960020780563354,
+      "sampled_D_symmetric_eigenvalue_max": 0.9960020780563354,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        0.9990000067579595,
+        0.9990000067579595
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010135024032,
+      "iteration_contraction_upper_bound": 0.4990005067512016,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.2642167841222545e-07,
+      "a_posteriori_error_bound": 8.511419355876727e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-1/decoding/soft_spectral": {
+    "fit_seconds": 5.635249200000544,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0225051260684839,
+        1.0230744999726125
+      ],
+      "operator_lipschitz_upper_bound": 1.0460989205719473,
+      "iteration_contraction_upper_bound": 0.5230494602859737,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 17,
+      "fixed_point_residual_max": 2.9098578124830965e-07,
+      "a_posteriori_error_bound": 6.100963454675638e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.418072532847873e-07,
+    "representation": {
+      "centered_rms": 0.1821536980179365,
+      "effective_rank": 32,
+      "singular_values": [
+        39.674882528539776,
+        37.559687560417856,
+        36.43587664251405,
+        34.03473597705223,
+        30.28491639060927,
+        29.296131948461397,
+        25.985047955526856,
+        23.31988540835869,
+        3.716437761972169,
+        2.7584121938561372,
+        1.4313689007648842,
+        1.1047160815642314,
+        0.9539805886236898,
+        0.7793337560013724,
+        0.5803697809618871,
+        0.5363175865456424,
+        0.40486988164361337,
+        0.3739661214350581,
+        0.36382434801250574,
+        0.3120998139329574,
+        0.3002440654724343,
+        0.2497715666393064,
+        0.23376816026037164,
+        0.2115043598922876,
+        0.18468406851227923,
+        0.16551948337922967,
+        0.1586790141464405,
+        0.14398394749187193,
+        0.13312201483449415,
+        0.10686160099814729,
+        0.09062207885644404,
+        0.0794728677143825
+      ],
+      "mean_norm": 0.004951487295329571
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0411348342895508,
+      "sampled_D_jacobian_norm_max": 1.0822746753692627,
+      "sampled_D_symmetric_eigenvalue_max": 1.0822644233703613,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        1.0225051260684839,
+        1.0230744999726125
+      ],
+      "operator_lipschitz_upper_bound": 1.0460989205719473,
+      "iteration_contraction_upper_bound": 0.5230494602859737,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 17,
+      "fixed_point_residual_max": 2.8916628025399405e-07,
+      "a_posteriori_error_bound": 6.062814824098418e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-1/decoding/unconstrained": {
+    "fit_seconds": 5.650777300004847,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.2829386285567612,
+        1.2593770571311262
+      ],
+      "operator_lipschitz_upper_bound": 1.615703474511657,
+      "iteration_contraction_upper_bound": 0.8078517372558285,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 54,
+      "fixed_point_residual_max": 1.7939507301889535e-07,
+      "a_posteriori_error_bound": 9.336283891244132e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.011305314488708973,
+    "representation": {
+      "centered_rms": 0.2866579064262024,
+      "effective_rank": 32,
+      "singular_values": [
+        55.50736798110058,
+        54.20059062352399,
+        53.35277737136442,
+        52.216130757863255,
+        50.637552979980455,
+        49.529716259522395,
+        47.71408055763111,
+        46.00291963271308,
+        4.009180412159216,
+        2.9001627399036725,
+        1.4715271293932253,
+        1.1172323900081527,
+        1.0188433376477635,
+        0.8261194737446511,
+        0.6595922381284806,
+        0.5426103749353195,
+        0.43175921776689913,
+        0.416886165987389,
+        0.38895783937069733,
+        0.3532029992779025,
+        0.30594291434170107,
+        0.28574453010371004,
+        0.2740079432107102,
+        0.2462060444882362,
+        0.2264745331026806,
+        0.2023754202175944,
+        0.1831634371963987,
+        0.17836978192811864,
+        0.1563346283037757,
+        0.15035359527736566,
+        0.11858283266776522,
+        0.10043606459098985
+      ],
+      "mean_norm": 0.011721468530595303
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.5948342084884644,
+      "sampled_D_jacobian_norm_max": 2.195155143737793,
+      "sampled_D_symmetric_eigenvalue_max": 2.1803483963012695,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        1.2829386285567612,
+        1.2593770571311262
+      ],
+      "operator_lipschitz_upper_bound": 1.615703474511657,
+      "iteration_contraction_upper_bound": 0.8078517372558285,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 54,
+      "fixed_point_residual_max": 1.632765389558699e-07,
+      "a_posteriori_error_bound": 8.497424677383538e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-1/gatsby/hard_spectral": {
+    "fit_seconds": 4.294688500005577,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000448878645,
+        0.9990000322798391
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010770905374,
+      "iteration_contraction_upper_bound": 0.4990005385452687,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 4.129530850605079e-07,
+      "a_posteriori_error_bound": 8.242585408404096e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 6.194296133799071e-07,
+    "representation": {
+      "centered_rms": 0.42690755727752877,
+      "effective_rank": 3,
+      "singular_values": [
+        62.735651861902355,
+        29.284421514497403,
+        25.954108839565993
+      ],
+      "mean_norm": 0.04706241562962532
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9975191354751587,
+      "sampled_D_jacobian_norm_max": 0.9951240420341492,
+      "sampled_D_symmetric_eigenvalue_max": 0.9950352907180786,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/gatsby/initial": {
+    "fit_seconds": 3.499999729683623e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.5801571129923104e-07,
+      "a_posteriori_error_bound": 7.146029409683234e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.205284878684324e-07,
+    "representation": {
+      "centered_rms": 0.5638974592070265,
+      "effective_rank": 3,
+      "singular_values": [
+        62.17692925556358,
+        56.510550966712856,
+        49.789993891924574
+      ],
+      "mean_norm": 0.007330411113798618
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979352355003357,
+      "sampled_D_jacobian_norm_max": 0.9958704710006714,
+      "sampled_D_symmetric_eigenvalue_max": 0.9958704710006714,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/gatsby/soft_spectral": {
+    "fit_seconds": 4.15402119999635,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0158125285948327,
+        1.0167134082783542
+      ],
+      "operator_lipschitz_upper_bound": 1.0327902181195054,
+      "iteration_contraction_upper_bound": 0.5163951090597527,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.816559512870299e-07,
+      "a_posteriori_error_bound": 7.891896017531926e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.816559512870299e-07,
+    "representation": {
+      "centered_rms": 0.5816779760104177,
+      "effective_rank": 3,
+      "singular_values": [
+        64.11323295824437,
+        58.297227031075494,
+        51.38472210290791
+      ],
+      "mean_norm": 0.006246473174542189
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0321799516677856,
+      "sampled_D_jacobian_norm_max": 1.064377784729004,
+      "sampled_D_symmetric_eigenvalue_max": 1.0643420219421387,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-1/gatsby/unconstrained": {
+    "fit_seconds": 3.9822714000038104,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.2033307700641638,
+        1.1825396643736972
+      ],
+      "operator_lipschitz_upper_bound": 1.4229863649622188,
+      "iteration_contraction_upper_bound": 0.7114931824811094,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 35,
+      "fixed_point_residual_max": 2.799673950448778e-07,
+      "a_posteriori_error_bound": 9.70401314785382e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0008241902105510235,
+    "representation": {
+      "centered_rms": 0.7792872316717435,
+      "effective_rank": 3,
+      "singular_values": [
+        81.47195908264757,
+        77.91020233600497,
+        74.22368943152945
+      ],
+      "mean_norm": 0.01262589544057846
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.4045006036758423,
+      "sampled_D_jacobian_norm_max": 1.8106176853179932,
+      "sampled_D_symmetric_eigenvalue_max": 1.8064464330673218,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/achilles/hard_spectral": {
+    "fit_seconds": 4.28864700000122,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9989999963680612,
+        0.9989999803535833
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009767449229,
+      "iteration_contraction_upper_bound": 0.49900048837246147,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 16,
+      "fixed_point_residual_max": 3.7527561858041736e-07,
+      "a_posteriori_error_bound": 7.490538610732441e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0,
+    "representation": {
+      "centered_rms": 0.4131916186269038,
+      "effective_rank": 3,
+      "singular_values": [
+        58.90128256840673,
+        29.945410003329968,
+        27.48124015931008
+      ],
+      "mean_norm": 0.06708769500255585
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9977748394012451,
+      "sampled_D_jacobian_norm_max": 0.995672345161438,
+      "sampled_D_symmetric_eigenvalue_max": 0.9955474734306335,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/achilles/initial": {
+    "fit_seconds": 3.8499994843732566e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.591767097077536e-07,
+      "a_posteriori_error_bound": 7.169203054051493e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.364418029785156e-07,
+    "representation": {
+      "centered_rms": 0.5632787606946611,
+      "effective_rank": 3,
+      "singular_values": [
+        58.2170188862821,
+        57.82377183087392,
+        52.77051394339412
+      ],
+      "mean_norm": 0.0018687339033931494
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979826807975769,
+      "sampled_D_jacobian_norm_max": 0.9959653615951538,
+      "sampled_D_symmetric_eigenvalue_max": 0.9959653615951538,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/achilles/soft_spectral": {
+    "fit_seconds": 4.331014099996537,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.016456017278114,
+        1.0175153544942157
+      ],
+      "operator_lipschitz_upper_bound": 1.0342596047485189,
+      "iteration_contraction_upper_bound": 0.5171298023742594,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.172325134277344e-07,
+      "a_posteriori_error_bound": 8.64067642772851e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.172325134277344e-07,
+    "representation": {
+      "centered_rms": 0.5833948863005195,
+      "effective_rank": 3,
+      "singular_values": [
+        60.40762031559989,
+        59.83725000841842,
+        54.5883657138053
+      ],
+      "mean_norm": 0.0036910483613610268
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.03388249874115,
+      "sampled_D_jacobian_norm_max": 1.0677945613861084,
+      "sampled_D_symmetric_eigenvalue_max": 1.0677353143692017,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/achilles/unconstrained": {
+    "fit_seconds": 4.0458280999955605,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1758598407021383,
+        1.1663812747184865
+      ],
+      "operator_lipschitz_upper_bound": 1.3715008998884366,
+      "iteration_contraction_upper_bound": 0.6857504499442183,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 32,
+      "fixed_point_residual_max": 2.6987152068613796e-07,
+      "a_posteriori_error_bound": 8.587809294817882e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0003940367023460567,
+    "representation": {
+      "centered_rms": 0.7842493818913862,
+      "effective_rank": 3,
+      "singular_values": [
+        80.03761735060611,
+        78.95237141355544,
+        76.22381849294614
+      ],
+      "mean_norm": 0.0033299517817795277
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3514128923416138,
+      "sampled_D_jacobian_norm_max": 1.7036021947860718,
+      "sampled_D_symmetric_eigenvalue_max": 1.7016223669052124,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/buddy/hard_spectral": {
+    "fit_seconds": 4.6225609999964945,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9989999626717367,
+        0.9989999660082008
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009287512589,
+      "iteration_contraction_upper_bound": 0.49900046437562945,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.039252476355614e-07,
+      "a_posteriori_error_bound": 6.066377831204865e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.039252476355614e-07,
+    "representation": {
+      "centered_rms": 0.4976256260536996,
+      "effective_rank": 3,
+      "singular_values": [
+        48.20550641720259,
+        45.53954095251008,
+        22.08277453751168
+      ],
+      "mean_norm": 0.0288374163210392
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9961903095245361,
+      "sampled_D_jacobian_norm_max": 0.9996875524520874,
+      "sampled_D_symmetric_eigenvalue_max": 0.9923774003982544,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/buddy/initial": {
+    "fit_seconds": 3.539999306667596e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.591767097077536e-07,
+      "a_posteriori_error_bound": 7.169203054051493e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.136039362696465e-07,
+    "representation": {
+      "centered_rms": 0.5633778404825037,
+      "effective_rank": 3,
+      "singular_values": [
+        47.89475334847071,
+        46.129158304604104,
+        42.89235188166546
+      ],
+      "mean_norm": 0.011773892678320408
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.997995138168335,
+      "sampled_D_jacobian_norm_max": 0.9959902763366699,
+      "sampled_D_symmetric_eigenvalue_max": 0.9959902763366699,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/buddy/soft_spectral": {
+    "fit_seconds": 4.44445750000159,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0159708225946942,
+        1.0166523775511591
+      ],
+      "operator_lipschitz_upper_bound": 1.0328891523135026,
+      "iteration_contraction_upper_bound": 0.5164445761567513,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.308471659442148e-07,
+      "a_posteriori_error_bound": 8.909985178532089e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.308471659442148e-07,
+    "representation": {
+      "centered_rms": 0.5813898240909033,
+      "effective_rank": 3,
+      "singular_values": [
+        49.427768331044,
+        47.621620884930124,
+        44.24273556798116
+      ],
+      "mean_norm": 0.007596040144562721
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0328516960144043,
+      "sampled_D_jacobian_norm_max": 1.065704584121704,
+      "sampled_D_symmetric_eigenvalue_max": 1.0657031536102295,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/buddy/unconstrained": {
+    "fit_seconds": 4.256446199993661,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.178442484242954,
+        1.166384652874467
+      ],
+      "operator_lipschitz_upper_bound": 1.3745172279162423,
+      "iteration_contraction_upper_bound": 0.6872586139581212,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 32,
+      "fixed_point_residual_max": 3.071953074140765e-07,
+      "a_posteriori_error_bound": 9.822662465687876e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.00045289029367268085,
+    "representation": {
+      "centered_rms": 0.7804687708375365,
+      "effective_rank": 3,
+      "singular_values": [
+        65.83938460772299,
+        63.285240833467455,
+        60.63909632874419
+      ],
+      "mean_norm": 0.01381406094878912
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3592326641082764,
+      "sampled_D_jacobian_norm_max": 1.72197425365448,
+      "sampled_D_symmetric_eigenvalue_max": 1.7136850357055664,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/cicero/hard_spectral": {
+    "fit_seconds": 5.205473699999857,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000617231758,
+        0.9990000318522163
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010934818186,
+      "iteration_contraction_upper_bound": 0.4990005467409093,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 4.217318121391145e-07,
+      "a_posteriori_error_bound": 8.417809827848592e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 4.217318121391145e-07,
+    "representation": {
+      "centered_rms": 0.4868862790511233,
+      "effective_rank": 3,
+      "singular_values": [
+        57.49074740615757,
+        55.42315974241478,
+        27.094715609310807
+      ],
+      "mean_norm": 0.043811142444610596
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9972586631774902,
+      "sampled_D_jacobian_norm_max": 0.9992842674255371,
+      "sampled_D_symmetric_eigenvalue_max": 0.9945141077041626,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/cicero/initial": {
+    "fit_seconds": 3.7800004065502435e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.6263745073483733e-07,
+      "a_posteriori_error_bound": 7.238279791128452e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.331233978722594e-07,
+    "representation": {
+      "centered_rms": 0.5638741065080456,
+      "effective_rank": 3,
+      "singular_values": [
+        59.30942396791013,
+        57.74710330989775,
+        51.820176240477075
+      ],
+      "mean_norm": 0.009755750186741352
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9980005025863647,
+      "sampled_D_jacobian_norm_max": 0.9960010051727295,
+      "sampled_D_symmetric_eigenvalue_max": 0.9960010051727295,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/cicero/soft_spectral": {
+    "fit_seconds": 4.854406900005415,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0159434870692972,
+        1.0169373113854112
+      ],
+      "operator_lipschitz_upper_bound": 1.0331508382597703,
+      "iteration_contraction_upper_bound": 0.5165754191298851,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.9198835111164954e-07,
+      "a_posteriori_error_bound": 8.108573014762935e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.9198835111164954e-07,
+    "representation": {
+      "centered_rms": 0.5822525853321774,
+      "effective_rank": 3,
+      "singular_values": [
+        61.25051727104792,
+        59.56925433843078,
+        53.566810724115
+      ],
+      "mean_norm": 0.007380598224699497
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0328819751739502,
+      "sampled_D_jacobian_norm_max": 1.0657672882080078,
+      "sampled_D_symmetric_eigenvalue_max": 1.065760850906372,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/cicero/unconstrained": {
+    "fit_seconds": 4.55712059999496,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.1862714682065856,
+        1.1716728372044574
+      ],
+      "operator_lipschitz_upper_bound": 1.3899220568483073,
+      "iteration_contraction_upper_bound": 0.6949610284241536,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 33,
+      "fixed_point_residual_max": 2.7486484555083734e-07,
+      "a_posteriori_error_bound": 9.010810786925749e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0005914517678320408,
+    "representation": {
+      "centered_rms": 0.781521581143441,
+      "effective_rank": 3,
+      "singular_values": [
+        79.10967221021484,
+        78.99532417899646,
+        76.30757266805544
+      ],
+      "mean_norm": 0.007633243687450886
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.3836238384246826,
+      "sampled_D_jacobian_norm_max": 1.76829993724823,
+      "sampled_D_symmetric_eigenvalue_max": 1.7656757831573486,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/decoding/hard_spectral": {
+    "fit_seconds": 8.992647899998701,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9989999506206118,
+        0.9989999821336742
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009328215326,
+      "iteration_contraction_upper_bound": 0.4990004664107663,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.72275132779032e-07,
+      "a_posteriori_error_bound": 9.426658132704918e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 8.279368444163993e-07,
+    "representation": {
+      "centered_rms": 0.10394358598587687,
+      "effective_rank": 32,
+      "singular_values": [
+        33.15682154085805,
+        18.608974093031645,
+        17.640727852020277,
+        16.76548096782188,
+        14.690252898028815,
+        14.060583471223458,
+        13.108069145872138,
+        11.701099279293636,
+        1.3186135436604658,
+        1.2462597536657185,
+        1.0588631255336174,
+        0.7018588585526031,
+        0.3621348276967317,
+        0.2578160975409731,
+        0.22472030454185954,
+        0.21682063138919286,
+        0.182791539407633,
+        0.1489083181445987,
+        0.14109370691086387,
+        0.1242532321075494,
+        0.10719933110961855,
+        0.10633422076718506,
+        0.0989592900952741,
+        0.09115618933345825,
+        0.08492068817283,
+        0.07254987370758281,
+        0.07063216224232949,
+        0.05994922496150538,
+        0.05425630151324054,
+        0.04500276109757063,
+        0.0379930217657037,
+        0.03026328421041948
+      ],
+      "mean_norm": 0.03372377157211304
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979801774024963,
+      "sampled_D_jacobian_norm_max": 1.043508529663086,
+      "sampled_D_symmetric_eigenvalue_max": 0.9947615265846252,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        0.9989999506206118,
+        0.9989999821336742
+      ],
+      "operator_lipschitz_upper_bound": 0.9980009328215326,
+      "iteration_contraction_upper_bound": 0.4990004664107663,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.5197458575785276e-07,
+      "a_posteriori_error_bound": 9.021457216134334e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-2/decoding/initial": {
+    "fit_seconds": 3.949999518226832e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579595,
+        0.9990000067579595
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010135024032,
+      "iteration_contraction_upper_bound": 0.4990005067512016,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.4039052227162756e-07,
+      "a_posteriori_error_bound": 8.790238876607561e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 7.172164941948722e-07,
+    "representation": {
+      "centered_rms": 0.1757768994657639,
+      "effective_rank": 32,
+      "singular_values": [
+        38.176183691311365,
+        35.96406652898314,
+        34.60168456788445,
+        33.04034367456771,
+        29.148610452121144,
+        27.895025432516313,
+        26.073716740815943,
+        23.242485194325663,
+        2.625146707972495,
+        2.4811505564377723,
+        2.1090322066889,
+        1.374276689617155,
+        0.7119874955080503,
+        0.511091548016769,
+        0.4461517632289642,
+        0.4277123143203553,
+        0.36070017051037134,
+        0.2993604250774088,
+        0.28635249632798726,
+        0.25141435343759927,
+        0.2164610510275752,
+        0.20915883504572594,
+        0.19881975563023627,
+        0.17790951334711247,
+        0.1699797538021453,
+        0.14306224614044982,
+        0.14031503768836773,
+        0.12207637203206624,
+        0.10945468737268448,
+        0.08724404174464646,
+        0.07648044960429214,
+        0.06220975951718009
+      ],
+      "mean_norm": 0.014659511856734753
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9980010390281677,
+      "sampled_D_jacobian_norm_max": 0.9960020780563354,
+      "sampled_D_symmetric_eigenvalue_max": 0.9960020780563354,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        0.9990000067579595,
+        0.9990000067579595
+      ],
+      "operator_lipschitz_upper_bound": 0.9980010135024032,
+      "iteration_contraction_upper_bound": 0.4990005067512016,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 13,
+      "fixed_point_residual_max": 4.167710017100035e-07,
+      "a_posteriori_error_bound": 8.318790883547526e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-2/decoding/soft_spectral": {
+    "fit_seconds": 5.8185765000016545,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0277273419607904,
+        1.0243484907268072
+      ],
+      "operator_lipschitz_upper_bound": 1.052750951616209,
+      "iteration_contraction_upper_bound": 0.5263754758081045,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 17,
+      "fixed_point_residual_max": 3.5545789955904183e-07,
+      "a_posteriori_error_bound": 7.505056883731451e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 6.621595503020217e-07,
+    "representation": {
+      "centered_rms": 0.1826852985766228,
+      "effective_rank": 32,
+      "singular_values": [
+        39.86195394375878,
+        37.54469686515297,
+        35.730743250139554,
+        34.30930681854086,
+        30.403047250400427,
+        29.001031987332137,
+        27.07017771934546,
+        23.902819271588818,
+        2.6179499455764166,
+        2.445289673868328,
+        2.079785092868554,
+        1.3572086817436433,
+        0.6996948052673162,
+        0.4990767222649314,
+        0.4365964541701137,
+        0.4160095863071209,
+        0.3552019733570863,
+        0.29444501101525683,
+        0.27915941931178023,
+        0.24709534820299697,
+        0.21033941727651653,
+        0.20369691521436853,
+        0.1930149423493672,
+        0.1763088480931281,
+        0.16664769244276456,
+        0.13974296412800527,
+        0.13519481539807998,
+        0.11855218819397598,
+        0.1061181692634792,
+        0.08551288400601437,
+        0.07535866937762656,
+        0.06119302067426696
+      ],
+      "mean_norm": 0.005354483611881733
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0448263883590698,
+      "sampled_D_jacobian_norm_max": 1.0896483659744263,
+      "sampled_D_symmetric_eigenvalue_max": 1.089641809463501,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        1.0277273419607904,
+        1.0243484907268072
+      ],
+      "operator_lipschitz_upper_bound": 1.052750951616209,
+      "iteration_contraction_upper_bound": 0.5263754758081045,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 17,
+      "fixed_point_residual_max": 3.5475446225063934e-07,
+      "a_posteriori_error_bound": 7.490204669108429e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-2/decoding/unconstrained": {
+    "fit_seconds": 5.590653999999631,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.261679917164532,
+        1.2452968422440744
+      ],
+      "operator_lipschitz_upper_bound": 1.5711660167677572,
+      "iteration_contraction_upper_bound": 0.7855830083838786,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 51,
+      "fixed_point_residual_max": 2.026284846579074e-07,
+      "a_posteriori_error_bound": 9.450206493927526e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.00816949363797903,
+    "representation": {
+      "centered_rms": 0.2864396589110885,
+      "effective_rank": 32,
+      "singular_values": [
+        56.95858958606477,
+        55.87745440581299,
+        54.1949203072097,
+        52.20209417813129,
+        50.65118225256568,
+        48.20833054508189,
+        46.55372618858205,
+        43.490645908528165,
+        3.0046260111096132,
+        2.7595335995003767,
+        2.0546784718875215,
+        1.3813663322313345,
+        0.6347938178966726,
+        0.5256879028130514,
+        0.4473072980780747,
+        0.37186641746516425,
+        0.35116084657595165,
+        0.3300960821195135,
+        0.3219290520992273,
+        0.2845248779333869,
+        0.2641088031212386,
+        0.2277019134452972,
+        0.2116153948702385,
+        0.20769563577004035,
+        0.19937989607323875,
+        0.17561153863329615,
+        0.1717873321522389,
+        0.14330673068632588,
+        0.1324534606203899,
+        0.11830721323775108,
+        0.11548791728507912,
+        0.08867143185499776
+      ],
+      "mean_norm": 0.012602328322827816
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.561094880104065,
+      "sampled_D_jacobian_norm_max": 2.1250758171081543,
+      "sampled_D_symmetric_eigenvalue_max": 2.117417097091675,
+      "sampled_checks_are_global_proof": false
+    },
+    "test_solver": {
+      "weight_norms": [
+        1.261679917164532,
+        1.2452968422440744
+      ],
+      "operator_lipschitz_upper_bound": 1.5711660167677572,
+      "iteration_contraction_upper_bound": 0.7855830083838786,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 50,
+      "fixed_point_residual_max": 2.1270936656492268e-07,
+      "a_posteriori_error_bound": 9.920359620833785e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    }
+  },
+  "seed-2/gatsby/hard_spectral": {
+    "fit_seconds": 5.226882700000715,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000521369314,
+        0.9990000649821266
+      ],
+      "operator_lipschitz_upper_bound": 0.9980011170019424,
+      "iteration_contraction_upper_bound": 0.4990005585009712,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 15,
+      "fixed_point_residual_max": 3.0971480668995355e-07,
+      "a_posteriori_error_bound": 6.181939160715689e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 3.0971480668995355e-07,
+    "representation": {
+      "centered_rms": 0.42689749718652414,
+      "effective_rank": 3,
+      "singular_values": [
+        62.727747111872496,
+        29.301187972061893,
+        25.949327436353915
+      ],
+      "mean_norm": 0.05033683776855469
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9975290298461914,
+      "sampled_D_jacobian_norm_max": 0.9951255321502686,
+      "sampled_D_symmetric_eigenvalue_max": 0.9950560927391052,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/gatsby/initial": {
+    "fit_seconds": 4.9700000090524554e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        0.9990000067579594,
+        0.9990000067579594
+      ],
+      "operator_lipschitz_upper_bound": 0.998001013502403,
+      "iteration_contraction_upper_bound": 0.4990005067512015,
+      "half_strict_pseudocontractive_certified": true,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 14,
+      "fixed_point_residual_max": 3.5801571129923104e-07,
+      "a_posteriori_error_bound": 7.146029409683234e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 5.205284878684324e-07,
+    "representation": {
+      "centered_rms": 0.5638974591945742,
+      "effective_rank": 3,
+      "singular_values": [
+        62.17692925100991,
+        56.51055096748021,
+        49.78999389250983
+      ],
+      "mean_norm": 0.007330411113798618
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 0.9979352355003357,
+      "sampled_D_jacobian_norm_max": 0.9958704710006714,
+      "sampled_D_symmetric_eigenvalue_max": 0.9958704710006714,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/gatsby/soft_spectral": {
+    "fit_seconds": 4.961709000002884,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.0160416139045874,
+        1.016806047422825
+      ],
+      "operator_lipschitz_upper_bound": 1.0331172574514316,
+      "iteration_contraction_upper_bound": 0.5165586287257158,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 16,
+      "fixed_point_residual_max": 2.811545414260763e-07,
+      "a_posteriori_error_bound": 5.815690549714272e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0,
+    "representation": {
+      "centered_rms": 0.5819828345810867,
+      "effective_rank": 3,
+      "singular_values": [
+        64.14862933867575,
+        58.31695414502661,
+        51.421694775336825
+      ],
+      "mean_norm": 0.0014149777125567198
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.0325955152511597,
+      "sampled_D_jacobian_norm_max": 1.0651960372924805,
+      "sampled_D_symmetric_eigenvalue_max": 1.0651845932006836,
+      "sampled_checks_are_global_proof": false
+    }
+  },
+  "seed-2/gatsby/unconstrained": {
+    "fit_seconds": 4.5759964999961085,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "training_convergence_claimed": false,
+    "train_solver": {
+      "weight_norms": [
+        1.2158652839687356,
+        1.1817022960970187
+      ],
+      "operator_lipschitz_upper_bound": 1.4367907978105086,
+      "iteration_contraction_upper_bound": 0.7183953989052543,
+      "half_strict_pseudocontractive_certified": false,
+      "inference_contraction_certified": true,
+      "certificate_scope": "fixed weights; floating-point SVD, not interval arithmetic",
+      "steps": 35,
+      "fixed_point_residual_max": 2.6656007889869215e-07,
+      "a_posteriori_error_bound": 9.465757230614572e-07,
+      "tolerance_met": true,
+      "requested_tolerance": 1e-06
+    },
+    "unroll_vs_solve_max": 0.0008483430719934404,
+    "representation": {
+      "centered_rms": 0.782840024834386,
+      "effective_rank": 3,
+      "singular_values": [
+        82.02639680776986,
+        77.79594572712413,
+        74.85170455055962
+      ],
+      "mean_norm": 0.008363182656466961
+    },
+    "jacobians": {
+      "sample_count": 128,
+      "sampled_N_jacobian_norm_max": 1.4120185375213623,
+      "sampled_D_jacobian_norm_max": 1.825788974761963,
+      "sampled_D_symmetric_eigenvalue_max": 1.8211610317230225,
+      "sampled_checks_are_global_proof": false
+    }
+  }
+}

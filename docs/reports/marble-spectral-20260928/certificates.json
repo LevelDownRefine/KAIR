@@ -1,0 +1,58 @@
+{
+  "initial": {
+    "fit_count": 15,
+    "LipN_bound_min": 0.998001013502403,
+    "LipN_bound_max": 0.9980010135024032,
+    "D_half_strict_certified_count": 15,
+    "inference_contraction_certified_count": 15,
+    "inference_tolerance_met_count": 15,
+    "inference_steps_max": 14,
+    "inference_residual_max": 4.5558365968645376e-07,
+    "unroll_vs_solve_max": 7.419972121169849e-07,
+    "sampled_D_jacobian_norm_max": 0.9960020780563354,
+    "sampled_D_symmetric_eigenvalue_max": 0.9960020780563354,
+    "all_representations_full_rank": true
+  },
+  "unconstrained": {
+    "fit_count": 15,
+    "LipN_bound_min": 1.3715008998884366,
+    "LipN_bound_max": 1.6942929638042878,
+    "D_half_strict_certified_count": 0,
+    "inference_contraction_certified_count": 15,
+    "inference_tolerance_met_count": 15,
+    "inference_steps_max": 66,
+    "inference_residual_max": 3.071953074140765e-07,
+    "unroll_vs_solve_max": 0.02339261770248413,
+    "sampled_D_jacobian_norm_max": 2.3471221923828125,
+    "sampled_D_symmetric_eigenvalue_max": 2.3302862644195557,
+    "all_representations_full_rank": true
+  },
+  "soft_spectral": {
+    "fit_count": 15,
+    "LipN_bound_min": 1.0327902181195054,
+    "LipN_bound_max": 1.052750951616209,
+    "D_half_strict_certified_count": 0,
+    "inference_contraction_certified_count": 15,
+    "inference_tolerance_met_count": 15,
+    "inference_steps_max": 17,
+    "inference_residual_max": 4.805480102731963e-07,
+    "unroll_vs_solve_max": 6.621595503020217e-07,
+    "sampled_D_jacobian_norm_max": 1.0900741815567017,
+    "sampled_D_symmetric_eigenvalue_max": 1.090063214302063,
+    "all_representations_full_rank": true
+  },
+  "hard_spectral": {
+    "fit_count": 15,
+    "LipN_bound_min": 0.9980009287512589,
+    "LipN_bound_max": 0.9980011170019424,
+    "D_half_strict_certified_count": 15,
+    "inference_contraction_certified_count": 15,
+    "inference_tolerance_met_count": 15,
+    "inference_steps_max": 16,
+    "inference_residual_max": 4.940049507240474e-07,
+    "unroll_vs_solve_max": 8.279368444163993e-07,
+    "sampled_D_jacobian_norm_max": 1.0586111545562744,
+    "sampled_D_symmetric_eigenvalue_max": 0.9956130385398865,
+    "all_representations_full_rank": true
+  }
+}
