@@ -1,0 +1,2525 @@
+{
+  "seed-0/achilles/initial": {
+    "fit_seconds": 4.02999939979054e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744677247323202,
+      "effective_rank": 3,
+      "singular_values": [
+        59.38972441868018,
+        58.96763247737297,
+        53.805984023714906
+      ],
+      "mean_norm": 0.007714248024785857
+    }
+  },
+  "seed-0/achilles/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0040190985655148255,
+      "auxiliary_gradient_norm": 0.00028683635855899554,
+      "auxiliary_force_rms": 0.028682201638250422
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0014784704077524214,
+      "auxiliary_gradient_norm": 1.7034073707587756e-05,
+      "auxiliary_force_rms": 0.001703322198260872
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.911899533269229,
+        0.08479324520509103,
+        0.7871418296651082,
+        0.08444416275895793
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.051032568861006,
+    "final_geometry": 0.002547307190222901,
+    "final_coupling": 0.00023404025123052987,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.794571499995072,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759683287337904,
+      "effective_rank": 3,
+      "singular_values": [
+        59.46787745098195,
+        58.44027007252006,
+        54.767660511570654
+      ],
+      "mean_norm": 0.005550470224433736
+    }
+  },
+  "seed-0/achilles/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0040190985655148255,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006558335677892682,
+      "auxiliary_gradient_norm": 6.208163332072316e-07,
+      "auxiliary_force_rms": 6.20785291614512e-05
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9827284566679934,
+        0.08776073995312272,
+        0.8849286783821848,
+        0.10251545681766598
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0509000579773102,
+    "final_geometry": 0.0,
+    "final_coupling": 1.9268718914245733e-09,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.027081300002465,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760928370149482,
+      "effective_rank": 3,
+      "singular_values": [
+        59.07842501178316,
+        58.54606354366685,
+        55.114346576870616
+      ],
+      "mean_norm": 0.005577242325745875
+    }
+  },
+  "seed-0/achilles/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0040190985655148255,
+      "auxiliary_gradient_norm": 0.00028683635855899554,
+      "auxiliary_force_rms": 0.028682201638250422
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009254593249669776,
+      "auxiliary_gradient_norm": 4.1419215916660976e-06,
+      "auxiliary_force_rms": 0.00041417144904088533
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8791608295830123,
+        0.061302014621134014,
+        0.7457254433919885,
+        0.0921693081670089
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0511464369955674,
+    "final_geometry": 0.0025407797195803644,
+    "final_coupling": 0.0002335083996479314,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.590811900001427,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5757889979046861,
+      "effective_rank": 3,
+      "singular_values": [
+        59.61230887589836,
+        58.56075556610291,
+        54.424305621144995
+      ],
+      "mean_norm": 0.0053822990783743176
+    }
+  },
+  "seed-0/buddy/initial": {
+    "fit_seconds": 3.669999568955973e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744565459973188,
+      "effective_rank": 3,
+      "singular_values": [
+        48.79465393750769,
+        47.02182091860574,
+        43.79813331044797
+      ],
+      "mean_norm": 0.009901523676909298
+    }
+  },
+  "seed-0/buddy/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004037932815636103,
+      "auxiliary_gradient_norm": 0.00040849218750959665,
+      "auxiliary_force_rms": 0.03312566894536509
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007203739278595872,
+      "auxiliary_gradient_norm": 6.110420120612752e-06,
+      "auxiliary_force_rms": 0.0004955094864029943
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8222377694425356,
+        0.056647100071223165,
+        0.6681085192604898,
+        0.034754555327283575
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0583800817202504,
+    "final_geometry": 0.0037289068001440146,
+    "final_coupling": 0.00033531733794264876,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.573723300003621,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758959363951212,
+      "effective_rank": 3,
+      "singular_values": [
+        49.770398676151714,
+        46.13751476339403,
+        44.01305795969457
+      ],
+      "mean_norm": 0.010192321422169403
+    }
+  },
+  "seed-0/buddy/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004037932815636103,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0005745160447765283,
+      "auxiliary_gradient_norm": 2.4773964382858196e-06,
+      "auxiliary_force_rms": 0.00020089836910076699
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.919104309118488,
+        0.04370256796757032,
+        0.768459409979311,
+        0.03639934299165395
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0581924277542454,
+    "final_geometry": 0.0,
+    "final_coupling": 2.0180077353674e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.178257700004906,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761329236997066,
+      "effective_rank": 3,
+      "singular_values": [
+        49.30165821026074,
+        46.00024558201751,
+        44.73949141282784
+      ],
+      "mean_norm": 0.008084849351284267
+    }
+  },
+  "seed-0/buddy/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004037932815636103,
+      "auxiliary_gradient_norm": 0.00040849218750959665,
+      "auxiliary_force_rms": 0.03312566894536509
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016585652312928905,
+      "auxiliary_gradient_norm": 1.463736838654303e-05,
+      "auxiliary_force_rms": 0.001186981377440875
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8359991431316028,
+        0.06102534462249656,
+        0.6844095367565403,
+        0.03637566075812338
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0583607038547267,
+    "final_geometry": 0.0037295168551568494,
+    "final_coupling": 0.0003356670961922937,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.046658800005389,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759289966531496,
+      "effective_rank": 3,
+      "singular_values": [
+        49.78426904984865,
+        46.1133859087106,
+        44.03118842395814
+      ],
+      "mean_norm": 0.00962832626497378
+    }
+  },
+  "seed-0/cicero/initial": {
+    "fit_seconds": 3.899999865097925e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744694377826612,
+      "effective_rank": 3,
+      "singular_values": [
+        60.42424717563525,
+        58.804547574907936,
+        52.82423251456751
+      ],
+      "mean_norm": 0.007321548463757908
+    }
+  },
+  "seed-0/cicero/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004883637218190986,
+      "auxiliary_gradient_norm": 0.0004392621474387117,
+      "auxiliary_force_rms": 0.04392401837822346
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0012873217990408308,
+      "auxiliary_gradient_norm": 1.3139308690373368e-05,
+      "auxiliary_force_rms": 0.0013138651708513892
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9150482843679727,
+        0.18869049006673133,
+        0.7545852425642647,
+        0.045608348771468535
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0574010635830229,
+    "final_geometry": 0.0046590469574679435,
+    "final_coupling": 0.0005376307449489032,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.858932700000878,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759084351928828,
+      "effective_rank": 3,
+      "singular_values": [
+        60.379545185792416,
+        57.5170396721349,
+        54.72861619594613
+      ],
+      "mean_norm": 0.007719343484765969
+    }
+  },
+  "seed-0/cicero/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004883637218190986,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009083212644107642,
+      "auxiliary_gradient_norm": 3.6641109951373104e-06,
+      "auxiliary_force_rms": 0.0003663927785007186
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        1.0000000000000002,
+        0.22927662088079845,
+        0.902202094316455,
+        0.0829159139121584
+      ],
+      "maximum_constraint_excess": 2.220446049250313e-16
+    },
+    "final_contrastive": 1.057193627759068,
+    "final_geometry": 0.0,
+    "final_coupling": 6.712183406873832e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.077499999999418,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761404745226102,
+      "effective_rank": 3,
+      "singular_values": [
+        59.85862380617896,
+        57.82723144090061,
+        55.04630812203361
+      ],
+      "mean_norm": 0.006861601580108563
+    }
+  },
+  "seed-0/cicero/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004883637218190986,
+      "auxiliary_gradient_norm": 0.0004392621474387117,
+      "auxiliary_force_rms": 0.04392401837822346
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008278701513909094,
+      "auxiliary_gradient_norm": 2.2059174887955213e-06,
+      "auxiliary_force_rms": 0.00022058071901635468
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9720433264117119,
+        0.23844784549621306,
+        0.8023903991561812,
+        0.07393197880894592
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0573243511203638,
+    "final_geometry": 0.00465478509974772,
+    "final_coupling": 0.0005350704412748264,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.419060899999749,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759776305717556,
+      "effective_rank": 3,
+      "singular_values": [
+        60.50960428972205,
+        57.364472217063046,
+        54.76693156310572
+      ],
+      "mean_norm": 0.00860186362971074
+    }
+  },
+  "seed-0/decoding/initial": {
+    "fit_seconds": 6.1399994592648e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17587211921852422,
+      "effective_rank": 32,
+      "singular_values": [
+        42.433571257756036,
+        36.9793312241529,
+        34.56264106533392,
+        32.31266872581218,
+        28.21087258577677,
+        27.317160258439635,
+        24.158284569974818,
+        19.184172826936198,
+        2.803228570815498,
+        1.9262026076233265,
+        1.3957611911337562,
+        1.0239399631717334,
+        0.8493166522357884,
+        0.6360950548475648,
+        0.43110031828681517,
+        0.4265345136021386,
+        0.38406084262238316,
+        0.34948470632069273,
+        0.31417272475729635,
+        0.28650742012283553,
+        0.25837828550549374,
+        0.23515858029403014,
+        0.2131404354129863,
+        0.1861500040390738,
+        0.17516841282524287,
+        0.1541493797078087,
+        0.1436374777553053,
+        0.13518420046510846,
+        0.12450067226772814,
+        0.1090819258180625,
+        0.09508199761802857,
+        0.07968666637351503
+      ],
+      "mean_norm": 0.01751958074970063
+    }
+  },
+  "seed-0/decoding/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.015527920555918142,
+      "auxiliary_gradient_norm": 0.0003031339122883278,
+      "auxiliary_force_rms": 0.02711142674344236
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.00141352646739694,
+      "auxiliary_gradient_norm": 7.980370095488242e-05,
+      "auxiliary_force_rms": 0.007137413877454796
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.6402630649602449,
+        0.0024285635991534577,
+        0.4016492164307018,
+        0.019469460778790994
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0306178505480794,
+    "final_geometry": 0.004275185032231834,
+    "final_coupling": 0.00025465916644310985,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 25.900334400001157,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.1759971872235264,
+      "effective_rank": 32,
+      "singular_values": [
+        39.9962478459602,
+        36.57891352534561,
+        34.088598451344296,
+        33.88792393728929,
+        28.5035601924001,
+        27.741539761726177,
+        26.003475060149206,
+        20.186740729625626,
+        2.6364659072689243,
+        1.789844700465511,
+        1.3087298552910194,
+        0.9494321637627643,
+        0.7914248309361405,
+        0.5865527037277114,
+        0.3977225624139829,
+        0.3911997032597744,
+        0.3585348697164073,
+        0.32895523750842887,
+        0.29654209682937654,
+        0.26558482836325226,
+        0.2386162036247298,
+        0.22054694750793352,
+        0.2004864666042198,
+        0.17344781768584602,
+        0.1628936050557007,
+        0.14374513951917064,
+        0.13376273326256813,
+        0.12705308909162555,
+        0.11611347605655345,
+        0.10034605630425453,
+        0.08850211697774173,
+        0.07378310532696744
+      ],
+      "mean_norm": 0.0067689932773823775
+    }
+  },
+  "seed-0/decoding/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.015527920555918142,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016029071618252312,
+      "auxiliary_gradient_norm": 8.29902162173333e-06,
+      "auxiliary_force_rms": 0.0007422406653263485
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8636644291302887,
+        0.007515377056495162,
+        0.7074903916170767,
+        0.03179659936534334
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0297727655433515,
+    "final_geometry": 0.0,
+    "final_coupling": 2.754606026320503e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 25.90976220000448,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17603360495752332,
+      "effective_rank": 32,
+      "singular_values": [
+        37.372844528239014,
+        35.82356368581972,
+        34.36442958360109,
+        33.41731828768355,
+        30.60458972662865,
+        28.56713509023283,
+        27.33321664790129,
+        20.992008064197066,
+        2.56535755511404,
+        1.7014411863321746,
+        1.262625895508172,
+        0.9070270264651837,
+        0.7641159018799017,
+        0.5566016080271323,
+        0.38055499545383653,
+        0.370837952137196,
+        0.3460693648350673,
+        0.3203120333053971,
+        0.2886692443605337,
+        0.25544237550946985,
+        0.2286983463802677,
+        0.21325767272253343,
+        0.194498293763596,
+        0.1678931529506146,
+        0.15679320799597013,
+        0.13875143162116851,
+        0.12912817093446466,
+        0.1233110813070396,
+        0.11181412994726049,
+        0.09567215812426742,
+        0.08494365519205871,
+        0.07065939948702299
+      ],
+      "mean_norm": 0.005328430905561461
+    }
+  },
+  "seed-0/decoding/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.015527920555918142,
+      "auxiliary_gradient_norm": 0.0003031339122883278,
+      "auxiliary_force_rms": 0.02711142674344236
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.001107238592627861,
+      "auxiliary_gradient_norm": 7.645974152042438e-06,
+      "auxiliary_force_rms": 0.0006838339746962524
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.7938772500860926,
+        0.006777870672401461,
+        0.6202021224430526,
+        0.02887093981289613
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0300674123157045,
+    "final_geometry": 0.004203059549121377,
+    "final_coupling": 0.0002352117435314,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.018671800004086,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17602762345715142,
+      "effective_rank": 32,
+      "singular_values": [
+        39.00103346372378,
+        37.44309427540327,
+        34.67821233602315,
+        33.4948835731958,
+        29.276533844438145,
+        27.421631642084517,
+        25.469157539276164,
+        20.300586486837013,
+        2.5731921228660917,
+        1.7294885348090223,
+        1.2786203194688086,
+        0.9180251140628444,
+        0.7702049765360828,
+        0.5649079621451559,
+        0.3851389515895143,
+        0.3762518826466866,
+        0.3502084602149093,
+        0.32315098617542276,
+        0.29132071862920406,
+        0.2573931562289869,
+        0.2309580148283903,
+        0.2158492775690943,
+        0.19674981536079056,
+        0.16863722158931926,
+        0.15814360776679431,
+        0.13969530646742861,
+        0.13031038363691463,
+        0.12478379347123812,
+        0.1127941352750273,
+        0.0967287928833401,
+        0.08569172697879103,
+        0.07136989818286466
+      ],
+      "mean_norm": 0.006401004517120969
+    }
+  },
+  "seed-0/gatsby/initial": {
+    "fit_seconds": 5.62999994144775e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744698202764674,
+      "effective_rank": 3,
+      "singular_values": [
+        63.26868539920127,
+        57.60377592049902,
+        50.777511095847466
+      ],
+      "mean_norm": 0.0072309526066230995
+    }
+  },
+  "seed-0/gatsby/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0067034466652869055,
+      "auxiliary_gradient_norm": 0.00037790367408280505,
+      "auxiliary_force_rms": 0.03778847784266977
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009402640498043984,
+      "auxiliary_gradient_norm": 1.2142027629885921e-05,
+      "auxiliary_force_rms": 0.0012141420513326134
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9413881283533541,
+        0.14988154723240715,
+        0.785875964244506,
+        0.052226984153799075
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0565469919840365,
+    "final_geometry": 0.004001088494282121,
+    "final_coupling": 0.0004095974283096081,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.030064899998251,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575850720031293,
+      "effective_rank": 3,
+      "singular_values": [
+        62.11024313344725,
+        57.383902459380714,
+        52.882248222800015
+      ],
+      "mean_norm": 0.0070471376626861995
+    }
+  },
+  "seed-0/gatsby/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0067034466652869055,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008858174554562969,
+      "auxiliary_gradient_norm": 5.422271720905242e-06,
+      "auxiliary_force_rms": 0.0005422000600541018
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9999999999999999,
+        0.18824688312216542,
+        0.8989985508823587,
+        0.06396523332363561
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.05638708766331,
+    "final_geometry": 0.0,
+    "final_coupling": 1.469904525613358e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.438280299997132,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.576004490832898,
+      "effective_rank": 3,
+      "singular_values": [
+        61.147383563885334,
+        57.752510277988755,
+        53.64778560342904
+      ],
+      "mean_norm": 0.004242122437268684
+    }
+  },
+  "seed-0/gatsby/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0067034466652869055,
+      "auxiliary_gradient_norm": 0.00037790367408280505,
+      "auxiliary_force_rms": 0.03778847784266977
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009820346203003821,
+      "auxiliary_gradient_norm": 7.258446209461116e-06,
+      "auxiliary_force_rms": 0.0007258083278077133
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9895032567364518,
+        0.1937210400457,
+        0.8236647174137511,
+        0.07884217833309957
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0564856083166756,
+    "final_geometry": 0.004001449468133756,
+    "final_coupling": 0.0004075681224267919,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.471271100002923,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759065466340564,
+      "effective_rank": 3,
+      "singular_values": [
+        62.037929183486064,
+        57.531150382789406,
+        52.825349851044116
+      ],
+      "mean_norm": 0.00701661339128103
+    }
+  },
+  "seed-1/achilles/initial": {
+    "fit_seconds": 3.760000254260376e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744677247326818,
+      "effective_rank": 3,
+      "singular_values": [
+        59.389724422176755,
+        58.96763247651888,
+        53.805984020907395
+      ],
+      "mean_norm": 0.007714247999741321
+    }
+  },
+  "seed-1/achilles/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006436304461796419,
+      "auxiliary_gradient_norm": 0.00028683635851690334,
+      "auxiliary_force_rms": 0.028682201634041414
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009664594104312251,
+      "auxiliary_gradient_norm": 1.7001661116888297e-05,
+      "auxiliary_force_rms": 0.0017000811012579315
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9914684212344871,
+        0.12340733155238118,
+        0.8560131334950549,
+        0.0932045115855977
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0525941556895766,
+    "final_geometry": 0.0025173840069292286,
+    "final_coupling": 0.00022716916505615052,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.068206799995096,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760332846796571,
+      "effective_rank": 3,
+      "singular_values": [
+        59.43823752097025,
+        59.001398077982024,
+        54.21591882440151
+      ],
+      "mean_norm": 0.0016667734098117053
+    }
+  },
+  "seed-1/achilles/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006436304461796419,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009675060482135366,
+      "auxiliary_gradient_norm": 5.987720748521268e-06,
+      "auxiliary_force_rms": 0.0005987421354998817
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9999999999999997,
+        0.11449916832463251,
+        0.9495847918448955,
+        0.10177108244466174
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0525134967900172,
+    "final_geometry": 0.0,
+    "final_coupling": 1.792460724114793e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.3060709000055795,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.576091313112296,
+      "effective_rank": 3,
+      "singular_values": [
+        59.20169178149193,
+        58.8920913235801,
+        54.61063685258288
+      ],
+      "mean_norm": 0.0009242617790161181
+    }
+  },
+  "seed-1/achilles/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006436304461796419,
+      "auxiliary_gradient_norm": 0.00028683635851690334,
+      "auxiliary_force_rms": 0.028682201634041414
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006029732389153893,
+      "auxiliary_gradient_norm": 1.6920021243223747e-06,
+      "auxiliary_force_rms": 0.00016919175221010504
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9999999999999999,
+        0.1496632229045121,
+        0.959456158599443,
+        0.11053777133683867
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0525519266545138,
+    "final_geometry": 0.00250207047426333,
+    "final_coupling": 0.00022301884127875842,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.467008399995393,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760543955977583,
+      "effective_rank": 3,
+      "singular_values": [
+        59.652826948437706,
+        59.164702358533624,
+        53.80745967345771
+      ],
+      "mean_norm": 0.0009413979665513555
+    }
+  },
+  "seed-1/buddy/initial": {
+    "fit_seconds": 4.3000000005122274e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744565459972237,
+      "effective_rank": 3,
+      "singular_values": [
+        48.79465393784102,
+        47.02182091881972,
+        43.79813330982228
+      ],
+      "mean_norm": 0.00990152367975571
+    }
+  },
+  "seed-1/buddy/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037385675913847883,
+      "auxiliary_gradient_norm": 0.0004084921875467289,
+      "auxiliary_force_rms": 0.03312566894837624
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0010894949904540873,
+      "auxiliary_gradient_norm": 1.1577187478156197e-05,
+      "auxiliary_force_rms": 0.0009388235355439172
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8214485664868206,
+        0.0966117280639271,
+        0.6669820901606955,
+        0.04058927952534289
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.053806965929709,
+    "final_geometry": 0.0036769613218888943,
+    "final_coupling": 0.00032915108620644267,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.775637600003392,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575876617693988,
+      "effective_rank": 3,
+      "singular_values": [
+        49.22754907537341,
+        47.583542693325846,
+        43.06887551216166
+      ],
+      "mean_norm": 0.0084286047708616
+    }
+  },
+  "seed-1/buddy/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037385675913847883,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007461704098613655,
+      "auxiliary_gradient_norm": 2.5926589647319326e-06,
+      "auxiliary_force_rms": 0.00021024530010607692
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9020890366130008,
+        0.10366449954824605,
+        0.7755267388486621,
+        0.05243735639483357
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0536274042327871,
+    "final_geometry": 0.0,
+    "final_coupling": 2.2101543108347172e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.168491399999766,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761016368793319,
+      "effective_rank": 3,
+      "singular_values": [
+        48.71122345157917,
+        47.370849820489546,
+        43.94094099265253
+      ],
+      "mean_norm": 0.006077957840187205
+    }
+  },
+  "seed-1/buddy/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0037385675913847883,
+      "auxiliary_gradient_norm": 0.0004084921875467289,
+      "auxiliary_force_rms": 0.03312566894837624
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007173249892842086,
+      "auxiliary_gradient_norm": 1.4079960023556888e-06,
+      "auxiliary_force_rms": 0.00011417797176191113
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8210247219863693,
+        0.09742579938848371,
+        0.6652859769855194,
+        0.04051217320537214
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0538156699319876,
+    "final_geometry": 0.0036753026064488344,
+    "final_coupling": 0.00033107227784155805,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.194142400003329,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758651019873962,
+      "effective_rank": 3,
+      "singular_values": [
+        49.238021917019566,
+        47.61705170910883,
+        43.01680009604841
+      ],
+      "mean_norm": 0.007578730915423169
+    }
+  },
+  "seed-1/cicero/initial": {
+    "fit_seconds": 3.579999611247331e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.574469437782258,
+      "effective_rank": 3,
+      "singular_values": [
+        60.424247177852294,
+        58.80454757483759,
+        52.82423251197831
+      ],
+      "mean_norm": 0.007321548478700549
+    }
+  },
+  "seed-1/cicero/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006010002935260671,
+      "auxiliary_gradient_norm": 0.0004392621475134729,
+      "auxiliary_force_rms": 0.04392401838569921
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008104235140815511,
+      "auxiliary_gradient_norm": 9.245395502419694e-06,
+      "auxiliary_force_rms": 0.0009244933221087251
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8873856728525356,
+        0.15224765824013298,
+        0.7354305842147335,
+        0.03192287818082138
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0586046288036217,
+    "final_geometry": 0.004662900990563207,
+    "final_coupling": 0.0005405029679372038,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.878994899998361,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759049354750189,
+      "effective_rank": 3,
+      "singular_values": [
+        59.775107003197334,
+        57.469829450929396,
+        55.436045379228396
+      ],
+      "mean_norm": 0.007619244549580974
+    }
+  },
+  "seed-1/cicero/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006010002935260671,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007123488452721237,
+      "auxiliary_gradient_norm": 2.360437999642846e-06,
+      "auxiliary_force_rms": 0.0002360319974792169
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9751780666855471,
+        0.15778618432748162,
+        0.8502597204916166,
+        0.03750407746162747
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0584469872155633,
+    "final_geometry": 0.0,
+    "final_coupling": 2.785555191701453e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.286547199997585,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760916467318672,
+      "effective_rank": 3,
+      "singular_values": [
+        59.18751008827382,
+        57.386092968352195,
+        56.206110892400694
+      ],
+      "mean_norm": 0.00571703387471213
+    }
+  },
+  "seed-1/cicero/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006010002935260671,
+      "auxiliary_gradient_norm": 0.0004392621475134729,
+      "auxiliary_force_rms": 0.04392401838569921
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008515822075378714,
+      "auxiliary_gradient_norm": 5.340838654070398e-06,
+      "auxiliary_force_rms": 0.0005340571605461313
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.936081646538804,
+        0.18862013017816068,
+        0.7827431254978746,
+        0.05155322736579775
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.058537336978494,
+    "final_geometry": 0.004660092803449928,
+    "final_coupling": 0.0005402521600436468,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.314067100000102,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759769224478849,
+      "effective_rank": 3,
+      "singular_values": [
+        59.84455213065222,
+        57.25728156840971,
+        55.60324176887557
+      ],
+      "mean_norm": 0.007888038250323496
+    }
+  },
+  "seed-1/decoding/initial": {
+    "fit_seconds": 3.819999983534217e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.1758917058041953,
+      "effective_rank": 32,
+      "singular_values": [
+        38.26343959744837,
+        36.04447585067966,
+        35.169861278306,
+        33.18168244138235,
+        29.113320812965927,
+        28.23701908841677,
+        25.085233383573588,
+        22.70324781835671,
+        3.7396270660345867,
+        2.7772532422317067,
+        1.4514462865347262,
+        1.1281142239686097,
+        0.969494145751583,
+        0.7912926908326339,
+        0.5859294835112312,
+        0.5462864208078416,
+        0.4126376655901575,
+        0.3841298723667948,
+        0.3716192941690288,
+        0.31641202509851535,
+        0.3068629702669067,
+        0.2570257209799084,
+        0.22825764576271587,
+        0.21143038479644674,
+        0.1847339281177085,
+        0.1679167276758325,
+        0.163298828087373,
+        0.1407259252082744,
+        0.1320515681440305,
+        0.10698507538140001,
+        0.0917905806367672,
+        0.0823710623301308
+      ],
+      "mean_norm": 0.009298410549518204
+    }
+  },
+  "seed-1/decoding/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008755619694654358,
+      "auxiliary_gradient_norm": 0.00029793109240988246,
+      "auxiliary_force_rms": 0.02664610147208298
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009634439018524427,
+      "auxiliary_gradient_norm": 6.0557118683468926e-05,
+      "auxiliary_force_rms": 0.005416054820746064
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.6070983704184262,
+        0.0019098983086011474,
+        0.345908918728911,
+        0.023870468992035206
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0306972121173956,
+    "final_geometry": 0.004207876081079745,
+    "final_coupling": 0.00024219755296128455,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.369442400005937,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17600811202510475,
+      "effective_rank": 32,
+      "singular_values": [
+        38.0088188039014,
+        36.27715335893128,
+        34.30274604076196,
+        33.47754600486882,
+        29.12220633243201,
+        27.806078949444558,
+        25.451828552041416,
+        24.0345431020484,
+        3.493416195715715,
+        2.60811808425148,
+        1.3644466890989455,
+        1.0559269066402466,
+        0.9034093000158565,
+        0.7423724716499586,
+        0.5418022675687271,
+        0.5040159394051517,
+        0.38161208043955236,
+        0.358080087878374,
+        0.34404119063084654,
+        0.29738678789751727,
+        0.28470275185303684,
+        0.23877148172990542,
+        0.21360270822778196,
+        0.19699753335830192,
+        0.1732835323114277,
+        0.15555779299395303,
+        0.15194102323045156,
+        0.1302966477960085,
+        0.12292473960457574,
+        0.09914259204762091,
+        0.08528664444818627,
+        0.07645805644223093
+      ],
+      "mean_norm": 0.0048801059305637546
+    }
+  },
+  "seed-1/decoding/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008755619694654358,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.001737112491541128,
+      "auxiliary_gradient_norm": 7.835150683829906e-06,
+      "auxiliary_force_rms": 0.0007007533805272177
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8211423748676295,
+        0.006654118333942707,
+        0.6546634564041789,
+        0.03781512606544963
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0299691628449978,
+    "final_geometry": 0.0,
+    "final_coupling": 2.4552765016016176e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.00762069999473,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17604322167851255,
+      "effective_rank": 32,
+      "singular_values": [
+        37.51935489574227,
+        34.05564371984911,
+        33.45208860211392,
+        32.318256136380526,
+        30.62968138062308,
+        29.591647683635433,
+        26.470454852288356,
+        25.774719173421833,
+        3.319529089901327,
+        2.546857054237254,
+        1.3402310235272668,
+        1.0256249193025757,
+        0.8742018739244349,
+        0.7124889593373162,
+        0.5208850202639908,
+        0.47621919156858145,
+        0.36318221298575576,
+        0.34561231266049036,
+        0.3309028806713803,
+        0.2864733648578403,
+        0.273358834893585,
+        0.22918387782802868,
+        0.20548852376601012,
+        0.18877526732564723,
+        0.1687803013193381,
+        0.1487942163977694,
+        0.14507827884925376,
+        0.12536889405719395,
+        0.11872207727330998,
+        0.0954293323452257,
+        0.08221441060549234,
+        0.07364428749143667
+      ],
+      "mean_norm": 0.004722453471334784
+    }
+  },
+  "seed-1/decoding/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.008755619694654358,
+      "auxiliary_gradient_norm": 0.00029793109240988246,
+      "auxiliary_force_rms": 0.02664610147208298
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0016894611779329416,
+      "auxiliary_gradient_norm": 1.0713734844264149e-05,
+      "auxiliary_force_rms": 0.0009582056827170692
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.7119094031335494,
+        0.004686920858587076,
+        0.5092914037160892,
+        0.03298116243036837
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0303661730613891,
+    "final_geometry": 0.00417054368487931,
+    "final_coupling": 0.00023308774008451362,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.642801800000598,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17602485644286917,
+      "effective_rank": 32,
+      "singular_values": [
+        39.17342800571699,
+        35.339355388560584,
+        34.4951649452005,
+        32.926682626896024,
+        29.912863240821743,
+        27.339213037748827,
+        25.14112487482757,
+        23.9907493903593,
+        3.4004688480448833,
+        2.5746103853462374,
+        1.3483548681187059,
+        1.0398982887784574,
+        0.8878412282641818,
+        0.7339172705069351,
+        0.5315921115927366,
+        0.4925701816005237,
+        0.37349694169527375,
+        0.3527154313075429,
+        0.3377736569904492,
+        0.293405854002496,
+        0.27903246115750174,
+        0.23449830017546908,
+        0.21054695874892834,
+        0.19340462371497544,
+        0.17131938804465824,
+        0.1525131295859084,
+        0.14924172853151957,
+        0.12773870969356751,
+        0.12082789947956499,
+        0.09736450465256069,
+        0.08394450025273308,
+        0.07508060292111499
+      ],
+      "mean_norm": 0.0045451960178419315
+    }
+  },
+  "seed-1/gatsby/initial": {
+    "fit_seconds": 3.5599994589574635e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744698202765124,
+      "effective_rank": 3,
+      "singular_values": [
+        63.26868539944532,
+        57.60377592105669,
+        50.77751109492592
+      ],
+      "mean_norm": 0.007230952597187232
+    }
+  },
+  "seed-1/gatsby/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007473830167399778,
+      "auxiliary_gradient_norm": 0.00037790367403285017,
+      "auxiliary_force_rms": 0.037788477837674535
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.001269229271598733,
+      "auxiliary_gradient_norm": 1.4506714308612232e-05,
+      "auxiliary_force_rms": 0.0014505988954762502
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9257048722200565,
+        0.10943801479067558,
+        0.7794886882343508,
+        0.0689428680514614
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0592426499933865,
+    "final_geometry": 0.0040072464900700435,
+    "final_coupling": 0.0004101625926574936,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.085978400005843,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758143849572804,
+      "effective_rank": 3,
+      "singular_values": [
+        61.82268292228734,
+        57.56292582653469,
+        53.01261111917953
+      ],
+      "mean_norm": 0.010927948613084725
+    }
+  },
+  "seed-1/gatsby/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007473830167399778,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006746452396753888,
+      "auxiliary_gradient_norm": 1.0760079860114857e-06,
+      "auxiliary_force_rms": 0.00010759541842671079
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9971228776324487,
+        0.12640067520888654,
+        0.8618774769245183,
+        0.06191503854488452
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0591018240726153,
+    "final_geometry": 0.0,
+    "final_coupling": 5.788387033209489e-09,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.374981200002367,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759555975852862,
+      "effective_rank": 3,
+      "singular_values": [
+        60.723823418162844,
+        57.94110010005578,
+        53.90915066868187
+      ],
+      "mean_norm": 0.007874897659937333
+    }
+  },
+  "seed-1/gatsby/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.007473830167399778,
+      "auxiliary_gradient_norm": 0.00037790367403285017,
+      "auxiliary_force_rms": 0.037788477837674535
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0011821457178991862,
+      "auxiliary_gradient_norm": 8.678988069336602e-06,
+      "auxiliary_force_rms": 0.0008678554109083858
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9734231615849231,
+        0.14509283367621092,
+        0.8228017053639103,
+        0.0888430801763932
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0591812492430521,
+    "final_geometry": 0.0040039198200638535,
+    "final_coupling": 0.00041076948742922606,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.626586700003827,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758920397869353,
+      "effective_rank": 3,
+      "singular_values": [
+        61.848844981955914,
+        57.64988214317708,
+        52.91281274937111
+      ],
+      "mean_norm": 0.00993545858814296
+    }
+  },
+  "seed-2/achilles/initial": {
+    "fit_seconds": 3.8300000596791506e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744677247321509,
+      "effective_rank": 3,
+      "singular_values": [
+        59.389724420144276,
+        58.967632476925274,
+        53.80598402253549
+      ],
+      "mean_norm": 0.007714248001414426
+    }
+  },
+  "seed-2/achilles/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005945237215184421,
+      "auxiliary_gradient_norm": 0.0002868363584187737,
+      "auxiliary_force_rms": 0.02868220162422894
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007751037177241773,
+      "auxiliary_gradient_norm": 1.1080009659816994e-05,
+      "auxiliary_force_rms": 0.00110794556454833
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8844088603881567,
+        0.06792317665293975,
+        0.7461074254532021,
+        0.058866330426609506
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0546342766532781,
+    "final_geometry": 0.002512617495165101,
+    "final_coupling": 0.00023109127470504297,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.086756999997306,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759328102273306,
+      "effective_rank": 3,
+      "singular_values": [
+        60.48994392560217,
+        57.824412641043,
+        54.28873683998099
+      ],
+      "mean_norm": 0.0016318831406621798
+    }
+  },
+  "seed-2/achilles/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005945237215184421,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007751922169804054,
+      "auxiliary_gradient_norm": 2.7903109553831924e-06,
+      "auxiliary_force_rms": 0.00027901714363473605
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.964330137698844,
+        0.06818512684720082,
+        0.8517312470184947,
+        0.06094545311765893
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0544813226490901,
+    "final_geometry": 0.0,
+    "final_coupling": 3.892528322104346e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.171158800003468,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761172339006477,
+      "effective_rank": 3,
+      "singular_values": [
+        60.119483602762244,
+        57.38070288772046,
+        55.22172498362194
+      ],
+      "mean_norm": 0.002093020017137462
+    }
+  },
+  "seed-2/achilles/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.005945237215184421,
+      "auxiliary_gradient_norm": 0.0002868363584187737,
+      "auxiliary_force_rms": 0.02868220162422894
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007881311099171553,
+      "auxiliary_gradient_norm": 2.9298307024114095e-06,
+      "auxiliary_force_rms": 0.00029296842072138173
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8758417302658854,
+        0.06039999746891218,
+        0.7343910141699104,
+        0.06430846198897086
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0547039207673023,
+    "final_geometry": 0.0025038204432704207,
+    "final_coupling": 0.0002298636858526163,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 7.203500499999791,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575822913347471,
+      "effective_rank": 3,
+      "singular_values": [
+        60.60410932708174,
+        57.797186898461206,
+        54.15526963548362
+      ],
+      "mean_norm": 0.0017914872721022871
+    }
+  },
+  "seed-2/buddy/initial": {
+    "fit_seconds": 3.4500000765547156e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744565459973897,
+      "effective_rank": 3,
+      "singular_values": [
+        48.794653938310454,
+        47.02182091681715,
+        43.798133311492265
+      ],
+      "mean_norm": 0.009901523656344335
+    }
+  },
+  "seed-2/buddy/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006170245637450478,
+      "auxiliary_gradient_norm": 0.00040849218768488314,
+      "auxiliary_force_rms": 0.03312566895957952
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009288688891120529,
+      "auxiliary_gradient_norm": 1.1788910422410325e-05,
+      "auxiliary_force_rms": 0.0009559926868127784
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8492768820757648,
+        0.1392316767944397,
+        0.684089255358898,
+        0.06390384370386996
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0580195596094701,
+    "final_geometry": 0.0036528945858507584,
+    "final_coupling": 0.0003256829630147055,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.618946699993103,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758621212315822,
+      "effective_rank": 3,
+      "singular_values": [
+        50.01708402826486,
+        46.84637181850309,
+        42.9633859519096
+      ],
+      "mean_norm": 0.012485987042584785
+    }
+  },
+  "seed-2/buddy/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006170245637450478,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0006676284296168119,
+      "auxiliary_gradient_norm": 4.857007415834908e-07,
+      "auxiliary_force_rms": 3.938670668416408e-05
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9188008548156696,
+        0.14531631762537747,
+        0.760501418952889,
+        0.07693442120098336
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0578718308865789,
+    "final_geometry": 0.0,
+    "final_coupling": 7.756563317121875e-10,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.045670300001802,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5760452686058675,
+      "effective_rank": 3,
+      "singular_values": [
+        49.57479270379084,
+        46.701163734773,
+        43.67661853503282
+      ],
+      "mean_norm": 0.009766145962091674
+    }
+  },
+  "seed-2/buddy/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.006170245637450478,
+      "auxiliary_gradient_norm": 0.00040849218768488314,
+      "auxiliary_force_rms": 0.03312566895957952
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007127523907695303,
+      "auxiliary_gradient_norm": 2.75878213801506e-06,
+      "auxiliary_force_rms": 0.00022371665013575434
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9025218452809497,
+        0.17713864127787024,
+        0.73834646931609,
+        0.08651615042492238
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.057943993479726,
+    "final_geometry": 0.0036470485952828135,
+    "final_coupling": 0.00032447029588666585,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.151064800003951,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759688418992127,
+      "effective_rank": 3,
+      "singular_values": [
+        50.07928001640219,
+        46.924508054345004,
+        42.83369099915125
+      ],
+      "mean_norm": 0.011983091725685801
+    }
+  },
+  "seed-2/cicero/initial": {
+    "fit_seconds": 3.499999729683623e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.574469437782826,
+      "effective_rank": 3,
+      "singular_values": [
+        60.42424717842775,
+        58.80454757393141,
+        52.824232512514
+      ],
+      "mean_norm": 0.007321548479997138
+    }
+  },
+  "seed-2/cicero/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004803314682900318,
+      "auxiliary_gradient_norm": 0.0004392621472950716,
+      "auxiliary_force_rms": 0.04392401836386017
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008540922234025268,
+      "auxiliary_gradient_norm": 8.347965977214426e-06,
+      "auxiliary_force_rms": 0.0008347548568480087
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8703784876447211,
+        0.137519224742828,
+        0.7226158357297727,
+        0.027361712361622596
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.057480105756693,
+    "final_geometry": 0.00468760120954822,
+    "final_coupling": 0.0005416545865332061,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 5.873973800000385,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758977606790002,
+      "effective_rank": 3,
+      "singular_values": [
+        59.4461871221197,
+        58.02110453377552,
+        55.21280841691514
+      ],
+      "mean_norm": 0.006137251140186226
+    }
+  },
+  "seed-2/cicero/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004803314682900318,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0009260168927098805,
+      "auxiliary_gradient_norm": 5.1659581631526634e-06,
+      "auxiliary_force_rms": 0.0005165699858786735
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9903151483854908,
+        0.16168686585594327,
+        0.8750403100048733,
+        0.049970144047482096
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0572531627267725,
+    "final_geometry": 0.0,
+    "final_coupling": 1.3342227515534648e-07,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.118036899999424,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5761695263239782,
+      "effective_rank": 3,
+      "singular_values": [
+        58.7719363088568,
+        58.35584017573934,
+        55.66506263226486
+      ],
+      "mean_norm": 0.0035874642643794466
+    }
+  },
+  "seed-2/cicero/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.004803314682900318,
+      "auxiliary_gradient_norm": 0.0004392621472950716,
+      "auxiliary_force_rms": 0.04392401836386017
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007813745984380995,
+      "auxiliary_gradient_norm": 2.0217921284031505e-06,
+      "auxiliary_force_rms": 0.00020216910362693639
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.8829573195213484,
+        0.1504011544301261,
+        0.7335622398922517,
+        0.030676655690020368
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0574723979638305,
+    "final_geometry": 0.00468668309574412,
+    "final_coupling": 0.0005423330719979038,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.4352772000056575,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5758982151491581,
+      "effective_rank": 3,
+      "singular_values": [
+        59.47618369094916,
+        57.95783234771676,
+        55.247089454661634
+      ],
+      "mean_norm": 0.006107114391776145
+    }
+  },
+  "seed-2/decoding/initial": {
+    "fit_seconds": 3.590000414988026e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17588083225470355,
+      "effective_rank": 32,
+      "singular_values": [
+        38.18906291322751,
+        35.984940962836596,
+        34.62925945694168,
+        33.07597569188344,
+        29.17797146811889,
+        27.896531261842913,
+        26.079304518626035,
+        23.25469305973576,
+        2.618793874070886,
+        2.4795605123890057,
+        2.106927785345954,
+        1.372157976974617,
+        0.7199825817678168,
+        0.5124598633423402,
+        0.4457589795582713,
+        0.43125393724057753,
+        0.36348212897984955,
+        0.2957987813201245,
+        0.279189738657107,
+        0.24717817481151322,
+        0.21159284695924752,
+        0.20953659235103334,
+        0.19688611842365392,
+        0.1800969245763417,
+        0.16879867589327702,
+        0.14135232413594648,
+        0.1403095662086201,
+        0.11873857972888639,
+        0.1079340627502047,
+        0.08930956855046841,
+        0.07559466122521927,
+        0.06000714566742956
+      ],
+      "mean_norm": 0.014452022730261877
+    }
+  },
+  "seed-2/decoding/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011118322250456817,
+      "auxiliary_gradient_norm": 0.0002983176920482684,
+      "auxiliary_force_rms": 0.026680677833718074
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0011472892799161266,
+      "auxiliary_gradient_norm": 5.85483609204512e-05,
+      "auxiliary_force_rms": 0.0052363972940567514
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.5845654962886498,
+        0.002213409773417366,
+        0.3045263944389073,
+        0.019896988107091788
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0298533330106816,
+    "final_geometry": 0.004115501337283916,
+    "final_coupling": 0.00021668367019852803,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.30257019999408,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17602010113413968,
+      "effective_rank": 32,
+      "singular_values": [
+        38.800132407888924,
+        38.01549707096704,
+        34.05544319585009,
+        32.704811503321004,
+        27.810174104453946,
+        27.70355109255881,
+        25.664466295024045,
+        23.075353179646633,
+        2.484465301922151,
+        2.326340707931474,
+        1.9640679877590792,
+        1.2855733730576404,
+        0.6674287661853999,
+        0.47801878620000515,
+        0.41131731512284947,
+        0.40449119597118216,
+        0.3352073898929948,
+        0.27510103742426345,
+        0.25860022348146944,
+        0.22896339311205005,
+        0.1966037198510429,
+        0.1943068807504224,
+        0.1794340972644904,
+        0.16631631525280907,
+        0.157152371521406,
+        0.13054055328109096,
+        0.12923476286449662,
+        0.11022637857188301,
+        0.10038046853720635,
+        0.08249450790582867,
+        0.07002240807000427,
+        0.055552388508521754
+      ],
+      "mean_norm": 0.005718007691355862
+    }
+  },
+  "seed-2/decoding/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011118322250456817,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008263244275332925,
+      "auxiliary_gradient_norm": 1.207128519005472e-06,
+      "auxiliary_force_rms": 0.00010796210877854023
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.6667968860802779,
+        0.004617474210618394,
+        0.4434043554016867,
+        0.028887282525892913
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.029532428942808,
+    "final_geometry": 0.0,
+    "final_coupling": 5.827908465954677e-09,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 25.817397800004983,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17605672597958036,
+      "effective_rank": 32,
+      "singular_values": [
+        38.41113720582036,
+        37.682204705749065,
+        33.720124390138096,
+        32.42068196731298,
+        29.65519701939792,
+        27.668994704647478,
+        25.487819027374588,
+        23.19424083829233,
+        2.443572585631965,
+        2.273156712641992,
+        1.919877187303991,
+        1.2579701418026308,
+        0.6452331262756525,
+        0.464215106491639,
+        0.39888462434077887,
+        0.3943582867322056,
+        0.32448753351817344,
+        0.2672819859889313,
+        0.2510119530681065,
+        0.22157891806397784,
+        0.1912087472900077,
+        0.18813031058002563,
+        0.17250660208956098,
+        0.16101274235715846,
+        0.15319119588354407,
+        0.12599955780166633,
+        0.12457202709447698,
+        0.10728520113813338,
+        0.0978094788778109,
+        0.07995821806232135,
+        0.06805930774201799,
+        0.05409454121966127
+      ],
+      "mean_norm": 0.005525247285135434
+    }
+  },
+  "seed-2/decoding/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.011118322250456817,
+      "auxiliary_gradient_norm": 0.0002983176920482684,
+      "auxiliary_force_rms": 0.026680677833718074
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0008617098614432866,
+      "auxiliary_gradient_norm": 3.946237851375253e-06,
+      "auxiliary_force_rms": 0.000352940182812661
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.6546929758455801,
+        0.0049298360410051315,
+        0.4255357903565384,
+        0.026332974361898805
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0297322359585108,
+    "final_geometry": 0.003932340369458675,
+    "final_coupling": 0.00021109119005433553,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 26.142350300004182,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.17605417096750797,
+      "effective_rank": 32,
+      "singular_values": [
+        39.88227767550686,
+        39.292059815239604,
+        33.93635083384053,
+        32.37135462395732,
+        28.108012993558823,
+        26.714070055333867,
+        23.873669026410425,
+        22.539969055137245,
+        2.4540634440969953,
+        2.281127574459956,
+        1.9235253508750145,
+        1.2628548779148383,
+        0.6523393729635114,
+        0.4690501025732699,
+        0.4015340785291714,
+        0.39774466709496004,
+        0.3266998200806155,
+        0.2695807553338606,
+        0.25264649981296877,
+        0.22378933646538637,
+        0.19261993603264255,
+        0.18982425675215298,
+        0.173398192872923,
+        0.162005396811553,
+        0.15415033340422804,
+        0.12724399779960804,
+        0.12567608333141314,
+        0.107798643813774,
+        0.09836982186282452,
+        0.08043282506116224,
+        0.06838590801962093,
+        0.054232538418348415
+      ],
+      "mean_norm": 0.005293339192307447
+    }
+  },
+  "seed-2/gatsby/initial": {
+    "fit_seconds": 5.0499998906161636e-05,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5744698202767856,
+      "effective_rank": 3,
+      "singular_values": [
+        63.268685396923615,
+        57.60377592154024,
+        50.77751109761226
+      ],
+      "mean_norm": 0.007230952618231486
+    }
+  },
+  "seed-2/gatsby/joint_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0071004593035075185,
+      "auxiliary_gradient_norm": 0.00037790367385721326,
+      "auxiliary_force_rms": 0.03778847782011172
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007063108313627649,
+      "auxiliary_gradient_norm": 1.227645474134095e-05,
+      "auxiliary_force_rms": 0.0012275840903257548
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9217406625251595,
+        0.09793220058819843,
+        0.7864445361013584,
+        0.037637002797986395
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0569512527734939,
+    "final_geometry": 0.00404865944650747,
+    "final_coupling": 0.00041618055902032427,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.392292500000622,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.575753397973972,
+      "effective_rank": 3,
+      "singular_values": [
+        61.7907998526888,
+        57.376276932151804,
+        53.231801410448114
+      ],
+      "mean_norm": 0.011320359737730816
+    }
+  },
+  "seed-2/gatsby/palm_no_prior": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0071004593035075185,
+      "auxiliary_gradient_norm": 0.0,
+      "auxiliary_force_rms": 0.0
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007265157670058186,
+      "auxiliary_gradient_norm": 2.1635544652492926e-06,
+      "auxiliary_force_rms": 0.0002163446284821452
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9999999999999999,
+        0.09372015339824179,
+        0.8980926473921025,
+        0.057691217668453705
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.0567872980627895,
+    "final_geometry": 0.0,
+    "final_coupling": 2.3402499136538707e-08,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.483114000002388,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5759118738964856,
+      "effective_rank": 3,
+      "singular_values": [
+        60.94948237227613,
+        57.850845319244286,
+        53.737136747223836
+      ],
+      "mean_norm": 0.009289186178263594
+    }
+  },
+  "seed-2/gatsby/palm_quadratic": {
+    "initial_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0071004593035075185,
+      "auxiliary_gradient_norm": 0.00037790367385721326,
+      "auxiliary_force_rms": 0.03778847782011172
+    },
+    "final_stationarity": {
+      "parameter_proximal_mapping_norm": 0.0007341052508226746,
+      "auxiliary_gradient_norm": 1.694462802669797e-06,
+      "auxiliary_force_rms": 0.0001694378077411479
+    },
+    "feasibility": {
+      "parameter_ball_norms": [
+        0.9559847780852755,
+        0.11967165092882395,
+        0.8260867622408798,
+        0.03655959106980048
+      ],
+      "maximum_constraint_excess": 0.0
+    },
+    "final_contrastive": 1.056901794813062,
+    "final_geometry": 0.004057437654743481,
+    "final_coupling": 0.00041471269561203566,
+    "finite_budget_convergence_claimed": false,
+    "fit_seconds": 6.669478299998445,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "representation": {
+      "centered_rms": 0.5757980994476354,
+      "effective_rank": 3,
+      "singular_values": [
+        61.721400862341156,
+        57.565784615280045,
+        53.12210487818304
+      ],
+      "mean_norm": 0.01157658204968604
+    }
+  }
+}
