@@ -1,0 +1,4712 @@
+{
+  "seed-0/achilles/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773329181205608,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433228807,
+        59.26173720966732,
+        54.07434471398763
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773425433895006,
+      "effective_rank": 3,
+      "singular_values": [
+        58.94879158369471,
+        58.464490293009916,
+        55.728590010758175
+      ],
+      "mean_norm": 0.005173397716134787
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.404192800000601,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0502591133117676,
+      "quadratic_energy": 0.0030586463399231434,
+      "tv_energy": 0.1364036500453949,
+      "base_prior_energy": 8.591196092311293e-06,
+      "linear_relative_residual": 6.380611807799141e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.021614177152514458,
+      "dual_relative": 0.025185825303196907,
+      "explicit_objective": 1.053326350847783
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0462380647659302,
+      "quadratic_energy": 0.0021145083010196686,
+      "tv_energy": 0.13519857823848724,
+      "base_prior_energy": 1.0182796359003987e-05,
+      "linear_relative_residual": 6.342959295579931e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0005502660060301423,
+      "dual_relative": 0.006460907869040966,
+      "explicit_objective": 1.0483627558633088
+    }
+  },
+  "seed-0/achilles/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773329181205608,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433228807,
+        59.26173720966732,
+        54.07434471398763
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773402412906161,
+      "effective_rank": 3,
+      "singular_values": [
+        59.29982340766723,
+        58.70614152888234,
+        55.097845255081374
+      ],
+      "mean_norm": 0.0058937533758580685
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.589822900001309,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0502591133117676,
+      "quadratic_energy": 0.0030586463399231434,
+      "tv_energy": 0.1364036500453949,
+      "base_prior_energy": 8.591196092311293e-06,
+      "tv_gap_per_node": 6.0378963098628446e-05,
+      "primal_relative": 0.041193097829818726,
+      "dual_relative": 0.04194677993655205,
+      "explicit_objective": 1.0639080695123995
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0466114282608032,
+      "quadratic_energy": 0.002221244852989912,
+      "tv_energy": 0.12639474868774414,
+      "base_prior_energy": 1.0272585313941818e-05,
+      "tv_gap_per_node": 6.973963877499045e-07,
+      "primal_relative": 0.002163865137845278,
+      "dual_relative": 0.0065369089134037495,
+      "explicit_objective": 1.0592611757148915
+    }
+  },
+  "seed-0/achilles/control": {
+    "initial": {
+      "centered_rms": 0.5773329181205608,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433228807,
+        59.26173720966732,
+        54.07434471398763
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773423410410046,
+      "effective_rank": 3,
+      "singular_values": [
+        58.98049528461577,
+        57.8982283944427,
+        56.28340532511643
+      ],
+      "mean_norm": 0.005240540020167828
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1965869000050589,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0502468347549438,
+      "quadratic_energy": 0.0030628342647105455,
+      "tv_energy": 0.13649770617485046,
+      "base_prior_energy": 8.593973689130507e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0457768440246582,
+      "quadratic_energy": 0.002349040238186717,
+      "tv_energy": 0.1381065398454666,
+      "base_prior_energy": 1.0313457096344791e-05
+    }
+  },
+  "seed-0/achilles/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773329181205608,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433228807,
+        59.26173720966732,
+        54.07434471398763
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773433400849213,
+      "effective_rank": 3,
+      "singular_values": [
+        59.04875772887451,
+        58.26680821344115,
+        55.82994953884641
+      ],
+      "mean_norm": 0.004899316933006048
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.5524118000030285,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0502642393112183,
+      "quadratic_energy": 0.0030248218681663275,
+      "tv_energy": 0.13614413142204285,
+      "base_prior_energy": 8.591930964030325e-06,
+      "explicit_objective": 1.0532976531103486
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0459692478179932,
+      "quadratic_energy": 0.002096897689625621,
+      "tv_energy": 0.13575460016727448,
+      "base_prior_energy": 1.0152722097700462e-05,
+      "explicit_objective": 1.0480762982297165
+    }
+  },
+  "seed-0/achilles/pnp": {
+    "initial": {
+      "centered_rms": 0.5773329181205608,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433228807,
+        59.26173720966732,
+        54.07434471398763
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773414245147591,
+      "effective_rank": 3,
+      "singular_values": [
+        58.80763852000175,
+        58.12338100002621,
+        56.231911556403276
+      ],
+      "mean_norm": 0.00553528917953372
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1910655000028783,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0502591133117676,
+      "quadratic_energy": 0.0030586463399231434,
+      "tv_energy": 0.1364036500453949,
+      "base_prior_energy": 8.591196092311293e-06,
+      "denoiser_bandwidth_squared": 0.0027283611707389355,
+      "primal_relative": 0.0008556409738957882,
+      "dual_relative": 0.01007105689495802
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0460844039916992,
+      "quadratic_energy": 0.002368316752836108,
+      "tv_energy": 0.1376153528690338,
+      "base_prior_energy": 1.0329921678930987e-05,
+      "denoiser_bandwidth_squared": 0.0027283611707389355,
+      "primal_relative": 4.644083674065769e-05,
+      "dual_relative": 0.0060978420078754425
+    }
+  },
+  "seed-0/buddy/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773216833094135,
+      "effective_rank": 3,
+      "singular_values": [
+        49.038020260829725,
+        47.256345141296286,
+        44.0165792002536
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773364685752554,
+      "effective_rank": 3,
+      "singular_values": [
+        49.09014021000812,
+        46.49142451761894,
+        44.77042781995337
+      ],
+      "mean_norm": 0.006914099678397179
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3230720999999903,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0572388172149658,
+      "quadratic_energy": 0.0045013208873569965,
+      "tv_energy": 0.18766869604587555,
+      "base_prior_energy": 8.050771612033714e-06,
+      "linear_relative_residual": 7.820960945537081e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.02582237869501114,
+      "dual_relative": 0.02968548983335495,
+      "explicit_objective": 1.0617481888739349
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0511740446090698,
+      "quadratic_energy": 0.003480668645352125,
+      "tv_energy": 0.18341697752475739,
+      "base_prior_energy": 1.0168673725274857e-05,
+      "linear_relative_residual": 9.444951842851879e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0007243295549415052,
+      "dual_relative": 0.0055065760388970375,
+      "explicit_objective": 1.0546648819281472
+    }
+  },
+  "seed-0/buddy/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773216833094135,
+      "effective_rank": 3,
+      "singular_values": [
+        49.038020260829725,
+        47.256345141296286,
+        44.0165792002536
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773317303951617,
+      "effective_rank": 3,
+      "singular_values": [
+        49.68615331136869,
+        46.685601686744604,
+        43.901235273790434
+      ],
+      "mean_norm": 0.008013718761503696
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.4962082999991253,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0572388172149658,
+      "quadratic_energy": 0.0045013208873569965,
+      "tv_energy": 0.18766869604587555,
+      "base_prior_energy": 8.050771612033714e-06,
+      "tv_gap_per_node": 2.2431069737649523e-05,
+      "primal_relative": 0.04958738386631012,
+      "dual_relative": 0.05073053017258644,
+      "explicit_objective": 1.0760137375911654
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.051649808883667,
+      "quadratic_energy": 0.003381282789632678,
+      "tv_energy": 0.1745150089263916,
+      "base_prior_energy": 1.0225590813206509e-05,
+      "tv_gap_per_node": 3.062895643779484e-07,
+      "primal_relative": 0.0016963565722107887,
+      "dual_relative": 0.005662314593791962,
+      "explicit_objective": 1.0691115353671194
+    }
+  },
+  "seed-0/buddy/control": {
+    "initial": {
+      "centered_rms": 0.5773216833094135,
+      "effective_rank": 3,
+      "singular_values": [
+        49.038020260829725,
+        47.256345141296286,
+        44.0165792002536
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773437767243719,
+      "effective_rank": 3,
+      "singular_values": [
+        48.62750107464838,
+        46.3198211756606,
+        45.44988898119597
+      ],
+      "mean_norm": 0.004742304794490337
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.0987464999998338,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.057224154472351,
+      "quadratic_energy": 0.004500953014940023,
+      "tv_energy": 0.18771764636039734,
+      "base_prior_energy": 8.051774784689769e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0507466793060303,
+      "quadratic_energy": 0.0038317269645631313,
+      "tv_energy": 0.18926604092121124,
+      "base_prior_energy": 1.0318733075109776e-05
+    }
+  },
+  "seed-0/buddy/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773216833094135,
+      "effective_rank": 3,
+      "singular_values": [
+        49.038020260829725,
+        47.256345141296286,
+        44.0165792002536
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.577338465104027,
+      "effective_rank": 3,
+      "singular_values": [
+        49.01771120757702,
+        46.54441343715933,
+        44.795230463078525
+      ],
+      "mean_norm": 0.006394589319825172
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.458620699995663,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0572504997253418,
+      "quadratic_energy": 0.004456571768969297,
+      "tv_energy": 0.18720614910125732,
+      "base_prior_energy": 8.047197297855746e-06,
+      "explicit_objective": 1.061715118691609
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0511221885681152,
+      "quadratic_energy": 0.003481187392026186,
+      "tv_energy": 0.18346752226352692,
+      "base_prior_energy": 1.0198807103733998e-05,
+      "explicit_objective": 1.0546135747672452
+    }
+  },
+  "seed-0/buddy/pnp": {
+    "initial": {
+      "centered_rms": 0.5773216833094135,
+      "effective_rank": 3,
+      "singular_values": [
+        49.038020260829725,
+        47.256345141296286,
+        44.0165792002536
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773429093202204,
+      "effective_rank": 3,
+      "singular_values": [
+        48.699450745108926,
+        46.32392323557977,
+        45.368380805702515
+      ],
+      "mean_norm": 0.005049306433647871
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2191740999987815,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0572388172149658,
+      "quadratic_energy": 0.0045013208873569965,
+      "tv_energy": 0.18766869604587555,
+      "base_prior_energy": 8.050771612033714e-06,
+      "denoiser_bandwidth_squared": 0.010679728351533413,
+      "primal_relative": 0.0015741975512355566,
+      "dual_relative": 0.01084044761955738
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0508074760437012,
+      "quadratic_energy": 0.0037908393424004316,
+      "tv_energy": 0.18806509673595428,
+      "base_prior_energy": 1.0279864909534808e-05,
+      "denoiser_bandwidth_squared": 0.010679728351533413,
+      "primal_relative": 6.982317427173257e-05,
+      "dual_relative": 0.006213515065610409
+    }
+  },
+  "seed-0/cicero/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.577334640078713,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688708887,
+        59.09783892454337,
+        53.08769670381104
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773324151955787,
+      "effective_rank": 3,
+      "singular_values": [
+        60.51694448794063,
+        58.06268446366718,
+        54.45002932625499
+      ],
+      "mean_norm": 0.007864314131438732
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3796352000063052,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.056756854057312,
+      "quadratic_energy": 0.005835270043462515,
+      "tv_energy": 0.20269668102264404,
+      "base_prior_energy": 8.52357243275037e-06,
+      "linear_relative_residual": 9.39199651384115e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.03253215551376343,
+      "dual_relative": 0.036353617906570435,
+      "explicit_objective": 1.0626006476732073
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0506951808929443,
+      "quadratic_energy": 0.00448148837313056,
+      "tv_energy": 0.1932796686887741,
+      "base_prior_energy": 1.0926138202194124e-05,
+      "linear_relative_residual": 1.3515110595108126e-06,
+      "cg_steps": 6,
+      "primal_relative": 0.0007369587547145784,
+      "dual_relative": 0.0048071532510221004,
+      "explicit_objective": 1.055187595404277
+    }
+  },
+  "seed-0/cicero/admm_tv": {
+    "initial": {
+      "centered_rms": 0.577334640078713,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688708887,
+        59.09783892454337,
+        53.08769670381104
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773195780814097,
+      "effective_rank": 3,
+      "singular_values": [
+        60.64391078250498,
+        58.48125186665027,
+        53.85346997650377
+      ],
+      "mean_norm": 0.010310836136341095
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.565275000000838,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.056756854057312,
+      "quadratic_energy": 0.005835270043462515,
+      "tv_energy": 0.20269668102264404,
+      "base_prior_energy": 8.52357243275037e-06,
+      "tv_gap_per_node": 2.1004298105253838e-05,
+      "primal_relative": 0.05642867833375931,
+      "dual_relative": 0.05826152116060257,
+      "explicit_objective": 1.0770350457320093
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0510509014129639,
+      "quadratic_energy": 0.004536882508546114,
+      "tv_energy": 0.18255819380283356,
+      "base_prior_energy": 1.1034159797418397e-05,
+      "tv_gap_per_node": 1.617593454739108e-07,
+      "primal_relative": 0.002031162614002824,
+      "dual_relative": 0.005470555741339922,
+      "explicit_objective": 1.0693177549530446
+    }
+  },
+  "seed-0/cicero/control": {
+    "initial": {
+      "centered_rms": 0.577334640078713,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688708887,
+        59.09783892454337,
+        53.08769670381104
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773377336587884,
+      "effective_rank": 3,
+      "singular_values": [
+        59.82357417332872,
+        58.45667028538975,
+        54.79528699519093
+      ],
+      "mean_norm": 0.00658971443772316
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1226705000008224,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.056740403175354,
+      "quadratic_energy": 0.005832630675286055,
+      "tv_energy": 0.20267193019390106,
+      "base_prior_energy": 8.523800715920515e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.050504207611084,
+      "quadratic_energy": 0.004776640795171261,
+      "tv_energy": 0.19775618612766266,
+      "base_prior_energy": 1.0982984349539038e-05
+    }
+  },
+  "seed-0/cicero/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.577334640078713,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688708887,
+        59.09783892454337,
+        53.08769670381104
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.577330930333263,
+      "effective_rank": 3,
+      "singular_values": [
+        60.52145815695537,
+        58.027738525027104,
+        54.481784339371295
+      ],
+      "mean_norm": 0.008184789679944515
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.5254855999955907,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.056748390197754,
+      "quadratic_energy": 0.005810760427266359,
+      "tv_energy": 0.20253753662109375,
+      "base_prior_energy": 8.523119504388887e-06,
+      "explicit_objective": 1.0625676737445247
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.050657033920288,
+      "quadratic_energy": 0.004495088942348957,
+      "tv_energy": 0.19360217452049255,
+      "base_prior_energy": 1.0953815035463776e-05,
+      "explicit_objective": 1.0551630766776725
+    }
+  },
+  "seed-0/cicero/pnp": {
+    "initial": {
+      "centered_rms": 0.577334640078713,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688708887,
+        59.09783892454337,
+        53.08769670381104
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773390327902876,
+      "effective_rank": 3,
+      "singular_values": [
+        59.80332770339325,
+        58.453177209774715,
+        54.82151833088564
+      ],
+      "mean_norm": 0.006238854490220547
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3038323000000673,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.056756854057312,
+      "quadratic_energy": 0.005835270043462515,
+      "tv_energy": 0.20269668102264404,
+      "base_prior_energy": 8.52357243275037e-06,
+      "denoiser_bandwidth_squared": 0.008276071399450302,
+      "primal_relative": 0.001682973001152277,
+      "dual_relative": 0.012194833718240261
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0504767894744873,
+      "quadratic_energy": 0.004770743194967508,
+      "tv_energy": 0.1972806602716446,
+      "base_prior_energy": 1.09805023384979e-05,
+      "denoiser_bandwidth_squared": 0.008276071399450302,
+      "primal_relative": 7.411366823362187e-05,
+      "dual_relative": 0.004951274022459984
+    }
+  },
+  "seed-0/decoding/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.17674929234252862,
+      "effective_rank": 32,
+      "singular_values": [
+        42.64521130984041,
+        37.16376794614569,
+        34.73502437757927,
+        32.47383018033115,
+        28.351576070267978,
+        27.453406272402585,
+        24.278775546076517,
+        19.2798550902666,
+        2.817209845054083,
+        1.9358096647164282,
+        1.4027226373173893,
+        1.0290469277510133,
+        0.8535526698560615,
+        0.6392676162096979,
+        0.4332504618126577,
+        0.42866188041020487,
+        0.3859763695401764,
+        0.3512277873505581,
+        0.3157396796938622,
+        0.28793639604024784,
+        0.2596669657819681,
+        0.23633144830212896,
+        0.2142034842713354,
+        0.1870784420327318,
+        0.17604207707160685,
+        0.15491820725055302,
+        0.144353880571535,
+        0.13585844566628527,
+        0.1251216275064217,
+        0.10962597543099503,
+        0.09555622269613795,
+        0.08008410924505467
+      ],
+      "mean_norm": 0.017606960609555244
+    },
+    "final": {
+      "centered_rms": 0.17677334902778036,
+      "effective_rank": 32,
+      "singular_values": [
+        36.636425280315585,
+        35.467626049554156,
+        33.477037237652866,
+        32.777331909635535,
+        31.24632790566935,
+        28.725795971255558,
+        26.736689526517466,
+        24.998491780031106,
+        5.409051875734493,
+        3.3768687756032167,
+        3.022339021382981,
+        1.9017698782955805,
+        1.450384793543502,
+        1.152594975248187,
+        1.0443235265919106,
+        0.8874605552932008,
+        0.7440360742650637,
+        0.7136073056448886,
+        0.6634463676996337,
+        0.6243854083879058,
+        0.5429864478569003,
+        0.49256810099492493,
+        0.4450805036612582,
+        0.42551667244046915,
+        0.38113530539503115,
+        0.3583150830344448,
+        0.3092122986885122,
+        0.27479404927362305,
+        0.2526347868386956,
+        0.2284243327833022,
+        0.2086124434734207,
+        0.188653336296087
+      ],
+      "mean_norm": 0.006152864545583725
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4026641000018572,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0292106866836548,
+      "quadratic_energy": 0.004920199979096651,
+      "tv_energy": 0.2443867325782776,
+      "base_prior_energy": 8.904102628548571e-07,
+      "linear_relative_residual": 7.228069875964138e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.021938230842351913,
+      "dual_relative": 0.033224161714315414,
+      "explicit_objective": 1.0341317770730143
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0162696838378906,
+      "quadratic_energy": 0.004795143846422434,
+      "tv_energy": 0.25038814544677734,
+      "base_prior_energy": 3.40046290148166e-06,
+      "linear_relative_residual": 1.139713731390657e-06,
+      "cg_steps": 6,
+      "primal_relative": 0.0016786814667284489,
+      "dual_relative": 0.01732923649251461,
+      "explicit_objective": 1.0210682281472145
+    }
+  },
+  "seed-0/decoding/admm_tv": {
+    "initial": {
+      "centered_rms": 0.17674929234252862,
+      "effective_rank": 32,
+      "singular_values": [
+        42.64521130984041,
+        37.16376794614569,
+        34.73502437757927,
+        32.47383018033115,
+        28.351576070267978,
+        27.453406272402585,
+        24.278775546076517,
+        19.2798550902666,
+        2.817209845054083,
+        1.9358096647164282,
+        1.4027226373173893,
+        1.0290469277510133,
+        0.8535526698560615,
+        0.6392676162096979,
+        0.4332504618126577,
+        0.42866188041020487,
+        0.3859763695401764,
+        0.3512277873505581,
+        0.3157396796938622,
+        0.28793639604024784,
+        0.2596669657819681,
+        0.23633144830212896,
+        0.2142034842713354,
+        0.1870784420327318,
+        0.17604207707160685,
+        0.15491820725055302,
+        0.144353880571535,
+        0.13585844566628527,
+        0.1251216275064217,
+        0.10962597543099503,
+        0.09555622269613795,
+        0.08008410924505467
+      ],
+      "mean_norm": 0.017606960609555244
+    },
+    "final": {
+      "centered_rms": 0.17677254321630476,
+      "effective_rank": 32,
+      "singular_values": [
+        39.59059888335996,
+        38.10020594846855,
+        34.387913152281456,
+        33.25238313797321,
+        31.147208822868865,
+        25.772689875774418,
+        23.176441549876543,
+        22.282172286725483,
+        3.2454643153216276,
+        2.0834895417892603,
+        1.7390235622021917,
+        1.2166123961722526,
+        0.9784169389069758,
+        0.7317709494779765,
+        0.610491330543059,
+        0.5942132027795752,
+        0.5565227405533589,
+        0.4893571239746435,
+        0.43003516932539787,
+        0.4143089607185897,
+        0.3930329606183658,
+        0.3779676200385819,
+        0.3341067846676209,
+        0.3098217298430445,
+        0.2637882593916777,
+        0.2249652981731583,
+        0.21322905382234733,
+        0.20483760470020163,
+        0.17694938702047666,
+        0.16675319891813215,
+        0.1478553712533067,
+        0.12025539721014303
+      ],
+      "mean_norm": 0.006853793747723103
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.547674299996288,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0292106866836548,
+      "quadratic_energy": 0.004920199979096651,
+      "tv_energy": 0.2443867325782776,
+      "base_prior_energy": 8.904102628548571e-07,
+      "tv_gap_per_node": 2.914792958108592e-06,
+      "primal_relative": 0.052822452038526535,
+      "dual_relative": 0.05749981477856636,
+      "explicit_objective": 1.0536502503517453
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0199518203735352,
+      "quadratic_energy": 0.003819122677668929,
+      "tv_energy": 0.21517948806285858,
+      "base_prior_energy": 3.188167056578095e-06,
+      "tv_gap_per_node": 1.9075869772677834e-08,
+      "primal_relative": 0.004238090943545103,
+      "dual_relative": 0.013342988677322865,
+      "explicit_objective": 1.0414729573468775
+    }
+  },
+  "seed-0/decoding/control": {
+    "initial": {
+      "centered_rms": 0.17674929234252862,
+      "effective_rank": 32,
+      "singular_values": [
+        42.64521130984041,
+        37.16376794614569,
+        34.73502437757927,
+        32.47383018033115,
+        28.351576070267978,
+        27.453406272402585,
+        24.278775546076517,
+        19.2798550902666,
+        2.817209845054083,
+        1.9358096647164282,
+        1.4027226373173893,
+        1.0290469277510133,
+        0.8535526698560615,
+        0.6392676162096979,
+        0.4332504618126577,
+        0.42866188041020487,
+        0.3859763695401764,
+        0.3512277873505581,
+        0.3157396796938622,
+        0.28793639604024784,
+        0.2596669657819681,
+        0.23633144830212896,
+        0.2142034842713354,
+        0.1870784420327318,
+        0.17604207707160685,
+        0.15491820725055302,
+        0.144353880571535,
+        0.13585844566628527,
+        0.1251216275064217,
+        0.10962597543099503,
+        0.09555622269613795,
+        0.08008410924505467
+      ],
+      "mean_norm": 0.017606960609555244
+    },
+    "final": {
+      "centered_rms": 0.17677446223770055,
+      "effective_rank": 32,
+      "singular_values": [
+        35.10008735914843,
+        33.47442720428019,
+        33.10886772304458,
+        32.700876679071236,
+        31.221605881359135,
+        29.392384174394387,
+        27.635962726248646,
+        25.19171482496312,
+        11.789026994816354,
+        6.253313212770888,
+        5.414360814331877,
+        3.183642197310269,
+        2.4429631540115895,
+        2.0188181322539167,
+        1.6945153626462623,
+        1.5884419825944969,
+        1.5384879243846619,
+        1.1451132028862463,
+        1.1195334231774747,
+        1.0092570386965094,
+        0.9737467215667258,
+        0.9211735716217173,
+        0.8029050267543368,
+        0.7056845601592123,
+        0.652249905625751,
+        0.6152470612649192,
+        0.5209354031190326,
+        0.49692769175569107,
+        0.3757135366123969,
+        0.36248711660300237,
+        0.3139219540618544,
+        0.2702854564249056
+      ],
+      "mean_norm": 0.005026412196457386
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.2232294999994338,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0290067195892334,
+      "quadratic_energy": 0.004923359490931034,
+      "tv_energy": 0.24464744329452515,
+      "base_prior_energy": 8.916573506212444e-07
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0125149488449097,
+      "quadratic_energy": 0.006701971869915724,
+      "tv_energy": 0.2943413555622101,
+      "base_prior_energy": 3.7185077417234425e-06
+    }
+  },
+  "seed-0/decoding/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.17674929234252862,
+      "effective_rank": 32,
+      "singular_values": [
+        42.64521130984041,
+        37.16376794614569,
+        34.73502437757927,
+        32.47383018033115,
+        28.351576070267978,
+        27.453406272402585,
+        24.278775546076517,
+        19.2798550902666,
+        2.817209845054083,
+        1.9358096647164282,
+        1.4027226373173893,
+        1.0290469277510133,
+        0.8535526698560615,
+        0.6392676162096979,
+        0.4332504618126577,
+        0.42866188041020487,
+        0.3859763695401764,
+        0.3512277873505581,
+        0.3157396796938622,
+        0.28793639604024784,
+        0.2596669657819681,
+        0.23633144830212896,
+        0.2142034842713354,
+        0.1870784420327318,
+        0.17604207707160685,
+        0.15491820725055302,
+        0.144353880571535,
+        0.13585844566628527,
+        0.1251216275064217,
+        0.10962597543099503,
+        0.09555622269613795,
+        0.08008410924505467
+      ],
+      "mean_norm": 0.017606960609555244
+    },
+    "final": {
+      "centered_rms": 0.17677351597074692,
+      "effective_rank": 32,
+      "singular_values": [
+        36.15923633809726,
+        34.73715657383496,
+        33.101584724856274,
+        32.190166259801984,
+        31.754595559250543,
+        28.671719296991764,
+        27.1824830676366,
+        25.507754994330114,
+        8.240585843957545,
+        5.082226842252261,
+        3.9502487851216155,
+        2.673017564160724,
+        1.9455496666006538,
+        1.5658590487406925,
+        1.397895466763817,
+        1.2907407749998274,
+        1.146717828745633,
+        0.9389473726156708,
+        0.9041529440696995,
+        0.7591202004089881,
+        0.7514987710301586,
+        0.6412565239120153,
+        0.5929280699627022,
+        0.5318300743461375,
+        0.5096058759234152,
+        0.4944411491235313,
+        0.4228064778200681,
+        0.38167152833915396,
+        0.3250559186792304,
+        0.27245276461044904,
+        0.25015124443021053,
+        0.2461891772827652
+      ],
+      "mean_norm": 0.0059974160976707935
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4541368999998667,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0290489196777344,
+      "quadratic_energy": 0.004825516603887081,
+      "tv_energy": 0.24262085556983948,
+      "base_prior_energy": 8.915102966966515e-07,
+      "explicit_objective": 1.0338753277919182
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0140619277954102,
+      "quadratic_energy": 0.005189438816159964,
+      "tv_energy": 0.2615126073360443,
+      "base_prior_energy": 3.5302075502841035e-06,
+      "explicit_objective": 1.0192548968191204
+    }
+  },
+  "seed-0/decoding/pnp": {
+    "initial": {
+      "centered_rms": 0.17674929234252862,
+      "effective_rank": 32,
+      "singular_values": [
+        42.64521130984041,
+        37.16376794614569,
+        34.73502437757927,
+        32.47383018033115,
+        28.351576070267978,
+        27.453406272402585,
+        24.278775546076517,
+        19.2798550902666,
+        2.817209845054083,
+        1.9358096647164282,
+        1.4027226373173893,
+        1.0290469277510133,
+        0.8535526698560615,
+        0.6392676162096979,
+        0.4332504618126577,
+        0.42866188041020487,
+        0.3859763695401764,
+        0.3512277873505581,
+        0.3157396796938622,
+        0.28793639604024784,
+        0.2596669657819681,
+        0.23633144830212896,
+        0.2142034842713354,
+        0.1870784420327318,
+        0.17604207707160685,
+        0.15491820725055302,
+        0.144353880571535,
+        0.13585844566628527,
+        0.1251216275064217,
+        0.10962597543099503,
+        0.09555622269613795,
+        0.08008410924505467
+      ],
+      "mean_norm": 0.017606960609555244
+    },
+    "final": {
+      "centered_rms": 0.17677425740537372,
+      "effective_rank": 32,
+      "singular_values": [
+        35.36268856218897,
+        34.04486320837995,
+        33.27375920528497,
+        32.472398374021346,
+        31.887361858702782,
+        30.173956320760674,
+        27.967334526271873,
+        25.03049628130288,
+        6.857778096814631,
+        3.8654802075777095,
+        3.4630507726016426,
+        2.272945478738148,
+        1.717785888285577,
+        1.4424891771541515,
+        1.1615769478202047,
+        0.968040811834398,
+        0.9303151556208048,
+        0.9024844130913419,
+        0.8425247758975172,
+        0.7296285225430342,
+        0.7245087657499307,
+        0.6084961171033051,
+        0.5491070496350089,
+        0.46844439537446564,
+        0.43490988562625266,
+        0.41981442400693336,
+        0.33900465907821736,
+        0.3055553976879153,
+        0.29180259726380475,
+        0.28500840371718916,
+        0.2455270009912255,
+        0.22703983598709168
+      ],
+      "mean_norm": 0.005251836962997913
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2241729000015766,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0292106866836548,
+      "quadratic_energy": 0.004920199979096651,
+      "tv_energy": 0.2443867325782776,
+      "base_prior_energy": 8.904102628548571e-07,
+      "denoiser_bandwidth_squared": 0.023020515218377113,
+      "primal_relative": 0.002698045689612627,
+      "dual_relative": 0.02475219964981079
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.014702558517456,
+      "quadratic_energy": 0.0058755092322826385,
+      "tv_energy": 0.27425655722618103,
+      "base_prior_energy": 3.592953135012067e-06,
+      "denoiser_bandwidth_squared": 0.023020515218377113,
+      "primal_relative": 0.00031013975967653096,
+      "dual_relative": 0.020527321845293045
+    }
+  },
+  "seed-0/gatsby/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773350241766819,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424191004736,
+        57.89107831576909,
+        51.03076708422416
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773400047305888,
+      "effective_rank": 3,
+      "singular_values": [
+        61.71968170320544,
+        57.48420381901499,
+        53.711187560649414
+      ],
+      "mean_norm": 0.0059629702009260654
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3152056999970227,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0560762882232666,
+      "quadratic_energy": 0.004956249613314867,
+      "tv_energy": 0.18834368884563446,
+      "base_prior_energy": 5.892298304388532e-06,
+      "linear_relative_residual": 6.571082167283748e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0287973340600729,
+      "dual_relative": 0.033345237374305725,
+      "explicit_objective": 1.0610384301348859
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0502079725265503,
+      "quadratic_energy": 0.0036814305931329727,
+      "tv_energy": 0.1837543547153473,
+      "base_prior_energy": 8.282023372885305e-06,
+      "linear_relative_residual": 7.437733984261286e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0006418293924070895,
+      "dual_relative": 0.005677337758243084,
+      "explicit_objective": 1.0538976851430562
+    }
+  },
+  "seed-0/gatsby/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773350241766819,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424191004736,
+        57.89107831576909,
+        51.03076708422416
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773334485044816,
+      "effective_rank": 3,
+      "singular_values": [
+        62.76282970559121,
+        56.17837419048112,
+        53.88167463796258
+      ],
+      "mean_norm": 0.007633379194885492
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.4932583999980125,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0560762882232666,
+      "quadratic_energy": 0.004956249613314867,
+      "tv_energy": 0.18834368884563446,
+      "base_prior_energy": 5.892298304388532e-06,
+      "tv_gap_per_node": 2.9067849027342163e-05,
+      "primal_relative": 0.05143902823328972,
+      "dual_relative": 0.05326847359538078,
+      "explicit_objective": 1.0749165494061343
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0508979558944702,
+      "quadratic_energy": 0.00359615171328187,
+      "tv_energy": 0.168768972158432,
+      "base_prior_energy": 8.331323442689609e-06,
+      "tv_gap_per_node": 2.472171161116421e-07,
+      "primal_relative": 0.002108644461259246,
+      "dual_relative": 0.006333407945930958,
+      "explicit_objective": 1.0677831844337562
+    }
+  },
+  "seed-0/gatsby/control": {
+    "initial": {
+      "centered_rms": 0.5773350241766819,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424191004736,
+        57.89107831576909,
+        51.03076708422416
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773462597066743,
+      "effective_rank": 3,
+      "singular_values": [
+        60.79557780564226,
+        57.88315969144225,
+        54.33505926398625
+      ],
+      "mean_norm": 0.003726867027580738
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1046563000054448,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0560579299926758,
+      "quadratic_energy": 0.004958911333233118,
+      "tv_energy": 0.18841397762298584,
+      "base_prior_energy": 5.894085006730165e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0499095916748047,
+      "quadratic_energy": 0.004053827840834856,
+      "tv_energy": 0.19029425084590912,
+      "base_prior_energy": 8.360367246496025e-06
+    }
+  },
+  "seed-0/gatsby/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773350241766819,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424191004736,
+        57.89107831576909,
+        51.03076708422416
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773419493453521,
+      "effective_rank": 3,
+      "singular_values": [
+        61.7160126198561,
+        57.4635615906712,
+        53.738112161279076
+      ],
+      "mean_norm": 0.005368579179048538
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4873270999960368,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.05607271194458,
+      "quadratic_energy": 0.0049212235026061535,
+      "tv_energy": 0.1879112273454666,
+      "base_prior_energy": 5.8987225202145055e-06,
+      "explicit_objective": 1.0609998341697064
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0501329898834229,
+      "quadratic_energy": 0.003661370137706399,
+      "tv_energy": 0.18334440886974335,
+      "base_prior_energy": 8.328780495503452e-06,
+      "explicit_objective": 1.0538026888016248
+    }
+  },
+  "seed-0/gatsby/pnp": {
+    "initial": {
+      "centered_rms": 0.5773350241766819,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424191004736,
+        57.89107831576909,
+        51.03076708422416
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773456281848817,
+      "effective_rank": 3,
+      "singular_values": [
+        60.75814722518986,
+        57.92329874337522,
+        54.33395122803582
+      ],
+      "mean_norm": 0.004009703639894724
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.230922399998235,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0560762882232666,
+      "quadratic_energy": 0.004956249613314867,
+      "tv_energy": 0.18834368884563446,
+      "base_prior_energy": 5.892298304388532e-06,
+      "denoiser_bandwidth_squared": 0.008512742817401886,
+      "primal_relative": 0.001575612579472363,
+      "dual_relative": 0.013856252655386925
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0499286651611328,
+      "quadratic_energy": 0.004038461018353701,
+      "tv_energy": 0.18976016342639923,
+      "base_prior_energy": 8.343688023160212e-06,
+      "denoiser_bandwidth_squared": 0.008512742817401886,
+      "primal_relative": 6.990480324020609e-05,
+      "dual_relative": 0.00607162294909358
+    }
+  },
+  "seed-1/achilles/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.577332918159315,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433536826,
+        59.26173721485527,
+        54.07434471731386
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773489384070077,
+      "effective_rank": 3,
+      "singular_values": [
+        59.40444433342955,
+        58.26555747739727,
+        55.45440208212071
+      ],
+      "mean_norm": 0.002147281775251031
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3319327999997768,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0519331693649292,
+      "quadratic_energy": 0.0030563680920749903,
+      "tv_energy": 0.13630101084709167,
+      "base_prior_energy": 8.584872375649866e-06,
+      "linear_relative_residual": 6.389553846020135e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.021587731316685677,
+      "dual_relative": 0.024918969720602036,
+      "explicit_objective": 1.0549981223293798
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.047789454460144,
+      "quadratic_energy": 0.0020942226983606815,
+      "tv_energy": 0.13853533565998077,
+      "base_prior_energy": 1.026054178510094e-05,
+      "linear_relative_residual": 6.134582122285792e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0006594003061763942,
+      "dual_relative": 0.006301651243120432,
+      "explicit_objective": 1.0498939377002898
+    }
+  },
+  "seed-1/achilles/admm_tv": {
+    "initial": {
+      "centered_rms": 0.577332918159315,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433536826,
+        59.26173721485527,
+        54.07434471731386
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773483293768586,
+      "effective_rank": 3,
+      "singular_values": [
+        59.726153185846016,
+        58.759671066096494,
+        54.58040391543638
+      ],
+      "mean_norm": 0.0025920486077666283
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.5046937000006437,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0519331693649292,
+      "quadratic_energy": 0.0030563680920749903,
+      "tv_energy": 0.13630101084709167,
+      "base_prior_energy": 8.584872375649866e-06,
+      "tv_gap_per_node": 6.021720400894992e-05,
+      "primal_relative": 0.041153378784656525,
+      "dual_relative": 0.041938938200473785,
+      "explicit_objective": 1.065571855322014
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0483756065368652,
+      "quadratic_energy": 0.0021371347829699516,
+      "tv_energy": 0.12826605141162872,
+      "base_prior_energy": 1.026118297886569e-05,
+      "tv_gap_per_node": 5.707357786377543e-07,
+      "primal_relative": 0.0020293372217565775,
+      "dual_relative": 0.005866281222552061,
+      "explicit_objective": 1.061212472861007
+    }
+  },
+  "seed-1/achilles/control": {
+    "initial": {
+      "centered_rms": 0.577332918159315,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433536826,
+        59.26173721485527,
+        54.07434471731386
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.577349353486156,
+      "effective_rank": 3,
+      "singular_values": [
+        59.33971003841038,
+        58.014303916837406,
+        55.78626744908416
+      ],
+      "mean_norm": 0.0017810644349083304
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1360729000007268,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0519253015518188,
+      "quadratic_energy": 0.0030649248510599136,
+      "tv_energy": 0.13635526597499847,
+      "base_prior_energy": 8.582982445659582e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0473462343215942,
+      "quadratic_energy": 0.0022848639637231827,
+      "tv_energy": 0.14217935502529144,
+      "base_prior_energy": 1.0296129403286614e-05
+    }
+  },
+  "seed-1/achilles/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.577332918159315,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433536826,
+        59.26173721485527,
+        54.07434471731386
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773489395526724,
+      "effective_rank": 3,
+      "singular_values": [
+        59.53765687551013,
+        58.19787563475645,
+        55.38256612020874
+      ],
+      "mean_norm": 0.00214603659696877
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4761529000024893,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0519410371780396,
+      "quadratic_energy": 0.0030224237125366926,
+      "tv_energy": 0.13605381548404694,
+      "base_prior_energy": 8.591195182816591e-06,
+      "explicit_objective": 1.054972052085759
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0475709438323975,
+      "quadratic_energy": 0.002079176716506481,
+      "tv_energy": 0.1393880546092987,
+      "base_prior_energy": 1.0283191841153894e-05,
+      "explicit_objective": 1.049660403740745
+    }
+  },
+  "seed-1/achilles/pnp": {
+    "initial": {
+      "centered_rms": 0.577332918159315,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433536826,
+        59.26173721485527,
+        54.07434471731386
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773498283543074,
+      "effective_rank": 3,
+      "singular_values": [
+        59.26016390470262,
+        57.929707673471825,
+        55.95861572093641
+      ],
+      "mean_norm": 0.0012355815852060914
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2195240000000922,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0519331693649292,
+      "quadratic_energy": 0.0030563680920749903,
+      "tv_energy": 0.13630101084709167,
+      "base_prior_energy": 8.584872375649866e-06,
+      "denoiser_bandwidth_squared": 0.002728360937908292,
+      "primal_relative": 0.0008562286966480315,
+      "dual_relative": 0.009258381091058254
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.047595739364624,
+      "quadratic_energy": 0.0023063223343342543,
+      "tv_energy": 0.14136162400245667,
+      "base_prior_energy": 1.0353695870435331e-05,
+      "denoiser_bandwidth_squared": 0.002728360937908292,
+      "primal_relative": 4.7399844333995134e-05,
+      "dual_relative": 0.006301797926425934
+    }
+  },
+  "seed-1/buddy/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773216833476752,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026679977,
+        47.25634514393397,
+        44.01657920067093
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773434607517893,
+      "effective_rank": 3,
+      "singular_values": [
+        48.66688443422793,
+        47.96765733244091,
+        43.663292531199104
+      ],
+      "mean_norm": 0.004856335464864969
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.389875299995765,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0526902675628662,
+      "quadratic_energy": 0.004491794388741255,
+      "tv_energy": 0.18744957447052002,
+      "base_prior_energy": 8.041717592277564e-06,
+      "linear_relative_residual": 7.786414357724425e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.025792425498366356,
+      "dual_relative": 0.030123395845294,
+      "explicit_objective": 1.0571901036691997
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0474978685379028,
+      "quadratic_energy": 0.00355811370536685,
+      "tv_energy": 0.18393589556217194,
+      "base_prior_energy": 1.008384242595639e-05,
+      "linear_relative_residual": 9.352278311780537e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0005774507881142199,
+      "dual_relative": 0.0049550700932741165,
+      "explicit_objective": 1.0510660660856956
+    }
+  },
+  "seed-1/buddy/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773216833476752,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026679977,
+        47.25634514393397,
+        44.01657920067093
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773435388392353,
+      "effective_rank": 3,
+      "singular_values": [
+        49.23766170392686,
+        48.292972271856,
+        42.6531145761633
+      ],
+      "mean_norm": 0.004828497767448425
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.603747100001783,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0526902675628662,
+      "quadratic_energy": 0.004491794388741255,
+      "tv_energy": 0.18744957447052002,
+      "base_prior_energy": 8.041717592277564e-06,
+      "tv_gap_per_node": 2.2427588191931136e-05,
+      "primal_relative": 0.04960200935602188,
+      "dual_relative": 0.0513349287211895,
+      "explicit_objective": 1.0714432667275104
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0479999780654907,
+      "quadratic_energy": 0.0034785792231559753,
+      "tv_energy": 0.1730298548936844,
+      "base_prior_energy": 1.0112085874425247e-05,
+      "tv_gap_per_node": 1.3922252151132852e-07,
+      "primal_relative": 0.0016008374514058232,
+      "dual_relative": 0.005910070613026619,
+      "explicit_objective": 1.0653130756407336
+    }
+  },
+  "seed-1/buddy/control": {
+    "initial": {
+      "centered_rms": 0.5773216833476752,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026679977,
+        47.25634514393397,
+        44.01657920067093
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773479065574889,
+      "effective_rank": 3,
+      "singular_values": [
+        48.18910295690017,
+        47.65558184837421,
+        44.52754264960454
+      ],
+      "mean_norm": 0.0028609505388885736
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1305382999998983,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0526740550994873,
+      "quadratic_energy": 0.004491992760449648,
+      "tv_energy": 0.18744045495986938,
+      "base_prior_energy": 8.041423825488891e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0471086502075195,
+      "quadratic_energy": 0.003915201406925917,
+      "tv_energy": 0.1894863098859787,
+      "base_prior_energy": 1.0149048648600001e-05
+    }
+  },
+  "seed-1/buddy/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773216833476752,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026679977,
+        47.25634514393397,
+        44.01657920067093
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.577344418719537,
+      "effective_rank": 3,
+      "singular_values": [
+        48.686908260135866,
+        48.008230091474914,
+        43.59657710091793
+      ],
+      "mean_norm": 0.004501902032643557
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4801931999973021,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0526938438415527,
+      "quadratic_energy": 0.004454381763935089,
+      "tv_energy": 0.18703031539916992,
+      "base_prior_energy": 8.039770364121068e-06,
+      "explicit_objective": 1.057156265375852
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0474400520324707,
+      "quadratic_energy": 0.0035368786193430424,
+      "tv_energy": 0.18351556360721588,
+      "base_prior_energy": 1.011873519018991e-05,
+      "explicit_objective": 1.050987049387004
+    }
+  },
+  "seed-1/buddy/pnp": {
+    "initial": {
+      "centered_rms": 0.5773216833476752,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026679977,
+        47.25634514393397,
+        44.01657920067093
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773475907009163,
+      "effective_rank": 3,
+      "singular_values": [
+        48.261834951552615,
+        47.646353972733486,
+        44.45851127247013
+      ],
+      "mean_norm": 0.0030463021248579025
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2217680000030668,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0526902675628662,
+      "quadratic_energy": 0.004491794388741255,
+      "tv_energy": 0.18744957447052002,
+      "base_prior_energy": 8.041717592277564e-06,
+      "denoiser_bandwidth_squared": 0.010679728351533413,
+      "primal_relative": 0.0015759312082082033,
+      "dual_relative": 0.01152587030082941
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0471749305725098,
+      "quadratic_energy": 0.003902464872226119,
+      "tv_energy": 0.18905310332775116,
+      "base_prior_energy": 1.015036650642287e-05,
+      "denoiser_bandwidth_squared": 0.010679728351533413,
+      "primal_relative": 5.681989205186255e-05,
+      "dual_relative": 0.00528270099312067
+    }
+  },
+  "seed-1/cicero/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773346400781917,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688574648,
+        59.097838923975026,
+        53.08769670580928
+      ],
+      "mean_norm": 0.007358065340667963
+    },
+    "final": {
+      "centered_rms": 0.5773399866125575,
+      "effective_rank": 3,
+      "singular_values": [
+        59.90142256774494,
+        57.62892763645994,
+        55.582102458483305
+      ],
+      "mean_norm": 0.005968107376247644
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3522632000021986,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0578203201293945,
+      "quadratic_energy": 0.0058516813442111015,
+      "tv_energy": 0.20282697677612305,
+      "base_prior_energy": 8.522841199010145e-06,
+      "linear_relative_residual": 9.3836860060037e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.03260059654712677,
+      "dual_relative": 0.03573755547404289,
+      "explicit_objective": 1.0636805243148046
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0528347492218018,
+      "quadratic_energy": 0.004637915641069412,
+      "tv_energy": 0.19745944440364838,
+      "base_prior_energy": 1.0805822057591286e-05,
+      "linear_relative_residual": 1.2515405387603096e-06,
+      "cg_steps": 6,
+      "primal_relative": 0.0006751762120984495,
+      "dual_relative": 0.0047650993801653385,
+      "explicit_objective": 1.0574834706849288
+    }
+  },
+  "seed-1/cicero/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773346400781917,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688574648,
+        59.097838923975026,
+        53.08769670580928
+      ],
+      "mean_norm": 0.007358065340667963
+    },
+    "final": {
+      "centered_rms": 0.5773278871813371,
+      "effective_rank": 3,
+      "singular_values": [
+        59.94478334548921,
+        58.15728194068962,
+        54.9779798099525
+      ],
+      "mean_norm": 0.00880517065525055
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.6800129000039306,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0578203201293945,
+      "quadratic_energy": 0.0058516813442111015,
+      "tv_energy": 0.20282697677612305,
+      "base_prior_energy": 8.522841199010145e-06,
+      "tv_gap_per_node": 2.1040923456894234e-05,
+      "primal_relative": 0.05642575025558472,
+      "dual_relative": 0.057820819318294525,
+      "explicit_objective": 1.0781115406482058
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0534735918045044,
+      "quadratic_energy": 0.004674715455621481,
+      "tv_energy": 0.1852596402168274,
+      "base_prior_energy": 1.092621278075967e-05,
+      "tv_gap_per_node": 1.1903046015504515e-07,
+      "primal_relative": 0.001883050543256104,
+      "dual_relative": 0.004294371232390404,
+      "explicit_objective": 1.072010482038968
+    }
+  },
+  "seed-1/cicero/control": {
+    "initial": {
+      "centered_rms": 0.5773346400781917,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688574648,
+        59.097838923975026,
+        53.08769670580928
+      ],
+      "mean_norm": 0.007358065340667963
+    },
+    "final": {
+      "centered_rms": 0.5773403678385551,
+      "effective_rank": 3,
+      "singular_values": [
+        59.04412915960466,
+        57.771610755318335,
+        56.346152015001344
+      ],
+      "mean_norm": 0.005856495350599289
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1248658999975305,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0578044652938843,
+      "quadratic_energy": 0.005845553241670132,
+      "tv_energy": 0.20276795327663422,
+      "base_prior_energy": 8.523082215106115e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.052420735359192,
+      "quadratic_energy": 0.0050860983319580555,
+      "tv_energy": 0.2042996734380722,
+      "base_prior_energy": 1.0744791325123515e-05
+    }
+  },
+  "seed-1/cicero/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773346400781917,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688574648,
+        59.097838923975026,
+        53.08769670580928
+      ],
+      "mean_norm": 0.007358065340667963
+    },
+    "final": {
+      "centered_rms": 0.5773394974044646,
+      "effective_rank": 3,
+      "singular_values": [
+        59.8962693000026,
+        57.60928522157454,
+        55.60785983484934
+      ],
+      "mean_norm": 0.006108598783612251
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.5395893000022625,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0578142404556274,
+      "quadratic_energy": 0.005816485732793808,
+      "tv_energy": 0.20256711542606354,
+      "base_prior_energy": 8.523661563231144e-06,
+      "explicit_objective": 1.0636392498499845
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0527945756912231,
+      "quadratic_energy": 0.004643108230084181,
+      "tv_energy": 0.19811779260635376,
+      "base_prior_energy": 1.0792317880259361e-05,
+      "explicit_objective": 1.0574484762391876
+    }
+  },
+  "seed-1/cicero/pnp": {
+    "initial": {
+      "centered_rms": 0.5773346400781917,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688574648,
+        59.097838923975026,
+        53.08769670580928
+      ],
+      "mean_norm": 0.007358065340667963
+    },
+    "final": {
+      "centered_rms": 0.577342831159696,
+      "effective_rank": 3,
+      "singular_values": [
+        59.10971675217956,
+        57.74833712802054,
+        56.30198318830614
+      ],
+      "mean_norm": 0.005076004192233086
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.263972399996419,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0578203201293945,
+      "quadratic_energy": 0.0058516813442111015,
+      "tv_energy": 0.20282697677612305,
+      "base_prior_energy": 8.522841199010145e-06,
+      "denoiser_bandwidth_squared": 0.008276071399450302,
+      "primal_relative": 0.0016815843991935253,
+      "dual_relative": 0.011211130768060684
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0525065660476685,
+      "quadratic_energy": 0.005040194373577833,
+      "tv_energy": 0.20249201357364655,
+      "base_prior_energy": 1.0748420208983589e-05,
+      "denoiser_bandwidth_squared": 0.008276071399450302,
+      "primal_relative": 7.536407792940736e-05,
+      "dual_relative": 0.005322127602994442
+    }
+  },
+  "seed-1/decoding/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.17676897661295282,
+      "effective_rank": 32,
+      "singular_values": [
+        38.45428088193121,
+        36.22424990307531,
+        35.345273150459555,
+        33.347178142266756,
+        29.258525302848643,
+        28.37785297610944,
+        25.21034756459857,
+        22.81648166702789,
+        3.7582786906881323,
+        2.7911049655399247,
+        1.458685463531794,
+        1.1337407649663993,
+        0.974329558449785,
+        0.7952393124243627,
+        0.5888518383076363,
+        0.5490110567865238,
+        0.4146957199301671,
+        0.38604573998370073,
+        0.373472770250708,
+        0.3179901466593533,
+        0.30839346722225514,
+        0.258307647998479,
+        0.2293960933863417,
+        0.21248490748261453,
+        0.185655298313948,
+        0.16875422032549448,
+        0.1641132909986948,
+        0.1414278052117953,
+        0.13271018452980268,
+        0.1075186690372178,
+        0.09224839208576256,
+        0.08278188864163556
+      ],
+      "mean_norm": 0.009344786405563354
+    },
+    "final": {
+      "centered_rms": 0.17677433898126205,
+      "effective_rank": 32,
+      "singular_values": [
+        38.06860511035537,
+        34.74666135763472,
+        32.59638041179918,
+        31.641017129030416,
+        30.920287221247385,
+        29.505056603666354,
+        27.121319140364605,
+        24.496829237181515,
+        8.84884295202372,
+        3.658477026717407,
+        2.8043246718802233,
+        2.0838973583387235,
+        1.7259453124118378,
+        1.2960088147987676,
+        1.225511903679418,
+        1.0679074921668066,
+        0.9372872367928535,
+        0.9091377612438474,
+        0.8193786498960671,
+        0.6945068094357194,
+        0.640693266019956,
+        0.5837919449669127,
+        0.5332227181135936,
+        0.49373713023941157,
+        0.4775523596560654,
+        0.44016309504366913,
+        0.3579500037172675,
+        0.3418149826313499,
+        0.33540214320265355,
+        0.2703411901532527,
+        0.2580267302683535,
+        0.18768880036150792
+      ],
+      "mean_norm": 0.005163146182894707
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3576783999960753,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.02884840965271,
+      "quadratic_energy": 0.004835223313421011,
+      "tv_energy": 0.24007095396518707,
+      "base_prior_energy": 8.308470000883972e-07,
+      "linear_relative_residual": 6.674052315247536e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.021680250763893127,
+      "dual_relative": 0.030112938955426216,
+      "explicit_objective": 1.033684463813131
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0163295269012451,
+      "quadratic_energy": 0.00484189810231328,
+      "tv_energy": 0.25103774666786194,
+      "base_prior_energy": 3.319566303616739e-06,
+      "linear_relative_residual": 1.178455590888916e-06,
+      "cg_steps": 6,
+      "primal_relative": 0.001908110803924501,
+      "dual_relative": 0.017031803727149963,
+      "explicit_objective": 1.021174744569862
+    }
+  },
+  "seed-1/decoding/admm_tv": {
+    "initial": {
+      "centered_rms": 0.17676897661295282,
+      "effective_rank": 32,
+      "singular_values": [
+        38.45428088193121,
+        36.22424990307531,
+        35.345273150459555,
+        33.347178142266756,
+        29.258525302848643,
+        28.37785297610944,
+        25.21034756459857,
+        22.81648166702789,
+        3.7582786906881323,
+        2.7911049655399247,
+        1.458685463531794,
+        1.1337407649663993,
+        0.974329558449785,
+        0.7952393124243627,
+        0.5888518383076363,
+        0.5490110567865238,
+        0.4146957199301671,
+        0.38604573998370073,
+        0.373472770250708,
+        0.3179901466593533,
+        0.30839346722225514,
+        0.258307647998479,
+        0.2293960933863417,
+        0.21248490748261453,
+        0.185655298313948,
+        0.16875422032549448,
+        0.1641132909986948,
+        0.1414278052117953,
+        0.13271018452980268,
+        0.1075186690372178,
+        0.09224839208576256,
+        0.08278188864163556
+      ],
+      "mean_norm": 0.009344786405563354
+    },
+    "final": {
+      "centered_rms": 0.1767726253443872,
+      "effective_rank": 32,
+      "singular_values": [
+        41.18929026097813,
+        36.49812755933162,
+        33.55439023834541,
+        32.84225140839717,
+        31.744762456497902,
+        27.610861602525475,
+        23.813402443853054,
+        19.9897738662401,
+        4.126345992011649,
+        1.7884092313942972,
+        1.5247460252105072,
+        1.2755640958592416,
+        0.9832438276173601,
+        0.7801620201889492,
+        0.6853022059702212,
+        0.6616760996932601,
+        0.6510254761489483,
+        0.5636521703788093,
+        0.49671300591601686,
+        0.4393180786830978,
+        0.38959864637684716,
+        0.38361684493806086,
+        0.3354836838348228,
+        0.28735375359463616,
+        0.2741203044595757,
+        0.25759179561745543,
+        0.2399171821050581,
+        0.21614160135917526,
+        0.2020380922610813,
+        0.16858495666081896,
+        0.1555401741664772,
+        0.12987187757806123
+      ],
+      "mean_norm": 0.006785636767745018
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.575715400002082,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.02884840965271,
+      "quadratic_energy": 0.004835223313421011,
+      "tv_energy": 0.24007095396518707,
+      "base_prior_energy": 8.308470000883972e-07,
+      "tv_gap_per_node": 4.755614554596832e-06,
+      "primal_relative": 0.05169406160712242,
+      "dual_relative": 0.05474553257226944,
+      "explicit_objective": 1.0528563358962288
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0203330516815186,
+      "quadratic_energy": 0.0037975232116878033,
+      "tv_energy": 0.20983745157718658,
+      "base_prior_energy": 3.0366941246029455e-06,
+      "tv_gap_per_node": 2.6706217681748967e-08,
+      "primal_relative": 0.004379626829177141,
+      "dual_relative": 0.01193685457110405,
+      "explicit_objective": 1.0413198335333618
+    }
+  },
+  "seed-1/decoding/control": {
+    "initial": {
+      "centered_rms": 0.17676897661295282,
+      "effective_rank": 32,
+      "singular_values": [
+        38.45428088193121,
+        36.22424990307531,
+        35.345273150459555,
+        33.347178142266756,
+        29.258525302848643,
+        28.37785297610944,
+        25.21034756459857,
+        22.81648166702789,
+        3.7582786906881323,
+        2.7911049655399247,
+        1.458685463531794,
+        1.1337407649663993,
+        0.974329558449785,
+        0.7952393124243627,
+        0.5888518383076363,
+        0.5490110567865238,
+        0.4146957199301671,
+        0.38604573998370073,
+        0.373472770250708,
+        0.3179901466593533,
+        0.30839346722225514,
+        0.258307647998479,
+        0.2293960933863417,
+        0.21248490748261453,
+        0.185655298313948,
+        0.16875422032549448,
+        0.1641132909986948,
+        0.1414278052117953,
+        0.13271018452980268,
+        0.1075186690372178,
+        0.09224839208576256,
+        0.08278188864163556
+      ],
+      "mean_norm": 0.009344786405563354
+    },
+    "final": {
+      "centered_rms": 0.17677370249634786,
+      "effective_rank": 32,
+      "singular_values": [
+        34.957616235443545,
+        34.79479198157799,
+        34.39863244029852,
+        31.689231964345726,
+        29.17565662521551,
+        28.05339849972277,
+        24.71297648058205,
+        23.82097055542531,
+        18.59094559801621,
+        10.51168312914043,
+        5.469728202665413,
+        5.152079312658361,
+        3.8676381906394353,
+        2.5384066367184266,
+        2.282816737252168,
+        2.0306096877450246,
+        2.0139841605257716,
+        1.8500401293567967,
+        1.490856951257637,
+        1.350001652443928,
+        1.1900179506819182,
+        1.0473029745606464,
+        0.9829228426137447,
+        0.917738332200552,
+        0.8742742829863503,
+        0.7540848410386441,
+        0.6964967032329629,
+        0.6113819953707047,
+        0.5555480086249249,
+        0.4609687465877722,
+        0.40160012775327997,
+        0.35274498325585457
+      ],
+      "mean_norm": 0.00581893976777792
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.125440099996922,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0286109447479248,
+      "quadratic_energy": 0.004871585872024298,
+      "tv_energy": 0.2411116659641266,
+      "base_prior_energy": 8.321549103129655e-07
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.011987328529358,
+      "quadratic_energy": 0.00740968668833375,
+      "tv_energy": 0.3097272515296936,
+      "base_prior_energy": 3.6022599942953093e-06
+    }
+  },
+  "seed-1/decoding/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.17676897661295282,
+      "effective_rank": 32,
+      "singular_values": [
+        38.45428088193121,
+        36.22424990307531,
+        35.345273150459555,
+        33.347178142266756,
+        29.258525302848643,
+        28.37785297610944,
+        25.21034756459857,
+        22.81648166702789,
+        3.7582786906881323,
+        2.7911049655399247,
+        1.458685463531794,
+        1.1337407649663993,
+        0.974329558449785,
+        0.7952393124243627,
+        0.5888518383076363,
+        0.5490110567865238,
+        0.4146957199301671,
+        0.38604573998370073,
+        0.373472770250708,
+        0.3179901466593533,
+        0.30839346722225514,
+        0.258307647998479,
+        0.2293960933863417,
+        0.21248490748261453,
+        0.185655298313948,
+        0.16875422032549448,
+        0.1641132909986948,
+        0.1414278052117953,
+        0.13271018452980268,
+        0.1075186690372178,
+        0.09224839208576256,
+        0.08278188864163556
+      ],
+      "mean_norm": 0.009344786405563354
+    },
+    "final": {
+      "centered_rms": 0.1767739028546763,
+      "effective_rank": 32,
+      "singular_values": [
+        36.765348671873696,
+        35.26507566685778,
+        33.35874084621508,
+        31.602369215003783,
+        30.51807594709553,
+        27.629008087569943,
+        26.99058659541121,
+        22.53807761770876,
+        16.456172076520502,
+        6.623971412837665,
+        3.8035743563641473,
+        2.79731119978853,
+        2.4056218446411726,
+        1.8915591062756687,
+        1.6390357997716305,
+        1.383047581500412,
+        1.3528643993177978,
+        1.2214604375561866,
+        1.1518363661077664,
+        0.9675319428753403,
+        0.8740196669720339,
+        0.8703273635500532,
+        0.685728348003071,
+        0.6677488899886878,
+        0.6306771561028451,
+        0.5951358863427936,
+        0.5480683907455945,
+        0.46616706130158886,
+        0.4305050543703999,
+        0.3848627459874996,
+        0.34745774412304464,
+        0.2417180187217634
+      ],
+      "mean_norm": 0.005620684940367937
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.455965199995262,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0286792516708374,
+      "quadratic_energy": 0.004745789337903261,
+      "tv_energy": 0.23850150406360626,
+      "base_prior_energy": 8.312057957482466e-07,
+      "explicit_objective": 1.0334258722145364
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0134254693984985,
+      "quadratic_energy": 0.005344384349882603,
+      "tv_energy": 0.26541101932525635,
+      "base_prior_energy": 3.4236870760651072e-06,
+      "explicit_objective": 1.0187732774354572
+    }
+  },
+  "seed-1/decoding/pnp": {
+    "initial": {
+      "centered_rms": 0.17676897661295282,
+      "effective_rank": 32,
+      "singular_values": [
+        38.45428088193121,
+        36.22424990307531,
+        35.345273150459555,
+        33.347178142266756,
+        29.258525302848643,
+        28.37785297610944,
+        25.21034756459857,
+        22.81648166702789,
+        3.7582786906881323,
+        2.7911049655399247,
+        1.458685463531794,
+        1.1337407649663993,
+        0.974329558449785,
+        0.7952393124243627,
+        0.5888518383076363,
+        0.5490110567865238,
+        0.4146957199301671,
+        0.38604573998370073,
+        0.373472770250708,
+        0.3179901466593533,
+        0.30839346722225514,
+        0.258307647998479,
+        0.2293960933863417,
+        0.21248490748261453,
+        0.185655298313948,
+        0.16875422032549448,
+        0.1641132909986948,
+        0.1414278052117953,
+        0.13271018452980268,
+        0.1075186690372178,
+        0.09224839208576256,
+        0.08278188864163556
+      ],
+      "mean_norm": 0.009344786405563354
+    },
+    "final": {
+      "centered_rms": 0.17677439703464964,
+      "effective_rank": 32,
+      "singular_values": [
+        36.33403365382192,
+        34.331220125274456,
+        33.24164535540075,
+        31.15185257426353,
+        30.762464964905227,
+        29.146331678241026,
+        28.00773176004388,
+        25.79612177573989,
+        10.480352051167063,
+        5.691751229533492,
+        3.2776577259761144,
+        2.6276177688115085,
+        2.0692558671542534,
+        1.697509170193211,
+        1.6550195383754112,
+        1.3630932758305123,
+        1.1123241395132424,
+        1.061700387716175,
+        0.9768613682913572,
+        0.856837210195841,
+        0.7701693773739909,
+        0.7195723473683245,
+        0.6292649243030947,
+        0.5553222676956517,
+        0.5320820242887944,
+        0.5208571743939479,
+        0.45093990974222964,
+        0.4040767390801726,
+        0.367923338390846,
+        0.36160673163748147,
+        0.32077133090365356,
+        0.20406704367337747
+      ],
+      "mean_norm": 0.005099221598356962
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2166668999998365,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.02884840965271,
+      "quadratic_energy": 0.004835223313421011,
+      "tv_energy": 0.24007095396518707,
+      "base_prior_energy": 8.308470000883972e-07,
+      "denoiser_bandwidth_squared": 0.021538550034165382,
+      "primal_relative": 0.002596822800114751,
+      "dual_relative": 0.021552281454205513
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0147982835769653,
+      "quadratic_energy": 0.00612138956785202,
+      "tv_energy": 0.2790292501449585,
+      "base_prior_energy": 3.5241964724264108e-06,
+      "denoiser_bandwidth_squared": 0.021538550034165382,
+      "primal_relative": 0.0003286719147581607,
+      "dual_relative": 0.020671216771006584
+    }
+  },
+  "seed-1/gatsby/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773350241738636,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190977802,
+        57.89107831580828,
+        51.03076708355894
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773366269019949,
+      "effective_rank": 3,
+      "singular_values": [
+        61.23004778055383,
+        57.63938751385236,
+        54.10277003956429
+      ],
+      "mean_norm": 0.00687434384599328
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3607354999985546,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0588306188583374,
+      "quadratic_energy": 0.00496312603354454,
+      "tv_energy": 0.1883385330438614,
+      "base_prior_energy": 5.8980454014090355e-06,
+      "linear_relative_residual": 6.541333732457133e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.028837237507104874,
+      "dual_relative": 0.03370561823248863,
+      "explicit_objective": 1.0637996429372834
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0530465841293335,
+      "quadratic_energy": 0.00370071385987103,
+      "tv_energy": 0.18018865585327148,
+      "base_prior_energy": 8.327166142407805e-06,
+      "linear_relative_residual": 7.32093894839636e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0006321711698547006,
+      "dual_relative": 0.005323249381035566,
+      "explicit_objective": 1.056755625155347
+    }
+  },
+  "seed-1/gatsby/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773350241738636,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190977802,
+        57.89107831580828,
+        51.03076708355894
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773321117827196,
+      "effective_rank": 3,
+      "singular_values": [
+        62.38615345280301,
+        56.20774228201565,
+        54.286542040221875
+      ],
+      "mean_norm": 0.007930866442620754
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.659423400000378,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0588306188583374,
+      "quadratic_energy": 0.00496312603354454,
+      "tv_energy": 0.1883385330438614,
+      "base_prior_energy": 5.8980454014090355e-06,
+      "tv_gap_per_node": 2.9044958864687942e-05,
+      "primal_relative": 0.05143887177109718,
+      "dual_relative": 0.05358363315463066,
+      "explicit_objective": 1.077670370208125
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.053342580795288,
+      "quadratic_energy": 0.003685170318931341,
+      "tv_energy": 0.16575883328914642,
+      "base_prior_energy": 8.382894520764239e-06,
+      "tv_gap_per_node": 2.456910692671954e-07,
+      "primal_relative": 0.002120675053447485,
+      "dual_relative": 0.006747784558683634,
+      "explicit_objective": 1.0699268470187235
+    }
+  },
+  "seed-1/gatsby/control": {
+    "initial": {
+      "centered_rms": 0.5773350241738636,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190977802,
+        57.89107831580828,
+        51.03076708355894
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773455414816022,
+      "effective_rank": 3,
+      "singular_values": [
+        60.04251297081231,
+        57.80060947138917,
+        55.25235221529961
+      ],
+      "mean_norm": 0.004046632442623377
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.15664800000377,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.058811068534851,
+      "quadratic_energy": 0.004962528590112925,
+      "tv_energy": 0.18832740187644958,
+      "base_prior_energy": 5.899536972719943e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0527414083480835,
+      "quadratic_energy": 0.004103554412722588,
+      "tv_energy": 0.18463779985904694,
+      "base_prior_energy": 8.482253178954124e-06
+    }
+  },
+  "seed-1/gatsby/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773350241738636,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190977802,
+        57.89107831580828,
+        51.03076708355894
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773376694733392,
+      "effective_rank": 3,
+      "singular_values": [
+        61.14188702761477,
+        57.63189395060308,
+        54.21068189759523
+      ],
+      "mean_norm": 0.006606560666114092
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.542335699996329,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0588278770446777,
+      "quadratic_energy": 0.004928078502416611,
+      "tv_energy": 0.18796250224113464,
+      "base_prior_energy": 5.902812517888378e-06,
+      "explicit_objective": 1.0637618583596122
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0530321598052979,
+      "quadratic_energy": 0.0036924812011420727,
+      "tv_energy": 0.17979387938976288,
+      "base_prior_energy": 8.376782716368325e-06,
+      "explicit_objective": 1.0567330177891563
+    }
+  },
+  "seed-1/gatsby/pnp": {
+    "initial": {
+      "centered_rms": 0.5773350241738636,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190977802,
+        57.89107831580828,
+        51.03076708355894
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773449072736857,
+      "effective_rank": 3,
+      "singular_values": [
+        60.16567439189984,
+        57.854648690481305,
+        55.06128882517037
+      ],
+      "mean_norm": 0.004309765063226223
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3372902000046452,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0588306188583374,
+      "quadratic_energy": 0.00496312603354454,
+      "tv_energy": 0.1883385330438614,
+      "base_prior_energy": 5.8980454014090355e-06,
+      "denoiser_bandwidth_squared": 0.008512742817401886,
+      "primal_relative": 0.001577516202814877,
+      "dual_relative": 0.01498878188431263
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.052720308303833,
+      "quadratic_energy": 0.004067091271281242,
+      "tv_energy": 0.18446145951747894,
+      "base_prior_energy": 8.429618901573122e-06,
+      "denoiser_bandwidth_squared": 0.008512742817401886,
+      "primal_relative": 6.897874845890328e-05,
+      "dual_relative": 0.005950307007879019
+    }
+  },
+  "seed-2/achilles/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773329181682594,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433501911,
+        59.26173721472787,
+        54.07434472070341
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773499138727041,
+      "effective_rank": 3,
+      "singular_values": [
+        60.22954958685522,
+        57.62805647797391,
+        55.23039159585429
+      ],
+      "mean_norm": 0.001108878874219954
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4370120000021416,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.053693413734436,
+      "quadratic_energy": 0.0030636603478342295,
+      "tv_energy": 0.13640786707401276,
+      "base_prior_energy": 8.587837328377645e-06,
+      "linear_relative_residual": 6.389265649886511e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.021655568853020668,
+      "dual_relative": 0.025354435667395592,
+      "explicit_objective": 1.0567656619195986
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0497575998306274,
+      "quadratic_energy": 0.002103919629007578,
+      "tv_energy": 0.1377502977848053,
+      "base_prior_energy": 1.0166282663703896e-05,
+      "linear_relative_residual": 6.535655643347127e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0006346970330923796,
+      "dual_relative": 0.005756826139986515,
+      "explicit_objective": 1.0518716857422987
+    }
+  },
+  "seed-2/achilles/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773329181682594,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433501911,
+        59.26173721472787,
+        54.07434472070341
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773500092858458,
+      "effective_rank": 3,
+      "singular_values": [
+        60.52959079746878,
+        57.90791126986594,
+        54.606166756362235
+      ],
+      "mean_norm": 0.0009487603674642742
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.625990100001218,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.053693413734436,
+      "quadratic_energy": 0.0030636603478342295,
+      "tv_energy": 0.13640786707401276,
+      "base_prior_energy": 8.587837328377645e-06,
+      "tv_gap_per_node": 6.017752821207978e-05,
+      "primal_relative": 0.04120362177491188,
+      "dual_relative": 0.04214491322636604,
+      "explicit_objective": 1.0673427882791657
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0502009391784668,
+      "quadratic_energy": 0.002238606568425894,
+      "tv_energy": 0.12656426429748535,
+      "base_prior_energy": 1.0175283932767343e-05,
+      "tv_gap_per_node": 5.646316481033864e-07,
+      "primal_relative": 0.0025731476489454508,
+      "dual_relative": 0.006085009779781103,
+      "explicit_objective": 1.0628675408921482
+    }
+  },
+  "seed-2/achilles/control": {
+    "initial": {
+      "centered_rms": 0.5773329181682594,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433501911,
+        59.26173721472787,
+        54.07434472070341
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773498251391057,
+      "effective_rank": 3,
+      "singular_values": [
+        59.88637566971258,
+        57.14920762418523,
+        56.09433747052144
+      ],
+      "mean_norm": 0.0012405707966536283
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.124637699998857,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0536738634109497,
+      "quadratic_energy": 0.0030761496163904667,
+      "tv_energy": 0.13659007847309113,
+      "base_prior_energy": 8.589689059590455e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0493322610855103,
+      "quadratic_energy": 0.002410968765616417,
+      "tv_energy": 0.14152765274047852,
+      "base_prior_energy": 1.0256901987304445e-05
+    }
+  },
+  "seed-2/achilles/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773329181682594,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433501911,
+        59.26173721472787,
+        54.07434472070341
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773498911770637,
+      "effective_rank": 3,
+      "singular_values": [
+        60.330713063468295,
+        57.51594104473707,
+        55.2368400034459
+      ],
+      "mean_norm": 0.0011441903188824654
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.5455753999995068,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0536940097808838,
+      "quadratic_energy": 0.003027286846190691,
+      "tv_energy": 0.13618560135364532,
+      "base_prior_energy": 8.596485713496804e-06,
+      "explicit_objective": 1.056729893112788
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0495812892913818,
+      "quadratic_energy": 0.002108535962179303,
+      "tv_energy": 0.13785359263420105,
+      "base_prior_energy": 1.0183091035287362e-05,
+      "explicit_objective": 1.0517000083445964
+    }
+  },
+  "seed-2/achilles/pnp": {
+    "initial": {
+      "centered_rms": 0.5773329181682594,
+      "effective_rank": 3,
+      "singular_values": [
+        59.68593433501911,
+        59.26173721472787,
+        54.07434472070341
+      ],
+      "mean_norm": 0.00775272399187088
+    },
+    "final": {
+      "centered_rms": 0.5773496066365158,
+      "effective_rank": 3,
+      "singular_values": [
+        59.77754022990769,
+        57.290535969267616,
+        56.066186094750314
+      ],
+      "mean_norm": 0.0015148308593779802
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3238205000016023,
+    "graph": {
+      "neighbors": 15,
+      "edges": 88892,
+      "phase_bandwidth_squared": 2.2516746520996094,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.053693413734436,
+      "quadratic_energy": 0.0030636603478342295,
+      "tv_energy": 0.13640786707401276,
+      "base_prior_energy": 8.587837328377645e-06,
+      "denoiser_bandwidth_squared": 0.002728360937908292,
+      "primal_relative": 0.000856150349136442,
+      "dual_relative": 0.010840238071978092
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0495173931121826,
+      "quadratic_energy": 0.002373176161199808,
+      "tv_energy": 0.14059004187583923,
+      "base_prior_energy": 1.0277051842422225e-05,
+      "denoiser_bandwidth_squared": 0.002728360937908292,
+      "primal_relative": 4.5997807319508865e-05,
+      "dual_relative": 0.006506914272904396
+    }
+  },
+  "seed-2/buddy/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773216833543975,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026844935,
+        47.256345143445095,
+        44.01657920109753
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773178532892977,
+      "effective_rank": 3,
+      "singular_values": [
+        49.32115034322363,
+        47.28651893469137,
+        43.66544222354613
+      ],
+      "mean_norm": 0.010596709325909615
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.342467200003739,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0568722486495972,
+      "quadratic_energy": 0.004471899941563606,
+      "tv_energy": 0.18730169534683228,
+      "base_prior_energy": 8.049208190641366e-06,
+      "linear_relative_residual": 7.756548257020768e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.02571454830467701,
+      "dual_relative": 0.030550669878721237,
+      "explicit_objective": 1.0613521977993514
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0499651432037354,
+      "quadratic_energy": 0.003311116248369217,
+      "tv_energy": 0.1824401319026947,
+      "base_prior_energy": 1.0193961315962952e-05,
+      "linear_relative_residual": 9.498793360762647e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0006208323175087571,
+      "dual_relative": 0.006353202275931835,
+      "explicit_objective": 1.0532864534134205
+    }
+  },
+  "seed-2/buddy/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773216833543975,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026844935,
+        47.256345143445095,
+        44.01657920109753
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773110627766085,
+      "effective_rank": 3,
+      "singular_values": [
+        50.060416812986674,
+        47.333683147476584,
+        42.761945922723385
+      ],
+      "mean_norm": 0.011653698980808258
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.579316800001834,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0568722486495972,
+      "quadratic_energy": 0.004471899941563606,
+      "tv_energy": 0.18730169534683228,
+      "base_prior_energy": 8.049208190641366e-06,
+      "tv_gap_per_node": 2.2275604351307265e-05,
+      "primal_relative": 0.04956093430519104,
+      "dual_relative": 0.05147341638803482,
+      "explicit_objective": 1.0756104673924711
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0504509210586548,
+      "quadratic_energy": 0.003209345741197467,
+      "tv_energy": 0.173343226313591,
+      "base_prior_energy": 1.0286774340784177e-05,
+      "tv_gap_per_node": 1.3922252151132852e-07,
+      "primal_relative": 0.0016139170620590448,
+      "dual_relative": 0.006663328502327204,
+      "explicit_objective": 1.0677955304643547
+    }
+  },
+  "seed-2/buddy/control": {
+    "initial": {
+      "centered_rms": 0.5773216833543975,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026844935,
+        47.256345143445095,
+        44.01657920109753
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.577332052645834,
+      "effective_rank": 3,
+      "singular_values": [
+        48.90639435585108,
+        47.14775743540335,
+        44.28135719279674
+      ],
+      "mean_norm": 0.007943684235215187
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1519450999985565,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0568610429763794,
+      "quadratic_energy": 0.0044649215415120125,
+      "tv_energy": 0.18725048005580902,
+      "base_prior_energy": 8.050074939092156e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0496481657028198,
+      "quadratic_energy": 0.0035080688539892435,
+      "tv_energy": 0.18613813817501068,
+      "base_prior_energy": 1.0294380444975104e-05
+    }
+  },
+  "seed-2/buddy/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773216833543975,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026844935,
+        47.256345143445095,
+        44.01657920109753
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.5773199819941943,
+      "effective_rank": 3,
+      "singular_values": [
+        49.35681351231087,
+        47.302533231580405,
+        43.60831787198252
+      ],
+      "mean_norm": 0.010242770425975323
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.4931079000016325,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0568747520446777,
+      "quadratic_energy": 0.004444473423063755,
+      "tv_energy": 0.18695802986621857,
+      "base_prior_energy": 8.04530645837076e-06,
+      "explicit_objective": 1.0613272707741999
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0498626232147217,
+      "quadratic_energy": 0.003295644884929061,
+      "tv_energy": 0.1820932775735855,
+      "base_prior_energy": 1.0219424439128488e-05,
+      "explicit_objective": 1.0531684875240899
+    }
+  },
+  "seed-2/buddy/pnp": {
+    "initial": {
+      "centered_rms": 0.5773216833543975,
+      "effective_rank": 3,
+      "singular_values": [
+        49.03802026844935,
+        47.256345143445095,
+        44.01657920109753
+      ],
+      "mean_norm": 0.009950907900929451
+    },
+    "final": {
+      "centered_rms": 0.577330824606875,
+      "effective_rank": 3,
+      "singular_values": [
+        48.86852179481743,
+        47.158804383443645,
+        44.31107996760425
+      ],
+      "mean_norm": 0.008207100443542004
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2256502999953227,
+    "graph": {
+      "neighbors": 15,
+      "edges": 58134,
+      "phase_bandwidth_squared": 3.319692850112915,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0568722486495972,
+      "quadratic_energy": 0.004471899941563606,
+      "tv_energy": 0.18730169534683228,
+      "base_prior_energy": 8.049208190641366e-06,
+      "denoiser_bandwidth_squared": 0.010679728351533413,
+      "primal_relative": 0.0015748213045299053,
+      "dual_relative": 0.0111440634354949
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0497257709503174,
+      "quadratic_energy": 0.003515161108225584,
+      "tv_energy": 0.1859540343284607,
+      "base_prior_energy": 1.0273492989654187e-05,
+      "denoiser_bandwidth_squared": 0.010679728351533413,
+      "primal_relative": 6.789041071897373e-05,
+      "dual_relative": 0.0065955971367657185
+    }
+  },
+  "seed-2/cicero/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773346400416294,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688210779,
+        59.09783892022143,
+        53.0876967022228
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773373268542996,
+      "effective_rank": 3,
+      "singular_values": [
+        59.42831600029301,
+        57.990872489675326,
+        55.71252713229439
+      ],
+      "mean_norm": 0.006695845630019903
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.3655428000056418,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0567264556884766,
+      "quadratic_energy": 0.005841645412147045,
+      "tv_energy": 0.20263026654720306,
+      "base_prior_energy": 8.527797035640106e-06,
+      "linear_relative_residual": 9.359197292724275e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.032550401985645294,
+      "dual_relative": 0.036254093050956726,
+      "explicit_objective": 1.0625766288976592
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0514354705810547,
+      "quadratic_energy": 0.00458231708034873,
+      "tv_energy": 0.19315902888774872,
+      "base_prior_energy": 1.098569373425562e-05,
+      "linear_relative_residual": 1.2543156344690942e-06,
+      "cg_steps": 6,
+      "primal_relative": 0.0006621787906624377,
+      "dual_relative": 0.004228947684168816,
+      "explicit_objective": 1.0560287733551377
+    }
+  },
+  "seed-2/cicero/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773346400416294,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688210779,
+        59.09783892022143,
+        53.0876967022228
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773263281622346,
+      "effective_rank": 3,
+      "singular_values": [
+        59.61446585113956,
+        58.41921824536867,
+        55.05888810623016
+      ],
+      "mean_norm": 0.009106677956879139
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.611635400004161,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0567264556884766,
+      "quadratic_energy": 0.005841645412147045,
+      "tv_energy": 0.20263026654720306,
+      "base_prior_energy": 8.527797035640106e-06,
+      "tv_gap_per_node": 2.120268254657276e-05,
+      "primal_relative": 0.056400056928396225,
+      "dual_relative": 0.058343056589365005,
+      "explicit_objective": 1.0769980101402326
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.051857590675354,
+      "quadratic_energy": 0.004676074720919132,
+      "tv_energy": 0.18185974657535553,
+      "base_prior_energy": 1.1105273188150022e-05,
+      "tv_gap_per_node": 1.6786346179742395e-07,
+      "primal_relative": 0.0019374205730855465,
+      "dual_relative": 0.004807384219020605,
+      "explicit_objective": 1.0700546706060776
+    }
+  },
+  "seed-2/cicero/control": {
+    "initial": {
+      "centered_rms": 0.5773346400416294,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688210779,
+        59.09783892022143,
+        53.0876967022228
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773436687770391,
+      "effective_rank": 3,
+      "singular_values": [
+        58.84871903453997,
+        58.15317370351887,
+        56.15877523036311
+      ],
+      "mean_norm": 0.004781652707606554
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2410359999994398,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0567103624343872,
+      "quadratic_energy": 0.005838299635797739,
+      "tv_energy": 0.202577143907547,
+      "base_prior_energy": 8.52889206726104e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0512471199035645,
+      "quadratic_energy": 0.004882751032710075,
+      "tv_energy": 0.1961647868156433,
+      "base_prior_energy": 1.1020399142580573e-05
+    }
+  },
+  "seed-2/cicero/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773346400416294,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688210779,
+        59.09783892022143,
+        53.0876967022228
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773373615275214,
+      "effective_rank": 3,
+      "singular_values": [
+        59.429751387908375,
+        57.97726565401448,
+        55.725166957443754
+      ],
+      "mean_norm": 0.006686759181320667
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.5903837000005296,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0567185878753662,
+      "quadratic_energy": 0.005817716475576162,
+      "tv_energy": 0.2024710774421692,
+      "base_prior_energy": 8.529624210495967e-06,
+      "explicit_objective": 1.0625448339751529
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0514535903930664,
+      "quadratic_energy": 0.004589178133755922,
+      "tv_energy": 0.19285134971141815,
+      "base_prior_energy": 1.1011569768015761e-05,
+      "explicit_objective": 1.0560537800965903
+    }
+  },
+  "seed-2/cicero/pnp": {
+    "initial": {
+      "centered_rms": 0.5773346400416294,
+      "effective_rank": 3,
+      "singular_values": [
+        60.72561688210779,
+        59.09783892022143,
+        53.0876967022228
+      ],
+      "mean_norm": 0.00735806580632925
+    },
+    "final": {
+      "centered_rms": 0.5773440724225687,
+      "effective_rank": 3,
+      "singular_values": [
+        58.834448315117065,
+        58.21681624014296,
+        56.10789034198009
+      ],
+      "mean_norm": 0.004633099306374788
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2510060999993584,
+    "graph": {
+      "neighbors": 15,
+      "edges": 83493,
+      "phase_bandwidth_squared": 5.564207077026367,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0567264556884766,
+      "quadratic_energy": 0.005841645412147045,
+      "tv_energy": 0.20263026654720306,
+      "base_prior_energy": 8.527797035640106e-06,
+      "denoiser_bandwidth_squared": 0.008276071399450302,
+      "primal_relative": 0.001683204434812069,
+      "dual_relative": 0.012373858131468296
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.051218867301941,
+      "quadratic_energy": 0.004870640113949776,
+      "tv_energy": 0.19611389935016632,
+      "base_prior_energy": 1.1017584256478585e-05,
+      "denoiser_bandwidth_squared": 0.008276071399450302,
+      "primal_relative": 7.009724504314363e-05,
+      "dual_relative": 0.004489256534725428
+    }
+  },
+  "seed-2/decoding/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.17675804884868518,
+      "effective_rank": 32,
+      "singular_values": [
+        38.37953323022029,
+        36.16441812002089,
+        34.80197505782377,
+        33.24094417897272,
+        29.323498407271117,
+        28.035666937282375,
+        26.209376670072004,
+        23.370677270744878,
+        2.6318552688394745,
+        2.4919274705363,
+        2.1174362173819072,
+        1.3790016981909992,
+        0.7235735422049173,
+        0.5150157867487657,
+        0.4479822286766157,
+        0.4334048411222585,
+        0.36529502006957326,
+        0.29727409443290465,
+        0.2805822142315707,
+        0.2484109900038334,
+        0.2126481789971052,
+        0.21058167248501825,
+        0.1978681015586345,
+        0.18099516681153108,
+        0.16964057200516944,
+        0.1420573276846404,
+        0.14100936682928478,
+        0.11933079588016492,
+        0.10847239105582145,
+        0.0897550078240271,
+        0.0759716910527653,
+        0.060306434798561355
+      ],
+      "mean_norm": 0.014524102210998535
+    },
+    "final": {
+      "centered_rms": 0.17677373148901956,
+      "effective_rank": 32,
+      "singular_values": [
+        39.141821858845766,
+        37.83849534786658,
+        34.28264695971014,
+        32.671044670918086,
+        29.48751642633059,
+        27.598930523400448,
+        24.29392488656533,
+        22.334021019916552,
+        6.117109774457672,
+        4.343048646542035,
+        2.2238186747173914,
+        1.8410059004507642,
+        1.1536386556983345,
+        1.0255657331406691,
+        0.9361332802083464,
+        0.885348640131775,
+        0.7776089273239373,
+        0.6940346030955244,
+        0.6697597972028067,
+        0.5891960795694521,
+        0.5242151043994367,
+        0.4720813191653316,
+        0.4105704342274272,
+        0.39356610121667207,
+        0.3524460442647679,
+        0.3424153084910264,
+        0.3102874262090937,
+        0.2863517407443024,
+        0.2679758687586524,
+        0.23644051308383354,
+        0.2148809529491099,
+        0.16565883785373958
+      ],
+      "mean_norm": 0.005790611729025841
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.371883699997852,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0279226303100586,
+      "quadratic_energy": 0.004844627343118191,
+      "tv_energy": 0.23975402116775513,
+      "base_prior_energy": 1.102869077840296e-06,
+      "linear_relative_residual": 7.220706947919098e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.02158239670097828,
+      "dual_relative": 0.028653472661972046,
+      "explicit_objective": 1.0327683605222546
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0177443027496338,
+      "quadratic_energy": 0.004393854644149542,
+      "tv_energy": 0.23830825090408325,
+      "base_prior_energy": 3.618148184614256e-06,
+      "linear_relative_residual": 1.0123544598172884e-06,
+      "cg_steps": 6,
+      "primal_relative": 0.0015749013982713223,
+      "dual_relative": 0.014586971141397953,
+      "explicit_objective": 1.022141775541968
+    }
+  },
+  "seed-2/decoding/admm_tv": {
+    "initial": {
+      "centered_rms": 0.17675804884868518,
+      "effective_rank": 32,
+      "singular_values": [
+        38.37953323022029,
+        36.16441812002089,
+        34.80197505782377,
+        33.24094417897272,
+        29.323498407271117,
+        28.035666937282375,
+        26.209376670072004,
+        23.370677270744878,
+        2.6318552688394745,
+        2.4919274705363,
+        2.1174362173819072,
+        1.3790016981909992,
+        0.7235735422049173,
+        0.5150157867487657,
+        0.4479822286766157,
+        0.4334048411222585,
+        0.36529502006957326,
+        0.29727409443290465,
+        0.2805822142315707,
+        0.2484109900038334,
+        0.2126481789971052,
+        0.21058167248501825,
+        0.1978681015586345,
+        0.18099516681153108,
+        0.16964057200516944,
+        0.1420573276846404,
+        0.14100936682928478,
+        0.11933079588016492,
+        0.10847239105582145,
+        0.0897550078240271,
+        0.0759716910527653,
+        0.060306434798561355
+      ],
+      "mean_norm": 0.014524102210998535
+    },
+    "final": {
+      "centered_rms": 0.17677220845069808,
+      "effective_rank": 32,
+      "singular_values": [
+        41.95831002833307,
+        40.4645870150094,
+        34.837715596882575,
+        32.95231974277382,
+        29.894467078952744,
+        23.35956817304764,
+        22.03978505114572,
+        18.817732763790918,
+        3.3118808158315995,
+        2.2788394660861195,
+        1.3172126450957937,
+        1.0919758698568645,
+        0.7044625539316909,
+        0.6528646911615007,
+        0.6274584767381832,
+        0.5175459859902581,
+        0.4771600760752803,
+        0.42545322170188293,
+        0.3869670780984065,
+        0.36833921685400167,
+        0.31394212023824664,
+        0.30695842430745973,
+        0.27233985919102327,
+        0.2680836435497484,
+        0.23294083750992015,
+        0.2204342581331655,
+        0.21036577909247986,
+        0.1934529454820115,
+        0.17480621206763203,
+        0.1622311644877894,
+        0.14268965443887013,
+        0.1179306681946908
+      ],
+      "mean_norm": 0.007124701980501413
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 2.6410841999968397,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0279226303100586,
+      "quadratic_energy": 0.004844627343118191,
+      "tv_energy": 0.23975402116775513,
+      "base_prior_energy": 1.102869077840296e-06,
+      "tv_gap_per_node": 4.959726084052818e-06,
+      "primal_relative": 0.051037199795246124,
+      "dual_relative": 0.05488958954811096,
+      "explicit_objective": 1.051899135295912
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.021204948425293,
+      "quadratic_energy": 0.0034423088654875755,
+      "tv_energy": 0.2022298276424408,
+      "base_prior_energy": 3.3440692277508788e-06,
+      "tv_gap_per_node": 1.5260695818142267e-08,
+      "primal_relative": 0.003733678488060832,
+      "dual_relative": 0.009959560818970203,
+      "explicit_objective": 1.0414312752587649
+    }
+  },
+  "seed-2/decoding/control": {
+    "initial": {
+      "centered_rms": 0.17675804884868518,
+      "effective_rank": 32,
+      "singular_values": [
+        38.37953323022029,
+        36.16441812002089,
+        34.80197505782377,
+        33.24094417897272,
+        29.323498407271117,
+        28.035666937282375,
+        26.209376670072004,
+        23.370677270744878,
+        2.6318552688394745,
+        2.4919274705363,
+        2.1174362173819072,
+        1.3790016981909992,
+        0.7235735422049173,
+        0.5150157867487657,
+        0.4479822286766157,
+        0.4334048411222585,
+        0.36529502006957326,
+        0.29727409443290465,
+        0.2805822142315707,
+        0.2484109900038334,
+        0.2126481789971052,
+        0.21058167248501825,
+        0.1978681015586345,
+        0.18099516681153108,
+        0.16964057200516944,
+        0.1420573276846404,
+        0.14100936682928478,
+        0.11933079588016492,
+        0.10847239105582145,
+        0.0897550078240271,
+        0.0759716910527653,
+        0.060306434798561355
+      ],
+      "mean_norm": 0.014524102210998535
+    },
+    "final": {
+      "centered_rms": 0.17677325833636356,
+      "effective_rank": 32,
+      "singular_values": [
+        37.30083424532155,
+        35.60035614711297,
+        34.8385395132094,
+        32.03910164015658,
+        30.318510398711467,
+        26.39356173856046,
+        24.384635440054222,
+        21.523688934297027,
+        16.23513673060245,
+        10.237778931674844,
+        4.392987800284586,
+        3.5275934646959515,
+        2.2737201631909643,
+        2.0024511962975198,
+        1.7848959632445336,
+        1.5969881819842329,
+        1.4496582186120417,
+        1.2400119386403516,
+        1.1237686893051082,
+        1.0420400603136504,
+        0.9946700546850337,
+        0.8922935800348057,
+        0.8269640325200699,
+        0.6814408143849688,
+        0.6545113171845929,
+        0.6122115383843255,
+        0.5679150001573458,
+        0.5341801291517575,
+        0.486745789989233,
+        0.44296099058363775,
+        0.33792861170673955,
+        0.28599409183415725
+      ],
+      "mean_norm": 0.006235745269805193
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1480379999993602,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0277762413024902,
+      "quadratic_energy": 0.004835925530642271,
+      "tv_energy": 0.23976457118988037,
+      "base_prior_energy": 1.1034594535885844e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0136518478393555,
+      "quadratic_energy": 0.006619349122047424,
+      "tv_energy": 0.2915392518043518,
+      "base_prior_energy": 4.025983344035922e-06
+    }
+  },
+  "seed-2/decoding/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.17675804884868518,
+      "effective_rank": 32,
+      "singular_values": [
+        38.37953323022029,
+        36.16441812002089,
+        34.80197505782377,
+        33.24094417897272,
+        29.323498407271117,
+        28.035666937282375,
+        26.209376670072004,
+        23.370677270744878,
+        2.6318552688394745,
+        2.4919274705363,
+        2.1174362173819072,
+        1.3790016981909992,
+        0.7235735422049173,
+        0.5150157867487657,
+        0.4479822286766157,
+        0.4334048411222585,
+        0.36529502006957326,
+        0.29727409443290465,
+        0.2805822142315707,
+        0.2484109900038334,
+        0.2126481789971052,
+        0.21058167248501825,
+        0.1978681015586345,
+        0.18099516681153108,
+        0.16964057200516944,
+        0.1420573276846404,
+        0.14100936682928478,
+        0.11933079588016492,
+        0.10847239105582145,
+        0.0897550078240271,
+        0.0759716910527653,
+        0.060306434798561355
+      ],
+      "mean_norm": 0.014524102210998535
+    },
+    "final": {
+      "centered_rms": 0.17677333022128808,
+      "effective_rank": 32,
+      "singular_values": [
+        39.116094441901225,
+        37.3134661164741,
+        34.81388332920119,
+        32.77033959075904,
+        29.385376537814228,
+        27.177985189032867,
+        23.486449506032734,
+        21.069917691711595,
+        11.315085980562214,
+        5.895364678134287,
+        3.055853371470878,
+        2.235869119858909,
+        1.726115901514906,
+        1.5189804184939406,
+        1.4682206261465394,
+        1.1774820506018326,
+        1.0936734831219015,
+        1.058261644423238,
+        0.9473354031761038,
+        0.8914773476682546,
+        0.7322745062216552,
+        0.7073681249263163,
+        0.596125604738611,
+        0.5420296731749348,
+        0.4841626754273704,
+        0.44682777399046053,
+        0.403788264874905,
+        0.3815007854991121,
+        0.3459265542742747,
+        0.3062570595834689,
+        0.27649034979394393,
+        0.23015697123317647
+      ],
+      "mean_norm": 0.006170195993036032
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.5148153999980423,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0278031826019287,
+      "quadratic_energy": 0.004731387831270695,
+      "tv_energy": 0.23758666217327118,
+      "base_prior_energy": 1.103591102946666e-06,
+      "explicit_objective": 1.0325356740243024
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0158987045288086,
+      "quadratic_energy": 0.004779762588441372,
+      "tv_energy": 0.2498445361852646,
+      "base_prior_energy": 3.7799941310368013e-06,
+      "explicit_objective": 1.020682247111381
+    }
+  },
+  "seed-2/decoding/pnp": {
+    "initial": {
+      "centered_rms": 0.17675804884868518,
+      "effective_rank": 32,
+      "singular_values": [
+        38.37953323022029,
+        36.16441812002089,
+        34.80197505782377,
+        33.24094417897272,
+        29.323498407271117,
+        28.035666937282375,
+        26.209376670072004,
+        23.370677270744878,
+        2.6318552688394745,
+        2.4919274705363,
+        2.1174362173819072,
+        1.3790016981909992,
+        0.7235735422049173,
+        0.5150157867487657,
+        0.4479822286766157,
+        0.4334048411222585,
+        0.36529502006957326,
+        0.29727409443290465,
+        0.2805822142315707,
+        0.2484109900038334,
+        0.2126481789971052,
+        0.21058167248501825,
+        0.1978681015586345,
+        0.18099516681153108,
+        0.16964057200516944,
+        0.1420573276846404,
+        0.14100936682928478,
+        0.11933079588016492,
+        0.10847239105582145,
+        0.0897550078240271,
+        0.0759716910527653,
+        0.060306434798561355
+      ],
+      "mean_norm": 0.014524102210998535
+    },
+    "final": {
+      "centered_rms": 0.17677357570127417,
+      "effective_rank": 32,
+      "singular_values": [
+        37.69226362329571,
+        36.28111774395083,
+        34.12208901927898,
+        32.46369582663778,
+        30.757066811056053,
+        27.928257397388105,
+        26.13405150697437,
+        22.827103911729033,
+        7.4118862985686365,
+        5.74111067731745,
+        3.0750050455559057,
+        2.2234847979896717,
+        1.409843867732576,
+        1.2620187167790864,
+        1.1702921092283523,
+        1.1050139718999978,
+        0.9369577193285514,
+        0.8438892180122124,
+        0.7562233706346171,
+        0.7024338067625149,
+        0.6736597181005116,
+        0.5975290421985532,
+        0.5512874699491521,
+        0.47715852999593716,
+        0.4635284618035967,
+        0.41133150653101724,
+        0.3937985792339329,
+        0.33954818244828605,
+        0.3188194525617963,
+        0.29720049386672837,
+        0.2695431908331821,
+        0.22610088657408445
+      ],
+      "mean_norm": 0.0059409667737782
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.2555415000024368,
+    "graph": {
+      "neighbors": 15,
+      "edges": 69188,
+      "phase_bandwidth_squared": 7.176811695098877,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0279226303100586,
+      "quadratic_energy": 0.004844627343118191,
+      "tv_energy": 0.23975402116775513,
+      "base_prior_energy": 1.102869077840296e-06,
+      "denoiser_bandwidth_squared": 0.021751508116722107,
+      "primal_relative": 0.0025448016822338104,
+      "dual_relative": 0.016842657700181007
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0159837007522583,
+      "quadratic_energy": 0.005489876959472895,
+      "tv_energy": 0.26388034224510193,
+      "base_prior_energy": 3.887217189912917e-06,
+      "denoiser_bandwidth_squared": 0.021751508116722107,
+      "primal_relative": 0.00030853410135023296,
+      "dual_relative": 0.0185833852738142
+    }
+  },
+  "seed-2/gatsby/admm_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773350241763822,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190778763,
+        57.89107831782574,
+        51.03076708460485
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773259535624072,
+      "effective_rank": 3,
+      "singular_values": [
+        61.407829994428326,
+        57.10893771220062,
+        54.45920888786114
+      ],
+      "mean_norm": 0.0091776791960001
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 3.249501100006455,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0565836429595947,
+      "quadratic_energy": 0.004972528666257858,
+      "tv_energy": 0.1883956491947174,
+      "base_prior_energy": 5.8923860706272535e-06,
+      "linear_relative_residual": 6.57896748634812e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.02889285236597061,
+      "dual_relative": 0.033595167100429535,
+      "explicit_objective": 1.0615620640119232
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0500710010528564,
+      "quadratic_energy": 0.0037793589290231466,
+      "tv_energy": 0.1844078153371811,
+      "base_prior_energy": 8.298971806652844e-06,
+      "linear_relative_residual": 7.313446417356317e-07,
+      "cg_steps": 6,
+      "primal_relative": 0.0008605560869909823,
+      "dual_relative": 0.007436735555529594,
+      "explicit_objective": 1.0538586589536862
+    }
+  },
+  "seed-2/gatsby/admm_tv": {
+    "initial": {
+      "centered_rms": 0.5773350241763822,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190778763,
+        57.89107831782574,
+        51.03076708460485
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773170741474282,
+      "effective_rank": 3,
+      "singular_values": [
+        62.54709878821959,
+        56.32539364620513,
+        53.973703799432165
+      ],
+      "mean_norm": 0.010723301209509373
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 16.096595000002708,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0565836429595947,
+      "quadratic_energy": 0.004972528666257858,
+      "tv_energy": 0.1883956491947174,
+      "base_prior_energy": 5.8923860706272535e-06,
+      "tv_gap_per_node": 2.9075477868900634e-05,
+      "primal_relative": 0.051493722945451736,
+      "dual_relative": 0.053623221814632416,
+      "explicit_objective": 1.075429100265137
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.050808310508728,
+      "quadratic_energy": 0.0037419013679027557,
+      "tv_energy": 0.17078620195388794,
+      "base_prior_energy": 8.397074452659581e-06,
+      "tv_gap_per_node": 2.746856750945881e-07,
+      "primal_relative": 0.0021711993031203747,
+      "dual_relative": 0.007217115256935358,
+      "explicit_objective": 1.0678953277785694
+    }
+  },
+  "seed-2/gatsby/control": {
+    "initial": {
+      "centered_rms": 0.5773350241763822,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190778763,
+        57.89107831782574,
+        51.03076708460485
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773362215667122,
+      "effective_rank": 3,
+      "singular_values": [
+        60.30911899457047,
+        57.401089648598095,
+        55.3754323134545
+      ],
+      "mean_norm": 0.006975733675062656
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.1418263000014122,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0565569400787354,
+      "quadratic_energy": 0.004975949879735708,
+      "tv_energy": 0.18844211101531982,
+      "base_prior_energy": 5.891906766919419e-06
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0495694875717163,
+      "quadratic_energy": 0.004217696376144886,
+      "tv_energy": 0.19120244681835175,
+      "base_prior_energy": 8.417543540417682e-06
+    }
+  },
+  "seed-2/gatsby/direct_quadratic": {
+    "initial": {
+      "centered_rms": 0.5773350241763822,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190778763,
+        57.89107831782574,
+        51.03076708460485
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.5773273217975385,
+      "effective_rank": 3,
+      "singular_values": [
+        61.29065181907182,
+        56.97893772977427,
+        54.727158057840825
+      ],
+      "mean_norm": 0.008915703743696213
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 1.681992400001036,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0565720796585083,
+      "quadratic_energy": 0.004939484875649214,
+      "tv_energy": 0.18801645934581757,
+      "base_prior_energy": 5.895763933949638e-06,
+      "explicit_objective": 1.0615174602980915
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0498698949813843,
+      "quadratic_energy": 0.0037743952125310898,
+      "tv_energy": 0.1847958266735077,
+      "base_prior_energy": 8.32809200801421e-06,
+      "explicit_objective": 1.0536526182859234
+    }
+  },
+  "seed-2/gatsby/pnp": {
+    "initial": {
+      "centered_rms": 0.5773350241763822,
+      "effective_rank": 3,
+      "singular_values": [
+        63.58424190778763,
+        57.89107831782574,
+        51.03076708460485
+      ],
+      "mean_norm": 0.007267017383128405
+    },
+    "final": {
+      "centered_rms": 0.577334712523096,
+      "effective_rank": 3,
+      "singular_values": [
+        60.510627027500846,
+        57.50120311035214,
+        55.050311715862655
+      ],
+      "mean_norm": 0.0073409173637628555
+    },
+    "fixed_budget_reached": true,
+    "global_optimality_or_convergence_claimed": false,
+    "deployed_output": "encoder(values), not ADMM auxiliary variable",
+    "seconds": 5.985770600003889,
+    "graph": {
+      "neighbors": 15,
+      "edges": 86990,
+      "phase_bandwidth_squared": 3.5541152954101562,
+      "normalization": "combinatorial Laplacian / maximum weighted degree"
+    },
+    "first_iteration": {
+      "outer": 1,
+      "contrastive": 1.0565836429595947,
+      "quadratic_energy": 0.004972528666257858,
+      "tv_energy": 0.1883956491947174,
+      "base_prior_energy": 5.8923860706272535e-06,
+      "denoiser_bandwidth_squared": 0.008512742817401886,
+      "primal_relative": 0.0015766319120302796,
+      "dual_relative": 0.015132967382669449
+    },
+    "last_iteration": {
+      "outer": 30,
+      "contrastive": 1.0497140884399414,
+      "quadratic_energy": 0.004193178378045559,
+      "tv_energy": 0.18979059159755707,
+      "base_prior_energy": 8.398335012316238e-06,
+      "denoiser_bandwidth_squared": 0.008512742817401886,
+      "primal_relative": 7.27082442608662e-05,
+      "dual_relative": 0.00789304543286562
+    }
+  }
+}
