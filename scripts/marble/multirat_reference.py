@@ -50,7 +50,7 @@ def projection_diagnostics(projection, observed):
 
 def prepare(repository, data_root, output, animal, protocol, alpha):
     assert animal in RATS and protocol in ("decoding", "consistency")
-    assert alpha in (0.0, 0.1)
+    assert np.isfinite(alpha) and alpha >= 0
     if output.exists():
         raise FileExistsError(output)
     revision = subprocess.check_output(
@@ -289,7 +289,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--protocol", choices=("decoding", "consistency"), required=True
     )
-    parser.add_argument("--alpha", type=float, choices=(0.0, 0.1), required=True)
+    parser.add_argument("--alpha", type=float, required=True)
     args = parser.parse_args()
     prepare(
         args.marble_repo.resolve(),

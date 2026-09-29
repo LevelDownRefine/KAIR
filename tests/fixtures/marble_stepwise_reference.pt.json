@@ -1,0 +1,6 @@
+{
+  "fixture_sha256": "78bc2288481c854bb7641a5b8883e32119baf1c8c518651d30e9e8282f186b7f",
+  "training_input_sha256": "e8846cdce273885da457b99ad8c92f1521a8f7b83572e4cc50f5ce8d88b0951f",
+  "oracle_sha256": "6dbe0ebf382d4ca5b6bdd0c02201518f0770b774f1db9f08d38324a5e16ace00",
+  "scope": "Public Achilles alpha=0.03 consistency numerical regression; three original batches, no training outcome selection"
+}

@@ -11,13 +11,14 @@ from data.dataset_marble import DatasetMARBLE
 from models.model_marble import ModelMARBLE
 from models.network_marble import GraphFeatures
 from scripts.marble.precision_reference import float32_reference
+from scripts.marble.precision_stepwise import checked_receipt
 from utils.utils_marble import read_json, save_json, sha256
 
 logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def run(source, output):
+def run(source, output, numerics_audit=None):
     if output.exists():
         raise FileExistsError(output)
     assert torch.cuda.is_available() and torch.version.cuda == "13.0"
@@ -33,9 +34,14 @@ def run(source, output):
     assert "animal" in dataset.protocol
     assert "out_channels" in dataset.params and dataset.params["out_channels"] == 3
     output.mkdir(parents=True)
-    precision = read_json(source / "precision_reference_receipt.json")
-    assert precision["oracle_sha256"] == sha256(source / "validation_float64.pt")
-    assert precision["training_input_sha256"] == sha256(source / "training_input.pt")
+    if numerics_audit is None:
+        precision = read_json(source / "precision_reference_receipt.json")
+        assert precision["oracle_sha256"] == sha256(source / "validation_float64.pt")
+        assert precision["training_input_sha256"] == sha256(
+            source / "training_input.pt"
+        )
+    else:
+        precision = checked_receipt(source, numerics_audit)
     save_json(output / "precision_reference_receipt.json", precision)
     save_json(output / "protocol.json", dataset.protocol)
     save_json(output / "input_provenance.json", dataset.provenance)
@@ -53,6 +59,7 @@ def run(source, output):
                 for path in (
                     "scripts/marble/train_consistency.py",
                     "scripts/marble/precision_reference.py",
+                    "scripts/marble/precision_stepwise.py",
                     "models/model_marble.py",
                     "models/network_marble.py",
                     "data/dataset_marble.py",
@@ -66,13 +73,16 @@ def run(source, output):
     options = {"params": dataset.params, "device": "cuda:0"}
     features = GraphFeatures(dataset.pack["train_graph"], "cuda:0")
     model = ModelMARBLE(options)
-    oracle = torch.load(
-        source / "validation_float64.pt", map_location="cpu", weights_only=True
-    )
-    reference = model.validate_reference(features, float32_reference(oracle))
-    reference["comparison"] = (
-        "float32 CUDA against original float64 oracle; original float32 separately checked at identical tolerance"
-    )
+    if numerics_audit is None:
+        oracle = torch.load(
+            source / "validation_float64.pt", map_location="cpu", weights_only=True
+        )
+        reference = model.validate_reference(features, float32_reference(oracle))
+        reference["comparison"] = (
+            "float32 CUDA against original float64 oracle; original float32 separately checked at identical tolerance"
+        )
+    else:
+        reference = precision
     save_json(output / "reference_validation.json", reference)
     full = features()
     results = []
@@ -116,5 +126,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--numerics-audit", type=Path)
     args = parser.parse_args()
-    run(args.input.resolve(), args.output.resolve())
+    run(
+        args.input.resolve(),
+        args.output.resolve(),
+        args.numerics_audit.resolve() if args.numerics_audit is not None else None,
+    )
