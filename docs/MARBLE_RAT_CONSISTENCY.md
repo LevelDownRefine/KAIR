@@ -1,5 +1,9 @@
 # 四只大鼠的 MARBLE 3D 作者模型核验
 
+2026-09-30 后续：已完成精确 PCA 与固定 α=0.1 联合投影条件下的四动物
+三种子从头训练，见 [扩展实验报告](MARBLE_MULTIRAT_RESULTS.md)。
+下文仍是此前作者权重的核验，二者的模型与成绩不混合。
+
 2026-09-28，分支 `codex/marble-rat-consistency`。
 本轮完成 Achilles、Buddy、Cicero、Gatsby 的作者检查点在 KAIR CUDA 13 上的
 特征、梯度、连续三步 SGD、表征及 12 个有向动物对的一致性核验。

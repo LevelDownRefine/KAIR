@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-09-29T15:46:38.030748+00:00",
+  "jobs": [
+    [
+      "decoding",
+      "buddy",
+      "pca",
+      0.0
+    ],
+    [
+      "decoding",
+      "buddy",
+      "joint-01",
+      0.1
+    ],
+    [
+      "decoding",
+      "cicero",
+      "pca",
+      0.0
+    ],
+    [
+      "decoding",
+      "cicero",
+      "joint-01",
+      0.1
+    ],
+    [
+      "decoding",
+      "gatsby",
+      "pca",
+      0.0
+    ],
+    [
+      "decoding",
+      "gatsby",
+      "joint-01",
+      0.1
+    ],
+    [
+      "consistency",
+      "achilles",
+      "pca",
+      0.0
+    ],
+    [
+      "consistency",
+      "achilles",
+      "joint-01",
+      0.1
+    ],
+    [
+      "consistency",
+      "buddy",
+      "pca",
+      0.0
+    ],
+    [
+      "consistency",
+      "buddy",
+      "joint-01",
+      0.1
+    ],
+    [
+      "consistency",
+      "cicero",
+      "pca",
+      0.0
+    ],
+    [
+      "consistency",
+      "cicero",
+      "joint-01",
+      0.1
+    ],
+    [
+      "consistency",
+      "gatsby",
+      "pca",
+      0.0
+    ],
+    [
+      "consistency",
+      "gatsby",
+      "joint-01",
+      0.1
+    ]
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 100,
+  "decoding": "q=20, out=32, chronological 80/20 split, frozen BN primary",
+  "recording_rows": {
+    "achilles": 10000,
+    "buddy": 6577,
+    "cicero": 10000,
+    "gatsby": 10000
+  },
+  "consistency": "q=10, out=3, dropout=0.5, whole-recording training",
+  "alpha_selection": "Fixed 0.1 from Achilles discovery; no new-animal tuning",
+  "achilles_decoding": "Reuse dynamics-projection-20260929; discovery only",
+  "hypothesis": "Fixed alpha improves new-animal decoding and cross-animal consistency",
+  "evaluation": "Report every animal and seed, all 12 directed consistency pairs",
+  "scope": "Four-rat public subset; not RNN or macaque paper experiments",
+  "source_sha256": {
+    "scripts\\marble\\run_multirat_projection.py": "f9234d3306a3a44d17850725ecf170b72cb11eb7f04b0d616825aa55f80d72bd",
+    "scripts\\marble\\multirat_reference.py": "acad9efa8821cd3eca012e08abe79419c5572f353defb4b5a74c0bce2c62015d",
+    "scripts\\marble\\train_consistency.py": "e8fe956f13bdfd16305b5a7319d64e64638f0416290bc188228e8164c53e0c6d",
+    "utils\\utils_dynamics_projection.py": "f6cdf41cc3da5ef8c3669b5e051cb42b9054a42c93c266d21a140c0ee60b5f1c"
+  }
+}

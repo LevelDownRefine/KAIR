@@ -12,7 +12,6 @@ from pathlib import Path
 import numpy as np
 import torch
 from sklearn.metrics.pairwise import cosine_distances
-
 from utils.utils_marble import (
     audit_decoder_ties,
     read_json,
@@ -20,6 +19,7 @@ from utils.utils_marble import (
     sha256,
     tensor_digest,
 )
+from utils.utils_marble_storage import load_tensor_file
 
 logger = logging.getLogger(__name__)
 
@@ -38,9 +38,10 @@ def check(repository, source, run):
     pack = torch.load(
         source / "training_input.pt", map_location="cpu", weights_only=True
     )
-    original = torch.load(
-        source / "original_graphs.pt", map_location="cpu", weights_only=False
-    )
+    graph_path = source / "original_graphs.pt"
+    if not graph_path.is_file():
+        graph_path = source / "original_graphs.pt.gz"
+    original = load_tensor_file(graph_path, weights_only=False)
     summary = read_json(run / "summary.json")
     options = read_json(run / "options.json")
     assert "seeds" in summary and "decoder" in options

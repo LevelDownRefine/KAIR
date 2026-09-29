@@ -1,0 +1,1103 @@
+{
+  "decoding_rows": [
+    {
+      "animal": "achilles",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 9.54979583621025,
+      "position_r2": 0.8917251825332642,
+      "best_epoch": 23
+    },
+    {
+      "animal": "achilles",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 9.054268896579742,
+      "position_r2": 0.903428852558136,
+      "best_epoch": 23
+    },
+    {
+      "animal": "achilles",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 10.076511651277542,
+      "position_r2": 0.8784871101379395,
+      "best_epoch": 59
+    },
+    {
+      "animal": "achilles",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 9.13907140493393,
+      "position_r2": 0.8988723158836365,
+      "best_epoch": 59
+    },
+    {
+      "animal": "achilles",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 9.049513936042786,
+      "position_r2": 0.896350085735321,
+      "best_epoch": 74
+    },
+    {
+      "animal": "achilles",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 8.624181896448135,
+      "position_r2": 0.9108073115348816,
+      "best_epoch": 74
+    },
+    {
+      "animal": "achilles",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 8.70228186249733,
+      "position_r2": 0.9018593430519104,
+      "best_epoch": 23
+    },
+    {
+      "animal": "achilles",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 9.046419709920883,
+      "position_r2": 0.9079992771148682,
+      "best_epoch": 23
+    },
+    {
+      "animal": "achilles",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 9.836164861917496,
+      "position_r2": 0.8801289796829224,
+      "best_epoch": 59
+    },
+    {
+      "animal": "achilles",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 9.134692698717117,
+      "position_r2": 0.8802170157432556,
+      "best_epoch": 59
+    },
+    {
+      "animal": "achilles",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 8.886396139860153,
+      "position_r2": 0.9140106439590454,
+      "best_epoch": 74
+    },
+    {
+      "animal": "achilles",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 8.220355957746506,
+      "position_r2": 0.9140777587890625,
+      "best_epoch": 74
+    },
+    {
+      "animal": "buddy",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 9.434574097394943,
+      "position_r2": 0.943774938583374,
+      "best_epoch": 57
+    },
+    {
+      "animal": "buddy",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 11.064912378787994,
+      "position_r2": 0.9246739149093628,
+      "best_epoch": 57
+    },
+    {
+      "animal": "buddy",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 10.074914246797562,
+      "position_r2": 0.9323395490646362,
+      "best_epoch": 76
+    },
+    {
+      "animal": "buddy",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 9.717658162117004,
+      "position_r2": 0.9438078999519348,
+      "best_epoch": 76
+    },
+    {
+      "animal": "buddy",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 9.544919431209564,
+      "position_r2": 0.9427585005760193,
+      "best_epoch": 16
+    },
+    {
+      "animal": "buddy",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 10.669482499361038,
+      "position_r2": 0.9226963520050049,
+      "best_epoch": 16
+    },
+    {
+      "animal": "buddy",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 9.443838894367218,
+      "position_r2": 0.9453990459442139,
+      "best_epoch": 54
+    },
+    {
+      "animal": "buddy",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 10.756170004606247,
+      "position_r2": 0.930767834186554,
+      "best_epoch": 54
+    },
+    {
+      "animal": "buddy",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 9.955758601427078,
+      "position_r2": 0.9352568984031677,
+      "best_epoch": 76
+    },
+    {
+      "animal": "buddy",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 9.922647476196289,
+      "position_r2": 0.9389815330505371,
+      "best_epoch": 76
+    },
+    {
+      "animal": "buddy",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 9.992285817861557,
+      "position_r2": 0.931479275226593,
+      "best_epoch": 16
+    },
+    {
+      "animal": "buddy",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 10.790936648845673,
+      "position_r2": 0.9230557680130005,
+      "best_epoch": 16
+    },
+    {
+      "animal": "cicero",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 11.564648896455765,
+      "position_r2": 0.8531272411346436,
+      "best_epoch": 95
+    },
+    {
+      "animal": "cicero",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 16.366641223430634,
+      "position_r2": 0.7288063168525696,
+      "best_epoch": 95
+    },
+    {
+      "animal": "cicero",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 13.93994688987732,
+      "position_r2": 0.7858906984329224,
+      "best_epoch": 66
+    },
+    {
+      "animal": "cicero",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 20.52551805973053,
+      "position_r2": 0.6069062948226929,
+      "best_epoch": 66
+    },
+    {
+      "animal": "cicero",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 10.89104637503624,
+      "position_r2": 0.8875484466552734,
+      "best_epoch": 96
+    },
+    {
+      "animal": "cicero",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 14.413094520568848,
+      "position_r2": 0.8103232383728027,
+      "best_epoch": 96
+    },
+    {
+      "animal": "cicero",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 13.202127814292908,
+      "position_r2": 0.8176275491714478,
+      "best_epoch": 54
+    },
+    {
+      "animal": "cicero",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 18.056873977184296,
+      "position_r2": 0.6702843308448792,
+      "best_epoch": 54
+    },
+    {
+      "animal": "cicero",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 15.67736268043518,
+      "position_r2": 0.7304946184158325,
+      "best_epoch": 66
+    },
+    {
+      "animal": "cicero",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 24.07032996416092,
+      "position_r2": 0.4781320095062256,
+      "best_epoch": 66
+    },
+    {
+      "animal": "cicero",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 10.775836557149887,
+      "position_r2": 0.8887221813201904,
+      "best_epoch": 96
+    },
+    {
+      "animal": "cicero",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 15.213684737682343,
+      "position_r2": 0.7755246162414551,
+      "best_epoch": 96
+    },
+    {
+      "animal": "gatsby",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 7.8633151948452,
+      "position_r2": 0.9000627398490906,
+      "best_epoch": 44
+    },
+    {
+      "animal": "gatsby",
+      "condition": "pca",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 11.045032739639282,
+      "position_r2": 0.7407623529434204,
+      "best_epoch": 44
+    },
+    {
+      "animal": "gatsby",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 7.885318994522095,
+      "position_r2": 0.8839194178581238,
+      "best_epoch": 27
+    },
+    {
+      "animal": "gatsby",
+      "condition": "pca",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 10.492727905511856,
+      "position_r2": 0.7575739622116089,
+      "best_epoch": 27
+    },
+    {
+      "animal": "gatsby",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 7.70643949508667,
+      "position_r2": 0.8900585770606995,
+      "best_epoch": 53
+    },
+    {
+      "animal": "gatsby",
+      "condition": "pca",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 11.448094993829727,
+      "position_r2": 0.7297893762588501,
+      "best_epoch": 53
+    },
+    {
+      "animal": "gatsby",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "eval",
+      "mae_cm": 7.682890444993973,
+      "position_r2": 0.9103560447692871,
+      "best_epoch": 44
+    },
+    {
+      "animal": "gatsby",
+      "condition": "joint-01",
+      "seed": 0,
+      "mode": "notebook",
+      "mae_cm": 11.220446228981018,
+      "position_r2": 0.7409034967422485,
+      "best_epoch": 44
+    },
+    {
+      "animal": "gatsby",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "eval",
+      "mae_cm": 7.875717431306839,
+      "position_r2": 0.8931075930595398,
+      "best_epoch": 27
+    },
+    {
+      "animal": "gatsby",
+      "condition": "joint-01",
+      "seed": 1,
+      "mode": "notebook",
+      "mae_cm": 10.416146367788315,
+      "position_r2": 0.7686331868171692,
+      "best_epoch": 27
+    },
+    {
+      "animal": "gatsby",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "eval",
+      "mae_cm": 8.20235088467598,
+      "position_r2": 0.8887283205986023,
+      "best_epoch": 53
+    },
+    {
+      "animal": "gatsby",
+      "condition": "joint-01",
+      "seed": 2,
+      "mode": "notebook",
+      "mae_cm": 10.57812049984932,
+      "position_r2": 0.7710937857627869,
+      "best_epoch": 53
+    }
+  ],
+  "decoding_summary": [
+    {
+      "animal": "achilles",
+      "mode": "eval",
+      "discovery": true,
+      "pca_mean_cm": 9.558607141176859,
+      "pca_sd_cm": 0.5135555530765522,
+      "joint_mean_cm": 9.14161428809166,
+      "joint_sd_cm": 0.6085021704838508,
+      "delta_cm": -0.4169928530852,
+      "relative_change_percent": -4.36248552667119,
+      "paired_seed_deltas_cm": [
+        -0.8475139737129211,
+        -0.2403467893600464,
+        -0.16311779618263245
+      ],
+      "seeds_improved": 3,
+      "pca_mean_r2": 0.8888541261355082,
+      "joint_mean_r2": 0.8986663222312927
+    },
+    {
+      "animal": "achilles",
+      "mode": "notebook",
+      "discovery": true,
+      "pca_mean_cm": 8.939174065987268,
+      "pca_sd_cm": 0.2760668696330986,
+      "joint_mean_cm": 8.800489455461502,
+      "joint_sd_cm": 0.504345304841863,
+      "delta_cm": -0.138684610525767,
+      "relative_change_percent": -1.551425327463396,
+      "paired_seed_deltas_cm": [
+        -0.007849186658859253,
+        -0.004378706216812134,
+        -0.40382593870162964
+      ],
+      "seeds_improved": 3,
+      "pca_mean_r2": 0.9043694933255514,
+      "joint_mean_r2": 0.9007646838823954
+    },
+    {
+      "animal": "buddy",
+      "mode": "eval",
+      "discovery": false,
+      "pca_mean_cm": 9.68480259180069,
+      "pca_sd_cm": 0.34232199855832207,
+      "joint_mean_cm": 9.797294437885284,
+      "joint_sd_cm": 0.30664584673178213,
+      "delta_cm": 0.11249184608459473,
+      "relative_change_percent": 1.1615295719071383,
+      "paired_seed_deltas_cm": [
+        0.00926479697227478,
+        -0.1191556453704834,
+        0.4473663866519928
+      ],
+      "seeds_improved": 1,
+      "pca_mean_r2": 0.9396243294080099,
+      "joint_mean_r2": 0.9373784065246582
+    },
+    {
+      "animal": "buddy",
+      "mode": "notebook",
+      "discovery": false,
+      "pca_mean_cm": 10.484017680088678,
+      "pca_sd_cm": 0.6925109244446888,
+      "joint_mean_cm": 10.48991804321607,
+      "joint_sd_cm": 0.49157817490519773,
+      "delta_cm": 0.005900363127390544,
+      "relative_change_percent": 0.056279599171205064,
+      "paired_seed_deltas_cm": [
+        -0.30874237418174744,
+        0.20498931407928467,
+        0.1214541494846344
+      ],
+      "seeds_improved": 1,
+      "pca_mean_r2": 0.9303927222887675,
+      "joint_mean_r2": 0.9309350450833639
+    },
+    {
+      "animal": "cicero",
+      "mode": "eval",
+      "discovery": false,
+      "pca_mean_cm": 12.131880720456442,
+      "pca_sd_cm": 1.6016437006927917,
+      "joint_mean_cm": 13.218442350625992,
+      "joint_sd_cm": 2.450803788022179,
+      "delta_cm": 1.0865616301695507,
+      "relative_change_percent": 8.956250520477171,
+      "paired_seed_deltas_cm": [
+        1.637478917837143,
+        1.7374157905578613,
+        -0.11520981788635254
+      ],
+      "seeds_improved": 1,
+      "pca_mean_r2": 0.8421887954076132,
+      "joint_mean_r2": 0.8122814496358236
+    },
+    {
+      "animal": "cicero",
+      "mode": "notebook",
+      "discovery": false,
+      "pca_mean_cm": 17.101751267910004,
+      "pca_sd_cm": 3.121813649730762,
+      "joint_mean_cm": 19.113629559675854,
+      "joint_sd_cm": 4.52190119725893,
+      "delta_cm": 2.0118782917658486,
+      "relative_change_percent": 11.764165319963293,
+      "paired_seed_deltas_cm": [
+        1.690232753753662,
+        3.5448119044303894,
+        0.8005902171134949
+      ],
+      "seeds_improved": 0,
+      "pca_mean_r2": 0.7153452833493551,
+      "joint_mean_r2": 0.6413136521975199
+    },
+    {
+      "animal": "gatsby",
+      "mode": "eval",
+      "discovery": false,
+      "pca_mean_cm": 7.818357894817988,
+      "pca_sd_cm": 0.09754659373278786,
+      "joint_mean_cm": 7.920319586992264,
+      "joint_sd_cm": 0.26258675007984716,
+      "delta_cm": 0.10196169217427571,
+      "relative_change_percent": 1.3041318080597941,
+      "paired_seed_deltas_cm": [
+        -0.1804247498512268,
+        -0.009601563215255737,
+        0.4959113895893097
+      ],
+      "seeds_improved": 2,
+      "pca_mean_r2": 0.8913469115893046,
+      "joint_mean_r2": 0.8973973194758097
+    },
+    {
+      "animal": "gatsby",
+      "mode": "notebook",
+      "discovery": false,
+      "pca_mean_cm": 10.995285212993622,
+      "pca_sd_cm": 0.47962243553211964,
+      "joint_mean_cm": 10.738237698872885,
+      "joint_sd_cm": 0.42538536028642815,
+      "delta_cm": -0.25704751412073773,
+      "relative_change_percent": -2.3377976027122327,
+      "paired_seed_deltas_cm": [
+        0.17541348934173584,
+        -0.07658153772354126,
+        -0.8699744939804077
+      ],
+      "seeds_improved": 2,
+      "pca_mean_r2": 0.7427085638046265,
+      "joint_mean_r2": 0.7602101564407349
+    }
+  ],
+  "new_animals_eval": {
+    "n_animals": 3,
+    "animals_improved": 0,
+    "pca_macro_mean_cm": 9.878347069025041,
+    "joint_macro_mean_cm": 10.312018791834513,
+    "mean_relative_change_percent": 3.8073039668147017,
+    "paired_seeds_improved": 4
+  },
+  "consistency": [
+    {
+      "condition": "pca",
+      "seed": 0,
+      "hashes": {
+        "achilles": "2d1943b1b67966709eba793e3e67e95c1fbf1e1bfc881e6b14cd129c9129c90f",
+        "buddy": "af3d5d47ab0e4ee3b76c4f5a523f85a5e3975e9881d80c76e2c6be343ce52a76",
+        "cicero": "df9d5d8c43a06e67a00fc42307cd260ede539c79ab46699c76ae6c59683828bb",
+        "gatsby": "cd8e4130983a250f55c6a17282be3dfb00e3d1b06244eeef136d649989acaffb"
+      },
+      "scores": [
+        0.8616979122161865,
+        0.7143260836601257,
+        0.7960445284843445,
+        0.9083359837532043,
+        0.6613309383392334,
+        0.7602701187133789,
+        0.8258517384529114,
+        0.7714636921882629,
+        0.7244172692298889,
+        0.8265922665596008,
+        0.7668251395225525,
+        0.6052672863006592
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.7685352464516958,
+      "new_animal_pair_mean_r2": 0.714929074048996
+    },
+    {
+      "condition": "pca",
+      "seed": 1,
+      "hashes": {
+        "achilles": "d2e5a7e39a9259168106f246dee2a48cb3183e82d09726a7b35137b270e59f4f",
+        "buddy": "5ce8914463538baa8662bc010df7d7c4088b37a042f02a8f2cabd62431f184e1",
+        "cicero": "817a6c0a40f6a901209a13d3b6c2aa25185977889867b724c2f61f212d6b327c",
+        "gatsby": "5a7c8947645ec62c8c1842df23c4449e52c540095d133beb8f25d6721c7e7855"
+      },
+      "scores": [
+        0.5191576480865479,
+        0.5128833651542664,
+        0.6928903460502625,
+        0.37048259377479553,
+        0.6610667109489441,
+        0.678793728351593,
+        0.5322588086128235,
+        0.8151151537895203,
+        0.7891480922698975,
+        0.6646763682365417,
+        0.6771500706672668,
+        0.7315464019775391
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.6370974406599998,
+      "new_animal_pair_mean_r2": 0.7254700263341268
+    },
+    {
+      "condition": "pca",
+      "seed": 2,
+      "hashes": {
+        "achilles": "811348cb5cd506c7aadbb9227d700fd09ab2d6d781de8524b8e3ec5607e925ce",
+        "buddy": "0b82de8dff76368a823e04137f6eea97c3eaa4ff297187aa8875f32ee84fb06b",
+        "cicero": "6a81a036ac1271515ca3af009543d6b254ce33ed68a50b7acbf27b2ebce67e11",
+        "gatsby": "5a3d71007f4b6d5459932c09c53b81652c17e0ca5751ceff428771793c62da77"
+      },
+      "scores": [
+        0.8787513375282288,
+        0.671955406665802,
+        0.8021078705787659,
+        0.846052348613739,
+        0.6097840666770935,
+        0.8077295422554016,
+        0.7838397026062012,
+        0.775732696056366,
+        0.6813151240348816,
+        0.7914732098579407,
+        0.858830988407135,
+        0.6040494441986084
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.7593018114566803,
+      "new_animal_pair_mean_r2": 0.7229069769382477
+    },
+    {
+      "condition": "joint-01",
+      "seed": 0,
+      "hashes": {
+        "achilles": "de9f55bc68a06da582e2975757a068f2b521971f0398b93dbe15db30ca044851",
+        "buddy": "74e0b4a4de848961ae68bb586ae784bef78e60c8bf9614747dacabbd20777ed4",
+        "cicero": "a30a5689aee41cc96f5b4b26bbc53520446573ecfed8dd2b27d4191634a3d51d",
+        "gatsby": "bed79dd442612469f521ff6c6a4c69ace05c65cc171be1b2b81022a4112df001"
+      },
+      "scores": [
+        0.4632657468318939,
+        0.5813645720481873,
+        0.7083062529563904,
+        0.5446367859840393,
+        0.47218823432922363,
+        0.5195608139038086,
+        0.7658658027648926,
+        0.4900006353855133,
+        0.6729909777641296,
+        0.7803557515144348,
+        0.5629286766052246,
+        0.5030891299247742
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.5887127816677094,
+      "new_animal_pair_mean_r2": 0.5367930779854456
+    },
+    {
+      "condition": "joint-01",
+      "seed": 1,
+      "hashes": {
+        "achilles": "a8707773d4440ff0d9625727accbfe2771b045f212887cbf5e2e5823bf79b422",
+        "buddy": "712fb4970fb3a56c237fb334df2a6c661a40a171d76ba57ebafb5162146ff85f",
+        "cicero": "fe6d9b682b03cd3f432b58bf4edd5e036a697cbf115e9d92ad9f89021931792a",
+        "gatsby": "c1e0a6fe7ab5e84a4caf8d02fa58b3e5c5af200a1966a1d506d8043a8ecfa236"
+      },
+      "scores": [
+        0.654567539691925,
+        0.6997859477996826,
+        0.6781339049339294,
+        0.7391524910926819,
+        0.7838456034660339,
+        0.6857125163078308,
+        0.6885685920715332,
+        0.8295870423316956,
+        0.7212724685668945,
+        0.7679045796394348,
+        0.7680260539054871,
+        0.7528918385505676
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.730787381529808,
+      "new_animal_pair_mean_r2": 0.7568892538547516
+    },
+    {
+      "condition": "joint-01",
+      "seed": 2,
+      "hashes": {
+        "achilles": "8ae545d5ef61fb39efd955bd3426bcc9f6293ba81d26c7d76570bbad19edc65f",
+        "buddy": "5bc6c5cea4d2c66bf128065b47b797561ffdc5feeebeb7102c007413fedd1a71",
+        "cicero": "ea7c6cc37b1110b0e6412b1aa598fa16ffd0c48512754b284bf5c492b182785c",
+        "gatsby": "9c38c8c0ba822c6707239c15bc7fe2f3f8ab53e24396570fcce867f9fdbf5637"
+      },
+      "scores": [
+        0.6842458844184875,
+        0.43431124091148376,
+        0.8454899191856384,
+        0.7954413294792175,
+        0.477398157119751,
+        0.758277177810669,
+        0.5482614040374756,
+        0.5428470373153687,
+        0.5699779391288757,
+        0.8925476670265198,
+        0.6379958987236023,
+        0.4407976567745209
+      ],
+      "pairs": [
+        [
+          "achilles",
+          "buddy"
+        ],
+        [
+          "achilles",
+          "cicero"
+        ],
+        [
+          "achilles",
+          "gatsby"
+        ],
+        [
+          "buddy",
+          "achilles"
+        ],
+        [
+          "buddy",
+          "cicero"
+        ],
+        [
+          "buddy",
+          "gatsby"
+        ],
+        [
+          "cicero",
+          "achilles"
+        ],
+        [
+          "cicero",
+          "buddy"
+        ],
+        [
+          "cicero",
+          "gatsby"
+        ],
+        [
+          "gatsby",
+          "achilles"
+        ],
+        [
+          "gatsby",
+          "buddy"
+        ],
+        [
+          "gatsby",
+          "cicero"
+        ]
+      ],
+      "mean_r2": 0.6356326093276342,
+      "new_animal_pair_mean_r2": 0.5712156444787979
+    }
+  ],
+  "consistency_summary": {
+    "pca": {
+      "mean_r2": 0.7216448328561254,
+      "sd_r2": 0.07336559292901468,
+      "seed_mean_r2": [
+        0.7685352464516958,
+        0.6370974406599998,
+        0.7593018114566803
+      ]
+    },
+    "joint-01": {
+      "mean_r2": 0.6517109241750506,
+      "sd_r2": 0.07238910234105235,
+      "seed_mean_r2": [
+        0.5887127816677094,
+        0.730787381529808,
+        0.6356326093276342
+      ]
+    }
+  },
+  "paired_consistency_deltas": [
+    -0.17982246478398645,
+    0.0936899408698082,
+    -0.12366920212904609
+  ],
+  "new_animal_pair_consistency_summary": {
+    "pca": {
+      "mean_r2": 0.7211020257737902,
+      "sd_r2": 0.005497390771894315,
+      "seed_mean_r2": [
+        0.714929074048996,
+        0.7254700263341268,
+        0.7229069769382477
+      ]
+    },
+    "joint-01": {
+      "mean_r2": 0.6216326587729983,
+      "sd_r2": 0.11839336195847015,
+      "seed_mean_r2": [
+        0.5367930779854456,
+        0.7568892538547516,
+        0.5712156444787979
+      ]
+    }
+  },
+  "score_source_sha256": "f5e248e9afb04e14f0f2a61d7754586f0e0acddbc51cc620b89f2edace075c3c",
+  "caveat": "Seeds and animal pairs are not independent biological samples; descriptive statistics only"
+}

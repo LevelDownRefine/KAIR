@@ -8,8 +8,8 @@ only exposed to the downstream decoder.
 from pathlib import Path
 
 import torch
-
 from utils.utils_marble import read_json, sha256, tensor_digest
+from utils.utils_marble_storage import load_tensor_file
 
 
 def validate_graph(graph):
@@ -64,10 +64,14 @@ class DatasetMARBLE:
     def sampling(self, seed):
         assert seed in self.seeds
         directory = self.root / f"seed-{seed}"
-        path = directory / "sampling.pt"
         receipt = read_json(directory / "sampling_receipt.json")
+        filename = "sampling.pt"
+        if "file" in receipt:
+            filename = receipt["file"]
+        assert filename in ("sampling.pt", "sampling.pt.gz")
+        path = directory / filename
         assert "sha256" in receipt and sha256(path) == receipt["sha256"]
-        plan = torch.load(path, map_location="cpu", weights_only=True)
+        plan = load_tensor_file(path)
         assert all(key in plan for key in ("initial_state", "epochs", "test"))
         assert "epochs" in self.params and len(plan["epochs"]) == self.params["epochs"]
         initialization = read_json(directory / "initialization.json")

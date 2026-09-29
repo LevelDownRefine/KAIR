@@ -1,0 +1,7 @@
+{
+  "fixture_sha256": "496c231b0949c27e26549b610a85f0d4e7e942082654652ab1fe47ce22af2d31",
+  "oracle_sha256": "a50ce27eccb618e448d3ebcc3b80120be21e289d2d376e391bce0ab9e5d52460",
+  "training_input_sha256": "3203f930fbabe20cb1d307a87d1d0dc31304377a2ad209c869ea90e21b9f5346",
+  "source_commit": "872e46bd6dff2d092f8554a8c084701450e84904",
+  "source": "Original MARBLE; Achilles q=10, three batches, initial seed 999; public rat_data.pkl"
+}
