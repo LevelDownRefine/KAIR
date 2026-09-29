@@ -1,0 +1,110 @@
+[
+  {
+    "condition": "pca",
+    "alpha": 0.0,
+    "seed": 0,
+    "mae_cm": 9.54979583621025,
+    "r2": 0.8917251825332642,
+    "best_epoch": 23,
+    "training_seconds": 65.5549946000101
+  },
+  {
+    "condition": "pca",
+    "alpha": 0.0,
+    "seed": 1,
+    "mae_cm": 10.076511651277542,
+    "r2": 0.8784871101379395,
+    "best_epoch": 59,
+    "training_seconds": 85.51046140000108
+  },
+  {
+    "condition": "pca",
+    "alpha": 0.0,
+    "seed": 2,
+    "mae_cm": 9.049513936042786,
+    "r2": 0.896350085735321,
+    "best_epoch": 74,
+    "training_seconds": 74.13243789999979
+  },
+  {
+    "condition": "joint-01",
+    "alpha": 0.1,
+    "seed": 0,
+    "mae_cm": 8.70228186249733,
+    "r2": 0.9018593430519104,
+    "best_epoch": 23,
+    "training_seconds": 53.50656229999731
+  },
+  {
+    "condition": "joint-01",
+    "alpha": 0.1,
+    "seed": 1,
+    "mae_cm": 9.836164861917496,
+    "r2": 0.8801289796829224,
+    "best_epoch": 59,
+    "training_seconds": 69.61650040000677
+  },
+  {
+    "condition": "joint-01",
+    "alpha": 0.1,
+    "seed": 2,
+    "mae_cm": 8.886396139860153,
+    "r2": 0.9140106439590454,
+    "best_epoch": 74,
+    "training_seconds": 63.98556879998068
+  },
+  {
+    "condition": "joint-1",
+    "alpha": 1.0,
+    "seed": 0,
+    "mae_cm": 10.142675787210464,
+    "r2": 0.8917873501777649,
+    "best_epoch": 23,
+    "training_seconds": 58.72026729999925
+  },
+  {
+    "condition": "joint-1",
+    "alpha": 1.0,
+    "seed": 1,
+    "mae_cm": 10.403813421726227,
+    "r2": 0.8752818703651428,
+    "best_epoch": 59,
+    "training_seconds": 71.98040349999792
+  },
+  {
+    "condition": "joint-1",
+    "alpha": 1.0,
+    "seed": 2,
+    "mae_cm": 9.194158762693405,
+    "r2": 0.9052325487136841,
+    "best_epoch": 74,
+    "training_seconds": 88.06189979999908
+  },
+  {
+    "condition": "joint-10",
+    "alpha": 10.0,
+    "seed": 0,
+    "mae_cm": 9.594575315713882,
+    "r2": 0.9077707529067993,
+    "best_epoch": 23,
+    "training_seconds": 49.47509359999094
+  },
+  {
+    "condition": "joint-10",
+    "alpha": 10.0,
+    "seed": 1,
+    "mae_cm": 10.13900637626648,
+    "r2": 0.8725085258483887,
+    "best_epoch": 59,
+    "training_seconds": 53.206230499985395
+  },
+  {
+    "condition": "joint-10",
+    "alpha": 10.0,
+    "seed": 2,
+    "mae_cm": 9.326310455799103,
+    "r2": 0.8857197165489197,
+    "best_epoch": 74,
+    "training_seconds": 74.43163360000472
+  }
+]

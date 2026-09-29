@@ -1,0 +1,226 @@
+[
+  {
+    "condition": "pca",
+    "alpha": 0.0,
+    "mae_mean_cm": 9.558607141176859,
+    "mae_sd_cm": 0.5135555530765522,
+    "r2_mean": 0.8888541261355082,
+    "projection": {
+      "alpha": 0.0,
+      "effective_lambda": 0.0,
+      "dimensions": 20,
+      "fit_scope": "8000 training bins only; no behavior labels",
+      "basis_convention": "orthogonal Procrustes to exact PCA; no whitening",
+      "train": {
+        "state_squared_error": 563929653.480666,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.14716294943770505,
+        "increment_squared_error": 3082225.9704506057,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.22281619255561635
+      },
+      "test": {
+        "state_squared_error": 244845980.44829643,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.27342151821286514,
+        "increment_squared_error": 1005662.5775633949,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.3891717807941527
+      },
+      "pca_train": {
+        "state_squared_error": 563929653.480666,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.14716294943770505,
+        "increment_squared_error": 3082225.9704506057,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.22281619255561635
+      },
+      "pca_test": {
+        "state_squared_error": 244845980.44829643,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.27342151821286514,
+        "increment_squared_error": 1005662.5775633949,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.3891717807941527
+      },
+      "graphs": {
+        "train": {
+          "edges": 768517,
+          "split_masks_sha256": "e853a0fc7a6996b5f53068e899f9e6af63a0054f41bc0958be8851cbd8d591a8"
+        },
+        "test": {
+          "edges": 74985,
+          "split_masks_sha256": "fc279be41bbb5023051f1eaade795d7f2781836a4ed2062889b29454173ce25a"
+        }
+      }
+    }
+  },
+  {
+    "condition": "joint-01",
+    "alpha": 0.1,
+    "mae_mean_cm": 9.14161428809166,
+    "mae_sd_cm": 0.6085021704838508,
+    "r2_mean": 0.8986663222312927,
+    "projection": {
+      "alpha": 0.1,
+      "effective_lambda": 27.701846725234386,
+      "dimensions": 20,
+      "fit_scope": "8000 training bins only; no behavior labels",
+      "basis_convention": "orthogonal Procrustes to exact PCA; no whitening",
+      "train": {
+        "state_squared_error": 565091218.7392658,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.14746607123377453,
+        "increment_squared_error": 2989105.5731963273,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.21608445628307063
+      },
+      "test": {
+        "state_squared_error": 244867272.23369813,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.2734452949245732,
+        "increment_squared_error": 994672.4589692123,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.38491881949295786
+      },
+      "pca_train": {
+        "state_squared_error": 563929653.480666,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.14716294943770505,
+        "increment_squared_error": 3082225.9704506057,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.22281619255561635
+      },
+      "pca_test": {
+        "state_squared_error": 244845980.44829643,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.27342151821286514,
+        "increment_squared_error": 1005662.5775633949,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.3891717807941527
+      },
+      "graphs": {
+        "train": {
+          "edges": 767849,
+          "split_masks_sha256": "e853a0fc7a6996b5f53068e899f9e6af63a0054f41bc0958be8851cbd8d591a8"
+        },
+        "test": {
+          "edges": 75197,
+          "split_masks_sha256": "fc279be41bbb5023051f1eaade795d7f2781836a4ed2062889b29454173ce25a"
+        }
+      }
+    }
+  },
+  {
+    "condition": "joint-1",
+    "alpha": 1.0,
+    "mae_mean_cm": 9.9135493238767,
+    "mae_sd_cm": 0.6365455998432733,
+    "r2_mean": 0.8907672564188639,
+    "projection": {
+      "alpha": 1.0,
+      "effective_lambda": 277.01846725234384,
+      "dimensions": 20,
+      "fit_scope": "8000 training bins only; no behavior labels",
+      "basis_convention": "orthogonal Procrustes to exact PCA; no whitening",
+      "train": {
+        "state_squared_error": 588935614.6353129,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.15368849916598987,
+        "increment_squared_error": 2773934.8161552674,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.20052961725023052
+      },
+      "test": {
+        "state_squared_error": 245853419.42180753,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.27454653359249226,
+        "increment_squared_error": 962120.1144344229,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.37232169778010366
+      },
+      "pca_train": {
+        "state_squared_error": 563929653.480666,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.14716294943770505,
+        "increment_squared_error": 3082225.9704506057,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.22281619255561635
+      },
+      "pca_test": {
+        "state_squared_error": 244845980.44829643,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.27342151821286514,
+        "increment_squared_error": 1005662.5775633949,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.3891717807941527
+      },
+      "graphs": {
+        "train": {
+          "edges": 781167,
+          "split_masks_sha256": "e853a0fc7a6996b5f53068e899f9e6af63a0054f41bc0958be8851cbd8d591a8"
+        },
+        "test": {
+          "edges": 75485,
+          "split_masks_sha256": "fc279be41bbb5023051f1eaade795d7f2781836a4ed2062889b29454173ce25a"
+        }
+      }
+    }
+  },
+  {
+    "condition": "joint-10",
+    "alpha": 10.0,
+    "mae_mean_cm": 9.686630715926489,
+    "mae_sd_cm": 0.41409456929221666,
+    "r2_mean": 0.8886663317680359,
+    "projection": {
+      "alpha": 10.0,
+      "effective_lambda": 2770.1846725234386,
+      "dimensions": 20,
+      "fit_scope": "8000 training bins only; no behavior labels",
+      "basis_convention": "orthogonal Procrustes to exact PCA; no whitening",
+      "train": {
+        "state_squared_error": 642282195.5637981,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.16760981034974773,
+        "increment_squared_error": 2693559.464411136,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.19471922890666352
+      },
+      "test": {
+        "state_squared_error": 265782388.6085808,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.29680137723537414,
+        "increment_squared_error": 964210.7932246584,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.37313074964900766
+      },
+      "pca_train": {
+        "state_squared_error": 563929653.480666,
+        "state_energy": 3832008366.4766507,
+        "state_residual_fraction": 0.14716294943770505,
+        "increment_squared_error": 3082225.9704506057,
+        "increment_energy": 13833042.989823382,
+        "increment_residual_fraction": 0.22281619255561635
+      },
+      "pca_test": {
+        "state_squared_error": 244845980.44829643,
+        "state_energy": 895489067.7539067,
+        "state_residual_fraction": 0.27342151821286514,
+        "increment_squared_error": 1005662.5775633949,
+        "increment_energy": 2584109.7098849695,
+        "increment_residual_fraction": 0.3891717807941527
+      },
+      "graphs": {
+        "train": {
+          "edges": 802431,
+          "split_masks_sha256": "e853a0fc7a6996b5f53068e899f9e6af63a0054f41bc0958be8851cbd8d591a8"
+        },
+        "test": {
+          "edges": 76759,
+          "split_masks_sha256": "fc279be41bbb5023051f1eaade795d7f2781836a4ed2062889b29454173ce25a"
+        }
+      }
+    }
+  }
+]

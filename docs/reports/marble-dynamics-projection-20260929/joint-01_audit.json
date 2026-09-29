@@ -1,0 +1,89 @@
+{
+  "checkpoint_readback": {
+    "rtol": 0.0002,
+    "atol": 2e-05,
+    "seeds": {
+      "0": {
+        "original_embedding_max_abs_error": 3.7997961044311523e-07,
+        "eval_decoder": {
+          "max_abs_error_m": 0.0,
+          "exact_boundary_tie_samples": []
+        },
+        "notebook_decoder": {
+          "max_abs_error_m": 0.0,
+          "exact_boundary_tie_samples": []
+        }
+      },
+      "1": {
+        "original_embedding_max_abs_error": 3.129243850708008e-07,
+        "eval_decoder": {
+          "max_abs_error_m": 0.0,
+          "exact_boundary_tie_samples": []
+        },
+        "notebook_decoder": {
+          "max_abs_error_m": 1.1920928955078125e-07,
+          "exact_boundary_tie_samples": []
+        }
+      },
+      "2": {
+        "original_embedding_max_abs_error": 4.3213367462158203e-07,
+        "eval_decoder": {
+          "max_abs_error_m": 0.0,
+          "exact_boundary_tie_samples": []
+        },
+        "notebook_decoder": {
+          "max_abs_error_m": 0.0,
+          "exact_boundary_tie_samples": []
+        }
+      }
+    },
+    "decoder_reference": "CEBRA KNNDecoder in original pinned CPU environment",
+    "decoder_rule": "Strict prediction tolerance or proven exact kNN boundary ties",
+    "audit_source_sha256": "6755154d3c9e568179aa7e8f6b4d2e8b5facb8090f4f4c44ddb378c6eb7d45f5"
+  },
+  "three_sgd_steps": {
+    "rtol": 0.0002,
+    "atol": 2e-05,
+    "max_absolute_errors": {
+      "0:features": 2.09808349609375e-05,
+      "0:embedding": 2.384185791015625e-07,
+      "0:loss": 0.0,
+      "0:enc.lins.0.weight": 1.341104507446289e-07,
+      "0:enc.lins.0.bias": 1.1641532182693481e-10,
+      "0:enc.lins.1.weight": 1.4901161193847656e-08,
+      "0:enc.lins.1.bias": 7.450580596923828e-09,
+      "0:enc.norms.0.module.weight": 5.960464477539063e-08,
+      "0:enc.norms.0.module.bias": 2.7939677238464355e-09,
+      "0:enc.norms.0.module.running_mean": 1.4901161193847656e-07,
+      "0:enc.norms.0.module.running_var": 1.52587890625e-05,
+      "0:enc.norms.0.module.num_batches_tracked": 0.0,
+      "0:diffusion.diffusion_time": 0.0,
+      "1:features": 1.71661376953125e-05,
+      "1:embedding": 3.3527612686157227e-07,
+      "1:loss": 0.0,
+      "1:enc.lins.0.weight": 2.384185791015625e-07,
+      "1:enc.lins.0.bias": 2.3283064365386963e-10,
+      "1:enc.lins.1.weight": 2.9802322387695312e-08,
+      "1:enc.lins.1.bias": 1.862645149230957e-08,
+      "1:enc.norms.0.module.weight": 1.1920928955078125e-07,
+      "1:enc.norms.0.module.bias": 7.450580596923828e-09,
+      "1:enc.norms.0.module.running_mean": 5.960464477539062e-07,
+      "1:enc.norms.0.module.running_var": 0.0003662109375,
+      "1:enc.norms.0.module.num_batches_tracked": 0.0,
+      "1:diffusion.diffusion_time": 0.0,
+      "2:features": 2.002716064453125e-05,
+      "2:embedding": 4.470348358154297e-07,
+      "2:loss": 1.1920928955078125e-07,
+      "2:enc.lins.0.weight": 3.948807716369629e-07,
+      "2:enc.lins.0.bias": 3.4924596548080444e-10,
+      "2:enc.lins.1.weight": 4.470348358154297e-08,
+      "2:enc.lins.1.bias": 2.9802322387695312e-08,
+      "2:enc.norms.0.module.weight": 1.1920928955078125e-07,
+      "2:enc.norms.0.module.bias": 1.1175870895385742e-08,
+      "2:enc.norms.0.module.running_mean": 8.344650268554688e-07,
+      "2:enc.norms.0.module.running_var": 0.0015869140625,
+      "2:enc.norms.0.module.num_batches_tracked": 0.0,
+      "2:diffusion.diffusion_time": 0.0
+    }
+  }
+}
