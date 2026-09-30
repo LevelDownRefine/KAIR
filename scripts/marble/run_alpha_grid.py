@@ -2,6 +2,7 @@
 
 import argparse
 import logging
+import math
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
@@ -12,13 +13,63 @@ from scripts.marble.run_multirat_projection import RATS, ROOT, check_pair, execu
 from utils.utils_marble import read_json, save_json, sha256
 
 ALPHAS = (0.0, 0.01, 0.03, 0.1, 0.3, 1.0)
+FINE_ALPHAS = (0.0, 0.01, 0.02, 0.03, 0.04, 0.05)
 SEEDS = (0, 1, 2)
 logger = logging.getLogger(__name__)
 
 
 def condition(alpha):
-    assert alpha in ALPHAS
+    assert math.isfinite(alpha) and alpha >= 0
     return "alpha-" + f"{alpha:g}".replace(".", "p")
+
+
+def grid_alphas(work):
+    """Require a complete Cartesian grid with one immutable folder per cell."""
+    assert work and all(
+        {"alpha", "protocol", "animal", "folder"} <= j.keys() for j in work
+    )
+    alphas = tuple(sorted({j["alpha"] for j in work}))
+    assert alphas[0] == 0 and all(math.isfinite(a) and a >= 0 for a in alphas)
+    expected = {
+        (a, p, r) for a in alphas for p in ("decoding", "consistency") for r in RATS
+    }
+    assert {(j["alpha"], j["protocol"], j["animal"]) for j in work} == expected
+    assert len(work) == len(expected) == len({j["folder"] for j in work})
+    return alphas
+
+
+def fine_jobs(output, previous_grid):
+    """Reuse audited coarse controls by manifest, excluding large alpha candidates."""
+    frozen = read_json(previous_grid / "frozen_protocol.json")
+    completed = read_json(previous_grid / "completed.json")
+    assert "jobs" in frozen and {"jobs", "receipts"} <= completed.keys()
+    prior = frozen["jobs"]
+    assert grid_alphas(prior) == ALPHAS
+    assert completed["jobs"] == len(prior)
+    result = []
+    for alpha in FINE_ALPHAS:
+        for protocol in ("decoding", "consistency"):
+            for animal in RATS:
+                reused = alpha in ALPHAS
+                if reused:
+                    job = find_job(prior, protocol, animal, alpha)
+                    assert job["folder"] in completed["receipts"]
+                    assert bundle_receipt(job) == completed["receipts"][job["folder"]]
+                    folder = Path(job["folder"])
+                else:
+                    folder = output / protocol / animal / condition(alpha)
+                result.append(
+                    {
+                        "alpha": alpha,
+                        "protocol": protocol,
+                        "animal": animal,
+                        "condition": condition(alpha),
+                        "folder": str(folder.resolve()),
+                        "reused": reused,
+                    }
+                )
+    assert grid_alphas(result) == FINE_ALPHAS
+    return result
 
 
 def jobs(output, previous, discovery):
@@ -99,6 +150,9 @@ def bundle_receipt(job):
 def source_manifest():
     names = [
         "scripts/marble/run_alpha_grid.py",
+        "scripts/marble/score_alpha_grid.py",
+        "scripts/marble/report_alpha_grid.py",
+        "tests/test_marble_alpha_fine_grid.py",
         "scripts/marble/run_multirat_projection.py",
         "scripts/marble/multirat_reference.py",
         "scripts/marble/rat_reference.py",
@@ -118,6 +172,7 @@ def source_manifest():
         "options/marble/train_achilles.json",
         "docs/MARBLE_ALPHA_GRID_PROTOCOL.md",
         "docs/MARBLE_ALPHA_GRID_NUMERICS.md",
+        "docs/MARBLE_ALPHA_FINE_GRID_PROTOCOL.md",
         "pyproject.toml",
         "uv.lock",
     ]
@@ -136,12 +191,26 @@ def expected_sources(output):
     return frozen["source_sha256"]
 
 
-def freeze(output, work, resume):
+def freeze(output, work, resume, previous_grid=None):
+    alphas = grid_alphas(work)
+    parent = (
+        {
+            "root": str(previous_grid),
+            "sha256": {
+                name: sha256(previous_grid / name)
+                for name in ("frozen_protocol.json", "completed.json", "aggregate.json")
+            },
+        }
+        if previous_grid is not None
+        else None
+    )
     if output.exists():
         assert resume, "Choose a new directory or explicitly resume"
         frozen = read_json(output / "frozen_protocol.json")
         assert frozen["jobs"] == work
         assert expected_sources(output) == source_manifest(), "Execution code changed"
+        if previous_grid is not None:
+            assert "parent_grid" in frozen and frozen["parent_grid"] == parent
         for job in work:
             if job["reused"]:
                 assert frozen["reuse_receipts"][job["folder"]] == bundle_receipt(job)
@@ -159,7 +228,8 @@ def freeze(output, work, resume):
         output / "frozen_protocol.json",
         {
             "created_utc": datetime.now(UTC).isoformat(),
-            "alphas": ALPHAS,
+            "alphas": alphas,
+            "parent_grid": parent,
             "seeds": SEEDS,
             "epochs": 100,
             "jobs": work,
@@ -176,12 +246,18 @@ def freeze(output, work, resume):
             archive.write(ROOT / name, name)
 
 
-def run(output, previous, discovery, repository, data, resume=False):
+def run(
+    output, previous, discovery, repository, data, resume=False, previous_grid=None
+):
     cpu = repository / "reproduction/.venv/Scripts/python.exe"
     gpu = ROOT / ".venv/Scripts/python.exe"
     assert cpu.is_file() and gpu.is_file()
-    work = jobs(output, previous, discovery)
-    freeze(output, work, resume)
+    work = (
+        fine_jobs(output, previous_grid)
+        if previous_grid is not None
+        else jobs(output, previous, discovery)
+    )
+    freeze(output, work, resume, previous_grid)
     fresh = [j for j in work if not j["reused"]]
 
     def numerics(job):
@@ -329,7 +405,9 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--previous", type=Path, required=True)
+    prior = parser.add_mutually_exclusive_group(required=True)
+    prior.add_argument("--previous", type=Path)
+    prior.add_argument("--previous-grid", type=Path)
     parser.add_argument(
         "--discovery", type=Path, default=ROOT / "results/dynamics-projection-20260929"
     )
@@ -341,9 +419,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     run(
         args.output.resolve(),
-        args.previous.resolve(),
+        args.previous.resolve() if args.previous is not None else None,
         args.discovery.resolve(),
         args.marble_repo.resolve(),
         args.data.resolve(),
         args.resume,
+        args.previous_grid.resolve() if args.previous_grid is not None else None,
     )

@@ -8,7 +8,14 @@ from pathlib import Path
 import numpy as np
 import torch
 from scripts.marble.precision_stepwise import checked_receipt
-from scripts.marble.run_alpha_grid import ALPHAS, RATS, SEEDS, bundle_receipt, find_job
+from scripts.marble.run_alpha_grid import (
+    ALPHAS,
+    RATS,
+    SEEDS,
+    bundle_receipt,
+    find_job,
+    grid_alphas,
+)
 from scripts.marble.score_multirat_projection import decoding_rows
 from utils.utils_marble import read_json, save_json, sha256
 from utils.utils_marble_consistency import consistency_scores
@@ -16,11 +23,13 @@ from utils.utils_marble_consistency import consistency_scores
 logger = logging.getLogger(__name__)
 
 
-def summarize_grid(rows):
+def summarize_grid(rows, alphas=ALPHAS):
     """Never select a seed; give each animal equal weight and retain both modes."""
+    assert alphas and alphas[0] == 0 and tuple(sorted(set(alphas))) == tuple(alphas)
+    assert all(np.isfinite(a) and a >= 0 for a in alphas)
     cells = []
     for mode in ("eval", "notebook"):
-        for alpha in ALPHAS:
+        for alpha in alphas:
             for animal in RATS:
                 matches = sorted(
                     [
@@ -58,7 +67,7 @@ def summarize_grid(rows):
         return matches[0]
 
     common = []
-    for alpha in ALPHAS:
+    for alpha in alphas:
         animals = [cell(animal, alpha) for animal in RATS]
         seed_macro = np.mean([c["seed_mae_cm"] for c in animals], axis=0)
         deltas = np.array(
@@ -85,14 +94,14 @@ def summarize_grid(rows):
     per_animal, folds = [], []
     for animal in RATS:
         winner = min(
-            [cell(animal, a) for a in ALPHAS], key=lambda c: (c["mean_cm"], c["alpha"])
+            [cell(animal, a) for a in alphas], key=lambda c: (c["mean_cm"], c["alpha"])
         )
         per_animal.append(winner)
         other = [r for r in RATS if r != animal]
         scores = {
-            a: float(np.mean([cell(r, a)["mean_cm"] for r in other])) for a in ALPHAS
+            a: float(np.mean([cell(r, a)["mean_cm"] for r in other])) for a in alphas
         }
-        chosen = min(ALPHAS, key=lambda a: (scores[a], a))
+        chosen = min(alphas, key=lambda a: (scores[a], a))
         folds.append(
             {
                 "excluded_animal": animal,
@@ -147,7 +156,9 @@ def aggregate(root):
     frozen = read_json(root / "frozen_protocol.json")
     completed = read_json(root / "completed.json")
     work = frozen["jobs"]
-    assert len(work) == completed["jobs"] == 48
+    alphas = grid_alphas(work)
+    assert list(alphas) == frozen["alphas"]
+    assert len(work) == completed["jobs"]
     rows, residuals, numerics = [], [], []
     for job in work:
         assert bundle_receipt(job) == completed["receipts"][job["folder"]]
@@ -177,7 +188,7 @@ def aggregate(root):
             entries = decoding_rows(folder / "run", job["animal"], job["condition"])
             rows.extend([{**entry, "alpha": job["alpha"]} for entry in entries])
     consistency, summary = [], []
-    for alpha in ALPHAS:
+    for alpha in alphas:
         entries = []
         for seed in SEEDS:
             embeddings, labels, hashes = load_embeddings(work, alpha, seed)
@@ -199,8 +210,9 @@ def aggregate(root):
             }
         )
     result = {
+        "alphas": alphas,
         "decoding_rows": rows,
-        "decoding": summarize_grid(rows),
+        "decoding": summarize_grid(rows, alphas),
         "consistency": consistency,
         "consistency_summary": summary,
         "best_consistency": min(summary, key=lambda v: (-v["mean_r2"], v["alpha"])),
