@@ -1,0 +1,1014 @@
+{
+  "float32_checkpoints": 144,
+  "checks": [
+    {
+      "alpha": 0.0,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "68090f91d3ad3102be5cfdb457cef6bdb56397db61098794f982a30ea5cb01ef"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "6ef3031b3929dff612a921c3bed3e0d797cb1868ccb1c48a7610c1a0fc49f77a"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "402ce2ab6137829a66a78bea98f85402c5b3814eb40709a96be9759d1d336f8a"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "8fd7c085cc3bf9c3f1a138727ce934c8e85f8cb78c31c1bd9a7443c50b613774"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "b3e13114e1e740e4a09bb99b6f5a9ac42d24210fb124c3d6a27a3ceeaacba7e1"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "35f17644bb0735073aabc87c4bae1dad3c3a12ff36e57d1dabd2e08888df0466"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "fc0b94f5b1ccb95f0efd6662cff7eb4f1adad669846fcf0ab7e6e673b4a6a304"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "f07dc9d715b3631835955aa13f29f4921b48a76b2f35b9d81025a1e7c72fd87f"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "0df4051b0944057afa2c59f103ab89c5a692efa3ada950224a4e27325e784eb6"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "94358f987d2a6879ac8eb6cb872cd826417a29ddf7345b36efadfed3c525a3c9"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "3d7e9154bf7574607b15c14daa9e73c7fef7ee854b8c88a5a783ed0f6bc71008"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "e2ed852ec8dddb2c92c6a9d0fefb0670217fa6b0d3faffdaf6b83b30ab2f5a04"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "5f511764274d17a5d281eaec5afecc1aab7e210532552010b605be87c9c681c7"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "2fb80a751d02c682f2709baac8e9728986b08b40067311240048ad1dd1430abe"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "75d5e72ee0316e0514c72f6770f00e4a8792a673e07bb755e8f76287b71720fa"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "7ab8b84781ee36b8a3cc77520bac60ca926880bb994a2161a4d00d7340ab1690"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "f7bd62bfab45133f408b2dab746f14d6a2e0c45b6dfb8f10cae32e2491bcb06d"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "959c07df117840ce653444c3efb900e5c8fc49ad746bf5dcdef1db4bc8114d38"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "5ed5269aa45f2f4b3a0ac9e4a5d19d60ae7f2d2e5a140b392c66d1002442808e"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "40f53d9aaf373afd6f5c353a0930fc171dec4949927c8e9822c12439102a0722"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "a7a66ac424376665db1636043d06a15fe69fa4d3aac58bb8eb2e95aaaecdc208"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "06d4f7148a313604300d18886ebbbd1ef224ee7ecc617b48a5e2de62a66f1e9a"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "47ad180fec3b69a8da52ff7da10dd7e3fb88ae720f2c3f2194ae15ccd6fed1af"
+    },
+    {
+      "alpha": 0.0,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "ef9208e3dc0e3b8d8d0777399498e2a88f0f75fe7b66a6867b64a3d4365b4ad0"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "c84e15f1ff7cf56fba989bf59431d8aacc7d451eca7b03cce885f20d672cc357"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "5e8bdea1724a5aad0b5ffbcd35a6616cd4aca25cdb235df485f0bb53a3902c01"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "611522f97cb4ec3b1bd9abd813b4ae24cb5dd43b9c23327837c16af0a9f1f21b"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "e9cc5f66cb2a9099144c8e70f92ed9579dab55cde8fa9430b76c9ccce51e676c"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "095992e1635e21c7372314764374073ce3b5b22b5eb5604cf6013d1ae0e9d2a9"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "31b95e3cb9782b4300feca7d22c9466026d19e2ef36d0a03de05e74795fa2726"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "240cc9e94e00b8a5d0a5f2a42921d14ce9f63563211714d66df514a666e6624c"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "cfea0e6d2e7fec781f654280df878b1bfc3096282c707b81fea2e9b42e3e03ad"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "ed97a4881efbdc4cdd39cbe7fd74d74f2059cfd38a9736639933a47774066885"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "5ddd5d8153d135fbfe2bffa238a50ec8c612c8deac833a43a6eadf18f2189764"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "2910d124e2961cfdf5604a3102de5b87f1cdb7fcf198da14e57cf36fdea02c20"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "02055d97b65574bc4f4d156cc8bc9345cffa517fd4cb65e67758f397f630616d"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "9800029d053748710bb98fc8168175076ac50f2a34166bf88454807e1a00af58"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "fd34468557b36defdb212b4ad4ebf31f8db67b8de9edd71293f267c16498cb2d"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "a4d2dffbf71efaafff85ca484e4674bed2c93bf62c77c44d0cf58318cca113c8"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "54ba4db410b0af1b8b08a4bd205135f653898306c0cbeaab07ef70fe84d4fdfd"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "078fc8a55829e5f6902ccd299b44192fd99a9c33c3be5c42ddb774c6b5577da3"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "6daff44fad6abce967dcdcc89576e06b69be92f2a5e5a7260bc8025ed58083b5"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "f4b95705aab2941a83066c716c3626519dc77256e8aaf86bc30f79f4dd8a48d9"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "eca8b499a2e6e70f423655cdb06051373cc675cf8efa16f356396bfa0f139708"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "85cc1f367e2de17aecb5eab5637c6bd267674ffc81d53ea5a880c826de96c256"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "3dd454f944937fb19af97ae855f69021528315e797f6031f18c2f594cdd06ba7"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "c6f4a6789380880a508029e8b910b56863de0a781972d888c5b8cb348d450e3d"
+    },
+    {
+      "alpha": 0.01,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "ef1ae06f2bf0e5211da804a903503bf5ff99f0e82ffdd270abd43f4185ce2fe0"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "258e42f8339387a5ba8434f30bb34fd6741abf55c097a3bc9fb4c26da7d30e0c"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "82268d117155980b81c4b63973cdda91da8d6ef391ed20f13af68ee30b5d4815"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "9eb3bcb2ab5fb315614f84cea2abfa6f6e0920dee5c3a027de4d557cb5fbc651"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "ac3a48e3ec2f32fe8cd291364374c213a453551af10640c1b883fd7ca4509726"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "c47f73033627f3db89a6909aca7ed13ef4a99927b36e167e2ec2ac235a137649"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "9132891a31775188f205fad31e4e84322a38dc31b6d084bd4a441fe3b162fb65"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "33635f8ed22218ea5f7e89efba978f35cc5e6ac953859c3f0d723b4064e5eacb"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "cf3e0b2a972c78baa864211821a44c5e3e70631bcdac26702de8cfa1f7ef5de2"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "4543d9c32205b35f025e619e9240b02330cc4ea8857d6718117319118fc69c9d"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "6f8b9eeb6e0808bbf8f02ed93a6f2901e8e54a6e17de1bf9ab99ae83ac1a550e"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "4f6da78ae98f6c4d789246252caefa2eacc6a4ce13d056613d4b2aa6c49cc442"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "a851c48cf1d4bb6b174243b1e843a4b3834bf428f1caa5640ca18ff7b8ff7def"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "a335be7410ea8b5e2117ab89e6b7e8c7bab35e3fdf14562dff4f5ebb659ca7a4"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "3cca35553378877865c6889e1042218cb6b65d6d20cca4f08871215e08dc0c3b"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "16167cf23c780133a44af292d10a7a2f79246c4dfd1e0da5332019357cfdd0d6"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "64c142c7687a21c39a75616a0762ec75d0088af9227ce93c17274389e7fa822e"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "90da062c15f83968a4324efaed15c6bbf3a512bf680038c47bdd330fd10aee21"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "0c8f8f148a168bd41249ba178de68363de9e9123e649e42a26752f5e0de18d7a"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "bcdb8469868d417be0b6c9cc1b64eacc4e55dead0c80947185610089f948a430"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "8e0a278cc760c8e39d462b27e50e290d70f5281e68ca775613bb4788add420a8"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "045eddd92e21a8df73f7364745aec86aa96c1dba58efb1abefb8a271be741b9e"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "9f2b58c66542bd4154bcd4b337d043111f26e4a98b8a27d864efd2af70a82f7b"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "a95fa0a5daab06f06ed98e3e22e1f1eb0c415fb1218fc16eb12965b729999210"
+    },
+    {
+      "alpha": 0.02,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "c6d21ee512709ce1c43b9a6aa175637002b11473f8991910c1e8878aba632603"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "91f12c1198a5dba1e4f5b59c3e0d9c18417763235c0cc9936fac4ecf4885c35e"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "0b4b8c185e28c8b26afdf324a486fdafedd906a41122eec900d45e5d09de6533"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "04d1db5030618c29e5b35f674a7f39e88ea2f926be4a4e74de5b589db06a44fd"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "7e56ae206b39a0ab75b50cf7926c5f5e7276148fa47735a0bf6afccac64a1567"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "fa230ef719d93cd8e4284aab2205f8823f05f566671728cb84dc5e3a55b41471"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "cea0fac87790da6d2d50df1893245c5ce87d3402259088858e05cd6a0bf81bd4"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "a725b5b83ebaf075043faf0e47d3051c879ec24edd6b7c2895bb5b88948ae517"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "bfdc0206ef56659c610927c452d61b6b9d30ebde529052e978374536853140ab"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "7769d74a44d08f2c1640c5e5fcc3e5e7730c18d777d484271a9504315d7684cb"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "884a97cf64ed9e23d1e8fea8deb68f23aa6159cc81fdde0cddbd10cf4f21731f"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "bc770abd50f24f0e5b31f9aa658fdc2c9489c18246f51b78aa2f7bf2dcf9a6f2"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "b01b54acf05964eab6db6f0264681e4c59dd2abbc006680a15f1360abb14472b"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "d85bfdd07cc7148edaea71d7e21bedd31ad0c05fa97601e4c89f90b519639005"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "9c9075501ff4a238d011e0e9b15ff9d6ad32893a90e2cd96525330b418faa294"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "fae6feda267f3d6b276331fedf9aa6aa09bbc9b28d7b255999fc460fa3796da5"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "2c66ad1d7c2276addba81c22556831549532e09a6c25381ea83d9a15524cc602"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "0fe5415e346b6601d1147c614da8f9d63ae0f4b11f77f96f3aaa3510a7aa62ea"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "fba6d25e96280d61d29b32b1f28e25f0fcddf367f291943ea6381021525e6c41"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "1515d6ac8e091c00e77f53895ac6386267625618e1bd5d0ad4f1dd5971c3809d"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "dab8d578f3b4713a033a4196d5f07f9971ab22414c22bd2a1596dd917bfe77cb"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "4e4d83bce4432455d5f52821e54d5140f0ecfe855cb050e05132394b4fb7fe2e"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "f4c154530c78379c5226ee6a9cbb54ee68507dbd747b29c29b993648b8666a63"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "5118523f6a139e93dc32ae02e9f72e8df982178e18522c7ebfa9bc77e2634220"
+    },
+    {
+      "alpha": 0.03,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "27322751e169d2d10b3688a3104f48726d03c99dd0559e3627db9d46c9c64858"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "ecec90e958127fd6f3880d11673cdd5837df5c2c3759a874d25b14beb6dce0bb"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "ceae92054f12c6b3a99d67af5da37dff7398c2ff3cc6c71b0bcb70f9b6b1e4b8"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "91f461c9a2d2c18120c81a6eaa46102caaa99a14c69a62cc1fbda58c8a61aeba"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "cabc876d7de267aa133eb62022e23963d09aba2400903aedf711966d63763ae9"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "8fed404abc6c1dcfe33b63140a7f43fdb82440454d4954b87e0d5ad4689bf0d8"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "3d5947afd8bab2d75d1184f67251f124fead9b480f0b3345f43a151fd6ff168b"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "6eb2aca33c96867e774ae119547183261170b19791ed55d6afbf64c388bbc615"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "e360e5d64a79a05ddb2f28e4007620f29bc8eaf8219f2cc1a3546f248904a4bd"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "ad1bf8288b503369f7605dc0afc2d1d405f283766f37e17ab5114e21fbe11221"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "5d6e86275b2445fe10230033f2358f09d3514816db219e1ba150156dd04e8253"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "f3e5dd705ec0b405176277b3577b3a64e042c675806d0299654f36eb397129ea"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "aeec052c5acf1c573fac0d27049c160a27205a609fdb8b8fff011ff2d3d34dd9"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "2f5beb901ac2dd192215905bfa7c539f10c5a667618fc8e94fc531b3642ae998"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "d22a4fecd1e1e14d619e4b5aed8e3853935e21957ffa6f41491a273f49df22fd"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "9c6abc67d5446cb85570107d679a334e9164241f041fd3844880161c6e46c2fe"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "c4120c7b8a90442b8116452b49872bdea167a5605476323fa8632460ac704b2c"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "e068bd6f6af906bfaa2054a26e69c054cfac96030f06bc4b99f6c4856d179028"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "202dd42427613c125d4b26c3c55654c20f739d98e2f2797f69f0c4cfc3c66ea4"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "924c4ce8fc7382a5b9d5a20e88d80b0cf689438f04ceb50ea10f99c33f173deb"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "8c70b7444ba718e33a4c1c3018b13fd4771012460a60dde8b49a4a8f6afa4cb7"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "c24c706003d4123818e9f381150ef66d1930673a79b64e585fac271c6ba63a0c"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "09dc48c5c55153f913131e7f4e219fd793e6e619a1df50789455a6c394be003d"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "ddfb66d92f2e98184fa31d0e6b50b52d3391b56aef30f6cc837033100462a502"
+    },
+    {
+      "alpha": 0.04,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "df28a2800e278a12acb674082b3244ece34ca0f38aa13257874861bee475f583"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "d872e21f9dfb34e1bbb8246c496cf633f5af86a6603fbbd8ea8c0d532d9f80a6"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "a21e65e7ec50509930e6674a6356f450e61bf2e38d6bfa613e56ed18e28022db"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "achilles",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "653506fff044d33df3167d95d06007e345943b9ab8d0292d3acbc629901ce478"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "f2c2a893937d6f980bbbff5d08de740407cc99f0b713a9195cc4d5da780da37a"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "00a0d67e405be530d906fdfcbcbedeea88a717db71f0920ae1b947cd8bbb926d"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "buddy",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "75ae599f3d698cc717a8051c3a36ed2cc8aa24247551c0fcb14008874d0b6d5f"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "e10ffb316f6256efb6112d5ed91eb79261e62caeb41ee1c9ec6ba712ebf0475b"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "145bef0137e842f5b0ea9743ce75e926abc0265c26929b49671163b07ff103ca"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "cicero",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "884755ac7af2f15133abe09349aed2c2590648280f490ec657bff63231af51ef"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 0,
+      "sha256": "501751b2dd9e345226d6d2a2b6a842944232111db768bd94a80713fec318e6db"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 1,
+      "sha256": "e0d3f4c0148c19530f1cb57ee5e237fb46d127374bb991ffa6b8855010c3822d"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "gatsby",
+      "protocol": "decoding",
+      "seed": 2,
+      "sha256": "65f5f6bdb162952258b55783993b2617b754507dd71f0e65f5b80ed2e2cd4c23"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "23c662d232570d12c9f5ed9e901955a3c2152d0e2b16d6d2861b345f17c86c4a"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "3667a6be26130796ac5f76f9fd93c2032e04ef9b09f5fd34db68af7159f7266d"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "achilles",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "736ec64c959f09fe10b7c357b57865a4a85c4af961bcfd074896bdc7a51a5a10"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "2f54be997ac28200877136c7f24abe221b51a72c81da508ae7ac3426b1185fd8"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "a28e40221a0dfb8e7e4f765dbc3c1204f66265278a0f4d6579b8328cb70c0884"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "buddy",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "2f7756995bc15904f32840bd9b668df165b17c2d93b7b20f2a36a8dd8af09e46"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "07014a6a3318e568612c5300913a5eaea8165918050e7bda399c0fea917597d6"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "9c72a9c7ff300eda6608043d5deccad372455bfa9dba900c0b37c43b438e09e6"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "cicero",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "235acbe3a840592ce062d2d813b2c4074350a5a9bb291a20c42524bba989d54f"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 0,
+      "sha256": "1ccc46943eecf9e36cae56518fd02d27b635d2b0d63b47ab662c1e1f4459e512"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 1,
+      "sha256": "6b588f84e633c5d122069ec2a64f37f02f61b6e8c9d0806aa085a6606ba2f4cc"
+    },
+    {
+      "alpha": 0.05,
+      "animal": "gatsby",
+      "protocol": "consistency",
+      "seed": 2,
+      "sha256": "9fad64c286d5ed066366ee159b9e70264f6de1df1cc0658360ab9155ae885cd5"
+    }
+  ],
+  "frozen_sources_unchanged": true
+}

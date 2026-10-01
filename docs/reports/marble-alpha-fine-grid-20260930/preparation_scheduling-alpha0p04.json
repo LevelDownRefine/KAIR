@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-30T02:53:53.818648+00:00",
+  "source_sha256": "525e6b04d382dbafdc9e5bb7768fed27fda551450b75b498de41fd26d8e92518",
+  "frozen_protocol_sha256": "3e663eb487b6b9179d478548811b54a11001b97fed490a3165ea16b8200fd72c",
+  "jobs": [
+    {
+      "alpha": 0.04,
+      "protocol": "decoding",
+      "animal": "achilles",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\decoding\\achilles\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "decoding",
+      "animal": "buddy",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\decoding\\buddy\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "decoding",
+      "animal": "cicero",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\decoding\\cicero\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "decoding",
+      "animal": "gatsby",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\decoding\\gatsby\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "consistency",
+      "animal": "achilles",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\consistency\\achilles\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "consistency",
+      "animal": "buddy",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\consistency\\buddy\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "consistency",
+      "animal": "cicero",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\consistency\\cicero\\alpha-0p04",
+      "reused": false
+    },
+    {
+      "alpha": 0.04,
+      "protocol": "consistency",
+      "animal": "gatsby",
+      "condition": "alpha-0p04",
+      "folder": "D:\\MARBLE-experiments\\KAIR\\alpha-fine-grid-20260930\\consistency\\gatsby\\alpha-0p04",
+      "reused": false
+    }
+  ],
+  "cpu_workers": 2,
+  "training_changed": false,
+  "exporter_changed": false,
+  "status": "completed",
+  "completed_utc": "2026-09-30T03:11:09.102794+00:00"
+}

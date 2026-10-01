@@ -1,4 +1,4 @@
-"""Train and decode MARBLE's exported Achilles protocol in KAIR."""
+"""Train and decode an exported single-animal MARBLE protocol in KAIR."""
 
 import argparse
 import copy
@@ -6,12 +6,11 @@ import importlib.metadata
 import logging
 import platform
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import numpy as np
 import torch
-
 from data.select_dataset import define_Dataset
 from models.network_marble import GraphFeatures
 from models.select_model import define_Model
@@ -65,6 +64,7 @@ def run(options, output):
         "models/network_marble.py",
         "models/model_marble.py",
         "utils/utils_marble.py",
+        "utils/utils_marble_storage.py",
         "pyproject.toml",
         "uv.lock",
         "scripts/marble/prepare.py",
@@ -73,7 +73,7 @@ def run(options, output):
         "models/select_model.py",
     ]
     provenance = {
-        "started_utc": datetime.now(timezone.utc).isoformat(),
+        "started_utc": datetime.now(UTC).isoformat(),
         "python": platform.python_version(),
         "platform": platform.platform(),
         "packages": {
@@ -111,7 +111,7 @@ def run(options, output):
         embeddings = model.embeddings(train_full, test_full)
         torch.save(embeddings, destination / "embeddings.pt")
         metrics.update(
-            scope="Achilles offline position decoding; KAIR MARBLE integration",
+            scope=f"{options['task']}: offline position decoding; KAIR MARBLE integration",
             primary_mode="eval",
             sampling_sha256=sampling_hash,
             results={},

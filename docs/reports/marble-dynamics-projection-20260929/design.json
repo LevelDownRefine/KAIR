@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    [
+      "pca",
+      0.0
+    ],
+    [
+      "joint-01",
+      0.1
+    ],
+    [
+      "joint-1",
+      1.0
+    ],
+    [
+      "joint-10",
+      10.0
+    ]
+  ],
+  "primary_alpha": 1.0,
+  "dimensions": 20,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 100,
+  "selection": "No alpha selection on test scores; report all conditions",
+  "protocol_sha256": "d1e74e6e83c4f135a9a40689d789eea202881944e35b420e7a5998fabf680f9a",
+  "runner_sha256": "d45f3bfacb061469ac2b8be4c74a68d36b7533659bf7873295cdf610172bfec9"
+}

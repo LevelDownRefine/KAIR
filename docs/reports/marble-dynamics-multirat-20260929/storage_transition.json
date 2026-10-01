@@ -1,0 +1,10 @@
+{
+  "reason": "C drive fell below 2 GiB; runner stopped before Gatsby preparation",
+  "criteria_changed": false,
+  "completed_training_seeds": 12,
+  "completed_conditions": 4,
+  "storage_root": "D:\\MARBLE-experiments\\KAIR\\dynamics-multirat-20260929-v2",
+  "training_repeated": false,
+  "sha256_verified_before_removing_duplicate_copies": true,
+  "old_metadata_directory": "C:\\Users\\WinSa\\Documents\\OneDragon-Helper\\闭关降级\\brain\\KAIR\\results\\dynamics-multirat-20260929-v2-storage-record"
+}

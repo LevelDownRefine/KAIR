@@ -1,0 +1,63 @@
+{
+  "status": "ANALYZED: all planned runs and numerical audits completed; descriptive inference",
+  "float32_trained_checkpoints": 144,
+  "original_code_audit_conditions": 48,
+  "consistency_numerics_conditions": 24,
+  "cebra_metric_audits": 18,
+  "cebra_max_r2_error": 1.657805186461303e-07,
+  "pytest": "342 passed, 53 existing dependency warnings",
+  "ruff_check": "passed (4 changed Python files)",
+  "ruff_format_check": "passed (4 changed Python files)",
+  "figure_visual_review": "Passed: PNG inspected, labels and panels visible",
+  "frozen_execution_sources_unchanged": true,
+  "aggregate_sha256": "f54656c1717dc56f95868c8866996c564b980512dba3a4ae6c146aa28573eca6",
+  "cleanup_manifest_sha256": "c1194e84d7f6fa023c5a75b931754bce0af3212e4b5e0afa31e62007bab666b5",
+  "fallacy_scan_coverage": "11/11 checked",
+  "interpretation": "CAUTION: adaptive same-record tuning, four animals, three seeds; no independent confirmation",
+  "fallacy_scan": [
+    {
+      "type": "Simpson's paradox",
+      "assessment": "Animal means and paired differences are retained; macro MAE gives each animal equal weight, not weight by record length."
+    },
+    {
+      "type": "Ecological fallacy",
+      "assessment": "Inference is restricted to four public rat recordings; seeds, time bins and directed pairs are not biological replicates."
+    },
+    {
+      "type": "Berkson/selection bias",
+      "assessment": "The released subset is not a random population sample. No population prevalence or universal neural property is inferred."
+    },
+    {
+      "type": "Collider bias",
+      "assessment": "No post-hoc animal/seed filtering. Position conditioning defines the in-sample consistency metric and is disclosed, not used as causal adjustment."
+    },
+    {
+      "type": "Base-rate neglect",
+      "assessment": "Not applicable to these continuous regression/reconstruction endpoints; no diagnostic sensitivity or predictive-value claim."
+    },
+    {
+      "type": "Regression to the mean",
+      "assessment": "This search follows a selected coarse optimum on the same records; winner's optimism remains. Reused controls and all seeds are retained, and fresh-data confirmation is absent."
+    },
+    {
+      "type": "Survivorship bias",
+      "assessment": "All 24 planned new conditions and 72 seeds completed. Poor historical tensor files were deleted at the user's request, while every score and audit record remains available."
+    },
+    {
+      "type": "Look-elsewhere effect",
+      "assessment": "All six local points and the prior coarse report are shown; selection is adaptive and exploratory. No p-values or significance claims are made."
+    },
+    {
+      "type": "Garden of forking paths",
+      "assessment": "Local points/endpoints were frozen before new outcomes. Only CPU input-preparation scheduling changed during execution; algorithm sources and training settings stayed fixed."
+    },
+    {
+      "type": "Correlation/causation",
+      "assessment": "Claims concern measured performance under an algorithmic intervention on fixed recordings, not causal neural or behavioral mechanisms."
+    },
+    {
+      "type": "Reverse causality",
+      "assessment": "Offline position decoding and position-binned affine similarity do not establish a causal direction or future-behavior prediction."
+    }
+  ]
+}

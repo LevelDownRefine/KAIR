@@ -1,0 +1,10 @@
+{
+  "float32_trained_checkpoints": 144,
+  "consistency_numerics_conditions": 24,
+  "cebra_metric_audits": 18,
+  "cebra_max_r2_error": 1.657805186461303e-07,
+  "pytest": "337 passed, 53 pre-existing dependency warnings",
+  "ruff_check": "passed (8 changed Python files)",
+  "ruff_format_check": "passed (8 changed Python files)",
+  "aggregate_sha256": "7388e32f63f17977e1bce2cdc45c35236fc34592ad108628b83602eb17fad888"
+}

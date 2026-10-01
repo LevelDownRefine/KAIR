@@ -1,0 +1,18 @@
+{
+  "tolerance_atol": 2E-05,
+  "training_inputs_changed": false,
+  "hyperparameters_changed": false,
+  "tolerance_rtol": 0.0002,
+  "failed_runs_preserved": true,
+  "cuda_oracle_repetitions_passed": 10,
+  "amended_source_sha256": {
+    "scripts/marble/train_consistency.py": "d6bce1cf7295a6985ffceda765b51c0ef5b2113466997f067ccbd912d34d2dc9",
+    "scripts/marble/run_multirat_projection.py": "3ae8b93742d80c70b880405c408039d77ee43a1f582ae8e7ea8cff9c7d02d723",
+    "scripts/marble/precision_reference.py": "41dfc40fec5f0ebb7cb3c4e231eaa28c5ea990902c091607f0a4c8b55a042396"
+  },
+  "formal_training_dtype": "float32",
+  "reason": "One float32-versus-float32 three-step output exceeded the old tolerance by rounding; original float64 oracle isolates backend error",
+  "frozen_protocol_sha256": "3db2fe5d968cd41b05db90f890c7cdab7c4083dab2e64ce8222c92c41acdec93",
+  "before_any_consistency_training": true,
+  "validation": "Both original float32 and CUDA float32 compare against original float64 at identical original tolerance"
+}

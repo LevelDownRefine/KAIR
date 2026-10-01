@@ -1,0 +1,11 @@
+{
+  "all_four_original_code_audits_passed": true,
+  "same_initial_weights_per_seed": true,
+  "same_training_means": true,
+  "same_pca_reference_errors": true,
+  "monotone_training_projection_errors": true,
+  "maximum_embedding_error": 4.3213367462158203e-07,
+  "maximum_eval_decoder_error_m": 0.0008653402328491211,
+  "pytest": "312 passed, 53 existing dependency warnings",
+  "ruff_changed_files": "check and format check passed"
+}
