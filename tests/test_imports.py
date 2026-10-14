@@ -24,6 +24,7 @@ SAFE_MODULES = [
     "utils.utils_image",
     "utils.utils_option",
     "utils.utils_model",
+    "utils.utils_hoi",
     # data
     "data.dataset_dncnn",
     "data.dataset_sr",
